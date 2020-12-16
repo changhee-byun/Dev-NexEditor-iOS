@@ -1,0 +1,12 @@
+KineMaster Manifest/0100
+summary.json=205d2b0a2e71e4384b016bd2937bcfa4e13185d5
+[published-effects]
+com.nexstreaming.kinemaster.builtin.watermark.mov=01cf354243d359e2637f335bb56e362835ac9555
+com.nexstreaming.kinemaster.builtin.watermark.std_1v1=f286bb076e7fd5ee2764d589c7c0a2b6968b5386
+com.nexstreaming.kinemaster.builtin.watermark.std_9v16=4c8dc1a171968f4896d95425156b8dca44dadef6
+com.nexstreaming.kinemaster.builtin.watermark.std=b9be3368f4014c86ee34cf14ab65514dd91f3a30
+com.nexstreaming.kinemaster.builtin.watermark.up=a93b186a82f979773d3b030a0e13ac8877288c49
+[internal-dependencies]
+r0=69b6aceeccb92d076f2c84fd7918247342df7f66
+[external-dependencies]
+[opt-external-dependencies]

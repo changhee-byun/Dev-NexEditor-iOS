@@ -1,0 +1,8 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.jpg",
+  "id": "com.nexstreaming.kinemaster.basic.opening",
+  "label": {},
+  "type": "nex.kedl",
+  "hidden": false
+}

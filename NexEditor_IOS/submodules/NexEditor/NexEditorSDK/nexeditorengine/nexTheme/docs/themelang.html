@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KineMaster Effect Description Language - Reference</title>
+    <link rel="stylesheet" href="themelang.css" type="text/css" />
+</head>
+<body>
+
+<div class=title>
+	KineMaster Effect Description Language
+</div>
+<div class="subtitle_a">
+	For KineMaster 2.0.28
+</div>
+<div class="subtitle_b">
+	Revised June 13, 2013
+</div>
+
+<h1>Index</h1>
+
+<ul>
+	<li><a href="#_Overview">Overview</a></li>
+		<ul>
+			<li><a href="#_Syntax">Syntax</a></li>
+			<li><a href="#_KineMaster Plugins">KineMaster Plugins</a></li>
+			<li><a href="#_Basic Structure">Basic Structure</a></li>
+			<li><a href="#_KMT Packages">KMT Packages</a></li>
+			<li><a href="#_Element ID">Element ID</a></li>
+			<li><a href="#_Coordinate Systems">Coordinate Systems</a></li>
+			<li><a href="#_Attribute Types">Attribute Types</a></li>
+		</ul>
+	<li><a href="#_Reference">Reference</a></li>
+		<ul>
+			<li><a href="#_(All)">(All)</a></li>
+			<li><a href="#_AnimatedValue">AnimatedValue</a></li>
+			<li><a href="#_Circle">Circle</a></li>
+			<li><a href="#_Clear">Clear</a></li>
+			<li><a href="#_Const">Const</a></li>
+			<li><a href="#_CoordinateSpace">CoordinateSpace</a></li>
+			<li><a href="#_Cull">Cull</a></li>
+			<li><a href="#_Effect">Effect</a></li>
+			<li><a href="#_FieldLabel">FieldLabel</a></li>
+			<li><a href="#_Function">Function</a></li>
+			<li><a href="#_Keyframe">Keyframe</a></li>
+			<li><a href="#_Option">Option</a></li>
+			<li><a href="#_Part">Part</a></li>
+			<li><a href="#_Point">Point</a></li>
+			<li><a href="#_Polygon">Polygon</a></li>
+			<li><a href="#_Projection">Projection</a></li>
+			<li><a href="#_Rect">Rect</a></li>
+			<li><a href="#_Rotate">Rotate</a></li>
+			<li><a href="#_Scale">Scale</a></li>
+			<li><a href="#_Sequence">Sequence</a></li>
+			<li><a href="#_Style">Style</a></li>
+			<li><a href="#_Texture">Texture</a></li>
+			<li><a href="#_Theme">Theme</a></li>
+			<li><a href="#_ThemeSet">ThemeSet</a></li>
+			<li><a href="#_TimingFunc">TimingFunc</a></li>
+			<li><a href="#_Translate">Translate</a></li>
+			<li><a href="#_TriangleStrip">TriangleStrip</a></li>
+			<li><a href="#_UserField">UserField</a></li>
+			<li><a href="#_Visibility">Visibility</a></li>
+		</ul>		
+		
+</ul>
+
+<h1 id="_Overview">Overview</h1>
+
+<h2 id="_Syntax">Syntax</h2>
+
+	<p>
+		The KineMaster Effect Description Language is an XML-based language used to describe
+		effects, transitions and themes for KineMaster.
+		
+		The parser is quite strict, so please pay close attention to syntax.  Some important points:
+	</p>
+	
+	<ul>
+		<li>All tags must be balanced.  In other words, every starting tag must be matched by an ending tag, or must include the terminal slash.
+			<ul>
+				<li><b>okay: </b> <span class="code">&lt;element&gt;...&lt;/element&gt;</span></li>
+				<li><b>also okay: </b> <span class="code">&lt;element /&gt;</span></li>
+				<li><b>invalid: </b> <span class="code">&lt;element&gt;</span></li>
+			</ul>
+		</li>
+		<li>All attribute values must be quoted.
+			<ul>
+				<li><b>okay: </b> <span class="code">&lt;element attr="value"&gt;...&lt;/element&gt;</span></li>
+				<li><b>also okay: </b> <span class="code">&lt;element attr="value" anotherAttr="value" /&gt;</span></li>
+				<li><b>invalid: </b> <span class="code">&lt;element attr=value /&gt;</span></li>
+			</ul>
+		</li>
+	</ul>
+	
+<h2 id="_KineMaster Plugins">KineMaster Plugins</h2>
+
+	<p>KineMaster supports plug-in clip effects, transition effects and themes.  In development versions of KineMaster, these can be
+	installed by copying them into the appropriate folder on the device.</p>
+	
+	<ul>
+	<li><b>Clip Effects:</b> <span class="code">/sdcard/KineMaster/Effects</span></li>
+	<li><b>Transition Effects:</b> <span class="code">/sdcard/KineMaster/Transitions</span></li>
+	<li><b>Themes:</b> <span class="code">/sdcard/KineMaster/Themes</span></li>
+	</ul>
+	
+	<p>Themes are self-contained.  Theme files have the extension <b>.kmt</b>, and are installed by copying the .kmt file into the <span class="code">Themes</span> folder.</p>
+	
+	<p>For clip effects and transition effects, you must put the <b>.nfxs</b> file and all of the required <b>.png</b> and <b>.jpeg</b> files into 
+	the appropriate folder (either <span class="code">Effects</span> or <span class="code">Transitions</span>).</p>
+	
+	<p>Although KineMaster checks for updated themes and effects while running, there may be issues with updating themes while they are in use.  It is therefore best
+	to terminate and re-start KineMaster after installing new themes or effects directly.  (This applies to development versions only; release versions that support downloadable
+	themes will be able to install the new themes live).</p>
+	
+<h2 id="_Basic Structure">Basic Structure</h2>
+
+	<p>There are three types of plugins that are supported by KineMaster:</p>
+
+	<ul>
+	<li><b>Clip Effects</b> apply to individual clips, and include <i>title effects</i>, <i>accent effects</i>, <i>overlay effects</i> (such as handwriting) and so on.</li>
+	<li><b>Transition Effects</b> are applied between two clips, and provide a transition between them.</li>
+	<li><b>Themes</b> are pre-packaged collections of clip and transition effects that can be applied to a project as a whole.</li>
+	</ul>
+	
+	<p>Each of these is defined in a <b>.nfxs</b> file (basically, an XML file that uses only KEDL tags and attributes as specified in this document).  
+	Clip effects and transition effects must have a single <span class="code">&lt;Effect /&gt;</span>
+	root element.  Themes have a single <span class="code">&lt;Theme /&gt;</span> root element which contains several <span class="code">&lt;Effect /&gt;</span>
+	elements within it.</p>
+	
+	<p>A full plugin consists of the <span class="code">.nfxs</span> file as well as all other required files referenced by the <span class="code">.nfxs</span> file, 
+	such as <span class="code">.png</span>, <span class="code">.jpeg</span>, <span class="code">.ttf</span>, <span class="code">.aac</span> files and so on.  In the case of a Theme
+	plugin, these are all packaged in a <span class="code">.kmt</span> file (see <a href="#_KMT Packages">KMT Packages</a> for details)</p>
+	
+	<p>Within a plugin's <span class="code">&lt;Effect /&gt;</span> element, the general approach is to define
+	textures and animated values first, and then to use drawing elements such as triangle strips and rectangles
+	to render the effect.</p>
+	
+	<pre class="code">
+&lt;texture id="video_out" video="1" /&gt;
+&lt;texture id="video_in" video="2" /&gt;
+&lt;animatedvalue id="fade"&gt;
+    &lt;keyframe value="0" /&gt;
+    &lt;keyframe value="1" /&gt;
+&lt;/animatedvalue&gt;
+&lt;rect bounds="-1 1 1 -1" texture="@video_out" /&gt;
+&lt;style alpha="@fade"&gt;
+    &lt;rect bounds="-1 1 1 -1" texture="@video_in" /&gt;
+&lt;/style&gt;
+	</pre>
+	
+<h2 id="_KMT Packages">KMT Packages</h2>
+	
+	<img src="kmt.gif" style="float:right;" />
+	<br clear="all" />
+	
+<h2 id="_Element ID">Element ID</h2>
+
+	<p>Each element can have an id assigned using the  <span class="code">id</span> attribute.</p>
+	
+	<p>Elements can be referred to elsewhere by prefixing their id with the <span class="code">@</span> symbol.
+	This is primarily used to use the output of an <span class="code">&lt;animatedvalue&gt;</span> someplace where
+	a scalar or vector would normally be given directly.  This is also used to refer to defined textures.
+	</p>
+	
+	<p>There are some rules relating to <span class="code">id</span> uniqueness:</p>
+	<ul>
+	<li>The id for an <span class="code">&lt;effect&gt;</span> must be globally unique (in other words, it must not conflict with the id for any other effect, even effects developed by different authors).</li>
+	<li>The id for an <span class="code">&lt;theme&gt;</span> must be globally unique (in other words, it must not conflict with the id for any other theme, even themes developed by different authors).</li>
+	<li>The id for other elements within an <span class="code">&lt;effect&gt;</span> element must be unique within that effect.</li>
+	<li>The id for other elements within a <span class="code">&lt;theme&gt;</span> element (but <i>not</i> within an <span class="code">&lt;effect&gt;</span> element) must be unique within that theme.</li>
+	</ul>
+	
+	<p>This means that it is possible to use an <span class="code">id</span> for a texture in an effect, and define another texture with the same <span class="code">id</span>
+	at the theme level.  In this case, the closest definition to a reference takes priority.  In other words, this can be used to define a set of default
+	textures available to the whole theme, but override them for specific individual themes.</p>
+	
+	<p>For themes and effects, to maintain a globally unique ID, we recommend using your organization's internet domain name in reverse order (similar to a java package name), with
+	underscores replacing period.  For example, if your company's domain name is <span class="code">example.com</span> and you have a theme
+	named "Summer", then you might choose a theme ID such as:  <span class="code">com_example_theme_summer</span> </p>
+	
+	<p><b>IMPORTANT:</b> KineMaster predefines the following two textures automatically (but explicitly defined elements with the same id take precedence, so you can override these):</p>
+	
+	<pre class="code">
+	
+&lt;texture id="video_out" video="1" /&gt;
+&lt;texture id="video_in" video="2" /&gt;
+	</pre>
+
+	
+<h2 id="_Coordinate Systems">Coordinate Systems</h2>
+
+	<p><img src="coordsys.gif" style="float:right; width:50%;" />The default coordinate system is the OpenGL coordinate system.  This places 0,0 in the 
+	center of the screen.  The lower-left corner is at -1,-1 and the upper-right corner is at 1,1.
+	Obviously, this means that figures with equal width and height (for example, a rectangle drawn fromn -0.5,-0.5 to 0.5,0.5)
+	will be distorted.</p>
+	
+	<p>In most cases, it is useful to begin with a 720p coordinate system.  That is, each unit is equal to one pixel at 720p
+	and the aspect ratio is adjusted so that pixels are square.  It is also usually desirable to set up a 3D projection, so
+	that changes to the Z coordinate will be reflected by a point appearing closer or further from the observer.</p>
+	
+	<br clear="all" />
+	
+	<p>The following code sets up a 720x1280 (720p) coordinate system with a 3D perspective transform and a 45-degree field of view. <b><i>IT IS HIGHLY RECOMMENDED to use this in all effects</i></b>, even effects that don't use 3D, because it maintains the correct aspect ratio when performing other transformations such as rotation:</p>
+	
+	<pre class="code">
+  &lt;projection type="perspective" aspect="1.777777" fov="45" near="0.01" far="60000"&gt;
+    &lt;translate offset="-640 -360 -870"&gt;
+    
+        &lt;!-- Anything drawn here uses the transformed coordiantes --&gt;
+
+    &lt;/translate&gt;
+  &lt;/projection&gt;
+    </pre>
+
+	<p>This code creates a perspective projection, then transforms the coordinate away from the
+	camera (without doing that, objects on the z=0 plane are too close to be seen).</p>
+	
+	<p>The result is a coordinate system with 0,0 in the bottom-left corner, and integer coordinates
+	on the z=0 plane being equal to one pixel on a 720p display.  The aspect ratio is at 16:9, so
+	pixels are square for 720p output.</p>
+
+
+<h2 id="_Attribute Types">Attribute Types</h2>
+
+	<p>There are several different formats that can be used for attribute values</p>
+	
+	<p><i>(enum)</i>  These values are one of a fixed set of strings.  The possible values are listed in this document in the
+	section describing each element.  The value must be entered exactly as it is shown, with no spaces.  The exception is
+	that enum values are not case sensitive.</p>
+
+	<p><i>(constant vector)</i>  Vectors are lists of floating point numbers.  Each element
+	in the list is separated by a comma or space (which one you use is entirely up to you).  Multiple spaces together are
+	treated as a single space. Vectors are used to define locations in 2D and 3D space, as well as colors and animation timing functions.  Constant vectors can
+	be defined using literal components only.  In some cases, a reference to a <span class="code">&lt;Const /&gt;</span> element may be allowed as well.</p>
+
+	<p><i>(animated vector)</i>  An animated vector is the same as a constant vector, except that in addition to supporting literal vector components, components
+	may be supplied by reference to <span class="code">&lt;AnimatedValue /&gt;</span>, <span class="code">&lt;Const /&gt;</span> or 
+	<span class="code">&lt;Sequence /&gt;</span> elements.  It is possible to mix references and literal values as components
+	of the same vector.  A reference to another element is made by prefixing the element's ID with the <span class="code">@</span> symbol.</p>
+	
+	<pre class="code">
+&lt;AnimatedValue id="fade_in"&gt;
+    &lt;KeyFrame value="0" /&gt;
+    &lt;KeyFrame value="1" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Style alpha="@fade_in"&gt;
+    &lt;Rect bounds="0 0 1 1" color="1 0 0" /&gt;
+&lt;/Style&gt;
+	</pre>
+	
+	<p>If a reference is to a vector with multiple components, all components are used.</p>
+
+	<pre class="code">
+&lt;AnimatedValue id="box_center"&gt;
+    &lt;KeyFrame value="-0.5 0.5" /&gt;
+    &lt;KeyFrame value="0.5 1.0" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Translate offset="@box_center"&gt;
+    &lt;Rect bounds="-0.1 -0.1 0.1 0.1" color="1 0 0" /&gt;
+&lt;/Translate&gt;
+	</pre>
+	
+	<p>If the vector is shorter than required, remaining components can be
+	filled in using literals:</p>
+	
+	<pre class="code">
+&lt;AnimatedValue id="red_level"&gt;
+    &lt;KeyFrame value="1" /&gt;
+    &lt;KeyFrame value="0" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Rect bounds="-0.1 -0.1 0.1 0.1" color="@red_level 0 0.5" /&gt;
+	</pre>
+	
+	<p>Individual components may be referenced directly by index, using the syntax <span class="code">@element_id[index]</span>.  Index values are zero-based.  In addition,
+	components may be referenced by name using the syntax <span class="code">@element_id.name</span>.  Names are just aliases for certain index values.  There is no
+	functional difference, but they may make code more readable:</p>
+	<pre class="code">
+	.x  =  .r  =  .s  = [0]
+	.y  =  .g  =  .t  = [1]
+	.z  =  .b  =  .p  = [2]
+	.w  =  .a  =  .q  = [3]
+	</pre>
+	
+	<p>For example, to swap the red and green values given by an animated value:</p>
+	
+	<pre class="code">
+&lt;AnimatedValue id="box_color"&gt;
+    &lt;KeyFrame value="1.0 0.0 0.0" /&gt;
+    &lt;KeyFrame value="0.5 1.0 1.0" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Rect bounds="-0.5 -0.5 0.5 0.5" color="@box_color.g @box_color.r @box_color.b" /&gt;
+	</pre>
+	
+	<p>Or to use only the green element, with fixed values for the other elements:</p>
+	
+	<pre class="code">
+&lt;AnimatedValue id="box_color"&gt;
+    &lt;KeyFrame value="1.0 0.0 0.0" /&gt;
+    &lt;KeyFrame value="0.5 1.0 1.0" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Rect bounds="-0.5 -0.5 0.5 0.5" color="0.5 @box_color.g 1.0" /&gt;
+	</pre>
+
+	<p>Finally, referenced elements may be scaled by a constant factor using
+	the <span class="code">*</span> and <span class="code">/</span> operators (be sure not to leave
+	a space around the operator; spaces delimit new values). </p>
+	
+	<pre class="code">
+&lt;AnimatedValue id="box_color"&gt;
+    &lt;KeyFrame value="1.0 0.0 0.0" /&gt;
+    &lt;KeyFrame value="0.5 1.0 1.0" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Rect bounds="-0.5 -0.5 0.5 0.5" color="0.5 @box_color.g*0.5 1.0" /&gt;
+	</pre>
+
+	
+	<p><i>(float)</i> </p>
+
+	<p><i>(integer)</i> </p>
+
+	<p><i>(string)</i> </p>
+
+	<p><i>(flags)</i> </p>
+
+	<p><i>(mixed)</i> </p>
+
+<h1 id="_Reference">Reference</h1>
+<h2 id="_(All)">(All)</h2>
+
+	<p>
+		These attributes apply to all tags.
+	</p>
+
+	<div class="param">
+		<p><span>id</span>
+			Establishes an identifier for the element.  This can be used later
+			to refer back to the element.  Identifiers must follow the following rules:
+			<ul>
+				<li>They must begin with a letter or underscore</li>
+				<li>They must contain only letters, numbers or underscore</li>
+				<li>They are case-sensitive (upper- and lower-case identifiers that are otherwise named alike will be treated separately)</li>
+			</ul>
+			When referring to an element by an identifier that has already been assigned, prefix the
+			of the identifier with the @ symbol.  For example <span class="code">id="fade_level"</span>
+			assigns the identifier <i>fade_level</i> to an element (perhaps an animated value that
+			will control the fade level over time).  Later, to refer to that same element,
+			one would write <span class="code">@fade_level</span>.
+		</p>
+	</div>
+
+<h2 id="_AnimatedValue">AnimatedValue</h2>
+	<p class="elementSummary">Permitted Parents: <span class="code">&lt;Effect /&gt</span></p>
+	<p>
+		An animated value establishes a vector of floating-point values that change over time as
+		the effect progresses.  Animated values can be referred to by their ID in other elements.
+		See the reference for each individual element to see which parameters support animation.
+	</p>
+	<p> For example, the following code causes a red square to appear and fade in gradually over 
+		the course of the effect:
+	</p>
+	<pre class="code">
+&lt;AnimatedValue id="fade_in"&gt;
+    &lt;KeyFrame value="0" /&gt;
+    &lt;KeyFrame value="1" /&gt;
+&lt;/AnimatedValue&gt;
+&lt;Style alpha="@fade_in"&gt;
+    &lt;Rect bounds="0 0 1 1" color="1 0 0" /&gt;
+&lt;/Style&gt;
+	</pre>
+	<p>
+		An animated value element should contain <span class="code">&lt;Keyframe /&gt</span> elements
+		that define points between which the values are interpolated.  If the keyframe values are
+		different depending on the position of the clip or the current part (of a title effect, for
+		instance) keyframes can be placed inside of a <span class="code">&lt;Part /&gt</span>
+		element.  If there are keyframes outside of any <span class="code">&lt;Part /&gt</span>, they
+		will be used only if no matching part element is found.
+	</p>
+	<div class="param">
+		<p><span>timingfunction</span>
+			Controls the speed at which the animation timing progresses.  Animation timing is calculated
+			using a cubic bezier function (a curve) to prevent the feeling of a "jerk" that happens at
+			the beginning and end of an animation when using merely linear interpolation.
+		</p>
+		<p>By adjusting the parameters of the bezier function, the smoothness of the curve can be adjusted.
+		This can be a <i>vector with four elements</i>, a reference to a <span class="code">&lt;TimingFunction /&gt</span>
+		or <span class="code">&lt;Const /&gt</span> node, or one of the following preset values.
+		</p>
+		<p class="attrvalue"><span>ease</span> Begins the animation gradually and finishes the animation gradually.  Same as specifying <span class="code">0.25 0.10 0.25 1.00</span></p>
+		<img src="anim_bezier_ease.jpg" style="margin-left: 50pt" />
+		<p class="attrvalue"><span>ease-in</span> Begins the animation gradually and finishes linearly.  Same as specifying <span class="code">0.42 0.00 1.00 1.00</span></p>
+		<img src="anim_bezier_easein.jpg" style="margin-left: 50pt" />
+		<p class="attrvalue"><span>ease-out</span> Begins the animation linearly and finishes gradually.  Same as specifying <span class="code">0.00 0.00 0.58 1.00</span></p>
+		<img src="anim_bezier_easeout.jpg" style="margin-left: 50pt" />
+		<p class="attrvalue"><span>ease-in-out</span> Begins the animation gradually and finishes the animation gradually.  Same as specifying <span class="code">0.42 0.00 0.58 1.00</span></p>
+		<img src="anim_bezier_easeinout.jpg" style="margin-left: 50pt" />
+		<p class="attrvalue"><span>linear</span> Linear timing function.  Same as specifying <span class="code">0.00 0.00 1.00 1.00</span></p>
+		<img src="anim_bezier_linear.jpg" style="margin-left: 50pt" />
+		<p class="attrvalue"><span>default</span> The default timing function, if none was specified.  Same as <span class="code">ease</span></p>
+	</div>
+	<div class="param">
+		<p><span>scope</span> Sets the some (time scale) for calculating this value.
+		<p class="attrvalue"><span>part</span> (default)  Time advances from 0 to 1 for each <i>part</i> of the effect.</p>
+		<p class="attrvalue"><span>whole</span> Time advances from 0 to 1 over the course of the whole effect, without regard to parts.</p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>basis</span>
+		<p class="attrvalue"><span>time</span> (default)  The value changes with respect to time (see <i>scope</i> for setting the time scale)</p>
+		<p class="attrvalue"><span>clipindex</span>  The value is fixed with respect to time (not really animated), but a value is 
+			chosen based on the index of the current clip with respect to the project.  
+			This allows for slightly different positioning each time the effect is used.</p>
+		<p class="attrvalue"><span>clipindexshuffle</span>  Same as <i>clipindex</i>, but the value is chosen randomly based on the clip index.</p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noise</span>
+		<p class="attrvalue"><span>none</span> (default) </p>
+		<p class="attrvalue"><span>perlin-simplex</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noisefunction</span>
+		<p class="attrvalue"><span>pure</span> (default) </p>
+		<p class="attrvalue"><span>fractal</span> noise(p) + ½ noise(2p) + ¼ noise(4p) ... </p>
+		<p class="attrvalue"><span>turbulence</span> |noise(p)| + ½ |noise(2p)| + ¼ |noise(4p)| ... </p>
+		<p class="attrvalue"><span>wavefractal</span> sin( x + |noise(p)| + ½ |noise(2p)| + ...) </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noisebias</span> (Float)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noisescale</span> (Float)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noisesamplebias</span> (Float)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noisesamplescale</span> (Float)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>noiseoctaves</span> (Integer)
+		</p>
+	</div>
+	
+<h2 id="_Circle">Circle</h2>
+	<div class="param">
+		<p><span>center</span> (Vector)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>radius</span> (Float)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>innerradius</span> (Float) Optional; omit for filled circle.
+		</p>
+	</div>
+	<div class="param">
+		<p><span>color</span> (Vector) Optional; omit to use color from enclosing <i>style</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>innercolor</span> (Vector) Optional; omit to use <i>color</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>segments</span> (Integer) Optional; omit to calculate automatically based on radius
+		</p>
+	</div>
+	
+<h2 id="_Clear">Clear</h2>
+	<p class="elementSummary">Permitted Parents: 
+		<span class="code">&lt;Effect /&gt</span>
+		<span class="code">&lt;Part /&gt</span>
+		<span class="code">&lt;Style /&gt</span>
+		
+		<span class="code">&lt;Translate /&gt</span>
+		<span class="code">&lt;Rotate /&gt</span>
+		<span class="code">&lt;Scale /&gt</span>
+		<span class="code">&lt;Sequence /&gt</span>
+		<span class="code">&lt;Visibility /&gt</span>
+		<span class="code">&lt;Projection /&gt</span>
+		<span class="code">&lt;Cull /&gt</span>
+	</p>
+	<p>
+		Clears the render buffer.  By default, the color render buffer (which will be
+		used as the output frame for the effect) is cleared.
+	</p>
+
+	<div class="param">
+		<p><span>color</span>
+			<i>(vector or animated vector)</i>  Specifies the color to be used when
+			clearing the color render buffer.  The default (if this is not specified)
+			is black.  For example:
+		</p>
+		
+		<pre class="code">
+		
+&lt;clear color="0 0 0.5" /&gt;  &lt;!-- clear render buffer to dark blue --&gt;
+&lt;clear /&gt;                  &lt;!-- clear render buffer to black     --&gt;
+		</pre>
+
+	</div>
+	<div class="param">
+		<p><span>stencil</span>  If present, the stencil buffer will be cleared instead
+		of the color render buffer.  In this case, the <i>color</i> attribute is ignored.
+		For example:
+		</p>
+		
+		<pre class="code">
+		
+&lt;clear stencil /&gt;           &lt;!-- clear stencil buffer            --&gt;
+		</pre>
+
+	</div>
+<h2 id="_Const">Const</h2>
+	<p>Defines a constant scalar or vector value that can be referred to elsewhere
+	by id.</p>
+	
+	<p>For example, this code:</p>
+		<pre class="code">
+		
+&lt;const id="effectColor" value="1 0 0" /&gt;
+&lt;rect bounds="0 0 50 50" color="@effectColor" /&gt;
+		</pre>
+	
+	<p>...is equivalent to this code...</p>
+		<pre class="code">
+		
+&lt;rect bounds="0 0 50 50" color="1 0 0" /&gt;
+		</pre>
+	
+	<div class="param">
+		<p><span>value</span>
+			<i>(vector)</i>
+		</p>
+	</div>
+<h2 id="_CoordinateSpace">CoordinateSpace</h2>
+<p><b>WARNING:</b> This is an experimental element and should not be used.</p>
+	<div class="param">
+		<p><span>width</span>
+			<i>(float)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>height</span>
+			<i>(float)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>origin</span>
+			<i>(vector) x,y</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>yup</span>
+			<i>(true/false)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>applyto</span>
+			<i>vertex/mask/texture (default=vertex)</i>
+		</p>
+	</div>
+<h2 id="_Cull">Cull</h2>
+<p>Suppresses drawing primitives (triangles, rectangles, polygons, etc.) that are facing in a certain
+direction (useful for back-face culling when rendering in 3D).  Primitives are assumed to defined
+with the points in clockwise order when seen from the front.</p>
+	<div class="param">
+		<p><span>face</span>
+		<p class="attrvalue"><span>none</span> (default) Don't perform any culling (all primitives are drawn)</p>
+		<p class="attrvalue"><span>back</span> Cull primitives facing away from the viewer (where points are counter-clockwise as seen from the viewer's perspective)</p>
+		<p class="attrvalue"><span>front</span> Cull primitives facing toward the viewer (where points are clockwise as seen from the viewer's perspective)</p>
+		<p class="attrvalue"><span>all</span> Cull everything (no primitives are drawn)</p>
+		</p>
+	</div>
+	
+		<pre class="code">
+		
+&lt;cull face="back"&gt;
+    &lt;!-- primitives placed here will be culled accordingly --&gt;
+&lt;/cull&gt;
+		</pre>
+	
+<h2 id="_Effect">Effect</h2>
+	<p>The minimum required parameters for effect depend on the type of effect.  For all effects, <span class="code">id</span> is required
+	and <span class="code">name</span> and <span class="code">icon</span> are strongly recommended.</p>
+	<p><b>Transition</b> effects require <span class="code">type="transition"</span> as
+	well as <span class="code">effectoffset</span> and <span class="code">videooverlap</span>.  It is recommended (but not required)
+	to also specify <span class="code">defaultduration</span>.</p>
+	<p><b>Title</b> effects require <span class="code">type="title"</span>.  Other settings are optional, but <span class="code">intime</span>, <span class="code">outtime</span>
+	and <span class="code">repeat</span> are commonly specified.</p>
+	<div class="param">
+		<p><span>name</span> <i>(string)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>icon</span> <i>resource filename, with extension (string)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>transition</span> </p>
+		<p class="attrvalue"><span>title</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>repeat</span>
+		<p class="attrvalue"><span>no</span> </p>
+		<p class="attrvalue"><span>none</span> </p>
+		<p class="attrvalue"><span>yes</span> </p>
+		<p class="attrvalue"><span>repeat</span> </p>
+		<p class="attrvalue"><span>sawtooth</span> </p>
+		<p class="attrvalue"><span>sine</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>intime</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>outtime</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>intimefirst</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>outtimelast</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>cycleTime</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>minduration</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>maxduration</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>maxtitleduration</span> <i>ms (integer)</i>
+		<b>Deprecated:</b> Has no effect; do not use.
+		</p>
+	</div>
+	<div class="param">
+		<p><span>userduration</span> <i>true/false</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>defaultduration</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>effectoffset</span> <i>ms (integer)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>videooverlap</span> <i>ms (integer)</i>
+		</p>
+	</div>
+<h2 id="_FieldLabel">FieldLabel</h2>
+	<p class="elementSummary">Permitted Parents: 
+		<span class="code">&lt;UserField /&gt</span>
+		<span class="code">&lt;Option /&gt</span>
+	</p>
+	<div class="param">
+		<p><span>locale</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>value</span>
+		</p>
+	</div>	
+<h2 id="_Function">Function</h2>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>simplexpure</span> </p>
+		<p class="attrvalue"><span>simplexfractal</span> </p>
+		<p class="attrvalue"><span>simplexturbulence</span> </p>
+		<p class="attrvalue"><span>simplexwavefractal</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>inputbias</span> <i>float vector</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>inputscale</span> <i>float vector</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>outputbias</span> <i>float</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>outputputscale</span> <i>float</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>normalize</span> <i>yes/no</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>octaves</span> <i>integer</i>
+		</p>
+	</div>
+<h2 id="_Keyframe">Keyframe</h2>
+	<div class="param">
+		<p><span>time</span> <i>(float)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>value</span> <i>(float vector)</i>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>timingfunction</span>
+		This can be a <i>vector with four elements</i>, a reference to a <span class="code">&lt;TimingFunction /&gt</span>
+		or <span class="code">&lt;Const /&gt</span> node, or one of the following preset values.
+		</p>
+		<p class="attrvalue"><span>ease</span> Begins the animation gradually and finishes the animation gradually.  Same as specifying <span class="code">0.25 0.10 0.25 1.00</span></p>
+		<p class="attrvalue"><span>ease-in</span> Begins the animation gradually and finishes linearly.  Same as specifying <span class="code">0.42 0.00 1.00 1.00</span></p>
+		<p class="attrvalue"><span>ease-out</span> Begins the animation linearly and finishes gradually.  Same as specifying <span class="code">0.00 0.00 0.58 1.00</span></p>
+		<p class="attrvalue"><span>ease-in-out</span> Begins the animation gradually and finishes the animation gradually.  Same as specifying <span class="code">0.42 0.00 0.58 1.00</span></p>
+		<p class="attrvalue"><span>linear</span> Linear timing function.  Same as specifying <span class="code">0.00 0.00 1.00 1.00</span></p>
+		<p class="attrvalue"><span>default</span> The default timing function, if none was specified.  Same as <span class="code">0.25 0.10 0.25 1.00</span></p>
+	</div>
+<h2 id="_Option">Option</h2>
+	<p class="elementSummary">Permitted Parents: 
+		<span class="code">&lt;UserField /&gt</span>
+	</p>
+	<div class="param">
+		<p><span>label</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>value</span>
+		</p>
+	</div>	
+<h2 id="_Part">Part</h2>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>in</span> </p>
+		<p class="attrvalue"><span>out</span> </p>
+		<p class="attrvalue"><span>mid</span> </p>
+		<p class="attrvalue"><span>all</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>clip</span>
+		<p class="attrvalue"><span>first</span> Only the first clip </p>
+		<p class="attrvalue"><span>mid</span> All clips EXCEPT first and last </p>
+		<p class="attrvalue"><span>middle</span> All clips EXCEPT first and last </p>
+		<p class="attrvalue"><span>last</span> Only the last clip </p>
+		<p class="attrvalue"><span>even</span> Only even-numbered clips (#2, #4, #6 ... )</p>
+		<p class="attrvalue"><span>odd</span> Only odd-numbered clips (#1, #3, #5 ...) </p>
+		<p class="attrvalue"><span>all</span> All clips </p>
+		<p class="attrvalue"><span>!first</span> All clips EXCEPT the first </p>
+		<p class="attrvalue"><span>!mid</span> All except the MIDDLE (first + last) </p>
+		<p class="attrvalue"><span>!middle</span> All except the MIDDLE (first + last) </p>
+		<p class="attrvalue"><span>!last</span> All clips EXCEPT the last  </p>
+		<p class="attrvalue"><span>!even</span> </p>
+		<p class="attrvalue"><span>!odd</span> </p>
+		</p>
+	</div>
+<h2 id="_Point">Point</h2>
+	<div class="param">
+		<p><span>location</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>texcoord</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>maskcoord</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>color</span>
+		</p>
+	</div>
+<h2 id="_Polygon">Polygon</h2>
+	<div class="param">
+		<p><span>fill</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>color</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>points</span>
+		</p>
+	</div>
+<h2 id="_Projection">Projection</h2>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>ortho</span> </p>
+		<p class="attrvalue"><span>perspective</span> Sets up a 3D perspective projection. <br /> Required attributes: <b>fov</b>, <b>aspect</b>, <b>near</b>, <b>far</b> </p>
+		<p class="attrvalue"><span>frustum</span> </p>
+		<p class="attrvalue"><span>title-bottom</span> </p>
+		<p class="attrvalue"><span>title-top</span> </p>
+		<p class="attrvalue"><span>title-left</span> </p>
+		<p class="attrvalue"><span>title-right</span> </p>
+		<p class="attrvalue"><span>title-middle</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>left</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>right</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>top</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>bottom</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>near</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>far</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>fov</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>aspect</span>
+		</p>
+	</div>
+<h2 id="_Rect">Rect</h2>
+	<div class="param">
+		<p><span>texture</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>mask</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>location</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>width</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>height</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>scalemode</span>
+		<p class="attrvalue"><span>stretch</span> </p>
+		<p class="attrvalue"><span>fit</span> </p>
+		<p class="attrvalue"><span>fill</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>anchor</span> Combinations that make sense are permitted, such as <span class="code">"top right"</span>.
+		<p class="attrvalue"><span>left</span> </p>
+		<p class="attrvalue"><span>right</span> </p>
+		<p class="attrvalue"><span>top</span> </p>
+		<p class="attrvalue"><span>bottom</span> </p>
+		<p class="attrvalue"><span>center</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>color</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>bounds</span>
+		</p>
+	</div>
+<h2 id="_Rotate">Rotate</h2>
+	<div class="param">
+		<p><span>axis</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>angle</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>vertex</span> </p>
+		<p class="attrvalue"><span>texture</span> </p>
+		<p class="attrvalue"><span>mask</span> </p>
+		</p>
+	</div>
+<h2 id="_Scale">Scale</h2>
+	<div class="param">
+		<p><span>x</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>y</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>z</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>uniform</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>vertex</span> </p>
+		<p class="attrvalue"><span>texture</span> </p>
+		<p class="attrvalue"><span>mask</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>inverse</span>
+		</p>
+	</div>
+<h2 id="_Sequence">Sequence</h2>
+	<div class="param">
+		<p><span>start</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>end</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>count</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>random</span> </p>
+		<p class="attrvalue"><span>randmix</span> </p>
+		<p class="attrvalue"><span>vrandom</span> </p>
+		<p class="attrvalue"><span>vrandmix</span> </p>
+		<p class="attrvalue"><span>linear</span> (default)</p>
+		<p class="attrvalue"><span>exp</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>seed</span>
+		</p>
+	</div>
+<h2 id="_Style">Style</h2>
+	<div class="fix">
+		<p>It doesn't make sense to have <span class="code">dest</span> and <span class="code">renderdest</span>
+		as attributes of <span class="code">&lt;Style /&gt;</span>.  Functionally, they work well as style
+		attributes, but that's not intuitive.  I woule rather move them to a new <span class="code">&lt;Output /&gt;</span>
+		element that could later take additional parameters, such as what value to write to the stencil, etc.</p>
+		<p class="sig">Matthew 2012-07-19</p>
+	</div>
+	<p>This element controls a variety of aspects of child elements, such as <i>alpha</i> (opacity), brightness, contrast
+	and so on.  Multiple attributes can be combined.  For example, the following boost the saturation on all child elements,
+	and causes them to be 50% transparent:</p>
+	
+		<pre class="code">
+		
+&lt;style alpha="0.5" saturation="0.75" &gt;
+    &lt;!-- elements here are effects by alpha and saturation adjustments --&gt;
+&lt;/style&gt;
+		</pre>
+
+	<div class="param">
+		<p><span>color</span> (default: <span class="code">0.5 0.5 0.5 1.0</span>) Sets the default color for any primitives that don't explicitly
+		specify a color or texture, including <span class="code">&lt;trianglestrip&gt;</span>, <span class="code">&lt;point&gt;</span>,
+		<span class="code">&lt;rect&gt;</span> and <span class="code">&lt;polygon&gt;</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>alpha</span> (default: 1.0) This controls how opaque
+		other elements are, and ranges from 0 (completely transparent) to 1 (fully opaque)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>brightness</span> (-1 ... +1)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>antialias</span> Enables antialiasing (via multisampling) on supported
+		devices.  This may have a performance impact, so use it only where necessary.</p>
+		<p class="attrvalue"><span>true</span></p>
+		<p class="attrvalue"><span>false</span> (default)</p>
+	</div>
+	<div class="param">
+		<p><span>depthtest</span> Enables depth testing.</p>
+		<p class="attrvalue"><span>true</span></p>
+		<p class="attrvalue"><span>false</span> (default)</p>
+	</div>
+	<div class="param">
+		<p><span>depthmask</span> Enables depth buffer writing.</p>
+		<p class="attrvalue"><span>true</span>  (default)</p>
+		<p class="attrvalue"><span>false</span></p>
+	</div>
+	<div class="param">
+		<p><span>contrast</span> (-1 ... +1)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>saturation</span> (-1 ... +1)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>tint</span> (float vector)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>masksampling</span>
+		<p class="attrvalue"><span>normal</span> (default)</p>
+		<p class="attrvalue"><span>invert</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>dest</span>  Controls where rendering output goes.
+		<p class="attrvalue"><span>screen</span> (default)  Rendering output goes to the screen (the color render buffer)</p>
+		<p class="attrvalue"><span>stencil</span> Rendering output goes to the stencil buffer</p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>rendertest</span>  Controls the test condition used to determine
+		whether a given pixel is drawn.
+		<p class="attrvalue"><span>none</span> (default)  All pixels for all primitives are drawn.</p>
+		<p class="attrvalue"><span>stencil</span> Pixels are only drawn if the corresponding pixel in the stencil buffer has been drawn.</p>
+		<p class="attrvalue"><span>stencilinvert</span> Same as <i>stencil</i> but pixels are only drawn if the corresponding pixel in the
+		stencil buffer has NOT been drawn.</p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>animframe</span>
+		Specifies the frame number to show, for textures that have multiple frames
+		available (that is, animated textures). A floating point value is accepted,
+		but will be truncated to the nearest integer.<p><p>The standard approach is to use an <span class="code">&lt;AnimatedValue /&gt; for the frame number.</span>
+		<p><p>This is a zero-based frame index, so if the animation has 20 frames, valid frame numbers are 0 through 19.  If this value is higher than the available
+		number of frames in the texture, it will automatically loop around back to the first frame.
+		</p>
+	</div>
+<h2 id="_Texture">Texture</h2>
+	<p>Defines a texture that can be used later when drawing trangles, rectangles and so on.</p>
+	<p>When defining a texture, it is important to assign an ID, because that ID will be used
+	to refer to the texture later when using it for drawing operations.</p>
+	<p>There are currently three types of textures that are supported.</p>
+	<ul>
+		<li><b>Video Textures</b> are used to draw the current video frame.  For title effects,
+		there is only one video frame available.  For transition effects, two frames are
+		available (the frame from the outgoing clip and the frame from the incoming clip).</li>
+		<li><b>Image Textures</b> are used to draw image resources required by the theme.  The
+		filename (without path) should be specified.  PNG and JPEG images are supported, but PNG
+		must be used if alpha is required.</li>
+		<li><b>Text Textures</b> are used to draw text specified by the user, such as for title
+		effects.  Fixed-text can also be rendered this way, although it's usually simpler to just
+		use an image in that case.</li>
+	</ul>
+	
+	<p>To specify a video texture, the <span class="code">video</span> attribute is required.  For title
+	effects, specify <b>1</b> for the value of this attribute.  For transition effects, <b>1</b> is the
+	outgoing clip and <b>2</b> is the incoming clip:</p>
+	
+	<pre class="code">
+&lt;Texture id="video_out" video="1" /&gt;
+&lt;Texture id="video_in" video="2" /&gt;</pre>
+
+	<p>To specify an image texture, the <span class="code">src</span> attribute is required:</p>
+	
+	<pre class="code">
+&lt;Texture id="snowflake" src="snowflake.png" /&gt;</pre>
+
+	<p>To specify an text texture, the <span class="code">text</span> attribute is required, as well
+	as either the <span class="code">stroke</span> or <span class="code">fill</span> attribute.  Other
+	attributes controlling the color of the text are commonly used as well:</p>
+	
+	<pre class="code">
+&lt;Texture id="title_text" 
+       text="%1"
+   typeface="asset:knewave.ttf"
+   textsize="80"
+  fillcolor="#FFFFFF"
+       fill /&gt;</pre>
+
+
+	<div class="param">
+		<p><span>src</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>video</span>
+		</p>
+	</div>
+	
+	<div class="param">
+		<p><span>animated</span>
+		Takes three integer parameters:
+		<ul>
+		   <li>Number of rows in texture</li>
+		   <li>Number of columns in texture</li>
+		   <li>Number of frames in texture (defaults to rows*columns)</li>
+		</ul>
+		For example:
+	<pre class="code">
+&lt;Texture id="wingflap" src="wingflap.png" animated="4 8 18" /&gt;</pre>
+		</p>
+		Means that the frames are arranged in the texture in a 4-row x 8-column grid, and
+		the first 18 cells are used (the rest are empty).
+	</div>
+	
+	<div class="param">
+		<p><span>text</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>typeface</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>width</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>height</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>skewx</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>scalex</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>textsize</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>textstrokewidth</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>fillcolor</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>strokecolor</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>shadowcolor</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>bgcolor</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>textmargin</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>spacingmult</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>spacingadd</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>shadowoffset</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>shadowradius</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>nocache</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>bold</span>
+		<p class="attrvalue"><span>yes</span> </p>
+		<p class="attrvalue"><span>no</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>italic</span>
+		<p class="attrvalue"><span>yes</span> </p>
+		<p class="attrvalue"><span>no</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>fill</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>stroke</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>underline</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>strike</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>hinting</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>subpixel</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>shadow</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>linear</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>cutout</span> When enabled, causes the text to be drawn in the <i>DST_IN</i> Porter-Duff mode.  Essentially, this punches a 
+		hole through the background.  This is useful if you want a filled background, but transparent text (you can see this in the
+		Modern title effect included with KineMaster).  If you use this feature, be sure to set a <i>fillcolor</i> to something with an
+		alpha less than 1.  Most commonly, this is used with <span class="code">fillcolor="#00000000"</span> and an opaque <i>bgcolor</i>
+		settings.
+		<p class="attrvalue"><span>true</span> </p>
+		<p class="attrvalue"><span>false</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>strokebehind</span> Same as <i>stroke</i>, except that the outline is drawn before the fill (useful for typefaces with thin parts).</p>
+		<p class="attrvalue"><span>true</span> (default)</p>
+		<p class="attrvalue"><span>false</span> </p>
+	</div>
+	<div class="param">
+		<p><span>autosize</span> When enabled (true), for text effects, the texture size is automatically reduced to exactly wrap the text.
+		This is useful if you are using <span class="code">&lt;rect /&gt;></span> with the <i>location</i> parameter rather than the <i>bounds</i>
+		parameter, but it requires a transformation where world coordinates have the same aspect ratio as pixel coordinates.</p><p>  <b>WARNING:</b> If you
+		are using the KineMaster Effect Designer tool, you <i>MUST</i> set this to <b>false</b> or the text will appear distorted.
+		<p class="attrvalue"><span>true</span> (default)</p>
+		<p class="attrvalue"><span>false</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>textalign</span>
+		<p class="attrvalue"><span>left</span> </p>
+		<p class="attrvalue"><span>center</span> </p>
+		<p class="attrvalue"><span>right</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>textvalign</span>
+		<p class="attrvalue"><span>top</span> </p>
+		<p class="attrvalue"><span>center</span> </p>
+		<p class="attrvalue"><span>bottom</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>wrap</span>
+		<p class="attrvalue"><span>none</span> </p>
+		<p class="attrvalue"><span>mirror</span> </p>
+		<p class="attrvalue"><span>repeat</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>wraps</span>
+		<p class="attrvalue"><span>none</span> </p>
+		<p class="attrvalue"><span>mirror</span> </p>
+		<p class="attrvalue"><span>repeat</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>wrapt</span>
+		<p class="attrvalue"><span>none</span> </p>
+		<p class="attrvalue"><span>mirror</span> </p>
+		<p class="attrvalue"><span>repeat</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>longtext</span>
+		<p class="attrvalue"><span>crop-end</span> </p>
+		<p class="attrvalue"><span>wrap</span> </p>
+		<p class="attrvalue"><span>ellipsize-start</span> </p>
+		<p class="attrvalue"><span>ellipsize-middle</span> </p>
+		<p class="attrvalue"><span>ellipsize-end</span> </p>
+		</p>
+	</div>
+<h2 id="_Theme">Theme</h2>
+	<div class="param">
+		<p><span>id</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>name</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>description</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>icon</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>music</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>hidden</span>
+		</p>
+	</div>
+<h2 id="_ThemeSet">ThemeSet</h2>
+	<p>This is for internal use, and should not appear in any theme or effect file.</p>
+	<div class="param">
+		<p><span>name</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>defaultTheme</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>defaultTitle</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>defaultTransition</span>
+		</p>
+	</div>
+<h2 id="_TimingFunc">TimingFunc</h2>
+	<div class="fix">
+		<p><span class="code">&lt;TimingFunc /&gt;</span> could be removed; there's no reason we can't just use <span class="code">&lt;Const /&gt;</span>
+		for the same purpose (and in fact, it is already supported for that).</p>
+		<p class="sig">Matthew 2012-07-24</p>
+	</div>
+	<div class="param">
+		<p><span>values</span>
+		</p>
+	</div>
+<h2 id="_UserField">UserField</h2>
+	<p class="elementSummary">Permitted Parents: 
+		<span class="code">&lt;Effect /&gt</span>
+	</p>
+	<div class="param">
+		<p><span>id</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>label</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>text</span> </p>
+		<p class="attrvalue"><span>color</span> </p>
+		<p class="attrvalue"><span>overlay</span> </p>
+		<p class="attrvalue"><span>selection</span> </p>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>default</span>
+		</p>
+	</div>
+<h2 id="_Translate">Translate</h2>
+	<div class="param">
+		<p><span>offset</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>textureoffset</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>maskoffset</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>repeat</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>jitterseed</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>jitteralpha</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>jitter</span>
+		</p>
+	</div>
+<h2 id="_TriangleStrip">TriangleStrip</h2>
+	<div class="fix">
+		<p>This will be renamed to <span class="code">&lt;Triangles&gt;</span>.</p>
+		<p class="sig">Matthew 2013-02-06</p>
+	</div>
+	<div class="param">
+		<p><span>texture</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>mask</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>type</span>
+		<p class="attrvalue"><span>trianglestrip</span> (default)</p>
+		<p class="attrvalue"><span>trianglefan</span> </p>
+		<p class="attrvalue"><span>triangles</span> </p>
+		<p class="attrvalue"><span>strip</span> </p>
+		<p class="attrvalue"><span>fan</span> </p>
+		<p class="attrvalue"><span>points</span> </p>
+		<p class="attrvalue"><span>lines</span> </p>
+		<p class="attrvalue"><span>linestrip</span> </p>
+		<p class="attrvalue"><span>lineloop</span> </p>
+		</p>
+	</div>
+<h2 id="_Visibility">Visibility</h2>
+	<div class="param">
+		<p><span>check</span> Value to check against start and end (omit for current time, ranging from 0 to 1)
+		</p>
+	</div>
+	<div class="param">
+		<p><span>start</span>
+		</p>
+	</div>
+	<div class="param">
+		<p><span>end</span>
+		</p>
+	</div>
+	
+<div class="footer">
+	Copyright &copy; 2012-2013 by Nexstreaming
+</div>
+
+</body>
+</html>

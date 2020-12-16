@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin3.terminaltrans",
+  "label": {
+    "pt": "Título terminal retrô",
+    "ja": "古いターミナル字幕",
+    "fr": "Titre Terminal Rétro",
+    "zh-CN": "复古终端标题",
+    "ko-KR": "복고풍 터미널 타이틀",
+    "ar": "عنوان طرفي رجعي",
+    "zh-TW": "復古型終端標題",
+    "en": "Retro Terminal Title",
+    "zh-HK": "復古型終端標題",
+    "de-DE": "Retro End-Titel",
+    "ru": "Название Ретро терминал\u0027",
+    "es": "Cuadros terminal retro"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

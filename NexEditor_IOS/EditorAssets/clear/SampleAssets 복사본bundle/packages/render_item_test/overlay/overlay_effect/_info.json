@@ -1,0 +1,21 @@
+{
+  "filename": "renderitem.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.csd.overlayeffect",
+  "label": {
+    "pt": "Título quadrado",
+    "ja": "長方形の字幕",
+    "fr": "Titre carré",
+    "zh-CN": "广场标题",
+    "ko-KR": "사각형 타이틀",
+    "ar": "عنوان المربع",
+    "zh-TW": "正方形標題",
+    "en": "overlayeffect",
+    "zh-HK": "正方形標題",
+    "de-DE": "Quadratischer Titel",
+    "ru": "Название квадратом",
+    "es": "Título cuadrado"
+  },
+  "type": "nex.renderitem",
+  "hidden": false
+}

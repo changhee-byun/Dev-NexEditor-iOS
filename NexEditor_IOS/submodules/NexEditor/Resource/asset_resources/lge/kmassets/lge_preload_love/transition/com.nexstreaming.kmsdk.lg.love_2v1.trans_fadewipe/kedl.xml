@@ -1,0 +1,46 @@
+<effect
+  id="com.nexstreaming.kmsdk.lg.love_2v1.trans_fadewipe"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="5000"
+  defaultduration="2000"
+  name="Love Fadewipe">
+  
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+  <texture id="tex_mask" src="mask_gradient_a.png" />
+  
+  <animatedvalue id="slide">
+    <keyframe value="2 0" />
+    <keyframe value="-2 0" />
+  </animatedvalue>
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="2"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+          <rect bounds="-720 -360 720 360" texture="@video1" />
+          <translate maskoffset="@slide">
+            <translate maskoffset="0.5 0.5">
+              <scale type="mask" x="3" y="0">
+                <translate maskoffset="-0.5 -0.5">
+                  <rect bounds="-720 -360 720 360" texture="@video2" mask="@tex_mask" />
+                </translate>
+              </scale>
+            </translate>
+          </translate>
+          <style compmode="multiply">
+           <rect bounds="-720 -360 720 360" color="#ffe7b8" />
+          </style>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

@@ -1,0 +1,260 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context="com.nexstreaming.editordemo.fragment.kmSTColorFragment">
+
+    <ScrollView
+        android:id="@+id/containView"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent" android:layout_height="21dp"/>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="80dp">
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_1"/>
+                    <TextView
+                        android:id="@+id/effect_naming_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_1"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_2"/>
+                    <TextView
+                        android:id="@+id/effect_naming_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_2"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_3"/>
+                    <TextView
+                        android:id="@+id/effect_naming_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_3"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_4"/>
+                    <TextView
+                        android:id="@+id/effect_naming_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_4"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent" android:layout_height="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="80dp">
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_5"/>
+                    <TextView
+                        android:id="@+id/effect_naming_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_5"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_6"/>
+                    <TextView
+                        android:id="@+id/effect_naming_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_6"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_7"/>
+                    <TextView
+                        android:id="@+id/effect_naming_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_7"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1">
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/effect_id_8"/>
+                    <TextView
+                        android:id="@+id/effect_naming_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/pallet_white"/>
+                    <com.nexstreaming.editordemo.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp" android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:alpha="5"
+                        android:background="@mipmap/ic_menu_selected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/selected_id_8"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

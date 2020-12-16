@@ -1,0 +1,385 @@
+{
+	"template_name":"Family",
+	"template_version":"v1.x",
+	"template_desc":"create by NEXSTREAMING Version 2.0.0",
+	"template_bgm":"template/hannes_Hofkind_Spare_Time_Folk.mp3",
+	"template_bgm_volume":"0.5",
+
+	"template_intro":
+	[
+		{
+			"type":"scene",
+			"id":"0",	
+			"source_type":"ALL",
+			"duration":"3000",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.intro",
+			"lut" : "caramel",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null",
+			"vignette" : "overlay,1000000,+0,false,+0,+0,+0,+0"			
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		}
+	],
+	"template_loop":
+	[
+		{
+			"type":"scene",
+			"id":"0",	
+			"source_type":"ALL",
+			"duration":"7600",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.opening",
+			"lut" : "caramel",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},	
+		{
+			"type":"scene",
+			"id":"1",	
+			"source_type":"ALL",
+			"duration":"2600",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",
+			"lut" : "orange",		
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"2",	
+			"source_type":"ALL",
+			"duration":"2300",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",
+			"lut" : "orange",		
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"3",	
+			"source_type":"ALL",
+			"duration":"1300",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",			
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"8",
+			"color_filter":"9",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"4",	
+			"source_type":"ALL",
+			"duration":"2500",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",		
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"8",
+			"color_filter":"9",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"5",	
+			"source_type":"ALL",
+			"duration":"7000",
+			"volume":"0",
+			"effects":"none",		
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"8",
+			"color_filter":"9",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.piptrans1",
+			"duration":"6000"
+		},
+		{
+			"type":"scene",
+			"id":"6",	
+			"source_type" :"ALL",
+			"duration":"7900",
+			"volume":"0",
+			"effects":"none",	
+			"lut" : "orange1",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"com.nexstreaming.kinemaster.builtin.transition.crossfade",
+			"duration":"500"
+		},
+		{
+			"type":"scene",
+			"id":"7",	
+			"source_type":"ALL",
+			"duration":"4100",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",		
+			"lut" : "pink",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"8",	
+			"source_type":"ALL",
+			"duration":"1700",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",
+			"lut" : "pink",		
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"9",	
+			"source_type":"ALL",
+			"duration":"2100",
+			"volume":"0",
+			"effects":"none",			
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"9",
+			"speed_control":"70",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"10",	
+			"source_type":"ALL",
+			"duration":"1500",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.middleillusion",		
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"9",
+			"speed_control":"70",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		},
+		{
+			"type":"scene",
+			"id":"11",	
+			"source_type":"ALL",
+			"duration":"4100",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.accent",	
+			"brightness": "28",
+			"contrast":"0",
+			"saturation":"43",
+			"color_filter":"8",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+
+		},
+		{
+			"type":"transition",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.openingtrans",
+			"duration":"2500"
+		},
+		{
+			"type":"scene",
+			"id":"12",	
+			"source_type":"ALL",
+			"duration" : 6000,
+			"volume":"0",
+			"effects":"none",		
+			"lut" : "pink",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+			
+		},
+		{
+			"type":"transition",
+			"effects":"com.nexstreaming.kinemaster.builtin.transition.crossfade",
+			"duration":"500"
+		},
+		{
+			"type":"scene",
+			"id":"0",	
+			"source_type":"ALL",
+			"duration":"7600",
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.opening",		
+			"lut" : "caramel",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"
+
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		}
+	],
+	"template_outro":
+	[
+		{
+			"type":"scene",
+			"id":"12",	
+			"source_type":"ALL",
+			"duration" : 3000,
+			"volume":"0",
+			"effects":"com.nexstreaming.kmsdk.family_9v16.outro",
+			"lut" : "orange",
+			"brightness": "0",
+			"contrast":"0",
+			"saturation":"0",
+			"color_filter":"default",
+			"speed_control":"100",
+			"crop_mode":"default",
+			"external_video_path":"null",
+			"external_image_path":"null",
+			"solid_color":"null"			
+		},
+		{
+			"type":"transition",
+			"effects":"none",
+			"duration":"0"
+		}
+	]
+}

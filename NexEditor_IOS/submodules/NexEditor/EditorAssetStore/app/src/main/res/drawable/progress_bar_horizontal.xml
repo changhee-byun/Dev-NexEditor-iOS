@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  @author : @alexduhem
+                blog.sakaroz.com
+ -->
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background">
+        <shape>
+            <corners
+                android:radius="3dp" />
+            <gradient
+                android:startColor="@color/dimGray"
+                android:centerColor="@color/dimGray"
+                android:centerY="0.50"
+                android:endColor="@color/dimGray"
+                android:angle="270" />
+        </shape>
+    </item>
+    <item
+        android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners
+                    android:radius="3dp" />
+                <gradient
+                    android:startColor="@color/indicatorColor"
+                    android:endColor="@color/indicatorColor"
+                    android:angle="90" />
+            </shape>
+        </clip>
+    </item>
+    <item
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:radius="3dp" />
+                <gradient
+                    android:startColor="@color/indicatorColor"
+                    android:endColor="@color/indicatorColor"
+                    android:angle="90" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

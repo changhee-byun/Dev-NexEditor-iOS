@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_daisy.jpg",
+	"thumbnail":"lut_daisy.jpg",
+	"preset_name":"ROUGE",
+	"brightness" : 0.08,
+	"contrast" : -0.06,
+	"saturation" : -0.6,
+	"tintColor": "0xFFFF5555",
+	"lut_file":""
+}

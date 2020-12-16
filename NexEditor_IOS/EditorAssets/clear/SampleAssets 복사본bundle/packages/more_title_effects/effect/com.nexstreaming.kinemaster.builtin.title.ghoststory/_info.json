@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.title.ghoststory",
+  "label": {
+    "pt": "História de fantasmas",
+    "ja": "ゴースト",
+    "fr": "Histoire de fantôme",
+    "zh-CN": "幽灵",
+    "ko-KR": "고스트",
+    "ar": "قصة الشبح",
+    "zh-TW": "鬼故事",
+    "en": "Ghost Story",
+    "zh-HK": "鬼故事",
+    "de-DE": "Spukgeschichte",
+    "ru": "Страшилка",
+    "es": "Historia de fantasmas"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.spin",
+  "label": {
+    "pt": "Girar",
+    "ja": "スピン",
+    "fr": "Tourbillon",
+    "zh-CN": "旋转",
+    "ko-KR": "회전",
+    "ar": "دوران",
+    "zh-TW": "轉動",
+    "en": "Spin",
+    "zh-HK": "轉動",
+    "de-DE": "Drehen",
+    "ru": "Вращение",
+    "es": "Rotar"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

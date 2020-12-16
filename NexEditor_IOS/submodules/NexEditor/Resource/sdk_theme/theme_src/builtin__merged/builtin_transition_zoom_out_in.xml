@@ -1,0 +1,37 @@
+<effect id="com.nexstreaming.kinemaster.builtin.transition.zoominout" 
+	name="Zoom out, then in" 
+	icon="transition_zoomout_thenin.png" 
+	categorytitle="Presentation"  
+	type="transition" 
+	effectoffset="50" 
+	videooverlap="0">
+	<animatedvalue id="scale_in_amount">
+		<keyframe time="0.5" value="0 0" />
+		<keyframe time="1.0" value="1 1" />
+	</animatedvalue>
+	
+	<animatedvalue id="scale_out_amount">
+		<keyframe time="0.0" value="1 1" />
+		<keyframe time="0.5" value="0 0" />
+	</animatedvalue>
+	
+	<clear color="0 0 0" />
+	
+	<scale uniform="@scale_in_amount">
+		<trianglestrip texture="@video_in">
+			<point location="-1 -1"	texcoord="0 1" />
+			<point location=" 1 -1"	texcoord="1 1" />
+			<point location="-1  1"	texcoord="0 0" />
+			<point location=" 1  1"	texcoord="1 0" />
+		</trianglestrip>
+	</scale>
+		
+	<scale uniform="@scale_out_amount">
+		<trianglestrip texture="@video_out">
+			<point location="-1 -1"	texcoord="0 1" />
+			<point location=" 1 -1"	texcoord="1 1" />
+			<point location="-1  1"	texcoord="0 0" />
+			<point location=" 1  1"	texcoord="1 0" />
+		</trianglestrip>
+	</scale>
+</effect>

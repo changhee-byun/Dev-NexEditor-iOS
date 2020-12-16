@@ -1,0 +1,114 @@
+#!/usr/bin/python
+
+import os
+import json
+import sys
+from zipfile import ZipFile
+from datetime import datetime
+
+def tstamp(t):
+    return str.format("{:04}{:02}{:02}{:02}{:02}{:02}",
+                      t.year,t.month,t.day,t.hour,t.minute,t.second)
+
+def utcstamp():
+    return tstamp(datetime.utcnow())
+
+def index_dir(path):
+    if not os.path.isdir(path):
+        print("Not a folder: " + path)
+        return
+    
+    
+    jsonfiles = [f for f in os.listdir(path)
+                if f.endswith(".json")
+                and os.path.isfile(os.path.join(path,f)) ]
+    
+    kmtfiles = [f for f in os.listdir(path)
+                if f.endswith(".kmt")
+                and os.path.isfile(os.path.join(path,f)) ]
+    
+    fontlists = {}
+    for f in jsonfiles:
+        summary = json.load(open(os.path.join(path,f)))
+        if summary.has_key("package_type") and summary["package_type"]=="fontlist":
+		    fontlists[summary[u"id"]] = summary
+    
+    all_effects = []
+    all_themes = []
+    extpath = os.path.join(path,"ext");
+    for f in kmtfiles:
+        zfpath = os.path.join(path,f);
+        zfsize = os.path.getsize(zfpath)
+        with ZipFile(zfpath, 'r') as zf:
+            summary = json.load(zf.open("summary.json"))
+            for e in summary["effects"]:
+                e["package_size"] = zfsize
+                all_effects.append(e)
+                dsize = 0
+                for d in e["dependencies"]:
+                    dsize += os.path.getsize(os.path.join(extpath,d))
+                e["dependency_size"] = dsize
+                dsize = 0
+                for d in e["optional_dependencies"]:
+                    dsize += os.path.getsize(os.path.join(extpath,d))
+                e["optional_dependency_size"] = dsize
+            for t in summary["themes"]:
+                t["package_size"] = zfsize;
+                all_themes.append(t)
+                dsize = 0
+                for d in t["dependencies"]:
+                    dsize += os.path.getsize(os.path.join(extpath,d))
+                t["dependency_size"] = dsize
+                dsize = 0
+                for d in t["optional_dependencies"]:
+                    dsize += os.path.getsize(os.path.join(extpath,d))
+                t["optional_dependency_size"] = dsize
+    
+    effects = []
+    themes = []
+    
+    idver = {}
+    for item in all_themes:
+        id = item["id"]
+        ver = item["version"]
+        if id in idver:
+            idver[id] = max(idver[id],ver)
+        else:
+            idver[id]=ver
+    for item in all_themes:
+        id = item["id"]
+        ver = item["version"]
+        if idver[id]==ver:
+            themes.append(item)
+    
+    idver = {}
+    for item in all_effects:
+        id = item["id"]
+        ver = item["version"]
+        if id in idver:
+            idver[id] = max(idver[id],ver)
+        else:
+            idver[id]=ver
+    for item in all_effects:
+        id = item["id"]
+        ver = item["version"]
+        if idver[id]==ver:
+            effects.append(item)
+    
+    result = json.dumps({"themes":themes,"effects":effects,"fontlists":fontlists},indent=4)
+    
+    while True:
+        index_path = os.path.join(path,"index." + utcstamp() + ".json")
+        if not os.path.isfile(index_path):
+            break
+    
+    with open(index_path,"w") as f:
+        f.write(result)
+
+    print(index_path)
+
+if __name__ == '__main__':
+    if( len(sys.argv)<2 ):
+        print("Usage:\n   " + sys.argv[0] + " <filename>\n")
+    else:
+        index_dir(sys.argv[1])

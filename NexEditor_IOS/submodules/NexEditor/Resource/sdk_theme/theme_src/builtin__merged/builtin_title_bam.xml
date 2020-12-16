@@ -1,0 +1,165 @@
+<effect id="com.nexstreaming.kinemaster.builtin.title.bam" name="Bam!" categorytitle="More Title Effects" type="title" icon="fx_text_bam.png" intimefirst="1300" outtimelast="600" intime="1300" outtime="600" cycletime="1100" repeat="yes" maxtitleduration="8000" >
+
+    <userfield id="f_text" type="text">
+        <fieldlabel locale="en" value="Title Text" />
+    </userfield>
+
+	<userfield id="f_color_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="Text Color" />
+	</userfield>
+
+	<userfield id="f_color_burst" type="color" default="#FFAA00">
+		<fieldlabel locale="en" value="Burst Color 1" />
+	</userfield>
+
+	<userfield id="f_color_burst2" type="color" default="#FFFF00">
+		<fieldlabel locale="en" value="Burst Color 2" />
+	</userfield>
+
+    <texture id="video1" video="1" />
+    <texture 
+    	id="text_2" 
+    	text="%1" 
+    	width="1335" 
+    	height="534" 
+    	srcfield="@f_text"  
+    	textsize="150"  
+    	textmargin="0"  
+    	textalign="center"  
+    	textvalign="center"  
+    	maxlines="2"  
+    	autosize="false"  
+    	typeface="asset:lato-bold.ttf"  
+    	fillcolor="@f_color_text"  
+    	fill="true"  
+    	shadowcolor="0 0 0 0.75"  
+    	shadowoffset="5 5"  
+    	shadowradius="8"  
+    	shadow="true"   />
+    <animatedvalue id="text_2_alpha">
+        <part type="in">
+            <keyframe value="0" />
+            <keyframe value="1" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="burst_alpha">
+        <part type="in">
+            <keyframe value="0" />
+            <keyframe value="1" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="burst_size">
+        <part type="in">
+            <keyframe value="0.1" />
+            <keyframe value="1" />
+            <keyframe value="1.8" />
+            <keyframe value="0.6" />
+            <keyframe value="1.5" timingfunction="ease-out" />
+            <keyframe value="1" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+            <keyframe value="1.8" />
+            <keyframe value="0.6" />
+            <keyframe value="1.5" />
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0.3" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="burst_size2">
+        <part type="in">
+            <keyframe value="0.1" />
+            <keyframe value="1.2" />
+            <keyframe value="1.5" />
+            <keyframe value="0.8" />
+            <keyframe value="1.3" timingfunction="ease-out" />
+            <keyframe value="0.6" />
+        </part>
+        <part type="mid">
+            <keyframe value="0.6" />
+            <keyframe value="0.4" />
+            <keyframe value="1.3" />
+            <keyframe value="0.9" />
+            <keyframe value="0.6" />
+        </part>
+        <part type="out">
+            <keyframe value="0.6" />
+            <keyframe value="0.1" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="text_size" timingfunction="ease-in">
+        <part type="in">
+            <keyframe value="10" />
+            <keyframe value="1" time="0.5" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0.1" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="text_2_pos">
+        <part type="in">
+            <keyframe value="638.5 370.5" />
+            <keyframe value="638.5 370.5" />
+        </part>
+        <part type="mid">
+            <keyframe value="638.5 370.5" />
+            <keyframe value="638.5 370.5" />
+        </part>
+        <part type="out">
+            <keyframe value="638.5 370.5" />
+            <keyframe value="638.5 370.5" />
+        </part>
+    </animatedvalue>
+    <projection type="perspective" fov="45" aspect="1.777777" near="0.01" far="60000">
+        <translate offset="-640 -360 -870">
+            <rect bounds="0 720 1280 0" texture="@video1" />
+            <translate offset="640 360">
+            	<style alpha="@burst_alpha">
+	            	<scale uniform="@burst_size">
+            			<style alpha="0.5">
+		            		<polygon fill="@f_color_burst" points="-109 10 -257 86 -101 58 -126 123 -32 65 25 150 19 58 165 155 81 52 278 105 140 33 287 44 163 6 371 -47 131 -43 328 -168 131 -89 193 -172 40 -81 45 -205 -18 -89 -64 -129 -67 -71 -227 -134 -113 -36 -306 -56" />
+	            		</style>
+	            	</scale>
+	            	<scale uniform="@burst_size2">
+	            		<scale x="-1">
+	            			<rotate axis="0 0 1" angle="20">
+		            			<style alpha="0.7">
+				            		<polygon fill="@f_color_burst2" points="-109 10 -257 86 -101 58 -126 123 -32 65 25 150 19 58 165 155 81 52 278 105 140 33 287 44 163 6 371 -47 131 -43 328 -168 131 -89 193 -172 40 -81 45 -205 -18 -89 -64 -129 -67 -71 -227 -134 -113 -36 -306 -56" />
+			            		</style>
+		            		</rotate>
+	            		</scale>
+	            	</scale>
+            	</style>
+            </translate>
+            <translate offset="@text_2_pos">
+                <style alpha="@text_2_alpha">
+	            	<scale uniform="@text_size">
+                    	<rect bounds="-593.5 237.5 593.5 -237.5" texture="@text_2" />
+                    </scale>
+                </style>
+            </translate>
+        </translate>
+    </projection>
+	
+</effect>

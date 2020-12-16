@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.oldfilm_2v1.middle",
+  "label": {
+    "en": "oldfilm 2v1 middle"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "2v1" ],
+  "hidden": "true"
+}

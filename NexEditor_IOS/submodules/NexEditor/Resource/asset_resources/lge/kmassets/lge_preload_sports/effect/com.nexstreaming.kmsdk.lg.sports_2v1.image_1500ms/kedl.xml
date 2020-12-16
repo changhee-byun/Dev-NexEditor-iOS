@@ -1,0 +1,47 @@
+
+<effect
+  id="com.nexstreaming.kmsdk.lg.sports_2v1.image_1500ms"
+  type="title"
+  repeat="no"
+  intime="1600" 
+  intimefirst="1600"
+  outtime="800" 
+  outtimelast="800"
+  cycleTime="800"
+  name="Sports Image Effect 1500ms">
+
+  <texture id="video1" video="1" />
+  <texture id="texture_1" src="flare_01.png" />
+
+  <animatedvalue id="anim_1" scope="whole" timingfunction="linear">
+    <keyframe time="0.072" value="1233.053 -244.533" />
+    <keyframe time="0.256" value="1553.552 -128.200" />
+    <keyframe time="0.452" value="1777.285 128.956" />
+    <keyframe time="0.530" value="1829.998 532.200" />
+    <keyframe time="0.618" value="1616.631 817.067" />
+    <keyframe time="0.730" value="686.027 976.200" />
+    <keyframe time="0.808" value="-462.473 809.667" />
+  </animatedvalue>
+
+  <animatedvalue id="anim_alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="0" />
+    <keyframe time="0.05" value="1" />
+    <keyframe time="0.88" value="1" />
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+
+  <projection type="perspective" fov="45" aspect="2" near="0.01" far="60000">
+    <scale y="-1"> 
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+            <rect bounds="-720 -360 720 360" texture="@video1" />
+        </translate>
+        <translate offset="@anim_1">
+          <style compmode="screen" alpha="@anim_alpha">
+            <rect bounds="-2250 -2250 2250 2250" texture="@texture_1" />
+          </style>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

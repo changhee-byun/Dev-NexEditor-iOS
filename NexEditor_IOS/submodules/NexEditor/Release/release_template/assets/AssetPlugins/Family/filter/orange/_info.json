@@ -1,0 +1,9 @@
+{
+    "filename": "orange.png",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.lut.orange",
+    "label": {
+        "en": "orange"
+    },
+    "type": "nex.lut"
+}

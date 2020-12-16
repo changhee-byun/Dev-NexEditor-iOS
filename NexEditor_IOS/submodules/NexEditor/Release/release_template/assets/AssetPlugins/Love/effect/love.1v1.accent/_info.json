@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.1v1.accent.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.1v1.accent",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.1v1.accent"
+    },
+    "mergePaths": [
+        "1v1"
+    ],
+    "type": "nex.kedl"
+}

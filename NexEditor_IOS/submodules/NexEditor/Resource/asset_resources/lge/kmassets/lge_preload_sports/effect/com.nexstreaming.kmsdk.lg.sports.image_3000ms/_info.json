@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.sports.image_3000ms",
+  "label": {
+    "en": "sports 16v9 image_3000ms"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "16v9" ],
+  "hidden": "true"
+}

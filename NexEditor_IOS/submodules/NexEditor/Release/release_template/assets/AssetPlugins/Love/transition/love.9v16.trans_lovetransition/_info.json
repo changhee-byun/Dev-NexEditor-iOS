@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.9v16.trans_lovetransition.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.9v16.trans_lovetransition",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.9v16.trans_lovetransition"
+    },
+    "mergePaths": [
+        "9v16"
+    ],
+    "type": "nex.kedl"
+}

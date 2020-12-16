@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.kinemaster.kmsdk.design1.beatsync.old_school.effect.ri.vas.radialblur"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+            name="radialblur"
+            version="1.0.5">
+
+  <parameter id="bOriAlpha" type="range" default="0" minvalue="0" maxvalue="1" hidden="true">
+    <string name="label" lang="en">flag : whether the ori alpha value is used </string>
+  </parameter>
+
+  	<parameter id="diralpha" type="range" default="5" minvalue="1" maxvalue="30">
+      <string name="label" lang="en">Directional Alpha</string>
+    </parameter>
+
+    <parameter id="strength" type="range" default="20" minvalue="0" maxvalue="50">
+      <string name="label" lang="en">Strength</string>
+    </parameter>
+
+  <parameter id="centerX" type="range" default="50" minvalue="0" maxvalue="100">
+    <string name="label" lang="en"> centerX </string>
+  </parameter>
+  <parameter id="centerY" type="range" default="50" minvalue="0" maxvalue="100">
+    <string name="label" lang="en"> centerY </string>
+  </parameter>
+
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+	<shader name="filters_radialblur_resolfactor_vertex" language="glsl" src="glsl/filters_radialblur_resolfactor_vertex.glsl"/>
+	<shader name="filters_radialblur_fragment" language="glsl" src="glsl/filters_radialblur_fragment.glsl"/>
+	<program name="RBFx" language="glsl" fragmentShader="filters_radialblur_fragment" vertexShader="filters_radialblur_resolfactor_vertex" />
+
+
+  <script name="mainScript" language="lua" src="main.lua"/>
+  
+</renderitem>

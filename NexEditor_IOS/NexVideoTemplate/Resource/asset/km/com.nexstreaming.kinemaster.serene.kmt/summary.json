@@ -1,0 +1,34 @@
+{
+    "themes": [
+        {
+            "package": "com.nexstreaming.kinemaster.serene.20150618070141.kmt", 
+            "optional_dependencies": [
+                "serene_preview.32ed56e9c4060b5d67f8c0bdc93a5c90c195bf73.mp4"
+            ], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.serene", 
+            "thumbnail": "theme_thumb_serene.1eef2d5d594b260af9a8ce93c986c9fbb3d2ef81.jpg", 
+            "version": "20150618070141", 
+            "dependencies": [
+                "theme_ending.1507d5580d59e8e39c6354e88c15528008a43cb2.png", 
+                "theme_middle.2f622c84453e17250a5f9987399746e16f4728b2.png", 
+                "theme_music_serene.46e41bea5ae8074281882e149b011b55f0a6e2f1.aac", 
+                "theme_thumb_serene.1eef2d5d594b260af9a8ce93c986c9fbb3d2ef81.jpg", 
+                "theme_transition.73581fa2613f9fc41e429054a5823cf8acc2aa24.png", 
+                "theme_accent.fdbd63c72de84e818b4cd92c1995c6ab01ca68d9.png", 
+                "theme_open.f490db68350053279d4a86130ecf519b4a95c66e.png"
+            ], 
+            "package_date": 735767, 
+            "preview": "serene_preview.32ed56e9c4060b5d67f8c0bdc93a5c90c195bf73.mp4", 
+            "strings": {
+                "name": {
+                    "en-us": "Serene"
+                }, 
+                "desc": {
+                    "en-us": "Quiet and sentimental music and pastel colors.  Use this for calm or memorable videos."
+                }
+            }
+        }
+    ], 
+    "effects": []
+}

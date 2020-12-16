@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.travel.transition",
+  "label": {
+    "pt":     "Viagem",
+    "ja":     "旅行",
+    "fr":     "Voyage",
+    "zh-CN":  "旅行",
+    "ko-KR":  "여행",
+    "ar":     "سفر",
+    "zh-TW":  "旅行",
+    "en":     "Travel",
+    "zh-HK":  "旅行",
+    "de-DE":  "Reisen",
+    "ru":     "Путешествие",
+    "es":     "Viajes"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

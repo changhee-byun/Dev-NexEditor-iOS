@@ -1,0 +1,13 @@
+{
+  "assetName": {
+    "en": "Basic Effects"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "filter/blur",
+    "filter/mosaic"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 6
+}

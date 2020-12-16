@@ -1,0 +1,29 @@
+PODS:
+  - AssetReader (1.1.0)
+  - DKImagePickerController (3.8.1):
+    - DKImagePickerController/Camera (= 3.8.1)
+    - DKImagePickerController/ImageManager (= 3.8.1)
+  - DKImagePickerController/Camera (3.8.1)
+  - DKImagePickerController/ImageManager (3.8.1)
+  - NexEditorFramework (1.4.0):
+    - AssetReader
+
+DEPENDENCIES:
+  - AssetReader (from `../../NexEditorFramework/AssetReader`)
+  - DKImagePickerController (~> 3.8.1)
+  - NexEditorFramework (from `../..`)
+
+EXTERNAL SOURCES:
+  AssetReader:
+    :path: ../../NexEditorFramework/AssetReader
+  NexEditorFramework:
+    :path: ../..
+
+SPEC CHECKSUMS:
+  AssetReader: 7fe43f67114e0b3ad338d826e70c570621ce53bb
+  DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
+  NexEditorFramework: 06f8e84c2c8185f6128ebd824f1ba75f2f3447da
+
+PODFILE CHECKSUM: ec16c3c794d5f9d65435822424fe46939f6e980f
+
+COCOAPODS: 1.2.1

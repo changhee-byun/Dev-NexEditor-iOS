@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.family.16v9.piptrans2",
+  "label": {
+    "en": "family 16v9 piptrans1"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "16v9" ],
+  "hidden": "true"
+}

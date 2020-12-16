@@ -1,0 +1,8 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.travel.transition",
+  "label": {},
+  "type": "nex.kedl",
+  "hidden": false
+}

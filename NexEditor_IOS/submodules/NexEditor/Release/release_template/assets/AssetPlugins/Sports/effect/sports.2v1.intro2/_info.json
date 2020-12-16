@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.2v1.intro2.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.2v1.intro2",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.2v1.intro2"
+    },
+    "mergePaths": [
+        "2v1"
+    ],
+    "type": "nex.kedl"
+}

@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.transition.pip.splitscn",
+  "label": {
+    "pt": "Dividir ecrã",
+    "ja": "スプリットスクリーン",
+    "fr": "Multi-image",
+    "zh-CN": "分屏",
+    "ko-KR": "스플릿 스크린",
+    "ar": "تقسيم الشاشة",
+    "zh-TW": "畫面分割",
+    "en": "Split-screen",
+    "zh-HK": "畫面分割",
+    "de-DE": "Geteilter Bildschirm",
+    "ru": "Разделение экрана",
+    "es": "Dividir pantalla"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

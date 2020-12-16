@@ -1,0 +1,17 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kinemaster.builtin.kmlogoending.20150618013055.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.builtin.kmlogoending", 
+            "thumbnail": null, 
+            "version": "20150618013055", 
+            "dependencies": [], 
+            "package_date": 735767, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

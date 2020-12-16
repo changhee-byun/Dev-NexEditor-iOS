@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.family.16v9.middlevignette",
+  "label": {
+    "en": "family 16v9 middle_vignette"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "16v9" ],
+  "hidden": "true"
+}

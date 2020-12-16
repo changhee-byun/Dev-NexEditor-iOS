@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.title.bam",
+  "label": {
+    "pt": "Bam!",
+    "ja": "爆弾！",
+    "fr": "Bingo !",
+    "zh-CN": "爆炸!",
+    "ko-KR": "폭탄",
+    "ar": "بام!",
+    "zh-TW": "爆炸",
+    "en": "Bam!",
+    "zh-HK": "爆炸",
+    "de-DE": "Bam!",
+    "ru": "Бам!",
+    "es": "¡Bam!"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.1v1.trans_lovecrossfade.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.1v1.trans_lovecrossfade",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.1v1.trans_lovecrossfade"
+    },
+    "mergePaths": [
+        "1v1"
+    ],
+    "type": "nex.kedl"
+}

@@ -1,0 +1,10 @@
+{
+  "filename": "template.json",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.lge.template.9v16.love",
+  "label": {
+    "en": "LG love 9v16"
+  },
+  "type": "nex.template",
+  "hidden": false
+}

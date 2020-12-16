@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.title.simple",
+  "label": {
+    "pt": "Subtítulo",
+    "ja": "字幕",
+    "fr": "Sous-titre",
+    "zh-CN": "字幕",
+    "ko-KR": "타이틀",
+    "ar": "عنوان فرعي",
+    "zh-TW": "字幕",
+    "en": "Subtitle",
+    "zh-HK": "字幕",
+    "de-DE": "Untertitel",
+    "ru": "Подзаголовок",
+    "es": "Subtítulo"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

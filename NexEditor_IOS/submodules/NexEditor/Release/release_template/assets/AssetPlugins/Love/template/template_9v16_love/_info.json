@@ -1,0 +1,10 @@
+{
+    "filename": "template_9v16_love.json",
+    "hidden": false,
+    "icon": "thumbnail.png",
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.template.9v16.love",
+    "label": {
+        "en": "template_9v16_love"
+    },
+    "type": "nex.template"
+}

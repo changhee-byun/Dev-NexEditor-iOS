@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_sherbert.jpg",
+	"thumbnail":"lut_sherbert.jpg",
+	"preset_name":"PINK",
+	"brightness" : 0.1,
+	"contrast" : -0.3,
+	"saturation" : -0.6,
+	"tintColor": "0xFF9C4F4F",
+	"lut_file":""
+}

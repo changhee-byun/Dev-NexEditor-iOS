@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nexstreaming.kinemastersdkapp.ExportActivity">
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="720 X 480"
+            android:id="@+id/radiobutton_export_low"
+            android:layout_above="@+id/export_cancel_button"
+            android:layout_centerHorizontal="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1280 X 720"
+            android:id="@+id/radiobutton_export_middle"
+            android:layout_above="@+id/radiobutton_export_low"
+            android:layout_centerHorizontal="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1920 X 1080"
+            android:id="@+id/radiobutton_export_high"
+            android:layout_above="@+id/radiobutton_export_middle"
+            android:layout_alignStart="@+id/radiobutton_export_middle" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Original resolution"
+            android:id="@+id/radiobutton_export_ori"
+            android:checked="false" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="335dp"
+            android:layout_height="111dp"
+            android:id="@+id/progressbar_export"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export Cancel"
+            android:id="@+id/button_direct_export_test_export_stop" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export Cancel without delete"
+            android:id="@+id/button_export_test_export_save_stop"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:id="@+id/button_export_test_pause_resume"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SamplingRate"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_export_test_samplingrate"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+</RelativeLayout>

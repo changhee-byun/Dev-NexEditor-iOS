@@ -1,0 +1,82 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin4.uncover"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="5000"
+  defaultduration="2000"
+  categorytitle="Presentation"
+  name="Uncover"
+  icon="uncover.png">
+  
+  	<userfield id="f_slidedir" type="selection" default="2.5">
+		<option value="2.5">
+			<fieldlabel locale="en" value="Leftward" />
+		</option>
+		<option value="1.5">
+			<fieldlabel locale="en" value="Rightward" />
+		</option>
+		<option value="4.5">
+			<fieldlabel locale="en" value="Upward" />
+		</option>
+		<option value="3.5">
+			<fieldlabel locale="en" value="Downward" />
+		</option>
+	</userfield>
+
+  
+  <animatedvalue id="anim_left" timingfunction="ease">
+    <keyframe time="0.1" value="640 360" />
+    <keyframe time="0.9" value="1920 360" />
+  </animatedvalue>
+  <animatedvalue id="anim_right" timingfunction="ease">
+    <keyframe time="0.1" value="640 360" />
+    <keyframe time="0.9" value="-640 360" />
+  </animatedvalue>
+  <animatedvalue id="anim_up" timingfunction="ease">
+    <keyframe time="0.1" value="640 360" />
+    <keyframe time="0.9" value="640 1080" />
+  </animatedvalue>
+  <animatedvalue id="anim_down" timingfunction="ease">
+    <keyframe time="0.1" value="640 360" />
+    <keyframe time="0.9" value="640 -360" />
+  </animatedvalue>
+  
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -870">
+        <translate offset="640 360">
+          <rect bounds="-640 -360 640 360" texture="@video2" />
+        </translate>
+    	<visibility check="@f_slidedir" start="1.0" end="1.9">
+			<translate offset="@anim_left">
+			  <rect bounds="-640 -360 640 360" texture="@video1" />
+			</translate>
+		</visibility>
+    	<visibility check="@f_slidedir" start="2.0" end="2.9">
+			<translate offset="@anim_right">
+			  <rect bounds="-640 -360 640 360" texture="@video1" />
+			</translate>
+		</visibility>
+    	<visibility check="@f_slidedir" start="3.0" end="3.9">
+			<translate offset="@anim_up">
+			  <rect bounds="-640 -360 640 360" texture="@video1" />
+			</translate>
+		</visibility>
+    	<visibility check="@f_slidedir" start="4.0" end="4.9">
+			<translate offset="@anim_down">
+			  <rect bounds="-640 -360 640 360" texture="@video1" />
+			</translate>
+		</visibility>
+      </translate>
+    </scale>
+  </projection>
+</effect>

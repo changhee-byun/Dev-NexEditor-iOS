@@ -1,0 +1,2677 @@
+
+<effect
+  id="com.nexstreaming.kmsdk.lg.love_2v1.sparkleheart4"
+  type="title"
+  intime="1500"
+  outtime="0"
+  intimefirst="1500"
+  outtimelast="0"
+  repeat="no"
+  name="Sparkle Heart 4">
+  <texture id="video1" video="1" />
+
+  <texture id="texture_1" src="sparkle.png" />
+  <texture id="tex_ts" src="love_tinyspot.png" />
+  <texture id="tex_sg" src="love_heartsolidglow.png" />
+  <animatedvalue id="sp0pos" scope="whole" timingfunction="linear">
+    <keyframe value="669 702" />
+    <keyframe value="668.275191706 705.155047867" />
+  </animatedvalue>
+  <animatedvalue id="sp0alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0814914365477" value="0" />
+    <keyframe time="0.111491436548" value="1" timingfunction="ease-in" />
+    <keyframe time="0.211491436548" value="1" timingfunction="linear" />
+    <keyframe time="0.611491436548" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp0scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0814914365477" value="0.102325876772" />
+    <keyframe time="0.111491436548" value="0.140698080562" timingfunction="ease-in" />
+    <keyframe time="0.211491436548" value="0.140698080562" timingfunction="linear" />
+    <keyframe time="0.611491436548" value="0.102325876772" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp1pos" scope="whole" timingfunction="linear">
+    <keyframe value="1400 578" />
+    <keyframe value="1458.86399416 586.483340334" />
+  </animatedvalue>
+  <animatedvalue id="sp1alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.416345057574" value="0" />
+    <keyframe time="0.446345057574" value="1" timingfunction="ease-in" />
+    <keyframe time="0.546345057574" value="1" timingfunction="linear" />
+    <keyframe time="0.946345057574" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp1scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.416345057574" value="0.623265820491" />
+    <keyframe time="0.446345057574" value="0.856990503175" timingfunction="ease-in" />
+    <keyframe time="0.546345057574" value="0.856990503175" timingfunction="linear" />
+    <keyframe time="0.946345057574" value="0.623265820491" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp2pos" scope="whole" timingfunction="linear">
+    <keyframe value="1068 604" />
+    <keyframe value="1102.05999695 616.136320754" />
+  </animatedvalue>
+  <animatedvalue id="sp2alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.240624176492" value="0" />
+    <keyframe time="0.270624176492" value="1" timingfunction="ease-in" />
+    <keyframe time="0.370624176492" value="1" timingfunction="linear" />
+    <keyframe time="0.770624176492" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp2scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.240624176492" value="0.70468959217" />
+    <keyframe time="0.270624176492" value="0.968948189234" timingfunction="ease-in" />
+    <keyframe time="0.370624176492" value="0.968948189234" timingfunction="linear" />
+    <keyframe time="0.770624176492" value="0.70468959217" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp3pos" scope="whole" timingfunction="linear">
+    <keyframe value="788 585" />
+    <keyframe value="792.507018251 591.959366416" />
+  </animatedvalue>
+  <animatedvalue id="sp3alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.108653920948" value="0" />
+    <keyframe time="0.138653920948" value="1" timingfunction="ease-in" />
+    <keyframe time="0.238653920948" value="1" timingfunction="linear" />
+    <keyframe time="0.638653920948" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp3scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.108653920948" value="0.47721369713" />
+    <keyframe time="0.138653920948" value="0.656168833554" timingfunction="ease-in" />
+    <keyframe time="0.238653920948" value="0.656168833554" timingfunction="linear" />
+    <keyframe time="0.638653920948" value="0.47721369713" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp4pos" scope="whole" timingfunction="linear">
+    <keyframe value="351 495" />
+    <keyframe value="321.698885973 496.191102196" />
+  </animatedvalue>
+  <animatedvalue id="sp4alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.249140389873" value="0" />
+    <keyframe time="0.279140389873" value="1" timingfunction="ease-in" />
+    <keyframe time="0.379140389873" value="1" timingfunction="linear" />
+    <keyframe time="0.779140389873" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp4scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.249140389873" value="0.571729054185" />
+    <keyframe time="0.279140389873" value="0.786127449504" timingfunction="ease-in" />
+    <keyframe time="0.379140389873" value="0.786127449504" timingfunction="linear" />
+    <keyframe time="0.779140389873" value="0.571729054185" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp5pos" scope="whole" timingfunction="linear">
+    <keyframe value="1326 657" />
+    <keyframe value="1347.56170551 663.297725867" />
+  </animatedvalue>
+  <animatedvalue id="sp5alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.410652176377" value="0" />
+    <keyframe time="0.440652176377" value="1" timingfunction="ease-in" />
+    <keyframe time="0.540652176377" value="1" timingfunction="linear" />
+    <keyframe time="0.940652176377" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp5scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.410652176377" value="0.256178679347" />
+    <keyframe time="0.440652176377" value="0.352245684103" timingfunction="ease-in" />
+    <keyframe time="0.540652176377" value="0.352245684103" timingfunction="linear" />
+    <keyframe time="0.940652176377" value="0.256178679347" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp6pos" scope="whole" timingfunction="linear">
+    <keyframe value="289 572" />
+    <keyframe value="263.214757666 577.504042447" />
+  </animatedvalue>
+  <animatedvalue id="sp6alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.284324865173" value="0" />
+    <keyframe time="0.314324865173" value="1" timingfunction="ease-in" />
+    <keyframe time="0.414324865173" value="1" timingfunction="linear" />
+    <keyframe time="0.814324865173" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp6scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.284324865173" value="0.430751148039" />
+    <keyframe time="0.314324865173" value="0.592282828554" timingfunction="ease-in" />
+    <keyframe time="0.414324865173" value="0.592282828554" timingfunction="linear" />
+    <keyframe time="0.814324865173" value="0.430751148039" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp7pos" scope="whole" timingfunction="linear">
+    <keyframe value="173 565" />
+    <keyframe value="166.779145897 565.966677511" />
+  </animatedvalue>
+  <animatedvalue id="sp7alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.337801705455" value="0" />
+    <keyframe time="0.367801705455" value="1" timingfunction="ease-in" />
+    <keyframe time="0.467801705455" value="1" timingfunction="linear" />
+    <keyframe time="0.867801705455" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp7scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.337801705455" value="0.0818832715614" />
+    <keyframe time="0.367801705455" value="0.112589498397" timingfunction="ease-in" />
+    <keyframe time="0.467801705455" value="0.112589498397" timingfunction="linear" />
+    <keyframe time="0.867801705455" value="0.0818832715614" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp8pos" scope="whole" timingfunction="linear">
+    <keyframe value="695 717" />
+    <keyframe value="692.492365106 740.772378798" />
+  </animatedvalue>
+  <animatedvalue id="sp8alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0961536181983" value="0" />
+    <keyframe time="0.126153618198" value="1" timingfunction="ease-in" />
+    <keyframe time="0.226153618198" value="1" timingfunction="linear" />
+    <keyframe time="0.626153618198" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp8scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0961536181983" value="0.722198849558" />
+    <keyframe time="0.126153618198" value="0.993023418143" timingfunction="ease-in" />
+    <keyframe time="0.226153618198" value="0.993023418143" timingfunction="linear" />
+    <keyframe time="0.626153618198" value="0.722198849558" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp9pos" scope="whole" timingfunction="linear">
+    <keyframe value="1395 537" />
+    <keyframe value="1429.47281861 539.911038016" />
+  </animatedvalue>
+  <animatedvalue id="sp9alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.439067178625" value="0" />
+    <keyframe time="0.469067178625" value="1" timingfunction="ease-in" />
+    <keyframe time="0.569067178625" value="1" timingfunction="linear" />
+    <keyframe time="0.969067178625" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp9scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.439067178625" value="0.367710065176" />
+    <keyframe time="0.469067178625" value="0.505601339618" timingfunction="ease-in" />
+    <keyframe time="0.569067178625" value="0.505601339618" timingfunction="linear" />
+    <keyframe time="0.969067178625" value="0.367710065176" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp10pos" scope="whole" timingfunction="linear">
+    <keyframe value="1269 716" />
+    <keyframe value="1319.62652826 737.762952039" />
+  </animatedvalue>
+  <animatedvalue id="sp10alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.369541251291" value="0" />
+    <keyframe time="0.399541251291" value="1" timingfunction="ease-in" />
+    <keyframe time="0.499541251291" value="1" timingfunction="linear" />
+    <keyframe time="0.899541251291" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp10scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.369541251291" value="0.663954468998" />
+    <keyframe time="0.399541251291" value="0.912937394872" timingfunction="ease-in" />
+    <keyframe time="0.499541251291" value="0.912937394872" timingfunction="linear" />
+    <keyframe time="0.899541251291" value="0.663954468998" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp11pos" scope="whole" timingfunction="linear">
+    <keyframe value="266 628" />
+    <keyframe value="223.123228932 641.977449599" />
+  </animatedvalue>
+  <animatedvalue id="sp11alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.333242966197" value="0" />
+    <keyframe time="0.363242966197" value="1" timingfunction="ease-in" />
+    <keyframe time="0.463242966197" value="1" timingfunction="linear" />
+    <keyframe time="0.863242966197" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp11scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.333242966197" value="0.679984034562" />
+    <keyframe time="0.363242966197" value="0.934978047522" timingfunction="ease-in" />
+    <keyframe time="0.463242966197" value="0.934978047522" timingfunction="linear" />
+    <keyframe time="0.863242966197" value="0.679984034562" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp12pos" scope="whole" timingfunction="linear">
+    <keyframe value="407 485" />
+    <keyframe value="378.642501586 485.452995182" />
+  </animatedvalue>
+  <animatedvalue id="sp12alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.241106431239" value="0" />
+    <keyframe time="0.271106431239" value="1" timingfunction="ease-in" />
+    <keyframe time="0.371106431239" value="1" timingfunction="linear" />
+    <keyframe time="0.771106431239" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp12scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.241106431239" value="0.65231306256" />
+    <keyframe time="0.271106431239" value="0.89693046102" timingfunction="ease-in" />
+    <keyframe time="0.371106431239" value="0.89693046102" timingfunction="linear" />
+    <keyframe time="0.771106431239" value="0.65231306256" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp13pos" scope="whole" timingfunction="linear">
+    <keyframe value="1346 688" />
+    <keyframe value="1374.35298636 697.420800578" />
+  </animatedvalue>
+  <animatedvalue id="sp13alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.397976822126" value="0" />
+    <keyframe time="0.427976822126" value="1" timingfunction="ease-in" />
+    <keyframe time="0.527976822126" value="1" timingfunction="linear" />
+    <keyframe time="0.927976822126" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp13scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.397976822126" value="0.326104635403" />
+    <keyframe time="0.427976822126" value="0.448393873679" timingfunction="ease-in" />
+    <keyframe time="0.527976822126" value="0.448393873679" timingfunction="linear" />
+    <keyframe time="0.927976822126" value="0.326104635403" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp14pos" scope="whole" timingfunction="linear">
+    <keyframe value="774 640" />
+    <keyframe value="775.624637561 644.813740923" />
+  </animatedvalue>
+  <animatedvalue id="sp14alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.105084302299" value="0" />
+    <keyframe time="0.135084302299" value="1" timingfunction="ease-in" />
+    <keyframe time="0.235084302299" value="1" timingfunction="linear" />
+    <keyframe time="0.635084302299" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp14scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.105084302299" value="0.216618341527" />
+    <keyframe time="0.135084302299" value="0.2978502196" timingfunction="ease-in" />
+    <keyframe time="0.235084302299" value="0.2978502196" timingfunction="linear" />
+    <keyframe time="0.635084302299" value="0.216618341527" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp15pos" scope="whole" timingfunction="linear">
+    <keyframe value="1397 719" />
+    <keyframe value="1454.08846835 739.153831515" />
+  </animatedvalue>
+  <animatedvalue id="sp15alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.443034123384" value="0" />
+    <keyframe time="0.473034123384" value="1" timingfunction="ease-in" />
+    <keyframe time="0.573034123384" value="1" timingfunction="linear" />
+    <keyframe time="0.973034123384" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp15scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.443034123384" value="0.607144715104" />
+    <keyframe time="0.473034123384" value="0.834823983268" timingfunction="ease-in" />
+    <keyframe time="0.573034123384" value="0.834823983268" timingfunction="linear" />
+    <keyframe time="0.973034123384" value="0.607144715104" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp16pos" scope="whole" timingfunction="linear">
+    <keyframe value="1276 683" />
+    <keyframe value="1309.56942418 695.256462425" />
+  </animatedvalue>
+  <animatedvalue id="sp16alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.354178321225" value="0" />
+    <keyframe time="0.384178321225" value="1" timingfunction="ease-in" />
+    <keyframe time="0.484178321225" value="1" timingfunction="linear" />
+    <keyframe time="0.884178321225" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp16scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.354178321225" value="0.434711967768" />
+    <keyframe time="0.384178321225" value="0.597728955681" timingfunction="ease-in" />
+    <keyframe time="0.484178321225" value="0.597728955681" timingfunction="linear" />
+    <keyframe time="0.884178321225" value="0.434711967768" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp17pos" scope="whole" timingfunction="linear">
+    <keyframe value="1199 578" />
+    <keyframe value="1230.9150541 584.529593532" />
+  </animatedvalue>
+  <animatedvalue id="sp17alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.324433068122" value="0" />
+    <keyframe time="0.354433068122" value="1" timingfunction="ease-in" />
+    <keyframe time="0.454433068122" value="1" timingfunction="linear" />
+    <keyframe time="0.854433068122" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp17scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.324433068122" value="0.47972523908" />
+    <keyframe time="0.354433068122" value="0.659622203734" timingfunction="ease-in" />
+    <keyframe time="0.454433068122" value="0.659622203734" timingfunction="linear" />
+    <keyframe time="0.854433068122" value="0.47972523908" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp18pos" scope="whole" timingfunction="linear">
+    <keyframe value="703 696" />
+    <keyframe value="702.246817482 705.569848467" />
+  </animatedvalue>
+  <animatedvalue id="sp18alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.08449063793" value="0" />
+    <keyframe time="0.11449063793" value="1" timingfunction="ease-in" />
+    <keyframe time="0.21449063793" value="1" timingfunction="linear" />
+    <keyframe time="0.61449063793" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp18scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.08449063793" value="0.318994948903" />
+    <keyframe time="0.11449063793" value="0.438618054742" timingfunction="ease-in" />
+    <keyframe time="0.21449063793" value="0.438618054742" timingfunction="linear" />
+    <keyframe time="0.61449063793" value="0.318994948903" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp19pos" scope="whole" timingfunction="linear">
+    <keyframe value="83 619" />
+    <keyframe value="26.0094371817 631.43593129" />
+  </animatedvalue>
+  <animatedvalue id="sp19alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.37834106933" value="0" />
+    <keyframe time="0.40834106933" value="1" timingfunction="ease-in" />
+    <keyframe time="0.50834106933" value="1" timingfunction="linear" />
+    <keyframe time="0.90834106933" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp19scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.37834106933" value="0.644163347397" />
+    <keyframe time="0.40834106933" value="0.885724602671" timingfunction="ease-in" />
+    <keyframe time="0.50834106933" value="0.885724602671" timingfunction="linear" />
+    <keyframe time="0.90834106933" value="0.644163347397" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp20pos" scope="whole" timingfunction="linear">
+    <keyframe value="826 656" />
+    <keyframe value="837.077639713 674.393062166" />
+  </animatedvalue>
+  <animatedvalue id="sp20alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.125691333154" value="0" />
+    <keyframe time="0.155691333154" value="1" timingfunction="ease-in" />
+    <keyframe time="0.255691333154" value="1" timingfunction="linear" />
+    <keyframe time="0.655691333154" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp20scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.125691333154" value="0.75244345223" />
+    <keyframe time="0.155691333154" value="1.03460974682" timingfunction="ease-in" />
+    <keyframe time="0.255691333154" value="1.03460974682" timingfunction="linear" />
+    <keyframe time="0.655691333154" value="0.75244345223" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp21pos" scope="whole" timingfunction="linear">
+    <keyframe value="299 626" />
+    <keyframe value="264.662612083 637.907977758" />
+  </animatedvalue>
+  <animatedvalue id="sp21alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.278682029375" value="0" />
+    <keyframe time="0.308682029375" value="1" timingfunction="ease-in" />
+    <keyframe time="0.408682029375" value="1" timingfunction="linear" />
+    <keyframe time="0.808682029375" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp21scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.278682029375" value="0.587242738727" />
+    <keyframe time="0.308682029375" value="0.80745876575" timingfunction="ease-in" />
+    <keyframe time="0.408682029375" value="0.80745876575" timingfunction="linear" />
+    <keyframe time="0.808682029375" value="0.587242738727" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp22pos" scope="whole" timingfunction="linear">
+    <keyframe value="1185 515" />
+    <keyframe value="1209.44104648 516.839648659" />
+  </animatedvalue>
+  <animatedvalue id="sp22alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.300120591586" value="0" />
+    <keyframe time="0.330120591586" value="1" timingfunction="ease-in" />
+    <keyframe time="0.430120591586" value="1" timingfunction="linear" />
+    <keyframe time="0.830120591586" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp22scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.300120591586" value="0.378442009943" />
+    <keyframe time="0.330120591586" value="0.520357763671" timingfunction="ease-in" />
+    <keyframe time="0.430120591586" value="0.520357763671" timingfunction="linear" />
+    <keyframe time="0.830120591586" value="0.378442009943" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp23pos" scope="whole" timingfunction="linear">
+    <keyframe value="1011 691" />
+    <keyframe value="1037.49896699 710.214027613" />
+  </animatedvalue>
+  <animatedvalue id="sp23alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.208052351142" value="0" />
+    <keyframe time="0.238052351142" value="1" timingfunction="ease-in" />
+    <keyframe time="0.338052351142" value="1" timingfunction="linear" />
+    <keyframe time="0.738052351142" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp23scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.208052351142" value="0.655644544154" />
+    <keyframe time="0.238052351142" value="0.901511248212" timingfunction="ease-in" />
+    <keyframe time="0.338052351142" value="0.901511248212" timingfunction="linear" />
+    <keyframe time="0.738052351142" value="0.655644544154" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp24pos" scope="whole" timingfunction="linear">
+    <keyframe value="382 601" />
+    <keyframe value="357.341471912 609.827461239" />
+  </animatedvalue>
+  <animatedvalue id="sp24alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.252778584416" value="0" />
+    <keyframe time="0.282778584416" value="1" timingfunction="ease-in" />
+    <keyframe time="0.382778584416" value="1" timingfunction="linear" />
+    <keyframe time="0.782778584416" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp24scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.252778584416" value="0.525270420813" />
+    <keyframe time="0.282778584416" value="0.722246828618" timingfunction="ease-in" />
+    <keyframe time="0.382778584416" value="0.722246828618" timingfunction="linear" />
+    <keyframe time="0.782778584416" value="0.525270420813" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp25pos" scope="whole" timingfunction="linear">
+    <keyframe value="185 679" />
+    <keyframe value="142.394913265 694.847499552" />
+  </animatedvalue>
+  <animatedvalue id="sp25alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.352630616545" value="0" />
+    <keyframe time="0.382630616545" value="1" timingfunction="ease-in" />
+    <keyframe time="0.482630616545" value="1" timingfunction="linear" />
+    <keyframe time="0.882630616545" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp25scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.352630616545" value="0.573376868207" />
+    <keyframe time="0.382630616545" value="0.788393193785" timingfunction="ease-in" />
+    <keyframe time="0.482630616545" value="0.788393193785" timingfunction="linear" />
+    <keyframe time="0.882630616545" value="0.573376868207" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp26pos" scope="whole" timingfunction="linear">
+    <keyframe value="916 590" />
+    <keyframe value="924.662384249 594.86154218" />
+  </animatedvalue>
+  <animatedvalue id="sp26alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.186343980337" value="0" />
+    <keyframe time="0.216343980337" value="1" timingfunction="ease-in" />
+    <keyframe time="0.316343980337" value="1" timingfunction="linear" />
+    <keyframe time="0.716343980337" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp26scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.186343980337" value="0.318210033631" />
+    <keyframe time="0.216343980337" value="0.437538796243" timingfunction="ease-in" />
+    <keyframe time="0.316343980337" value="0.437538796243" timingfunction="linear" />
+    <keyframe time="0.716343980337" value="0.318210033631" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp27pos" scope="whole" timingfunction="linear">
+    <keyframe value="264 648" />
+    <keyframe value="251.09394354 652.754862906" />
+  </animatedvalue>
+  <animatedvalue id="sp27alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.298895017479" value="0" />
+    <keyframe time="0.328895017479" value="1" timingfunction="ease-in" />
+    <keyframe time="0.428895017479" value="1" timingfunction="linear" />
+    <keyframe time="0.828895017479" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp27scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.298895017479" value="0.203779838842" />
+    <keyframe time="0.328895017479" value="0.280197278408" timingfunction="ease-in" />
+    <keyframe time="0.428895017479" value="0.280197278408" timingfunction="linear" />
+    <keyframe time="0.828895017479" value="0.203779838842" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp28pos" scope="whole" timingfunction="linear">
+    <keyframe value="635 716" />
+    <keyframe value="627.72743851 736.192053077" />
+  </animatedvalue>
+  <animatedvalue id="sp28alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.135064516722" value="0" />
+    <keyframe time="0.165064516722" value="1" timingfunction="ease-in" />
+    <keyframe time="0.265064516722" value="1" timingfunction="linear" />
+    <keyframe time="0.665064516722" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp28scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.135064516722" value="0.616028737947" />
+    <keyframe time="0.165064516722" value="0.847039514677" timingfunction="ease-in" />
+    <keyframe time="0.265064516722" value="0.847039514677" timingfunction="linear" />
+    <keyframe time="0.665064516722" value="0.616028737947" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp29pos" scope="whole" timingfunction="linear">
+    <keyframe value="624 638" />
+    <keyframe value="614.282238964 653.993815038" />
+  </animatedvalue>
+  <animatedvalue id="sp29alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.123637407128" value="0" />
+    <keyframe time="0.153637407128" value="1" timingfunction="ease-in" />
+    <keyframe time="0.253637407128" value="1" timingfunction="linear" />
+    <keyframe time="0.653637407128" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp29scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.123637407128" value="0.728832077673" />
+    <keyframe time="0.153637407128" value="1.0021441068" timingfunction="ease-in" />
+    <keyframe time="0.253637407128" value="1.0021441068" timingfunction="linear" />
+    <keyframe time="0.653637407128" value="0.728832077673" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp30pos" scope="whole" timingfunction="linear">
+    <keyframe value="883 695" />
+    <keyframe value="884.308170256 696.725500645" />
+  </animatedvalue>
+  <animatedvalue id="sp30alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.172059238039" value="0" />
+    <keyframe time="0.202059238039" value="1" timingfunction="ease-in" />
+    <keyframe time="0.302059238039" value="1" timingfunction="linear" />
+    <keyframe time="0.702059238039" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp30scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.172059238039" value="0.057784207631" />
+    <keyframe time="0.202059238039" value="0.0794532854926" timingfunction="ease-in" />
+    <keyframe time="0.302059238039" value="0.0794532854926" timingfunction="linear" />
+    <keyframe time="0.702059238039" value="0.057784207631" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp31pos" scope="whole" timingfunction="linear">
+    <keyframe value="1400 524" />
+    <keyframe value="1429.96158809 525.938690994" />
+  </animatedvalue>
+  <animatedvalue id="sp31alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.405810504989" value="0" />
+    <keyframe time="0.435810504989" value="1" timingfunction="ease-in" />
+    <keyframe time="0.535810504989" value="1" timingfunction="linear" />
+    <keyframe time="0.935810504989" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp31scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.405810504989" value="0.317240344433" />
+    <keyframe time="0.435810504989" value="0.436205473595" timingfunction="ease-in" />
+    <keyframe time="0.535810504989" value="0.436205473595" timingfunction="linear" />
+    <keyframe time="0.935810504989" value="0.317240344433" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp32pos" scope="whole" timingfunction="linear">
+    <keyframe value="1238 640" />
+    <keyframe value="1259.45113378 646.625832827" />
+  </animatedvalue>
+  <animatedvalue id="sp32alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.36529590465" value="0" />
+    <keyframe time="0.39529590465" value="1" timingfunction="ease-in" />
+    <keyframe time="0.49529590465" value="1" timingfunction="linear" />
+    <keyframe time="0.89529590465" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp32scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.36529590465" value="0.298162477205" />
+    <keyframe time="0.39529590465" value="0.409973406156" timingfunction="ease-in" />
+    <keyframe time="0.49529590465" value="0.409973406156" timingfunction="linear" />
+    <keyframe time="0.89529590465" value="0.298162477205" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp33pos" scope="whole" timingfunction="linear">
+    <keyframe value="1338 604" />
+    <keyframe value="1396.25186971 615.688077418" />
+  </animatedvalue>
+  <animatedvalue id="sp33alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.374861594394" value="0" />
+    <keyframe time="0.404861594394" value="1" timingfunction="ease-in" />
+    <keyframe time="0.504861594394" value="1" timingfunction="linear" />
+    <keyframe time="0.904861594394" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp33scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.374861594394" value="0.67866255977" />
+    <keyframe time="0.404861594394" value="0.933161019683" timingfunction="ease-in" />
+    <keyframe time="0.504861594394" value="0.933161019683" timingfunction="linear" />
+    <keyframe time="0.904861594394" value="0.67866255977" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp34pos" scope="whole" timingfunction="linear">
+    <keyframe value="295 700" />
+    <keyframe value="278.606956624 708.485810689" />
+  </animatedvalue>
+  <animatedvalue id="sp34alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.277580493622" value="0" />
+    <keyframe time="0.307580493622" value="1" timingfunction="ease-in" />
+    <keyframe time="0.407580493622" value="1" timingfunction="linear" />
+    <keyframe time="0.807580493622" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp34scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.277580493622" value="0.27771744073" />
+    <keyframe time="0.307580493622" value="0.381861481004" timingfunction="ease-in" />
+    <keyframe time="0.407580493622" value="0.381861481004" timingfunction="linear" />
+    <keyframe time="0.807580493622" value="0.27771744073" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp35pos" scope="whole" timingfunction="linear">
+    <keyframe value="1354 543" />
+    <keyframe value="1368.68900514 544.459633003" />
+  </animatedvalue>
+  <animatedvalue id="sp35alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.423373888366" value="0" />
+    <keyframe time="0.453373888366" value="1" timingfunction="ease-in" />
+    <keyframe time="0.553373888366" value="1" timingfunction="linear" />
+    <keyframe time="0.953373888366" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp35scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.423373888366" value="0.166815200342" />
+    <keyframe time="0.453373888366" value="0.229370900471" timingfunction="ease-in" />
+    <keyframe time="0.553373888366" value="0.229370900471" timingfunction="linear" />
+    <keyframe time="0.953373888366" value="0.166815200342" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp36pos" scope="whole" timingfunction="linear">
+    <keyframe value="403 630" />
+    <keyframe value="375.76032913 642.889434166" />
+  </animatedvalue>
+  <animatedvalue id="sp36alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.253638816794" value="0" />
+    <keyframe time="0.283638816794" value="1" timingfunction="ease-in" />
+    <keyframe time="0.383638816794" value="1" timingfunction="linear" />
+    <keyframe time="0.783638816794" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp36scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.253638816794" value="0.618692839949" />
+    <keyframe time="0.283638816794" value="0.85070265493" timingfunction="ease-in" />
+    <keyframe time="0.383638816794" value="0.85070265493" timingfunction="linear" />
+    <keyframe time="0.783638816794" value="0.618692839949" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp37pos" scope="whole" timingfunction="linear">
+    <keyframe value="772 706" />
+    <keyframe value="776.235873594 724.409758314" />
+  </animatedvalue>
+  <animatedvalue id="sp37alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0781536199795" value="0" />
+    <keyframe time="0.10815361998" value="1" timingfunction="ease-in" />
+    <keyframe time="0.20815361998" value="1" timingfunction="linear" />
+    <keyframe time="0.60815361998" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp37scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0781536199795" value="0.586505574594" />
+    <keyframe time="0.10815361998" value="0.806445165066" timingfunction="ease-in" />
+    <keyframe time="0.20815361998" value="0.806445165066" timingfunction="linear" />
+    <keyframe time="0.60815361998" value="0.586505574594" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp38pos" scope="whole" timingfunction="linear">
+    <keyframe value="666 580" />
+    <keyframe value="663.864810389 583.954054835" />
+  </animatedvalue>
+  <animatedvalue id="sp38alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.115813012722" value="0" />
+    <keyframe time="0.145813012722" value="1" timingfunction="ease-in" />
+    <keyframe time="0.245813012722" value="1" timingfunction="linear" />
+    <keyframe time="0.645813012722" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp38scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.115813012722" value="0.284691948137" />
+    <keyframe time="0.145813012722" value="0.391451428688" timingfunction="ease-in" />
+    <keyframe time="0.245813012722" value="0.391451428688" timingfunction="linear" />
+    <keyframe time="0.645813012722" value="0.284691948137" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp39pos" scope="whole" timingfunction="linear">
+    <keyframe value="570 578" />
+    <keyframe value="557.055757739 586.456904944" />
+  </animatedvalue>
+  <animatedvalue id="sp39alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.16505558537" value="0" />
+    <keyframe time="0.19505558537" value="1" timingfunction="ease-in" />
+    <keyframe time="0.29505558537" value="1" timingfunction="linear" />
+    <keyframe time="0.69505558537" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp39scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.16505558537" value="0.621323628538" />
+    <keyframe time="0.19505558537" value="0.854319989239" timingfunction="ease-in" />
+    <keyframe time="0.29505558537" value="0.854319989239" timingfunction="linear" />
+    <keyframe time="0.69505558537" value="0.621323628538" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp40pos" scope="whole" timingfunction="linear">
+    <keyframe value="728 606" />
+    <keyframe value="728.199204589 609.137472282" />
+  </animatedvalue>
+  <animatedvalue id="sp40alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0580073827939" value="0" />
+    <keyframe time="0.0880073827939" value="1" timingfunction="ease-in" />
+    <keyframe time="0.188007382794" value="1" timingfunction="linear" />
+    <keyframe time="0.588007382794" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp40scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0580073827939" value="0.179284130382" />
+    <keyframe time="0.0880073827939" value="0.246515679275" timingfunction="ease-in" />
+    <keyframe time="0.188007382794" value="0.246515679275" timingfunction="linear" />
+    <keyframe time="0.588007382794" value="0.179284130382" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp41pos" scope="whole" timingfunction="linear">
+    <keyframe value="664 682" />
+    <keyframe value="661.016232746 692.762874739" />
+  </animatedvalue>
+  <animatedvalue id="sp41alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0824390905951" value="0" />
+    <keyframe time="0.112439090595" value="1" timingfunction="ease-in" />
+    <keyframe time="0.212439090595" value="1" timingfunction="linear" />
+    <keyframe time="0.612439090595" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp41scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0824390905951" value="0.383627218412" />
+    <keyframe time="0.112439090595" value="0.527487425316" timingfunction="ease-in" />
+    <keyframe time="0.212439090595" value="0.527487425316" timingfunction="linear" />
+    <keyframe time="0.612439090595" value="0.383627218412" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp42pos" scope="whole" timingfunction="linear">
+    <keyframe value="646 658" />
+    <keyframe value="641.55514886 668.691668959" />
+  </animatedvalue>
+  <animatedvalue id="sp42alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0885454642564" value="0" />
+    <keyframe time="0.118545464256" value="1" timingfunction="ease-in" />
+    <keyframe time="0.218545464256" value="1" timingfunction="linear" />
+    <keyframe time="0.618545464256" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp42scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0885454642564" value="0.432472002841" />
+    <keyframe time="0.118545464256" value="0.594649003906" timingfunction="ease-in" />
+    <keyframe time="0.218545464256" value="0.594649003906" timingfunction="linear" />
+    <keyframe time="0.618545464256" value="0.432472002841" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp43pos" scope="whole" timingfunction="linear">
+    <keyframe value="1241 602" />
+    <keyframe value="1265.25140353 607.678831537" />
+  </animatedvalue>
+  <animatedvalue id="sp43alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.331840753951" value="0" />
+    <keyframe time="0.361840753951" value="1" timingfunction="ease-in" />
+    <keyframe time="0.461840753951" value="1" timingfunction="linear" />
+    <keyframe time="0.861840753951" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp43scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.331840753951" value="0.335144156263" />
+    <keyframe time="0.361840753951" value="0.460823214862" timingfunction="ease-in" />
+    <keyframe time="0.461840753951" value="0.460823214862" timingfunction="linear" />
+    <keyframe time="0.861840753951" value="0.335144156263" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp44pos" scope="whole" timingfunction="linear">
+    <keyframe value="1045 629" />
+    <keyframe value="1055.07853165 633.620619127" />
+  </animatedvalue>
+  <animatedvalue id="sp44alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.223630369352" value="0" />
+    <keyframe time="0.253630369352" value="1" timingfunction="ease-in" />
+    <keyframe time="0.353630369352" value="1" timingfunction="linear" />
+    <keyframe time="0.753630369352" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp44scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.223630369352" value="0.223278239689" />
+    <keyframe time="0.253630369352" value="0.307007579573" timingfunction="ease-in" />
+    <keyframe time="0.353630369352" value="0.307007579573" timingfunction="linear" />
+    <keyframe time="0.753630369352" value="0.223278239689" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp45pos" scope="whole" timingfunction="linear">
+    <keyframe value="1050 512" />
+    <keyframe value="1057.64222599 512.741064339" />
+  </animatedvalue>
+  <animatedvalue id="sp45alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.267106779886" value="0" />
+    <keyframe time="0.297106779886" value="1" timingfunction="ease-in" />
+    <keyframe time="0.397106779886" value="1" timingfunction="linear" />
+    <keyframe time="0.797106779886" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp45scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.267106779886" value="0.166739476174" />
+    <keyframe time="0.297106779886" value="0.229266779739" timingfunction="ease-in" />
+    <keyframe time="0.397106779886" value="0.229266779739" timingfunction="linear" />
+    <keyframe time="0.797106779886" value="0.166739476174" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp46pos" scope="whole" timingfunction="linear">
+    <keyframe value="56 679" />
+    <keyframe value="22.7590636682 688.962268569" />
+  </animatedvalue>
+  <animatedvalue id="sp46alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.39761751626" value="0" />
+    <keyframe time="0.42761751626" value="1" timingfunction="ease-in" />
+    <keyframe time="0.52761751626" value="1" timingfunction="linear" />
+    <keyframe time="0.92761751626" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp46scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.39761751626" value="0.360443887936" />
+    <keyframe time="0.42761751626" value="0.495610345912" timingfunction="ease-in" />
+    <keyframe time="0.52761751626" value="0.495610345912" timingfunction="linear" />
+    <keyframe time="0.92761751626" value="0.360443887936" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp47pos" scope="whole" timingfunction="linear">
+    <keyframe value="653 684" />
+    <keyframe value="651.689228691 687.991005179" />
+  </animatedvalue>
+  <animatedvalue id="sp47alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.132612253319" value="0" />
+    <keyframe time="0.162612253319" value="1" timingfunction="ease-in" />
+    <keyframe time="0.262612253319" value="1" timingfunction="linear" />
+    <keyframe time="0.662612253319" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp47scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.132612253319" value="0.140859006322" />
+    <keyframe time="0.162612253319" value="0.193681133693" timingfunction="ease-in" />
+    <keyframe time="0.262612253319" value="0.193681133693" timingfunction="linear" />
+    <keyframe time="0.662612253319" value="0.140859006322" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp48pos" scope="whole" timingfunction="linear">
+    <keyframe value="1166 534" />
+    <keyframe value="1207.9120764 539.074556335" />
+  </animatedvalue>
+  <animatedvalue id="sp48alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.296810850528" value="0" />
+    <keyframe time="0.326810850528" value="1" timingfunction="ease-in" />
+    <keyframe time="0.426810850528" value="1" timingfunction="linear" />
+    <keyframe time="0.826810850528" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp48scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.296810850528" value="0.676607511388" />
+    <keyframe time="0.326810850528" value="0.930335328159" timingfunction="ease-in" />
+    <keyframe time="0.426810850528" value="0.930335328159" timingfunction="linear" />
+    <keyframe time="0.826810850528" value="0.676607511388" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp49pos" scope="whole" timingfunction="linear">
+    <keyframe value="170 716" />
+    <keyframe value="111.154856192 741.249916252" />
+  </animatedvalue>
+  <animatedvalue id="sp49alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.359172186374" value="0" />
+    <keyframe time="0.389172186374" value="1" timingfunction="ease-in" />
+    <keyframe time="0.489172186374" value="1" timingfunction="linear" />
+    <keyframe time="0.889172186374" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp49scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.359172186374" value="0.770336428037" />
+    <keyframe time="0.389172186374" value="1.05921258855" timingfunction="ease-in" />
+    <keyframe time="0.489172186374" value="1.05921258855" timingfunction="linear" />
+    <keyframe time="0.889172186374" value="0.770336428037" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp50pos" scope="whole" timingfunction="linear">
+    <keyframe value="466 565" />
+    <keyframe value="454.625247158 568.806511778" />
+  </animatedvalue>
+  <animatedvalue id="sp50alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.21309548354" value="0" />
+    <keyframe time="0.24309548354" value="1" timingfunction="ease-in" />
+    <keyframe time="0.34309548354" value="1" timingfunction="linear" />
+    <keyframe time="0.74309548354" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp50scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.21309548354" value="0.322433938815" />
+    <keyframe time="0.24309548354" value="0.44334666587" timingfunction="ease-in" />
+    <keyframe time="0.34309548354" value="0.44334666587" timingfunction="linear" />
+    <keyframe time="0.74309548354" value="0.322433938815" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp51pos" scope="whole" timingfunction="linear">
+    <keyframe value="1384 596" />
+    <keyframe value="1433.68371632 604.679685381" />
+  </animatedvalue>
+  <animatedvalue id="sp51alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.392716478326" value="0" />
+    <keyframe time="0.422716478326" value="1" timingfunction="ease-in" />
+    <keyframe time="0.522716478326" value="1" timingfunction="linear" />
+    <keyframe time="0.922716478326" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp51scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.392716478326" value="0.538739092631" />
+    <keyframe time="0.422716478326" value="0.740766252368" timingfunction="ease-in" />
+    <keyframe time="0.522716478326" value="0.740766252368" timingfunction="linear" />
+    <keyframe time="0.922716478326" value="0.538739092631" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp52pos" scope="whole" timingfunction="linear">
+    <keyframe value="283 525" />
+    <keyframe value="258.13177033 527.560801682" />
+  </animatedvalue>
+  <animatedvalue id="sp52alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.296253442465" value="0" />
+    <keyframe time="0.326253442465" value="1" timingfunction="ease-in" />
+    <keyframe time="0.426253442465" value="1" timingfunction="linear" />
+    <keyframe time="0.826253442465" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp52scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.296253442465" value="0.409728269166" />
+    <keyframe time="0.326253442465" value="0.563376370104" timingfunction="ease-in" />
+    <keyframe time="0.426253442465" value="0.563376370104" timingfunction="linear" />
+    <keyframe time="0.826253442465" value="0.409728269166" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp53pos" scope="whole" timingfunction="linear">
+    <keyframe value="1126 709" />
+    <keyframe value="1155.4622381 725.61786336" />
+  </animatedvalue>
+  <animatedvalue id="sp53alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.296080726631" value="0" />
+    <keyframe time="0.326080726631" value="1" timingfunction="ease-in" />
+    <keyframe time="0.426080726631" value="1" timingfunction="linear" />
+    <keyframe time="0.826080726631" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp53scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.296080726631" value="0.522483040131" />
+    <keyframe time="0.326080726631" value="0.71841418018" timingfunction="ease-in" />
+    <keyframe time="0.426080726631" value="0.71841418018" timingfunction="linear" />
+    <keyframe time="0.826080726631" value="0.522483040131" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp54pos" scope="whole" timingfunction="linear">
+    <keyframe value="916 612" />
+    <keyframe value="926.487545071 619.063040558" />
+  </animatedvalue>
+  <animatedvalue id="sp54alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.168239964491" value="0" />
+    <keyframe time="0.198239964491" value="1" timingfunction="ease-in" />
+    <keyframe time="0.298239964491" value="1" timingfunction="linear" />
+    <keyframe time="0.698239964491" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp54scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.168239964491" value="0.385256757699" />
+    <keyframe time="0.198239964491" value="0.529728041837" timingfunction="ease-in" />
+    <keyframe time="0.298239964491" value="0.529728041837" timingfunction="linear" />
+    <keyframe time="0.698239964491" value="0.385256757699" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp55pos" scope="whole" timingfunction="linear">
+    <keyframe value="93 705" />
+    <keyframe value="38.0690880482 724.712049743" />
+  </animatedvalue>
+  <animatedvalue id="sp55alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.414350009351" value="0" />
+    <keyframe time="0.444350009351" value="1" timingfunction="ease-in" />
+    <keyframe time="0.544350009351" value="1" timingfunction="linear" />
+    <keyframe time="0.944350009351" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp55scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.414350009351" value="0.63078559179" />
+    <keyframe time="0.444350009351" value="0.867330188712" timingfunction="ease-in" />
+    <keyframe time="0.544350009351" value="0.867330188712" timingfunction="linear" />
+    <keyframe time="0.944350009351" value="0.63078559179" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp56pos" scope="whole" timingfunction="linear">
+    <keyframe value="326 674" />
+    <keyframe value="312.571303915 680.612099087" />
+  </animatedvalue>
+  <animatedvalue id="sp56alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.262370585912" value="0" />
+    <keyframe time="0.292370585912" value="1" timingfunction="ease-in" />
+    <keyframe time="0.392370585912" value="1" timingfunction="linear" />
+    <keyframe time="0.792370585912" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp56scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.262370585912" value="0.245397491907" />
+    <keyframe time="0.292370585912" value="0.337421551372" timingfunction="ease-in" />
+    <keyframe time="0.392370585912" value="0.337421551372" timingfunction="linear" />
+    <keyframe time="0.792370585912" value="0.245397491907" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp57pos" scope="whole" timingfunction="linear">
+    <keyframe value="399 689" />
+    <keyframe value="390.354182062 694.629208564" />
+  </animatedvalue>
+  <animatedvalue id="sp57alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.220092509967" value="0" />
+    <keyframe time="0.250092509967" value="1" timingfunction="ease-in" />
+    <keyframe time="0.350092509967" value="1" timingfunction="linear" />
+    <keyframe time="0.750092509967" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp57scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.220092509967" value="0.193924888336" />
+    <keyframe time="0.250092509967" value="0.266646721462" timingfunction="ease-in" />
+    <keyframe time="0.350092509967" value="0.266646721462" timingfunction="linear" />
+    <keyframe time="0.750092509967" value="0.193924888336" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp58pos" scope="whole" timingfunction="linear">
+    <keyframe value="1084 702" />
+    <keyframe value="1103.68128129 714.003418808" />
+  </animatedvalue>
+  <animatedvalue id="sp58alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.26006809754" value="0" />
+    <keyframe time="0.29006809754" value="1" timingfunction="ease-in" />
+    <keyframe time="0.39006809754" value="1" timingfunction="linear" />
+    <keyframe time="0.79006809754" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp58scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.26006809754" value="0.389300069448" />
+    <keyframe time="0.29006809754" value="0.535287595491" timingfunction="ease-in" />
+    <keyframe time="0.39006809754" value="0.535287595491" timingfunction="linear" />
+    <keyframe time="0.79006809754" value="0.389300069448" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp59pos" scope="whole" timingfunction="linear">
+    <keyframe value="469 598" />
+    <keyframe value="458.498697755 602.936867191" />
+  </animatedvalue>
+  <animatedvalue id="sp59alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.19631659023" value="0" />
+    <keyframe time="0.22631659023" value="1" timingfunction="ease-in" />
+    <keyframe time="0.32631659023" value="1" timingfunction="linear" />
+    <keyframe time="0.72631659023" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp59scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.19631659023" value="0.301232574371" />
+    <keyframe time="0.22631659023" value="0.41419478976" timingfunction="ease-in" />
+    <keyframe time="0.32631659023" value="0.41419478976" timingfunction="linear" />
+    <keyframe time="0.72631659023" value="0.301232574371" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp60pos" scope="whole" timingfunction="linear">
+    <keyframe value="904 705" />
+    <keyframe value="911.873466212 714.627879879" />
+  </animatedvalue>
+  <animatedvalue id="sp60alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.150151993516" value="0" />
+    <keyframe time="0.180151993516" value="1" timingfunction="ease-in" />
+    <keyframe time="0.280151993516" value="1" timingfunction="linear" />
+    <keyframe time="0.680151993516" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp60scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.150151993516" value="0.308092156137" />
+    <keyframe time="0.180151993516" value="0.423626714689" timingfunction="ease-in" />
+    <keyframe time="0.280151993516" value="0.423626714689" timingfunction="linear" />
+    <keyframe time="0.680151993516" value="0.308092156137" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp61pos" scope="whole" timingfunction="linear">
+    <keyframe value="636 553" />
+    <keyframe value="633.62503793 555.063955133" />
+  </animatedvalue>
+  <animatedvalue id="sp61alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.104704263637" value="0" />
+    <keyframe time="0.134704263637" value="1" timingfunction="ease-in" />
+    <keyframe time="0.234704263637" value="1" timingfunction="linear" />
+    <keyframe time="0.634704263637" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp61scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.104704263637" value="0.203568177454" />
+    <keyframe time="0.134704263637" value="0.279906243999" timingfunction="ease-in" />
+    <keyframe time="0.234704263637" value="0.279906243999" timingfunction="linear" />
+    <keyframe time="0.634704263637" value="0.203568177454" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp62pos" scope="whole" timingfunction="linear">
+    <keyframe value="4 562" />
+    <keyframe value="-2.68186002271 562.765240952" />
+  </animatedvalue>
+  <animatedvalue id="sp62alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.428201907197" value="0" />
+    <keyframe time="0.458201907197" value="1" timingfunction="ease-in" />
+    <keyframe time="0.558201907197" value="1" timingfunction="linear" />
+    <keyframe time="0.958201907197" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp62scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.428201907197" value="0.0671918884966" />
+    <keyframe time="0.458201907197" value="0.0923888466828" timingfunction="ease-in" />
+    <keyframe time="0.558201907197" value="0.0923888466828" timingfunction="linear" />
+    <keyframe time="0.958201907197" value="0.0671918884966" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp63pos" scope="whole" timingfunction="linear">
+    <keyframe value="1170 645" />
+    <keyframe value="1189.39697264 652.112223302" />
+  </animatedvalue>
+  <animatedvalue id="sp63alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.329918313687" value="0" />
+    <keyframe time="0.359918313687" value="1" timingfunction="ease-in" />
+    <keyframe time="0.459918313687" value="1" timingfunction="linear" />
+    <keyframe time="0.859918313687" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp63scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.329918313687" value="0.310351562283" />
+    <keyframe time="0.359918313687" value="0.426733398139" timingfunction="ease-in" />
+    <keyframe time="0.459918313687" value="0.426733398139" timingfunction="linear" />
+    <keyframe time="0.859918313687" value="0.310351562283" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp64pos" scope="whole" timingfunction="linear">
+    <keyframe value="297 593" />
+    <keyframe value="272.952574007 599.424016873" />
+  </animatedvalue>
+  <animatedvalue id="sp64alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.279381245608" value="0" />
+    <keyframe time="0.309381245608" value="1" timingfunction="ease-in" />
+    <keyframe time="0.409381245608" value="1" timingfunction="linear" />
+    <keyframe time="0.809381245608" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp64scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.279381245608" value="0.409317889238" />
+    <keyframe time="0.309381245608" value="0.562812097703" timingfunction="ease-in" />
+    <keyframe time="0.409381245608" value="0.562812097703" timingfunction="linear" />
+    <keyframe time="0.809381245608" value="0.409317889238" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp65pos" scope="whole" timingfunction="linear">
+    <keyframe value="942 655" />
+    <keyframe value="958.709619527 668.171997375" />
+  </animatedvalue>
+  <animatedvalue id="sp65alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.209970931849" value="0" />
+    <keyframe time="0.239970931849" value="1" timingfunction="ease-in" />
+    <keyframe time="0.339970931849" value="1" timingfunction="linear" />
+    <keyframe time="0.739970931849" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp65scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.209970931849" value="0.541933606288" />
+    <keyframe time="0.239970931849" value="0.745158708647" timingfunction="ease-in" />
+    <keyframe time="0.339970931849" value="0.745158708647" timingfunction="linear" />
+    <keyframe time="0.739970931849" value="0.541933606288" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp66pos" scope="whole" timingfunction="linear">
+    <keyframe value="700 619" />
+    <keyframe value="699.084905568 625.359906303" />
+  </animatedvalue>
+  <animatedvalue id="sp66alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0643768300295" value="0" />
+    <keyframe time="0.0943768300295" value="1" timingfunction="ease-in" />
+    <keyframe time="0.19437683003" value="1" timingfunction="linear" />
+    <keyframe time="0.59437683003" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp66scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0643768300295" value="0.329433995555" />
+    <keyframe time="0.0943768300295" value="0.452971743888" timingfunction="ease-in" />
+    <keyframe time="0.19437683003" value="0.452971743888" timingfunction="linear" />
+    <keyframe time="0.59437683003" value="0.329433995555" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp67pos" scope="whole" timingfunction="linear">
+    <keyframe value="885 641" />
+    <keyframe value="893.42656449 649.222284138" />
+  </animatedvalue>
+  <animatedvalue id="sp67alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.141727109291" value="0" />
+    <keyframe time="0.171727109291" value="1" timingfunction="ease-in" />
+    <keyframe time="0.271727109291" value="1" timingfunction="linear" />
+    <keyframe time="0.671727109291" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp67scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.141727109291" value="0.367704632271" />
+    <keyframe time="0.171727109291" value="0.505593869373" timingfunction="ease-in" />
+    <keyframe time="0.271727109291" value="0.505593869373" timingfunction="linear" />
+    <keyframe time="0.671727109291" value="0.367704632271" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp68pos" scope="whole" timingfunction="linear">
+    <keyframe value="852 604" />
+    <keyframe value="861.986844784 613.381581464" />
+  </animatedvalue>
+  <animatedvalue id="sp68alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.141547793682" value="0" />
+    <keyframe time="0.171547793682" value="1" timingfunction="ease-in" />
+    <keyframe time="0.271547793682" value="1" timingfunction="linear" />
+    <keyframe time="0.671547793682" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp68scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.141547793682" value="0.544736988227" />
+    <keyframe time="0.171547793682" value="0.749013358812" timingfunction="ease-in" />
+    <keyframe time="0.271547793682" value="0.749013358812" timingfunction="linear" />
+    <keyframe time="0.671547793682" value="0.544736988227" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp69pos" scope="whole" timingfunction="linear">
+    <keyframe value="97 513" />
+    <keyframe value="28.3349431682 516.637153893" />
+  </animatedvalue>
+  <animatedvalue id="sp69alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.410012795898" value="0" />
+    <keyframe time="0.440012795898" value="1" timingfunction="ease-in" />
+    <keyframe time="0.540012795898" value="1" timingfunction="linear" />
+    <keyframe time="0.940012795898" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp69scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.410012795898" value="0.79356084942" />
+    <keyframe time="0.440012795898" value="1.09114616795" timingfunction="ease-in" />
+    <keyframe time="0.540012795898" value="1.09114616795" timingfunction="linear" />
+    <keyframe time="0.940012795898" value="0.79356084942" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp70pos" scope="whole" timingfunction="linear">
+    <keyframe value="735 497" />
+    <keyframe value="736.596534048 498.809405255" />
+  </animatedvalue>
+  <animatedvalue id="sp70alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0664138124767" value="0" />
+    <keyframe time="0.0964138124767" value="1" timingfunction="ease-in" />
+    <keyframe time="0.196413812477" value="1" timingfunction="linear" />
+    <keyframe time="0.596413812477" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp70scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0664138124767" value="0.766336343107" />
+    <keyframe time="0.0964138124767" value="1.05371247177" timingfunction="ease-in" />
+    <keyframe time="0.196413812477" value="1.05371247177" timingfunction="linear" />
+    <keyframe time="0.596413812477" value="0.766336343107" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp71pos" scope="whole" timingfunction="linear">
+    <keyframe value="790 549" />
+    <keyframe value="796.030991737 554.944834712" />
+  </animatedvalue>
+  <animatedvalue id="sp71alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0942432110972" value="0" />
+    <keyframe time="0.124243211097" value="1" timingfunction="ease-in" />
+    <keyframe time="0.224243211097" value="1" timingfunction="linear" />
+    <keyframe time="0.624243211097" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp71scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0942432110972" value="0.620330578613" />
+    <keyframe time="0.124243211097" value="0.852954545593" timingfunction="ease-in" />
+    <keyframe time="0.224243211097" value="0.852954545593" timingfunction="linear" />
+    <keyframe time="0.624243211097" value="0.620330578613" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp72pos" scope="whole" timingfunction="linear">
+    <keyframe value="972 553" />
+    <keyframe value="990.469529131 558.350300105" />
+  </animatedvalue>
+  <animatedvalue id="sp72alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.210072335594" value="0" />
+    <keyframe time="0.240072335594" value="1" timingfunction="ease-in" />
+    <keyframe time="0.340072335594" value="1" timingfunction="linear" />
+    <keyframe time="0.740072335594" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp72scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.210072335594" value="0.527700832314" />
+    <keyframe time="0.240072335594" value="0.725588644432" timingfunction="ease-in" />
+    <keyframe time="0.340072335594" value="0.725588644432" timingfunction="linear" />
+    <keyframe time="0.740072335594" value="0.527700832314" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp73pos" scope="whole" timingfunction="linear">
+    <keyframe value="933 556" />
+    <keyframe value="945.261381891 560.374953163" />
+  </animatedvalue>
+  <animatedvalue id="sp73alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.162525823537" value="0" />
+    <keyframe time="0.192525823537" value="1" timingfunction="ease-in" />
+    <keyframe time="0.292525823537" value="1" timingfunction="linear" />
+    <keyframe time="0.692525823537" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp73scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.162525823537" value="0.414469247024" />
+    <keyframe time="0.192525823537" value="0.569895214658" timingfunction="ease-in" />
+    <keyframe time="0.292525823537" value="0.569895214658" timingfunction="linear" />
+    <keyframe time="0.692525823537" value="0.414469247024" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp74pos" scope="whole" timingfunction="linear">
+    <keyframe value="1243 480" />
+    <keyframe value="1292.90702774 480.0" />
+  </animatedvalue>
+  <animatedvalue id="sp74alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.357829351378" value="0" />
+    <keyframe time="0.387829351378" value="1" timingfunction="ease-in" />
+    <keyframe time="0.487829351378" value="1" timingfunction="linear" />
+    <keyframe time="0.887829351378" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp74scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.357829351378" value="0.687056596021" />
+    <keyframe time="0.387829351378" value="0.944702819529" timingfunction="ease-in" />
+    <keyframe time="0.487829351378" value="0.944702819529" timingfunction="linear" />
+    <keyframe time="0.887829351378" value="0.687056596021" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp75pos" scope="whole" timingfunction="linear">
+    <keyframe value="110 632" />
+    <keyframe value="95.0475952856 635.725845109" />
+  </animatedvalue>
+  <animatedvalue id="sp75alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.370977655913" value="0" />
+    <keyframe time="0.400977655913" value="1" timingfunction="ease-in" />
+    <keyframe time="0.500977655913" value="1" timingfunction="linear" />
+    <keyframe time="0.900977655913" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp75scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.370977655913" value="0.176487399907" />
+    <keyframe time="0.400977655913" value="0.242670174873" timingfunction="ease-in" />
+    <keyframe time="0.500977655913" value="0.242670174873" timingfunction="linear" />
+    <keyframe time="0.900977655913" value="0.176487399907" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp76pos" scope="whole" timingfunction="linear">
+    <keyframe value="39 638" />
+    <keyframe value="20.1640771589 642.370155373" />
+  </animatedvalue>
+  <animatedvalue id="sp76alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.421881928044" value="0" />
+    <keyframe time="0.451881928044" value="1" timingfunction="ease-in" />
+    <keyframe time="0.551881928044" value="1" timingfunction="linear" />
+    <keyframe time="0.951881928044" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp76scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.421881928044" value="0.199146320787" />
+    <keyframe time="0.451881928044" value="0.273826191083" timingfunction="ease-in" />
+    <keyframe time="0.551881928044" value="0.273826191083" timingfunction="linear" />
+    <keyframe time="0.951881928044" value="0.199146320787" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp77pos" scope="whole" timingfunction="linear">
+    <keyframe value="93 707" />
+    <keyframe value="25.0542099809 731.599193516" />
+  </animatedvalue>
+  <animatedvalue id="sp77alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.384985617102" value="0" />
+    <keyframe time="0.414985617102" value="1" timingfunction="ease-in" />
+    <keyframe time="0.514985617102" value="1" timingfunction="linear" />
+    <keyframe time="0.914985617102" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp77scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.384985617102" value="0.780238737061" />
+    <keyframe time="0.414985617102" value="1.07282826346" timingfunction="ease-in" />
+    <keyframe time="0.514985617102" value="1.07282826346" timingfunction="linear" />
+    <keyframe time="0.914985617102" value="0.780238737061" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp78pos" scope="whole" timingfunction="linear">
+    <keyframe value="1120 703" />
+    <keyframe value="1143.44160288 716.068693605" />
+  </animatedvalue>
+  <animatedvalue id="sp78alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.267375895971" value="0" />
+    <keyframe time="0.297375895971" value="1" timingfunction="ease-in" />
+    <keyframe time="0.397375895971" value="1" timingfunction="linear" />
+    <keyframe time="0.797375895971" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp78scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.267375895971" value="0.421948851814" />
+    <keyframe time="0.297375895971" value="0.580179671245" timingfunction="ease-in" />
+    <keyframe time="0.397375895971" value="0.580179671245" timingfunction="linear" />
+    <keyframe time="0.797375895971" value="0.421948851814" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp79pos" scope="whole" timingfunction="linear">
+    <keyframe value="1370 550" />
+    <keyframe value="1393.18696288 552.497057541" />
+  </animatedvalue>
+  <animatedvalue id="sp79alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.396899976366" value="0" />
+    <keyframe time="0.426899976366" value="1" timingfunction="ease-in" />
+    <keyframe time="0.526899976366" value="1" timingfunction="linear" />
+    <keyframe time="0.926899976366" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp79scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.396899976366" value="0.256840204194" />
+    <keyframe time="0.426899976366" value="0.353155280767" timingfunction="ease-in" />
+    <keyframe time="0.526899976366" value="0.353155280767" timingfunction="linear" />
+    <keyframe time="0.926899976366" value="0.256840204194" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp80pos" scope="whole" timingfunction="linear">
+    <keyframe value="1433 597" />
+    <keyframe value="1501.23218068 608.196585049" />
+  </animatedvalue>
+  <animatedvalue id="sp80alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.466027919403" value="0" />
+    <keyframe time="0.496027919403" value="1" timingfunction="ease-in" />
+    <keyframe time="0.596027919403" value="1" timingfunction="linear" />
+    <keyframe time="0.996027919403" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp80scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.466027919403" value="0.689020618391" />
+    <keyframe time="0.496027919403" value="0.947403350288" timingfunction="ease-in" />
+    <keyframe time="0.596027919403" value="0.947403350288" timingfunction="linear" />
+    <keyframe time="0.996027919403" value="0.689020618391" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp81pos" scope="whole" timingfunction="linear">
+    <keyframe value="754 653" />
+    <keyframe value="756.169888914 664.040905358" />
+  </animatedvalue>
+  <animatedvalue id="sp81alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0881293115699" value="0" />
+    <keyframe time="0.11812931157" value="1" timingfunction="ease-in" />
+    <keyframe time="0.21812931157" value="1" timingfunction="linear" />
+    <keyframe time="0.61812931157" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp81scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0881293115699" value="0.459505887739" />
+    <keyframe time="0.11812931157" value="0.631820595641" timingfunction="ease-in" />
+    <keyframe time="0.21812931157" value="0.631820595641" timingfunction="linear" />
+    <keyframe time="0.61812931157" value="0.459505887739" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp82pos" scope="whole" timingfunction="linear">
+    <keyframe value="113 481" />
+    <keyframe value="65.0078124882 481.079064559" />
+  </animatedvalue>
+  <animatedvalue id="sp82alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.404306939016" value="0" />
+    <keyframe time="0.434306939016" value="1" timingfunction="ease-in" />
+    <keyframe time="0.534306939016" value="1" timingfunction="linear" />
+    <keyframe time="0.934306939016" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp82scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.404306939016" value="0.569264827158" />
+    <keyframe time="0.434306939016" value="0.782739137343" timingfunction="ease-in" />
+    <keyframe time="0.534306939016" value="0.782739137343" timingfunction="linear" />
+    <keyframe time="0.934306939016" value="0.569264827158" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp83pos" scope="whole" timingfunction="linear">
+    <keyframe value="354 701" />
+    <keyframe value="324.280351933 718.945470554" />
+  </animatedvalue>
+  <animatedvalue id="sp83alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.25023980101" value="0" />
+    <keyframe time="0.28023980101" value="1" timingfunction="ease-in" />
+    <keyframe time="0.38023980101" value="1" timingfunction="linear" />
+    <keyframe time="0.78023980101" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp83scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.25023980101" value="0.584648814424" />
+    <keyframe time="0.28023980101" value="0.803892119834" timingfunction="ease-in" />
+    <keyframe time="0.38023980101" value="0.803892119834" timingfunction="linear" />
+    <keyframe time="0.78023980101" value="0.584648814424" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp84pos" scope="whole" timingfunction="linear">
+    <keyframe value="1157 574" />
+    <keyframe value="1163.71924528 575.445329649" />
+  </animatedvalue>
+  <animatedvalue id="sp84alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.289913485932" value="0" />
+    <keyframe time="0.319913485932" value="1" timingfunction="ease-in" />
+    <keyframe time="0.419913485932" value="1" timingfunction="linear" />
+    <keyframe time="0.819913485932" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp84scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.289913485932" value="0.110706100793" />
+    <keyframe time="0.319913485932" value="0.152220888591" timingfunction="ease-in" />
+    <keyframe time="0.419913485932" value="0.152220888591" timingfunction="linear" />
+    <keyframe time="0.819913485932" value="0.110706100793" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp85pos" scope="whole" timingfunction="linear">
+    <keyframe value="388 708" />
+    <keyframe value="369.476200628 720.721163424" />
+  </animatedvalue>
+  <animatedvalue id="sp85alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.259282047538" value="0" />
+    <keyframe time="0.289282047538" value="1" timingfunction="ease-in" />
+    <keyframe time="0.389282047538" value="1" timingfunction="linear" />
+    <keyframe time="0.789282047538" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp85scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.259282047538" value="0.401720950234" />
+    <keyframe time="0.289282047538" value="0.552366306571" timingfunction="ease-in" />
+    <keyframe time="0.389282047538" value="0.552366306571" timingfunction="linear" />
+    <keyframe time="0.789282047538" value="0.401720950234" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp86pos" scope="whole" timingfunction="linear">
+    <keyframe value="1243 520" />
+    <keyframe value="1248.1500855 520.393887992" />
+  </animatedvalue>
+  <animatedvalue id="sp86alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.362844278234" value="0" />
+    <keyframe time="0.392844278234" value="1" timingfunction="ease-in" />
+    <keyframe time="0.492844278234" value="1" timingfunction="linear" />
+    <keyframe time="0.892844278234" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp86scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.362844278234" value="0.0708998386216" />
+    <keyframe time="0.392844278234" value="0.0974872781046" timingfunction="ease-in" />
+    <keyframe time="0.492844278234" value="0.0974872781046" timingfunction="linear" />
+    <keyframe time="0.892844278234" value="0.0708998386216" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp87pos" scope="whole" timingfunction="linear">
+    <keyframe value="790 600" />
+    <keyframe value="794.01724282 606.886701978" />
+  </animatedvalue>
+  <animatedvalue id="sp87alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.114904511605" value="0" />
+    <keyframe time="0.144904511605" value="1" timingfunction="ease-in" />
+    <keyframe time="0.244904511605" value="1" timingfunction="linear" />
+    <keyframe time="0.644904511605" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp87scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.114904511605" value="0.413202118661" />
+    <keyframe time="0.144904511605" value="0.568152913159" timingfunction="ease-in" />
+    <keyframe time="0.244904511605" value="0.568152913159" timingfunction="linear" />
+    <keyframe time="0.644904511605" value="0.413202118661" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp88pos" scope="whole" timingfunction="linear">
+    <keyframe value="87 633" />
+    <keyframe value="48.3294334513 642.346914189" />
+  </animatedvalue>
+  <animatedvalue id="sp88alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.385671486912" value="0" />
+    <keyframe time="0.415671486912" value="1" timingfunction="ease-in" />
+    <keyframe time="0.515671486912" value="1" timingfunction="linear" />
+    <keyframe time="0.915671486912" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp88scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.385671486912" value="0.439854785388" />
+    <keyframe time="0.415671486912" value="0.604800329909" timingfunction="ease-in" />
+    <keyframe time="0.515671486912" value="0.604800329909" timingfunction="linear" />
+    <keyframe time="0.915671486912" value="0.439854785388" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp89pos" scope="whole" timingfunction="linear">
+    <keyframe value="982 522" />
+    <keyframe value="1010.93545944 526.638508765" />
+  </animatedvalue>
+  <animatedvalue id="sp89alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.185936470417" value="0" />
+    <keyframe time="0.215936470417" value="1" timingfunction="ease-in" />
+    <keyframe time="0.315936470417" value="1" timingfunction="linear" />
+    <keyframe time="0.715936470417" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp89scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.185936470417" value="0.795172931181" />
+    <keyframe time="0.215936470417" value="1.09336278037" timingfunction="ease-in" />
+    <keyframe time="0.315936470417" value="1.09336278037" timingfunction="linear" />
+    <keyframe time="0.715936470417" value="0.795172931181" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp90pos" scope="whole" timingfunction="linear">
+    <keyframe value="1411 588" />
+    <keyframe value="1463.30621844 596.175212145" />
+  </animatedvalue>
+  <animatedvalue id="sp90alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.41326183473" value="0" />
+    <keyframe time="0.44326183473" value="1" timingfunction="ease-in" />
+    <keyframe time="0.54326183473" value="1" timingfunction="linear" />
+    <keyframe time="0.94326183473" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp90scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.41326183473" value="0.545014142978" />
+    <keyframe time="0.44326183473" value="0.749394446595" timingfunction="ease-in" />
+    <keyframe time="0.54326183473" value="0.749394446595" timingfunction="linear" />
+    <keyframe time="0.94326183473" value="0.545014142978" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp91pos" scope="whole" timingfunction="linear">
+    <keyframe value="1351 502" />
+    <keyframe value="1415.94871379 504.264455948" />
+  </animatedvalue>
+  <animatedvalue id="sp91alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.385352527131" value="0" />
+    <keyframe time="0.415352527131" value="1" timingfunction="ease-in" />
+    <keyframe time="0.515352527131" value="1" timingfunction="linear" />
+    <keyframe time="0.915352527131" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp91scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.385352527131" value="0.741094673948" />
+    <keyframe time="0.415352527131" value="1.01900517668" timingfunction="ease-in" />
+    <keyframe time="0.515352527131" value="1.01900517668" timingfunction="linear" />
+    <keyframe time="0.915352527131" value="0.741094673948" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp92pos" scope="whole" timingfunction="linear">
+    <keyframe value="226 543" />
+    <keyframe value="180.032607147 548.86223836" />
+  </animatedvalue>
+  <animatedvalue id="sp92alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.335030752408" value="0" />
+    <keyframe time="0.365030752408" value="1" timingfunction="ease-in" />
+    <keyframe time="0.465030752408" value="1" timingfunction="linear" />
+    <keyframe time="0.865030752408" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp92scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.335030752408" value="0.669970098258" />
+    <keyframe time="0.365030752408" value="0.921208885105" timingfunction="ease-in" />
+    <keyframe time="0.465030752408" value="0.921208885105" timingfunction="linear" />
+    <keyframe time="0.865030752408" value="0.669970098258" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp93pos" scope="whole" timingfunction="linear">
+    <keyframe value="698 616" />
+    <keyframe value="696.775758316 623.568039499" />
+  </animatedvalue>
+  <animatedvalue id="sp93alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0836716477797" value="0" />
+    <keyframe time="0.11367164778" value="1" timingfunction="ease-in" />
+    <keyframe time="0.21367164778" value="1" timingfunction="linear" />
+    <keyframe time="0.61367164778" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp93scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0836716477797" value="0.400660914655" />
+    <keyframe time="0.11367164778" value="0.550908757651" timingfunction="ease-in" />
+    <keyframe time="0.21367164778" value="0.550908757651" timingfunction="linear" />
+    <keyframe time="0.61367164778" value="0.400660914655" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp94pos" scope="whole" timingfunction="linear">
+    <keyframe value="277 622" />
+    <keyframe value="245.219462292 632.186989514" />
+  </animatedvalue>
+  <animatedvalue id="sp94alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.301376275216" value="0" />
+    <keyframe time="0.331376275216" value="1" timingfunction="ease-in" />
+    <keyframe time="0.431376275216" value="1" timingfunction="linear" />
+    <keyframe time="0.831376275216" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp94scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.301376275216" value="0.516523411954" />
+    <keyframe time="0.331376275216" value="0.710219691437" timingfunction="ease-in" />
+    <keyframe time="0.431376275216" value="0.710219691437" timingfunction="linear" />
+    <keyframe time="0.831376275216" value="0.516523411954" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp95pos" scope="whole" timingfunction="linear">
+    <keyframe value="234 480" />
+    <keyframe value="217.404063557 480.0" />
+  </animatedvalue>
+  <animatedvalue id="sp95alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.320539912781" value="0" />
+    <keyframe time="0.350539912781" value="1" timingfunction="ease-in" />
+    <keyframe time="0.450539912781" value="1" timingfunction="linear" />
+    <keyframe time="0.850539912781" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp95scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.320539912781" value="0.245865725076" />
+    <keyframe time="0.350539912781" value="0.33806537198" timingfunction="ease-in" />
+    <keyframe time="0.450539912781" value="0.33806537198" timingfunction="linear" />
+    <keyframe time="0.850539912781" value="0.245865725076" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp96pos" scope="whole" timingfunction="linear">
+    <keyframe value="1362 549" />
+    <keyframe value="1380.89428626 551.030694318" />
+  </animatedvalue>
+  <animatedvalue id="sp96alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.425744939296" value="0" />
+    <keyframe time="0.455744939296" value="1" timingfunction="ease-in" />
+    <keyframe time="0.555744939296" value="1" timingfunction="linear" />
+    <keyframe time="0.955744939296" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp96scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.425744939296" value="0.211898537542" />
+    <keyframe time="0.455744939296" value="0.29136048912" timingfunction="ease-in" />
+    <keyframe time="0.555744939296" value="0.29136048912" timingfunction="linear" />
+    <keyframe time="0.955744939296" value="0.211898537542" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp97pos" scope="whole" timingfunction="linear">
+    <keyframe value="653 679" />
+    <keyframe value="648.925435526 691.102064633" />
+  </animatedvalue>
+  <animatedvalue id="sp97alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.125651533605" value="0" />
+    <keyframe time="0.155651533605" value="1" timingfunction="ease-in" />
+    <keyframe time="0.255651533605" value="1" timingfunction="linear" />
+    <keyframe time="0.655651533605" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp97scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.125651533605" value="0.437863644995" />
+    <keyframe time="0.155651533605" value="0.602062511869" timingfunction="ease-in" />
+    <keyframe time="0.255651533605" value="0.602062511869" timingfunction="linear" />
+    <keyframe time="0.655651533605" value="0.437863644995" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp98pos" scope="whole" timingfunction="linear">
+    <keyframe value="1397 667" />
+    <keyframe value="1420.9304686 673.610040809" />
+  </animatedvalue>
+  <animatedvalue id="sp98alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.409073370685" value="0" />
+    <keyframe time="0.439073370685" value="1" timingfunction="ease-in" />
+    <keyframe time="0.539073370685" value="1" timingfunction="linear" />
+    <keyframe time="0.939073370685" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp98scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.409073370685" value="0.254504245051" />
+    <keyframe time="0.439073370685" value="0.349943336944" timingfunction="ease-in" />
+    <keyframe time="0.539073370685" value="0.349943336944" timingfunction="linear" />
+    <keyframe time="0.939073370685" value="0.254504245051" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp99pos" scope="whole" timingfunction="linear">
+    <keyframe value="1313 578" />
+    <keyframe value="1378.41775057 588.811027919" />
+  </animatedvalue>
+  <animatedvalue id="sp99alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.38062554607" value="0" />
+    <keyframe time="0.41062554607" value="1" timingfunction="ease-in" />
+    <keyframe time="0.51062554607" value="1" timingfunction="linear" />
+    <keyframe time="0.91062554607" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp99scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.38062554607" value="0.794279602208" />
+    <keyframe time="0.41062554607" value="1.09213445304" timingfunction="ease-in" />
+    <keyframe time="0.51062554607" value="1.09213445304" timingfunction="linear" />
+    <keyframe time="0.91062554607" value="0.794279602208" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp100pos" scope="whole" timingfunction="linear">
+    <keyframe value="940 577" />
+    <keyframe value="951.929731308 582.259926986" />
+  </animatedvalue>
+  <animatedvalue id="sp100alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.169137743571" value="0" />
+    <keyframe time="0.199137743571" value="1" timingfunction="ease-in" />
+    <keyframe time="0.299137743571" value="1" timingfunction="linear" />
+    <keyframe time="0.699137743571" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp100scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.169137743571" value="0.390427570085" />
+    <keyframe time="0.199137743571" value="0.536837908867" timingfunction="ease-in" />
+    <keyframe time="0.299137743571" value="0.536837908867" timingfunction="linear" />
+    <keyframe time="0.699137743571" value="0.390427570085" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp101pos" scope="whole" timingfunction="linear">
+    <keyframe value="802 541" />
+    <keyframe value="802.841778411 541.626201013" />
+  </animatedvalue>
+  <animatedvalue id="sp101alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0947832120599" value="0" />
+    <keyframe time="0.12478321206" value="1" timingfunction="ease-in" />
+    <keyframe time="0.22478321206" value="1" timingfunction="linear" />
+    <keyframe time="0.62478321206" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp101scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0947832120599" value="0.0739122506839" />
+    <keyframe time="0.12478321206" value="0.10162934469" timingfunction="ease-in" />
+    <keyframe time="0.22478321206" value="0.10162934469" timingfunction="linear" />
+    <keyframe time="0.62478321206" value="0.0739122506839" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp102pos" scope="whole" timingfunction="linear">
+    <keyframe value="526 669" />
+    <keyframe value="515.720455102 679.014608174" />
+  </animatedvalue>
+  <animatedvalue id="sp102alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.185603108791" value="0" />
+    <keyframe time="0.215603108791" value="1" timingfunction="ease-in" />
+    <keyframe time="0.315603108791" value="1" timingfunction="linear" />
+    <keyframe time="0.715603108791" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp102scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.185603108791" value="0.381508882829" />
+    <keyframe time="0.215603108791" value="0.52457471389" timingfunction="ease-in" />
+    <keyframe time="0.315603108791" value="0.52457471389" timingfunction="linear" />
+    <keyframe time="0.715603108791" value="0.381508882829" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp103pos" scope="whole" timingfunction="linear">
+    <keyframe value="480 504" />
+    <keyframe value="458.426351518 506.157364848" />
+  </animatedvalue>
+  <animatedvalue id="sp103alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.217169022071" value="0" />
+    <keyframe time="0.247169022071" value="1" timingfunction="ease-in" />
+    <keyframe time="0.347169022071" value="1" timingfunction="linear" />
+    <keyframe time="0.747169022071" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp103scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.217169022071" value="0.647209454448" />
+    <keyframe time="0.247169022071" value="0.889912999867" timingfunction="ease-in" />
+    <keyframe time="0.347169022071" value="0.889912999867" timingfunction="linear" />
+    <keyframe time="0.747169022071" value="0.647209454448" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp104pos" scope="whole" timingfunction="linear">
+    <keyframe value="1325 542" />
+    <keyframe value="1359.48927591 545.534438193" />
+  </animatedvalue>
+  <animatedvalue id="sp104alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.39725344117" value="0" />
+    <keyframe time="0.42725344117" value="1" timingfunction="ease-in" />
+    <keyframe time="0.52725344117" value="1" timingfunction="linear" />
+    <keyframe time="0.92725344117" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp104scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.39725344117" value="0.410450886896" />
+    <keyframe time="0.42725344117" value="0.564369969482" timingfunction="ease-in" />
+    <keyframe time="0.52725344117" value="0.564369969482" timingfunction="linear" />
+    <keyframe time="0.92725344117" value="0.410450886896" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp105pos" scope="whole" timingfunction="linear">
+    <keyframe value="1003 716" />
+    <keyframe value="1023.85174142 733.388731358" />
+  </animatedvalue>
+  <animatedvalue id="sp105alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.240204937056" value="0" />
+    <keyframe time="0.270204937056" value="1" timingfunction="ease-in" />
+    <keyframe time="0.370204937056" value="1" timingfunction="linear" />
+    <keyframe time="0.770204937056" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp105scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.240204937056" value="0.53050366855" />
+    <keyframe time="0.270204937056" value="0.729442544257" timingfunction="ease-in" />
+    <keyframe time="0.370204937056" value="0.729442544257" timingfunction="linear" />
+    <keyframe time="0.770204937056" value="0.53050366855" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp106pos" scope="whole" timingfunction="linear">
+    <keyframe value="612 534" />
+    <keyframe value="607.953693782 536.023153109" />
+  </animatedvalue>
+  <animatedvalue id="sp106alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.122025775242" value="0" />
+    <keyframe time="0.152025775242" value="1" timingfunction="ease-in" />
+    <keyframe time="0.252025775242" value="1" timingfunction="linear" />
+    <keyframe time="0.652025775242" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp106scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.122025775242" value="0.269753747873" />
+    <keyframe time="0.152025775242" value="0.370911403325" timingfunction="ease-in" />
+    <keyframe time="0.252025775242" value="0.370911403325" timingfunction="linear" />
+    <keyframe time="0.652025775242" value="0.269753747873" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp107pos" scope="whole" timingfunction="linear">
+    <keyframe value="818 678" />
+    <keyframe value="828.094418803 698.394846154" />
+  </animatedvalue>
+  <animatedvalue id="sp107alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.119312388523" value="0" />
+    <keyframe time="0.149312388523" value="1" timingfunction="ease-in" />
+    <keyframe time="0.249312388523" value="1" timingfunction="linear" />
+    <keyframe time="0.649312388523" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp107scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.119312388523" value="0.741630769226" />
+    <keyframe time="0.149312388523" value="1.01974230769" timingfunction="ease-in" />
+    <keyframe time="0.249312388523" value="1.01974230769" timingfunction="linear" />
+    <keyframe time="0.649312388523" value="0.741630769226" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp108pos" scope="whole" timingfunction="linear">
+    <keyframe value="267 495" />
+    <keyframe value="239.035959143 495.925961618" />
+  </animatedvalue>
+  <animatedvalue id="sp108alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.30955845624" value="0" />
+    <keyframe time="0.33955845624" value="1" timingfunction="ease-in" />
+    <keyframe time="0.43955845624" value="1" timingfunction="linear" />
+    <keyframe time="0.83955845624" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp108scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.30955845624" value="0.444461576532" />
+    <keyframe time="0.33955845624" value="0.611134667732" timingfunction="ease-in" />
+    <keyframe time="0.43955845624" value="0.611134667732" timingfunction="linear" />
+    <keyframe time="0.83955845624" value="0.444461576532" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp109pos" scope="whole" timingfunction="linear">
+    <keyframe value="69 638" />
+    <keyframe value="25.2790686035 648.611224517" />
+  </animatedvalue>
+  <animatedvalue id="sp109alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.387466797511" value="0" />
+    <keyframe time="0.417466797511" value="1" timingfunction="ease-in" />
+    <keyframe time="0.517466797511" value="1" timingfunction="linear" />
+    <keyframe time="0.917466797511" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp109scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.387466797511" value="0.483549471666" />
+    <keyframe time="0.417466797511" value="0.664880523541" timingfunction="ease-in" />
+    <keyframe time="0.517466797511" value="0.664880523541" timingfunction="linear" />
+    <keyframe time="0.917466797511" value="0.483549471666" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp110pos" scope="whole" timingfunction="linear">
+    <keyframe value="1392 549" />
+    <keyframe value="1448.93306937 554.84580623" />
+  </animatedvalue>
+  <animatedvalue id="sp110alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.410575544691" value="0" />
+    <keyframe time="0.440575544691" value="1" timingfunction="ease-in" />
+    <keyframe time="0.540575544691" value="1" timingfunction="linear" />
+    <keyframe time="0.940575544691" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp110scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.410575544691" value="0.609997171776" />
+    <keyframe time="0.440575544691" value="0.838746111191" timingfunction="ease-in" />
+    <keyframe time="0.540575544691" value="0.838746111191" timingfunction="linear" />
+    <keyframe time="0.940575544691" value="0.609997171776" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp111pos" scope="whole" timingfunction="linear">
+    <keyframe value="320 571" />
+    <keyframe value="314.961711766 572.146210573" />
+  </animatedvalue>
+  <animatedvalue id="sp111alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.259513580749" value="0" />
+    <keyframe time="0.289513580749" value="1" timingfunction="ease-in" />
+    <keyframe time="0.389513580749" value="1" timingfunction="linear" />
+    <keyframe time="0.789513580749" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp111scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.259513580749" value="0.0906891882168" />
+    <keyframe time="0.289513580749" value="0.124697633798" timingfunction="ease-in" />
+    <keyframe time="0.389513580749" value="0.124697633798" timingfunction="linear" />
+    <keyframe time="0.789513580749" value="0.0906891882168" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp112pos" scope="whole" timingfunction="linear">
+    <keyframe value="775 488" />
+    <keyframe value="780.175368935 488.752780936" />
+  </animatedvalue>
+  <animatedvalue id="sp112alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.119253134849" value="0" />
+    <keyframe time="0.149253134849" value="1" timingfunction="ease-in" />
+    <keyframe time="0.249253134849" value="1" timingfunction="linear" />
+    <keyframe time="0.649253134849" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp112scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.119253134849" value="0.677502842411" />
+    <keyframe time="0.149253134849" value="0.931566408315" timingfunction="ease-in" />
+    <keyframe time="0.249253134849" value="0.931566408315" timingfunction="linear" />
+    <keyframe time="0.649253134849" value="0.677502842411" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp113pos" scope="whole" timingfunction="linear">
+    <keyframe value="1423 581" />
+    <keyframe value="1447.31741839 584.493683154" />
+  </animatedvalue>
+  <animatedvalue id="sp113alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.421338779263" value="0" />
+    <keyframe time="0.451338779263" value="1" timingfunction="ease-in" />
+    <keyframe time="0.551338779263" value="1" timingfunction="linear" />
+    <keyframe time="0.951338779263" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp113scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.421338779263" value="0.249054640649" />
+    <keyframe time="0.451338779263" value="0.342450130892" timingfunction="ease-in" />
+    <keyframe time="0.551338779263" value="0.342450130892" timingfunction="linear" />
+    <keyframe time="0.951338779263" value="0.249054640649" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp114pos" scope="whole" timingfunction="linear">
+    <keyframe value="740 703" />
+    <keyframe value="742.117838907 726.613903816" />
+  </animatedvalue>
+  <animatedvalue id="sp114alpha" scope="whole" timingfunction="linear">
+    <keyframe time="0.0842924745411" value="0" />
+    <keyframe time="0.114292474541" value="1" timingfunction="ease-in" />
+    <keyframe time="0.214292474541" value="1" timingfunction="linear" />
+    <keyframe time="0.614292474541" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="sp114scale" scope="whole" timingfunction="linear">
+    <keyframe time="0.0842924745411" value="0.762422006621" />
+    <keyframe time="0.114292474541" value="1.0483302591" timingfunction="ease-in" />
+    <keyframe time="0.214292474541" value="1.0483302591" timingfunction="linear" />
+    <keyframe time="0.614292474541" value="0.762422006621" timingfunction="ease-out" />
+  </animatedvalue>
+
+  <projection type="perspective" fov="45" aspect="2" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+          <rect bounds="-720 -360 720 360" texture="@video1" />
+          <style compmode="multiply">
+            <rect bounds="-720 -360 720 360" color="#ffe7b8" />
+          </style>
+        </translate>
+
+        <translate offset="@sp0pos">
+          <style alpha="@sp0alpha">
+            <scale uniform="@sp0scale">
+              <rect bounds="-90 -90 90 90" texture="@tex_sg" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp1pos">
+          <style alpha="@sp1alpha">
+            <scale uniform="@sp1scale">
+              <rect bounds="-90 -90 90 90" texture="@tex_sg" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp2pos">
+          <style alpha="@sp2alpha">
+            <scale uniform="@sp2scale">
+              <rect bounds="-90 -90 90 90" texture="@tex_sg" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp3pos">
+          <style alpha="@sp3alpha">
+            <scale uniform="@sp3scale">
+              <rect bounds="-90 -90 90 90" texture="@tex_sg" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp4pos">
+          <style alpha="@sp4alpha">
+            <scale uniform="@sp4scale">
+              <rect bounds="-90 -90 90 90" texture="@tex_sg" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp5pos">
+          <style alpha="@sp5alpha">
+            <scale uniform="@sp5scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp6pos">
+          <style alpha="@sp6alpha">
+            <scale uniform="@sp6scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp7pos">
+          <style alpha="@sp7alpha">
+            <scale uniform="@sp7scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp8pos">
+          <style alpha="@sp8alpha">
+            <scale uniform="@sp8scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp9pos">
+          <style alpha="@sp9alpha">
+            <scale uniform="@sp9scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp10pos">
+          <style alpha="@sp10alpha">
+            <scale uniform="@sp10scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp11pos">
+          <style alpha="@sp11alpha">
+            <scale uniform="@sp11scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp12pos">
+          <style alpha="@sp12alpha">
+            <scale uniform="@sp12scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp13pos">
+          <style alpha="@sp13alpha">
+            <scale uniform="@sp13scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp14pos">
+          <style alpha="@sp14alpha">
+            <scale uniform="@sp14scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp15pos">
+          <style alpha="@sp15alpha">
+            <scale uniform="@sp15scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp16pos">
+          <style alpha="@sp16alpha">
+            <scale uniform="@sp16scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp17pos">
+          <style alpha="@sp17alpha">
+            <scale uniform="@sp17scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp18pos">
+          <style alpha="@sp18alpha">
+            <scale uniform="@sp18scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp19pos">
+          <style alpha="@sp19alpha">
+            <scale uniform="@sp19scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp20pos">
+          <style alpha="@sp20alpha">
+            <scale uniform="@sp20scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp21pos">
+          <style alpha="@sp21alpha">
+            <scale uniform="@sp21scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp22pos">
+          <style alpha="@sp22alpha">
+            <scale uniform="@sp22scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp23pos">
+          <style alpha="@sp23alpha">
+            <scale uniform="@sp23scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp24pos">
+          <style alpha="@sp24alpha">
+            <scale uniform="@sp24scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp25pos">
+          <style alpha="@sp25alpha">
+            <scale uniform="@sp25scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp26pos">
+          <style alpha="@sp26alpha">
+            <scale uniform="@sp26scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp27pos">
+          <style alpha="@sp27alpha">
+            <scale uniform="@sp27scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp28pos">
+          <style alpha="@sp28alpha">
+            <scale uniform="@sp28scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp29pos">
+          <style alpha="@sp29alpha">
+            <scale uniform="@sp29scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp30pos">
+          <style alpha="@sp30alpha">
+            <scale uniform="@sp30scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp31pos">
+          <style alpha="@sp31alpha">
+            <scale uniform="@sp31scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp32pos">
+          <style alpha="@sp32alpha">
+            <scale uniform="@sp32scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp33pos">
+          <style alpha="@sp33alpha">
+            <scale uniform="@sp33scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp34pos">
+          <style alpha="@sp34alpha">
+            <scale uniform="@sp34scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp35pos">
+          <style alpha="@sp35alpha">
+            <scale uniform="@sp35scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp36pos">
+          <style alpha="@sp36alpha">
+            <scale uniform="@sp36scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp37pos">
+          <style alpha="@sp37alpha">
+            <scale uniform="@sp37scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp38pos">
+          <style alpha="@sp38alpha">
+            <scale uniform="@sp38scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp39pos">
+          <style alpha="@sp39alpha">
+            <scale uniform="@sp39scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp40pos">
+          <style alpha="@sp40alpha">
+            <scale uniform="@sp40scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp41pos">
+          <style alpha="@sp41alpha">
+            <scale uniform="@sp41scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp42pos">
+          <style alpha="@sp42alpha">
+            <scale uniform="@sp42scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp43pos">
+          <style alpha="@sp43alpha">
+            <scale uniform="@sp43scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp44pos">
+          <style alpha="@sp44alpha">
+            <scale uniform="@sp44scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp45pos">
+          <style alpha="@sp45alpha">
+            <scale uniform="@sp45scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp46pos">
+          <style alpha="@sp46alpha">
+            <scale uniform="@sp46scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp47pos">
+          <style alpha="@sp47alpha">
+            <scale uniform="@sp47scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp48pos">
+          <style alpha="@sp48alpha">
+            <scale uniform="@sp48scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp49pos">
+          <style alpha="@sp49alpha">
+            <scale uniform="@sp49scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp50pos">
+          <style alpha="@sp50alpha">
+            <scale uniform="@sp50scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp51pos">
+          <style alpha="@sp51alpha">
+            <scale uniform="@sp51scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp52pos">
+          <style alpha="@sp52alpha">
+            <scale uniform="@sp52scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp53pos">
+          <style alpha="@sp53alpha">
+            <scale uniform="@sp53scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp54pos">
+          <style alpha="@sp54alpha">
+            <scale uniform="@sp54scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp55pos">
+          <style alpha="@sp55alpha">
+            <scale uniform="@sp55scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp56pos">
+          <style alpha="@sp56alpha">
+            <scale uniform="@sp56scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp57pos">
+          <style alpha="@sp57alpha">
+            <scale uniform="@sp57scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp58pos">
+          <style alpha="@sp58alpha">
+            <scale uniform="@sp58scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp59pos">
+          <style alpha="@sp59alpha">
+            <scale uniform="@sp59scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp60pos">
+          <style alpha="@sp60alpha">
+            <scale uniform="@sp60scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp61pos">
+          <style alpha="@sp61alpha">
+            <scale uniform="@sp61scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp62pos">
+          <style alpha="@sp62alpha">
+            <scale uniform="@sp62scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp63pos">
+          <style alpha="@sp63alpha">
+            <scale uniform="@sp63scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp64pos">
+          <style alpha="@sp64alpha">
+            <scale uniform="@sp64scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp65pos">
+          <style alpha="@sp65alpha">
+            <scale uniform="@sp65scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp66pos">
+          <style alpha="@sp66alpha">
+            <scale uniform="@sp66scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp67pos">
+          <style alpha="@sp67alpha">
+            <scale uniform="@sp67scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp68pos">
+          <style alpha="@sp68alpha">
+            <scale uniform="@sp68scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp69pos">
+          <style alpha="@sp69alpha">
+            <scale uniform="@sp69scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp70pos">
+          <style alpha="@sp70alpha">
+            <scale uniform="@sp70scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp71pos">
+          <style alpha="@sp71alpha">
+            <scale uniform="@sp71scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp72pos">
+          <style alpha="@sp72alpha">
+            <scale uniform="@sp72scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp73pos">
+          <style alpha="@sp73alpha">
+            <scale uniform="@sp73scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp74pos">
+          <style alpha="@sp74alpha">
+            <scale uniform="@sp74scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp75pos">
+          <style alpha="@sp75alpha">
+            <scale uniform="@sp75scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp76pos">
+          <style alpha="@sp76alpha">
+            <scale uniform="@sp76scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp77pos">
+          <style alpha="@sp77alpha">
+            <scale uniform="@sp77scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp78pos">
+          <style alpha="@sp78alpha">
+            <scale uniform="@sp78scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp79pos">
+          <style alpha="@sp79alpha">
+            <scale uniform="@sp79scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp80pos">
+          <style alpha="@sp80alpha">
+            <scale uniform="@sp80scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp81pos">
+          <style alpha="@sp81alpha">
+            <scale uniform="@sp81scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp82pos">
+          <style alpha="@sp82alpha">
+            <scale uniform="@sp82scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp83pos">
+          <style alpha="@sp83alpha">
+            <scale uniform="@sp83scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp84pos">
+          <style alpha="@sp84alpha">
+            <scale uniform="@sp84scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp85pos">
+          <style alpha="@sp85alpha">
+            <scale uniform="@sp85scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp86pos">
+          <style alpha="@sp86alpha">
+            <scale uniform="@sp86scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp87pos">
+          <style alpha="@sp87alpha">
+            <scale uniform="@sp87scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp88pos">
+          <style alpha="@sp88alpha">
+            <scale uniform="@sp88scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp89pos">
+          <style alpha="@sp89alpha">
+            <scale uniform="@sp89scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp90pos">
+          <style alpha="@sp90alpha">
+            <scale uniform="@sp90scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp91pos">
+          <style alpha="@sp91alpha">
+            <scale uniform="@sp91scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp92pos">
+          <style alpha="@sp92alpha">
+            <scale uniform="@sp92scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp93pos">
+          <style alpha="@sp93alpha">
+            <scale uniform="@sp93scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp94pos">
+          <style alpha="@sp94alpha">
+            <scale uniform="@sp94scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp95pos">
+          <style alpha="@sp95alpha">
+            <scale uniform="@sp95scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp96pos">
+          <style alpha="@sp96alpha">
+            <scale uniform="@sp96scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp97pos">
+          <style alpha="@sp97alpha">
+            <scale uniform="@sp97scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp98pos">
+          <style alpha="@sp98alpha">
+            <scale uniform="@sp98scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp99pos">
+          <style alpha="@sp99alpha">
+            <scale uniform="@sp99scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp100pos">
+          <style alpha="@sp100alpha">
+            <scale uniform="@sp100scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp101pos">
+          <style alpha="@sp101alpha">
+            <scale uniform="@sp101scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp102pos">
+          <style alpha="@sp102alpha">
+            <scale uniform="@sp102scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp103pos">
+          <style alpha="@sp103alpha">
+            <scale uniform="@sp103scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp104pos">
+          <style alpha="@sp104alpha">
+            <scale uniform="@sp104scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp105pos">
+          <style alpha="@sp105alpha">
+            <scale uniform="@sp105scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp106pos">
+          <style alpha="@sp106alpha">
+            <scale uniform="@sp106scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp107pos">
+          <style alpha="@sp107alpha">
+            <scale uniform="@sp107scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp108pos">
+          <style alpha="@sp108alpha">
+            <scale uniform="@sp108scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp109pos">
+          <style alpha="@sp109alpha">
+            <scale uniform="@sp109scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp110pos">
+          <style alpha="@sp110alpha">
+            <scale uniform="@sp110scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp111pos">
+          <style alpha="@sp111alpha">
+            <scale uniform="@sp111scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp112pos">
+          <style alpha="@sp112alpha">
+            <scale uniform="@sp112scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp113pos">
+          <style alpha="@sp113alpha">
+            <scale uniform="@sp113scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+        <translate offset="@sp114pos">
+          <style alpha="@sp114alpha">
+            <scale uniform="@sp114scale">
+              <rect bounds="-12 -12 12 12" texture="@tex_ts" />
+            </scale>
+          </style>
+        </translate>
+
+      </translate>
+    </scale>
+  </projection>
+</effect>
+

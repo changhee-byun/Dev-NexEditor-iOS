@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin3.bouncebox",
+  "label": {
+    "pt": "Caixa a saltar",
+    "ja": "はじかれるファイル",
+    "fr": "Boîte Surprise",
+    "zh-CN": "弹跳箱",
+    "ko-KR": "튕기는 상자",
+    "ar": "صندوق نطاط",
+    "zh-TW": "跳躍箱",
+    "en": "Bouncy Box",
+    "zh-HK": "跳躍箱",
+    "de-DE": "Bouncy Box",
+    "ru": "Прягающая коробка",
+    "es": "Caja saltarina"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

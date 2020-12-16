@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_cinnamon.jpg",
+	"thumbnail":"lut_cinnamon.jpg",
+	"preset_name":"ALIEN_INVASION",
+	"brightness" : 0.12,
+	"contrast" : -0.06,
+	"saturation" : -0.3,
+	"tintColor": "0xFF147014",
+	"lut_file":""
+}

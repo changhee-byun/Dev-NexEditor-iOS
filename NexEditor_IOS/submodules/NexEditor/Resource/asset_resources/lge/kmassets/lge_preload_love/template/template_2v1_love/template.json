@@ -1,0 +1,445 @@
+{
+	"template_name" : "love",
+	"template_bgm":"com.lge.template.audio.beautifulones",
+	"template" : 
+	[
+		{
+			"type" : "scene",
+			"id" : "0",
+			"source_type" : "ALL",
+			"duration" : "3094",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.sparkleheart4",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "1000"
+		},
+		{
+			"type" : "scene",
+			"id" : "1",
+			"source_type" : "ALL",
+			"duration" : "2956",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "17",
+			"speed_control" : "default"
+
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "1000"
+		},
+		{
+			"type" : "scene",
+			"id" : "2",
+			"source_type" : "ALL",
+			"duration": "2983",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "1000"
+		},
+		{
+			"type" : "scene",
+			"id" : "3",
+			"source_type" : "ALL",
+			"duration" : "3071",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "1000"
+		},
+		{
+			"type" : "scene",
+			"id" : "4",
+			"source_type" : "ALL",
+			"duration" : "3500",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.sparklehearttitle",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none", 
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "5",
+			"source_type" : "ALL",
+			"duration" : "5978",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "6",
+			"source_type" : "ALL",
+			"duration" : "1500",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "7",
+			"source_type" : "ALL",
+			"duration" : "1950",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.loveaccent",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "8",
+			"source_type" : "ALL",
+			"duration" : "2500",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "9",
+			"source_type" : "ALL",
+			"duration" : "1200",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.loveaccent",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "10",
+			"source_type" : "ALL",
+			"duration" : "2300",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.loveaccent",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "1000"
+
+		},
+		{
+			"type" : "scene",
+			"id" : "11",
+			"source_type" : "ALL",
+			"duration" : "2600",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.loveaccent",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "500"
+		},
+		{
+			"type" : "scene",
+			"id" : "12",
+			"source_type" : "ALL",
+			"duration" : "2700",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.loveaccent",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "17",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade",
+			"duration" : "500"
+		},
+		{
+			"type" : "scene",
+			"id" : "13",
+			"source_type" : "ALL",
+			"duration" : "3800",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.loveaccent",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.trans_circle1",
+			"duration": "1800"
+		},
+		{
+			"type" : "scene",
+			"id" : "14",
+			"source_type" : "ALL",
+			"duration" : "4900",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.trans_fadewipe",
+			"duration" : "1000"
+		},
+		{
+			"type" : "scene",
+			"id" : "15",
+			"source_type" : "ALL",
+			"duration" : "4850",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "25",
+			"contrast" : "0",
+			"saturation" : "0",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "none",
+			"duration" : "0"
+		},
+		{
+			"type" : "scene",
+			"id" : "16",
+			"source_type" : "ALL",
+			"duration" : "8200",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.trans_circle2",
+			"duration" : "2400"
+		},
+		{
+			"type" : "scene",
+			"id" : "17",
+			"source_type" : "ALL",
+			"duration" : "5950",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+			
+		},
+		{
+			"type" : "scene",
+			"id" : "18",
+			"source_type" : "ALL",
+			"duration" : "2000",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.sparkleheart4",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "19",
+			"source_type" : "ALL",
+			"duration" : "2700",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "20",
+			"source_type" : "ALL",
+			"duration" : "2100",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"
+		},
+		{
+			"type" : "scene",
+			"id" : "21",
+			"source_type" : "ALL",
+			"duration" : "5500",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.sparklehearttitle",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.trans_circle1",
+			"duration" : "1800"
+		},
+		{
+			"type" : "scene",
+			"id" : "22",
+			"source_type" : "ALL",
+			"duration" : "7100",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects": "none",
+			"duration":"0"			
+		},
+		{
+			"type" : "scene",
+			"id" : "23",
+			"source_type" : "ALL",
+			"duration" : "5000",
+			"volume" : "100",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.lovevignette",
+			"brightness" : "35",
+			"contrast" : "0",
+			"saturation" : "-10",
+			"color_filter" : "1",
+			"speed_control" : "default"
+		},
+		{
+			"type" : "transition",
+			"effects" : "com.nexstreaming.kmsdk.lg.love_2v1.trans_fadewipe",
+			"duration" : "1000"
+		}
+	]
+}

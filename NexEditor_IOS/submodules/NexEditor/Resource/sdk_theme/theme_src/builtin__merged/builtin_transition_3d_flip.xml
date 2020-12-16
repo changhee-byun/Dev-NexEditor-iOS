@@ -1,0 +1,25 @@
+<effect id="com.nexstreaming.kinemaster.builtin.transition.flip" 
+	name="3D FLIP" 
+	icon="transition_3d_flip.png" 
+	type="transition" 
+	categorytitle="3D Transitions"  
+	effectoffset="29" 
+	videooverlap="0" >
+
+	<clear color="0 0 0" />
+	<animatedvalue id="spin">
+		<keyframe value="0" />
+		<keyframe value="180" time="0.99" />
+	</animatedvalue>
+	<projection type="perspective" aspect="1.77777" fov="45" top="1" near="1" far="30">
+		<cull face="front">
+			<translate offset="0 0 -21.69">
+				<rotate axis="0 1 0" angle="@spin">
+					<rect bounds="-16 9 16 -9" texture="@video_out" />
+					<rect bounds="16 9 -16 -9" texture="@video_in" />
+				</rotate>
+			</translate>
+		</cull>
+	</projection>
+
+</effect>

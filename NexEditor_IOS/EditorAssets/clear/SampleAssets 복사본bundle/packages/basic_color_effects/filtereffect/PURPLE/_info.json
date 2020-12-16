@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_oldfilm.jpg",
+	"thumbnail":"lut_oldfilm.jpg",
+	"preset_name":"PURPLE",
+	"brightness" : 0.08,
+	"contrast" : -0.06,
+	"saturation" : -0.3,
+	"tintColor": "0xFFAA55CC",
+	"lut_file":""
+}

@@ -1,0 +1,29 @@
+{
+  "assetName": {
+    "pt": "Efeitos de cor",
+    "ja": "カラー効果",
+    "fr": "Effets de couleur",
+    "zh-CN": "颜色效果",
+    "ko-KR": "컬러 효과",
+    "ar": "تأثيرات الألوان",
+    "zh-TW": "顏色特效",
+    "en": "Color Effects",
+    "zh-HK": "顏色特效",
+    "de-DE": "Farbeffekte",
+    "ru": "Цветовые эффекты",
+    "es": "Efectos de color"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "effect/com.nexstreaming.kinemaster.builtin2.accent.pink",
+    "effect/com.nexstreaming.kinemaster.builtin.accent.cool",
+    "effect/com.nexstreaming.kinemaster.builtin.accent.sepia",
+    "effect/com.nexstreaming.kinemaster.builtin2.accent.deepblue",
+    "effect/com.nexstreaming.kinemaster.builtin.accent.bw",
+    "effect/com.nexstreaming.kinemaster.builtin.accent.alien",
+    "effect/com.nexstreaming.kinemaster.builtin.accent.sunny"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

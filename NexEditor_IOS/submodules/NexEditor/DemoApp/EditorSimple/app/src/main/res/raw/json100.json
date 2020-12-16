@@ -1,0 +1,64 @@
+{
+	"assetName": [{
+		"default_flag": 1,
+		"language_code": "en",
+		"string_desc": "Copyright © NexStreaming Corp.",
+		"string_title": "Sport"
+	}],
+	"asset_filepath": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/4Myg7IQNKG8Ldai3as584aa3b9e66f6.zip",
+	"asset_filesize": 3951144,
+	"asset_id": "asset1481286502oLP",
+	"asset_sversion": 8,
+	"asset_version": 0,
+	"categoryName": [{
+		"default_flag": 1,
+		"language_code": "en",
+		"string_title": "Template"
+	}, {
+		"default_flag": 0,
+		"language_code": "ko",
+		"string_title": "템플릿"
+	}],
+	"category_aliasName": "Template",
+	"category_idx": 31,
+	"categoryimagePath": "https://d1nnpvva6x39x4.cloudfront.net/category/MZiJ7JC9YoMUceBCzm582bec3400bef",
+	"categoryimagePath_on": "https://d1nnpvva6x39x4.cloudfront.net/category/xRXxGQZmpEVbwIaPsi582bec38e30ff",
+	"default_flag": 1,
+	"description": "Copyright © NexStreaming Corp.",
+	"idx": 100,
+	"language_idx": 29,
+	"priceType": "Free",
+	"subcategoryName": [{
+		"default_flag": 1,
+		"language_code": "en",
+		"string_title": "Template"
+	}, {
+		"default_flag": 0,
+		"language_code": "ko",
+		"string_title": "템플릿"
+	}],
+	"subcategory_idx": 25,
+	"thumb": [{
+		"asset_idx": 100,
+		"file_path": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/thumb/YYNJEVvS6OVghyJ72V584aa3bad97e6",
+		"idx": 735
+	}, {
+		"asset_idx": 100,
+		"file_path": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/thumb/2icrzZxhQqxYpwWdgA584aa3bbef0af",
+		"idx": 736
+	}, {
+		"asset_idx": 100,
+		"file_path": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/thumb/9MtfAowRXfZZa1imtS584aa3bc7eb1f",
+		"idx": 737
+	}, {
+		"asset_idx": 100,
+		"file_path": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/thumb/l19crHaRe64uHdgatR584aa3bd413a9",
+		"idx": 738
+	}],
+	"thumbnail_path": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/CsQucUggpgN5HRSg7Z584aa3ba3749a",
+	"thumbnail_path_l": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/CsQucUggpgN5HRSg7Z584aa3ba3749a_l",
+	"thumbnail_path_s": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/CsQucUggpgN5HRSg7Z584aa3ba3749a_s",
+	"title": "Sport",
+	"update_time": 1481290736,
+	"videoclip_path": "https://d1nnpvva6x39x4.cloudfront.net/asset/100/zZJweIvpKOLeG7fPkG584aa3be36d68.mp4"
+}

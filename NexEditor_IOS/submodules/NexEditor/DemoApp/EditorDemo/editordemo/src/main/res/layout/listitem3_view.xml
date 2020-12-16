@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/layout_clip"
+        android:layout_width="128dp" android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/edit_thumbnail"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/edit_typeicon"
+            android:layout_width="18dp" android:layout_height="18dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitCenter"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_transparence"
+        android:layout_width="128dp" android:layout_height="80dp">
+        <FrameLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/timelineBackgroudn2">
+        </FrameLayout>
+        <ImageView
+            android:layout_width="24dp" android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_check_white_48dp"
+            android:scaleType="fitCenter"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_transition"
+        android:visibility="gone"
+        android:layout_width="46dp" android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/edit_transition"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context="com.nexstretming.editordemo.fragment.kmSTSpeedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent" android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <com.nexstreaming.editordemo.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="80dp" android:layout_height="80dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_speed_025x_nor"
+                    android:id="@+id/speedcontrol_select_025"/>
+                <FrameLayout
+                    android:layout_width="40dp" android:layout_height="match_parent"/>
+                <com.nexstreaming.editordemo.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="80dp" android:layout_height="80dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_speed_05x_nor"
+                    android:id="@+id/speedcontrol_select_050"/>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent" android:layout_height="14dp"/>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <com.nexstreaming.editordemo.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="80dp" android:layout_height="80dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_speed_10x_nor"
+                    android:id="@+id/speedcontrol_select_100"/>
+                <FrameLayout
+                    android:layout_width="40dp" android:layout_height="match_parent"/>
+                <com.nexstreaming.editordemo.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="80dp" android:layout_height="80dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_speed_15x_nor"
+                    android:id="@+id/speedcontrol_select_150"/>
+                <FrameLayout
+                    android:layout_width="40dp" android:layout_height="match_parent"/>
+                <com.nexstreaming.editordemo.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="80dp" android:layout_height="80dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_speed_20x_nor"
+                    android:id="@+id/speedcontrol_select_200"/>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent" android:layout_height="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<effect id="com.nexstreaming.kinemaster.builtin.transition.slideleft" name="Slide Left" icon="transition_s_left.png" categorytitle="Presentation"  type="transition" effectoffset="100" videooverlap="100" minduration="500" maxduration="8000" >
+	<animatedvalue id="slide_amount">
+		<keyframe value="0 0" />
+		<keyframe value="-2 0" />
+	</animatedvalue>
+	<translate offset="@slide_amount">
+		<rect bounds="-1 1 1 -1" texture="@video_out" />
+		<rect bounds="1 1 3 -1" texture="@video_in" />
+	</translate>
+</effect>

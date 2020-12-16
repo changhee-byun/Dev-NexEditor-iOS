@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="56dp" android:orientation="horizontal"
+    android:background="@color/appBackground">
+
+    <TextView android:id="@+id/list_text"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:layout_marginLeft="16dp" android:text="tkdk"
+        style="@style/Appl.Text4.Style"/>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.sports.ghost2",
+  "label": {
+    "en": "sports 16v9 ghost2"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "16v9" ],
+  "hidden": "true"
+}

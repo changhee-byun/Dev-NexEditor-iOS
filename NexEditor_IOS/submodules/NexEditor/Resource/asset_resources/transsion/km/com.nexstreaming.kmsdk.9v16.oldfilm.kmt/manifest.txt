@@ -1,0 +1,18 @@
+KineMaster Manifest/0100
+summary.json=8936a266d217901b0c3d74b590da4ef0e27311b4
+[published-effects]
+com.nexstreaming.kmsdk.oldfilm_9v16.accent=a3bb8d82e1afcca595f8f37df8b026956ca84909
+com.nexstreaming.kmsdk.oldfilm_9v16.ending=fafd4eaf678bfa35d0f1cdb78306c5f63e257a39
+com.nexstreaming.kmsdk.oldfilm_9v16.middle=f9d41107b61ec89a73fa05d1baa01d95b08d2b00
+com.nexstreaming.kmsdk.oldfilm_9v16.opening=59b112dbb0c4696ace697ff80cd7cce996d41965
+com.nexstreaming.kmsdk.oldfilm_9v16.transition=26c04eccfc616a5f8390b2aa60fa6c3dcbecfa85
+com.nexstreaming.kmsdk.oldfilm_9v16.intro=79535a74158518a27cabcb24422311d007c1e319
+com.nexstreaming.kmsdk.oldfilm_9v16.outro=e55721255fce883a580209627fa29bd86dc3237a
+[internal-dependencies]
+r0=5a735700700e4eaeead35a5d7dfc5ee8e573140c
+r1=455c2fa8420616035b56f8438fce1ac7a80ae66f
+r2=4284059e939d4b210863d7021d326690c87c73a4
+r3=92a46533915894a30354232ff86beb4f9e21f076
+r4=faeea969144e5afe530aa9cfadc1cbe9ae5514cd
+[external-dependencies]
+[opt-external-dependencies]

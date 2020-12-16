@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NexEditor</string>
+
+    <string name="title_activity_km_theme_list">kmThemeListActivity</string>
+    <string name="title_activity_km_preview">kmPreviewActivity</string>
+    <string name="title_activity_km_title_edit">kmTitleEditActivity</string>
+    <string name="title_activity_km_video">kmVideoActivity</string>
+    <string name="title_activity_km_transition_list">kmTransitionListActivity</string>
+    <string name="title_activity_km_music_list">kmMusicListActivity</string>
+    <string name="title_activity_km_edit_preview">kmEditPreviewActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

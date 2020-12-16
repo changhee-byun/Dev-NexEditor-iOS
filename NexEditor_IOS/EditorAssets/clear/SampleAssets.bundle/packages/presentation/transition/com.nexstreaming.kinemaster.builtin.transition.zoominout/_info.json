@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.transition.zoominout",
+  "label": {
+    "pt": "Diminuir zoom, depois aumentar",
+    "ja": "ズームイン/アウト",
+    "fr": "Dézoomer, puis zoomer",
+    "zh-CN": "缩小/放大",
+    "ko-KR": "줌 인/아웃",
+    "ar": "تصغير ثم تكبير",
+    "zh-TW": "縮小/放大",
+    "en": "Zoom out, then in",
+    "zh-HK": "縮小/放大",
+    "de-DE": "Herauszoomen, dann heranzoomen",
+    "ru": "Уменьшение, а затем увеличение",
+    "es": "Alejar y luego acercar"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

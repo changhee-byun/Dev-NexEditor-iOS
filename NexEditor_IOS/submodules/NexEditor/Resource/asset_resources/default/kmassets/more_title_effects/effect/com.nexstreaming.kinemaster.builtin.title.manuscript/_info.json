@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.title.manuscript",
+  "label": {
+    "pt": "Manuscrito",
+    "ja": "台本",
+    "fr": "Manuscrit",
+    "zh-CN": "剧本",
+    "ko-KR": "대본",
+    "ar": "مخطوط",
+    "zh-TW": "手稿",
+    "en": "Manuscript",
+    "zh-HK": "手稿",
+    "de-DE": "Manuskript",
+    "ru": "Рукопись",
+    "es": "Manuscrito"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

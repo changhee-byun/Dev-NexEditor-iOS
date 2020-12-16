@@ -1,0 +1,1 @@
+python kedl.py -p -o output -k kedlkeys_sdk theme_src\builtin_logo\kmlogoending.xml 

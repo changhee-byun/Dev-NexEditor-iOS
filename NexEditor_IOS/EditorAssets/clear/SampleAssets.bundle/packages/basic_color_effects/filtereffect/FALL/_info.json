@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_dbright.jpg",
+	"thumbnail":"lut_dbright.jpg",
+	"preset_name":"FALL",
+	"brightness" : 0.08,
+	"contrast" : -0.06,
+	"saturation" : -0.5,
+	"tintColor": "0xFF00FFAA",
+	"lut_file":""
+}

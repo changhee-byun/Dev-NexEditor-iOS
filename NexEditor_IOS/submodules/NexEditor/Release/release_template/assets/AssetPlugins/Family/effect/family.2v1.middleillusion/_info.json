@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.family.2v1.middleillusion.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.family.2v1.middleillusion",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.family.2v1.middleillusion"
+    },
+    "mergePaths": [
+        "2v1"
+    ],
+    "type": "nex.kedl"
+}

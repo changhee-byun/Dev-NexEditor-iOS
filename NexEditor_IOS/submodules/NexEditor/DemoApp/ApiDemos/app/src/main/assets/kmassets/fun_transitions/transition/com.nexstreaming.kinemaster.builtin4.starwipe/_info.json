@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.starwipe",
+  "label": {
+    "pt": "Limpar estrela",
+    "ja": "スター　ワイプ",
+    "fr": "Balayage étoile",
+    "zh-CN": "小星星擦除",
+    "ko-KR": "별",
+    "ar": "مسح نجمة",
+    "zh-TW": "星形抹去",
+    "en": "Star Wipe",
+    "zh-HK": "星形抹去",
+    "de-DE": "Stern-Wischeffekt",
+    "ru": "Шторка \u0027Звезда\u0027",
+    "es": "Limpiar estrella"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

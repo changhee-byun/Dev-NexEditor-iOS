@@ -1,0 +1,39 @@
+<effect
+  id="com.nexstreaming.kmsdk.lg.sports_9v16.trans_bottom_to_up"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="5000"
+  defaultduration="2000"
+  name="SportsBottomToUp 9v16">
+
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+  <texture id="tex_mask" src="mask_gradient_c.png" />
+
+  <animatedvalue id="slide">
+    <keyframe value="0 -2" />
+    <keyframe value="0 1" />
+  </animatedvalue>
+
+	<projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000">
+    	<scale y="-1">
+      		<translate offset="-360 -640 -1546.666667">
+				<translate offset="360 640">
+					<rect bounds="-360 -640 360 640" texture="@video1" />
+					<translate maskoffset="@slide">
+						<translate maskoffset="0.5 0.5">
+							<scale type="mask" x="0" y="2">
+								<translate maskoffset="-0.5 -0.5">
+									<rect bounds="-360 -640 360 640" texture="@video2" mask="@tex_mask" />
+								</translate>
+							</scale>
+						</translate>
+					</translate>
+				</translate>
+			</translate>
+		</scale>
+	</projection>
+
+</effect>

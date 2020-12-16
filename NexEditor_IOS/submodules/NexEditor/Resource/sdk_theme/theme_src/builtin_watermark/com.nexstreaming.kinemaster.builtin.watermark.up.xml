@@ -1,0 +1,13 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin.watermark.up"
+  type="title"
+  intime="0"
+  outtime="0"
+  intimefirst="0"
+  outtimelast="0"
+  hidden="true"
+  repeat="yes"
+  cycletime="10000"
+  name="_">
+
+</effect>

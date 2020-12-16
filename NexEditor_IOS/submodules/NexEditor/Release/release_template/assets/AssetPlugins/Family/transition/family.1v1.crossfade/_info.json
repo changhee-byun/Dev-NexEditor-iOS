@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.transition.family.1v1.crossfade.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.transition.family.1v1.crossfade",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.transition.family.1v1.crossfade"
+    },
+    "mergePaths": [
+        "1v1"
+    ],
+    "type": "nex.kedl"
+}

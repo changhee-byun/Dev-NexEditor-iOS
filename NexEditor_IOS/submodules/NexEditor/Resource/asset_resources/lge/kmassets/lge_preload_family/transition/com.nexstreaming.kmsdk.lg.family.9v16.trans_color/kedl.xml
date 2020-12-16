@@ -1,0 +1,53 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.family.9v16.colortrans"
+	type="transition" 
+	minduration="1500" 
+	maxduration="3000" 
+	effectoffset="100" 
+	effectoverlap="100"
+	cycleTime="800"
+	name="Family Color Trans 9v16">
+
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+
+  <animatedvalue id="anim_trans_color_background" timingfunction="linear">
+    <keyframe time="0.215" value="1" />
+    <keyframe time="0.856" value="2" />
+  </animatedvalue>
+  <animatedvalue id="anim_trans_color_video1" timingfunction="linear">
+    <keyframe time="0" value="1" />
+    <keyframe time="0.419" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_trans_color_video2" timingfunction="linear">
+    <keyframe time="0.2" value="0" />
+    <keyframe time="1" value="1" />
+  </animatedvalue>
+  <texture id="texture_color_background" src="trans_color.png" />
+
+  <projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="-360 -640 -1546.666667">
+			<translate offset="360 640">
+			  <scale uniform="@anim_trans_color_background">
+				<rect bounds="-360 -640 360 640" texture="@texture_color_background" />
+			  </scale>
+			</translate>
+			<translate offset="360 640">
+			  <style alpha="@anim_trans_color_video2">
+				<rect bounds="-361 -641 361 641" color="#000000" />
+				<rect bounds="-360 -640 360 640" texture="@video2" />
+			  </style>
+			</translate>
+			<translate offset="360 640">
+			  <style alpha="@anim_trans_color_video1">
+				<rect bounds="-360 -640 360 640" texture="@video1" />
+			  </style>
+			</translate>
+
+			
+		  </translate>
+		</scale>
+	  </projection>
+	
+</effect>

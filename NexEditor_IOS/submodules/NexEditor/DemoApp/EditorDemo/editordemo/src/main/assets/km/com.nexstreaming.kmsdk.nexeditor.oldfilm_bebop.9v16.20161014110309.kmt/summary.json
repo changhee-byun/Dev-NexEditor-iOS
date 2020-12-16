@@ -1,0 +1,89 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.ending", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.intro", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.loop", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.loop_right_to_left", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.loop_top_to_bottom", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.transition", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.20161014110309.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.transition_top_to_bottom", 
+            "thumbnail": null, 
+            "version": "20161014110309", 
+            "dependencies": [], 
+            "package_date": 736251, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

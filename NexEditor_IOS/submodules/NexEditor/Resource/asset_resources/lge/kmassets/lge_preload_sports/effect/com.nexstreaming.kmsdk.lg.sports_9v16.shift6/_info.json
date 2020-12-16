@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.sports_9v16.shift6",
+  "label": {
+    "en": "sports 9v16 shift6"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "9v16" ],
+  "hidden": "true"
+}

@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_cinnamon.jpg",
+	"thumbnail":"lut_cinnamon.jpg",
+	"preset_name":"NOIR",
+	"brightness" : -0.25,
+	"contrast" : 0.6,
+	"saturation" : -1.0,
+	"tintColor": "0xFF776655",
+	"lut_file":""
+}

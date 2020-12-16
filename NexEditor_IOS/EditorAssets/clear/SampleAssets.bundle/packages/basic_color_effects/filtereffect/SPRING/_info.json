@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_ludwig.jpg",
+	"thumbnail":"lut_ludwig.jpg",
+	"preset_name":"SPRING",
+	"brightness" : 0.08,
+	"contrast" : -0.06,
+	"saturation" : -0.3,
+	"tintColor": "0xFFAACC55",
+	"lut_file":""
+}

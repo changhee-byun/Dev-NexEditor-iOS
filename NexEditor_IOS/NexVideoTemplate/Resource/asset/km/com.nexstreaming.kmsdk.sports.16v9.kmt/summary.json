@@ -1,0 +1,77 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160225043744.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.camcord", 
+            "thumbnail": null, 
+            "version": "20160225043744", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160225043744.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.flash", 
+            "thumbnail": null, 
+            "version": "20160225043744", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160225043744.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.ghost", 
+            "thumbnail": null, 
+            "version": "20160225043744", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160225043744.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.split_auto", 
+            "thumbnail": null, 
+            "version": "20160225043744", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160225043744.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.split_small", 
+            "thumbnail": null, 
+            "version": "20160225043744", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160225043744.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.zoom", 
+            "thumbnail": null, 
+            "version": "20160225043744", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

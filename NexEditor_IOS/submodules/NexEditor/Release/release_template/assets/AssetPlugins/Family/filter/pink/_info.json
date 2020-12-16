@@ -1,0 +1,9 @@
+{
+    "filename": "pink.png",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.lut.pink",
+    "label": {
+        "en": "pink"
+    },
+    "type": "nex.lut"
+}

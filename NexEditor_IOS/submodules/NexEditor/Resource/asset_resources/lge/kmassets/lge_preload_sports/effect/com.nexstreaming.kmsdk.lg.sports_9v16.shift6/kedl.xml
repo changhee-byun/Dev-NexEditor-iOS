@@ -1,0 +1,190 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.sports_9v16.shift6" 
+	type="title" 
+  intime="1500"
+  outtime="0"
+  intimefirst="1500"
+  outtimelast="0"
+  repeat="no"
+  name="Sports Shift6 9v16">
+  
+  <texture id="video1" video="1" />
+
+  <animatedvalue id="slide" scope="whole">
+    <keyframe value="20 0" />
+    <keyframe value="-30 0" />
+  </animatedvalue>
+  
+  <animatedvalue id="clipangle" basis="clipindexshuffle" timingfunction="linear">
+    <keyframe value="0" />
+    <keyframe value="360" />
+  </animatedvalue>
+  
+  
+  <animatedvalue id="clipoffset" basis="clipindexshuffle" timingfunction="linear">
+    <keyframe value="-100 -100" />
+    <keyframe value="200 200" />
+  </animatedvalue>
+
+  <animatedvalue id="clipcolor" basis="clipindexshuffle" timingfunction="linear">
+    <keyframe value="0.874 0.694 0.415" />
+    <keyframe value="0.874 0.874 0.874" />
+
+  </animatedvalue>
+   
+   <animatedvalue id="mask_position" timingfunction="linear" scope="whole">
+      <keyframe time="0" value="780 300" />
+	    <keyframe time="0.3" value="780 300" />
+      <keyframe time="0.7" value="780 1300" />
+      <keyframe time="1" value="780 1300" />
+  </animatedvalue>  
+ 
+  <animatedvalue id="zoom" scope="whole" timingfunction="linear" >
+      <keyframe time="0" value="1.2" />
+      <keyframe time="0.3" value="1.2" />
+      <keyframe time="1" value="1.2" />
+  </animatedvalue>
+  
+  <animatedvalue id="spin" scope="whole" timingfunction="linear">
+      <keyframe value="0" />
+      <keyframe value="8" />
+  </animatedvalue>
+
+  <animatedvalue id="shift" scope="whole" timingfunction="linear">
+      <keyframe value="30 -30" />
+      <keyframe value="-30 30" />
+  </animatedvalue>
+
+  <animatedvalue id="alpha_second" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="1" />
+    <keyframe time="0.317" value="1" />
+    <keyframe time="0.318" value="1" />    
+    <keyframe time="1" value="1" />
+
+  </animatedvalue>
+
+  <animatedvalue id="move_1" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="800 3035" />
+    <keyframe time="0.81" value="800 -20" />
+  </animatedvalue>
+
+  <animatedvalue id="anim_2" scope="whole" timingfunction="linear">
+    <keyframe time="0.3" value="-739 1280" />
+    <keyframe time="0.81" value="-739 -644" />
+  </animatedvalue>
+  <animatedvalue id="anim_3" scope="whole" timingfunction="linear">
+    <keyframe value="0.995" />
+  </animatedvalue>
+
+  <projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="-360 -640 -1546.666667">
+        <translate offset="360 640">
+          <scale uniform="@zoom">
+            <style saturation="-0.3" contrast="-0.2" >
+              <rect bounds="-360 -640 360 640" texture="@video1" />
+            </style>
+          </scale>
+        </translate>
+
+        <translate offset="@move_1">
+          <translate offset="0 0">
+            <scale x="1.000" y="1">
+              <!-- Group -->
+                <translate offset="476 0">
+                  <rotate axis="0 0 1" angle="-60.4">
+                    <style alpha="0.4">
+                      <rect bounds="-1600 -1100 1600 1100" color="1 0.392 0.196" />
+                    </style>
+                  </rotate>
+                </translate>
+                <translate offset="-476.264 -553.286">
+                  <rotate axis="0 0 1" angle="-60.4">
+                    <rect bounds="-1100 -3 1100 3" color="1 1 1" />
+                  </rotate>
+                </translate>
+              <!-- end Group -->
+            </scale>
+          </translate>
+        </translate>
+
+        <style alpha="@alpha_second" >
+          <translate offset="@anim_2">
+            <trianglestrip >
+              <point location="0 1934" color="#ffffff" />
+              <point location="2198 1934" color="#ffffff" />
+              <point location="1099 0" color="#ffffff" />
+            </trianglestrip>
+          </translate>
+
+          <style dest="stencil">
+            <translate offset="@anim_2">
+                <trianglestrip >
+                  <point location="0 1942" color="#0000ff" />
+                  <point location="2198 1942" color="#0000ff" />
+                  <point location="1099 12" color="#0000ff" />
+                </trianglestrip>
+            </translate>
+          </style>
+        </style>
+
+          <style rendertest="stencil">
+            <translate offset="360 640">
+              <rect bounds="-361 -641 361 641" color="#000000" />              
+              <rect bounds="-360 -640 360 640" texture="@video1" />
+            </translate>
+          </style>
+<!--
+        <style alpha="@alpha_second">
+          <translate offset="606 351">
+            <rotate axis="0 0 1" angle="-5">
+              <scale x="1" y="@scale_y1">
+                <rect bounds="-900 -7 900 7" color="#ffffff" />
+              </scale>
+            </rotate>
+          </translate>
+          <translate offset="606 351">
+            <style dest="stencil">
+              <rotate axis="0 0 1" angle="-5">
+                <scale x="1" y="@scale_y2">
+                  <rect bounds="-900 -2 900 2" color="0.333 0.333 0.333" />
+                </scale>
+              </rotate>
+            </style>
+          </translate>
+        </style>
+        <style rendertest="stencil">
+          <translate offset="360 640">
+              <scale uniform="@zoom">
+                <style saturation="-0.3" contrast="-0.2" >
+                  <rect bounds="-360 -640 360 640" texture="@video1" />
+                </style>
+              </scale>
+          </translate>
+        </style>
+-->
+<!--
+         <style dest="stencil">
+          <translate offset="@mask_position">
+          	<rotate angle="@spin">
+               <rect bounds="-900 -500 900 500" color="#ffffff"  />
+            </rotate>
+          </translate>
+        </style>
+
+        <style rendertest="stencil">
+          <translate offset="360 640">
+            <translate offset="@slide">
+              <scale uniform="@zoom">
+                <style saturation="-0.3" contrast="-0.2" >
+                  <rect bounds="-360 -640 360 640" texture="@video1" />
+                </style>
+              </scale>
+            </translate>            
+          </translate>
+        </style>
+-->	                
+      </translate>
+    </scale>
+  </projection>
+</effect>

@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.transition.family.16v9.trans_pip1.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.transition.family.16v9.trans_pip1",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.transition.family.16v9.trans_pip1"
+    },
+    "mergePaths": [
+        "16v9"
+    ],
+    "type": "nex.kedl"
+}

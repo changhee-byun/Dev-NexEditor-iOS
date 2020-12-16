@@ -1,0 +1,286 @@
+<effect
+  id="com.nexstreaming.kmsdk.lg.sports_9v16.trans_split"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="5000"
+  defaultduration="2000"
+  name="Sports Trans Split 9v16">
+
+  	<texture id="video1" video="1" />
+  	<texture id="video2" video="2" />
+  	<texture id="tex_mask" src="mask_image.png" />
+
+  <animatedvalue id="vscale1" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="1" />
+    <keyframe time="0.9" value="1" />
+    <keyframe time="1" value="1" />
+  </animatedvalue>
+
+  <animatedvalue id="vscale2" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="2" />
+    <keyframe time="0.9" value="2" />
+    <keyframe time="1" value="1" />
+  </animatedvalue>
+
+  <animatedvalue id="vscale3" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="1.1" />
+    <keyframe time="0.9" value="1.1" />
+    <keyframe time="1" value="1" />
+  </animatedvalue>
+
+
+<!-- 9 16 -->
+
+  	<animatedvalue id="mask1" timingfunction="ease-in" >
+		<keyframe time="0" value="-105 1705" />
+		<keyframe time="0.3" value="80 1705" />
+		<keyframe time="0.4" value="80 1605" />
+		<keyframe time="0.67" value="80 640" />
+		<keyframe time="1" value="80 640" />
+  	</animatedvalue>
+
+
+
+  	<animatedvalue id="rect1" timingfunction="ease-in" >
+		<keyframe time="0" value="-105 1665" />
+		<keyframe time="0.3" value="80 1665" />
+		<keyframe time="0.4" value="80 1565" />
+		<keyframe time="0.48" value="80 1100" />
+		<keyframe time="0.85" value="80 300" />
+		<keyframe time="1" value="80 300" />
+  	</animatedvalue>
+
+
+  	<animatedvalue id="mask2" timingfunction="ease-in" >
+		<keyframe time="0" value="360 -800 " />
+		<keyframe time="0.3" value="360 -480" />
+		<keyframe time="0.4" value="360 -480" />
+		<keyframe time="0.7" value="360 650" />
+		<keyframe time="1" value="360 650" />
+  	</animatedvalue>
+
+  
+  	<animatedvalue id="rect2" timingfunction="ease-in" >
+		<keyframe time="0" value="290 -770" />
+		<keyframe time="0.3" value="290 -480" />
+		<keyframe time="0.4" value="290 -480" />
+		<keyframe time="0.5" value="290 0" />		
+		<keyframe time="0.8" value="290 900" />
+		<keyframe time="1" value="290 900" />
+  	</animatedvalue>
+
+  	<animatedvalue id="mask3" timingfunction="ease-in" >
+		<keyframe time="0" value="1000 1655  " />
+		<keyframe time="0.3" value="570 1605" />
+		<keyframe time="0.4" value="570 1505" />
+		<keyframe time="0.67" value="570 640" />
+		<keyframe time="1" value="570 640" />
+  	</animatedvalue>
+
+  	<animatedvalue id="rect3" timingfunction="ease-in" >
+		<keyframe time="0" value="1000 1655" />
+		<keyframe time="0.3" value="570 1655" />
+		<keyframe time="0.4" value="570 1555" />
+		<keyframe time="0.48" value="570 1100" />		
+		<keyframe time="0.85" value="570 300" />
+		<keyframe time="1" value="570 640" />
+  	</animatedvalue>
+
+	<animatedvalue id="rect_alpha" scope="whole" timingfunction="linear">
+		<keyframe time="0.79" value="0" />
+		<keyframe time="0.8" value="1" />
+		<keyframe time="0.95" value="1" />
+		<keyframe time="1" value="0" />
+	</animatedvalue>
+
+
+	<animatedvalue id="t" scope="whole" timingfunction="linear">
+		<keyframe value="0" />
+		<keyframe value="20" />
+	</animatedvalue>
+	
+	<function id="glowfunc" type="simplexfractal" outputbias="0.2" outputscale="0.2" octaves="1" />
+	<function id="glowfuncb" type="simplexfractal" outputbias="0.2" outputscale="0.2" octaves="1" />
+	<function id="glowfuncc" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="1" />
+
+
+  	<projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000">
+    	<scale y="-1">
+      		<translate offset="-360 -640 -1546.666667">
+		        <translate offset="360 640">
+		          <rect bounds="-360 -640 360 640" texture="@video1" />
+		        </translate>
+
+		        <!-- RECT 1-->
+		        <translate offset="@rect1">
+		        	<style alpha="0.7">		        	
+		        		<rect bounds="-80 -640 80 640" color="#1cc7ff"/>
+		        	</style>
+		    	</translate>
+
+		        <translate offset="@mask1">
+			        <style dest="stencil">
+			        	<rect bounds="-80 -640 80 640" color="#FFFFFF"/>
+			        </style>
+		    	</translate>
+		        <style rendertest="stencil">
+		          <translate offset="360 640">
+	            	<scale uniform="@vscale3">
+	            		<rect bounds="-360 -640 360 640" color="#FFFFFF" />
+	            	</scale>
+		          </translate>
+		        </style>
+
+		        <!-- RECT 2 -->
+
+		        <translate offset="@rect2">
+		        	<style alpha="0.7">		        	
+		        		<rect bounds="-130 -720 130 720" color="#1cc7ff"/>
+		        	</style>
+		    	</translate>
+
+		        <translate offset="@mask2">
+					<translate maskoffset="0 0">
+						<translate maskoffset="0 0">
+							<scale type="mask" x="1" y="0">
+								<rect bounds="-362 -660 362 660" texture="@video2" mask="@tex_mask" />
+							</scale>
+						</translate>
+					</translate>
+		    	</translate>
+
+		        <!-- RECT 3 -->
+		        <translate offset="@rect3">
+		        	<style alpha="0.7">		        	
+		        		<rect bounds="-150 -720 150 720" color="#1cc7ff"/>
+		        	</style>
+		    	</translate>
+
+		        <translate offset="@mask3">
+			        <style dest="stencil">
+			        	<rect bounds="-150 -640 150 640" color="#FFFFFF"/>
+			        </style>
+		    	</translate>
+		        <style rendertest="stencil">
+		          <translate offset="360 640">
+	            	<scale uniform="@vscale3">
+	            		<rect bounds="-360 -640 360 640" texture="@video2" />
+	            	</scale>
+		          </translate>
+		        </style>
+
+		        <!-- MOTION GRAPHIC -->
+<!--		        
+				<style alpha="@rect_alpha">
+					<translate offset="201 625">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="3472">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+	            				<rect bounds="-200 -10 200 10" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="728 7.000">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="4450">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-225 -15 225 15" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="1105 661">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="1000">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-175 -12 175 12" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="398 573">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="2057">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-250 -5 250 5" color="1 0.392 0.196" />
+							</style>
+						</sequence>
+					</translate>
+					<translate offset="262 171">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="6878">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-300 -5 300 5" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="1047 400">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="9875">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-250 -10 250 10" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="439 529">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="9645">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-80 -15 80 15" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="1132 100">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="15697">
+							<style alpha="@glowfuncc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-165 -20 165 20" color="1 0.392 0.196" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="120 450">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="54689">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-50 -40 50 40" color="#1cc7ff" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="921 612">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="12325">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-25 -20 25 20" color="#1cc7ff" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="961 423">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="7566">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-229 -11 229 11" color="#1cc7ff" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="407 657">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="8964">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-183 -37 183 37" color="#1cc7ff" />
+							</style>
+						</sequence>	
+					</translate>
+
+					<translate offset="542 591">
+						<sequence id="r" type="randmix" count="12" start="0.1" end="0.1" seed="633247">
+							<style alpha="@glowfunc(@r.x @r.y @t)" brightness="@glowfunc(@r.x @r.y @t)" >
+								<rect bounds="-285 -5 285 5" color="#1cc7ff" />
+							</style>
+						</sequence>	
+					</translate>
+				</style>
+-->				
+
+			</translate>
+		</scale>
+	</projection>
+
+</effect>

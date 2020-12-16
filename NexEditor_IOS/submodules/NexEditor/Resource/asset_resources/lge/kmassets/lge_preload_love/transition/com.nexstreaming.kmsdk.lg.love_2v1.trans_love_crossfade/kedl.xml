@@ -1,0 +1,40 @@
+<effect
+  id="com.nexstreaming.kmsdk.lg.love_2v1.lovecrossfade"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="5000"
+  defaultduration="2000"
+  name="Love Crossfade">
+  
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+    
+  <animatedvalue id="fade_amount">
+    <keyframe value="1" />
+    <keyframe value="0" />
+  </animatedvalue>
+	
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="2"
+    near="0.01"
+    far="60000">
+	    
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+			<rect bounds="-720 -360 720 360" texture="@video2" />
+			<style alpha="@fade_amount">
+				<rect bounds="-720 -360 720 360" texture="@video1" />
+			</style>      
+          <style compmode="multiply">
+           <rect bounds="-720 -360 720 360" color="#ffe7b8" />
+          </style>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

@@ -1,0 +1,67 @@
+<effect id="com.nexstreaming.kinemaster.builtin.title.stylishfinale" name="Stylish Finale" categorytitle="More Title Effects" type="title" intime="2000" intimefirst="2000" outtime="2000" outtimelast="2000" icon="fx_text_stylishfinale.png">
+
+    <texture id="video1" video="1" />
+    <userfield id="f_text" type="text">
+        <fieldlabel locale="en" value="Title Text" />
+    </userfield>
+    <userfield id="f_color_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="Text Color" />
+	</userfield>
+    <texture 
+    	id="text_2" 
+    	text="%1 " 
+    	width="1132" 
+    	height="124" 
+    	srcfield="@f_text"  
+    	textsize="150"  
+    	textmargin="0"  
+    	textalign="right"  
+    	textvalign="bottom"  
+    	maxlines="2"  
+    	autosize="false"  
+    	typeface="asset:greatvibes-regular.ttf"  
+    	fillcolor="@f_color_text"  
+    	fill="true"  
+    	shadowcolor="0 0 0 0.75"  
+    	shadowoffset="5 5"  
+    	shadowradius="8"  
+    	shadow="true"   />
+    <animatedvalue id="text_2_alpha">
+        <part type="in">
+            <keyframe value="0" />
+            <keyframe value="1" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="text_2_pos">
+        <part type="in">
+            <keyframe value="-756.5 155" />
+            <keyframe value="830 155" />
+        </part>
+        <part type="mid">
+            <keyframe value="830 155" />
+            <keyframe value="830 155" />
+        </part>
+        <part type="out">
+            <keyframe value="830 155" />
+            <keyframe value="957 155" />
+        </part>
+    </animatedvalue>
+    <projection type="perspective" fov="45" aspect="1.777777" near="0.01" far="60000">
+        <translate offset="-640 -360 -870">
+            <rect bounds="0 720 1280 0" texture="@video1" />
+            <translate offset="@text_2_pos">
+                <style alpha="@text_2_alpha">
+                    <rect bounds="-378.5 42 378.5 -42" texture="@text_2" />
+                </style>
+            </translate>
+        </translate>
+    </projection>
+
+</effect>

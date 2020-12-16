@@ -1,0 +1,65 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kinemaster.builtin.watermark.20160408013927.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.builtin.watermark.mov", 
+            "thumbnail": null, 
+            "version": "20160408013927", 
+            "dependencies": [], 
+            "package_date": 736062, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kinemaster.builtin.watermark.20160408013927.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.builtin.watermark.std_1v1", 
+            "thumbnail": null, 
+            "version": "20160408013927", 
+            "dependencies": [], 
+            "package_date": 736062, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kinemaster.builtin.watermark.20160408013927.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.builtin.watermark.std_9v16", 
+            "thumbnail": null, 
+            "version": "20160408013927", 
+            "dependencies": [], 
+            "package_date": 736062, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kinemaster.builtin.watermark.20160408013927.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.builtin.watermark.std", 
+            "thumbnail": null, 
+            "version": "20160408013927", 
+            "dependencies": [], 
+            "package_date": 736062, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kinemaster.builtin.watermark.20160408013927.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kinemaster.builtin.watermark.up", 
+            "thumbnail": null, 
+            "version": "20160408013927", 
+            "dependencies": [], 
+            "package_date": 736062, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

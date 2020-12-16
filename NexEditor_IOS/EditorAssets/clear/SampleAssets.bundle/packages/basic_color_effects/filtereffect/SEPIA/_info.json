@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_rosy.jpg",
+	"thumbnail":"lut_rosy.jpg",
+	"preset_name":"SEPIA",
+	"brightness" : 0.12,
+	"contrast" : -0.12,
+	"saturation" : -0.3,
+	"tintColor": "0xFF704214",
+	"lut_file":""
+}

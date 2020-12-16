@@ -1,0 +1,111 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin3.captioninsettrans"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="8000"
+  defaultduration="4000"
+  icon="transition_captioned_inset.png"
+  categorytitle="Text Transitions"
+  name="Captioned Inset">
+  
+  <userfield id="f_text" type="text">
+	<fieldlabel locale="en" value="Title Text" />
+  </userfield>
+  
+    <userfield id="f_color_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="Text Color" />
+	</userfield>
+
+	<userfield id="f_color_bg" type="color" default="#000000">
+		<fieldlabel locale="en" value="Background Color" />
+	</userfield>
+  
+  <animatedvalue id="anim_1" timingfunction="linear">
+    <keyframe time="0.0" value="0" />
+    <keyframe time="1.0" value="1" />
+  </animatedvalue>
+  <animatedvalue id="anim_2" timingfunction="linear">
+    <keyframe time="0.0" value="640 110" />
+    <keyframe time="0.22" value="640 270.792" timingfunction="default" />
+    <keyframe time="0.66" value="640 270" />
+    <keyframe time="1.0" value="640 360" />
+  </animatedvalue>
+  <animatedvalue id="anim_3" timingfunction="linear">
+    <keyframe time="0.0" value="0.010" />
+    <keyframe time="0.22" value="0.300" timingfunction="default" />
+    <keyframe time="0.66" value="0.300" />
+    <keyframe time="1.0" value="1" />
+  </animatedvalue>
+  <animatedvalue id="anim_4" timingfunction="linear">
+    <keyframe time="0.0" value="0" />
+    <keyframe time="0.22" value="1" timingfunction="default" />
+    <keyframe time="1.0" value="1" />
+  </animatedvalue>
+  <animatedvalue id="anim_5" timingfunction="linear">
+    <keyframe time="0.66" value="640 419" />
+    <keyframe time="0.93" value="640 695" />
+  </animatedvalue>
+  <animatedvalue id="anim_6" timingfunction="linear">
+    <keyframe time="0.18" value="0.500" />
+    <keyframe time="0.33" value="1" timingfunction="default" />
+    <keyframe time="0.66" value="1" />
+    <keyframe time="0.93" value="2" />
+  </animatedvalue>
+  <animatedvalue id="anim_7" timingfunction="linear">
+    <keyframe time="0.18" value="0" />
+    <keyframe time="0.33" value="1" timingfunction="default" />
+    <keyframe time="0.66" value="1" />
+    <keyframe time="0.93" value="0" />
+  </animatedvalue>
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+  <texture
+    id="text1"
+    textsize="50"
+    height="67"
+    width="582"
+    fillcolor="@f_color_text"
+    fill="true"
+    typeface="asset:lato-bold.ttf"
+    textalign="center"
+    textvalign="center"
+    autosize="false"
+	text="%1" 
+	srcfield="@f_text"  
+    />
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -870">
+        <translate offset="640 360">
+          <rect bounds="-640 -360 640 360" texture="@video1" />
+        </translate>
+        <translate offset="640 360">
+          <style alpha="@anim_1">
+            <rect bounds="-640 -360 640 360" color="@f_color_bg" />
+          </style>
+        </translate>
+        <translate offset="@anim_2">
+          <scale uniform="@anim_3">
+            <style alpha="@anim_4">
+              <rect bounds="-640 -360 640 360" texture="@video2" />
+            </style>
+          </scale>
+        </translate>
+        <translate offset="@anim_5">
+          <scale uniform="@anim_6">
+            <style alpha="@anim_7">
+              <rect bounds="-291 -33.500 291 33.500" texture="@text1" />
+            </style>
+          </scale>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

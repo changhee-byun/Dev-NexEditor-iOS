@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_heat.jpg",
+	"thumbnail":"lut_heat.jpg",
+	"preset_name":"lut_heat",
+	"brightness" : 0,
+	"contrast" : 0,
+	"saturation" : 0,
+	"tintColor": 0,
+	"lut_file":"lut_heat.png"
+}

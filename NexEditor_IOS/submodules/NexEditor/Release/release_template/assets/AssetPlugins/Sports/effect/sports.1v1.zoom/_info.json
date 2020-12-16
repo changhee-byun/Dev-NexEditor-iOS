@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.1v1.zoom.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.1v1.zoom",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.1v1.zoom"
+    },
+    "mergePaths": [
+        "1v1"
+    ],
+    "type": "nex.kedl"
+}

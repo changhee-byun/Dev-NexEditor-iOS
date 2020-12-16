@@ -1,0 +1,1086 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0763DEE91E63C50700850655 /* TemplateValidatioin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763DEE81E63C50700850655 /* TemplateValidatioin.swift */; };
+		874490DA5E27711A3C9E87C6 /* Pods_NexEditorSDKTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBDC5DDB11DF3980EE87264 /* Pods_NexEditorSDKTest.framework */; };
+		8CCF29E73AA73A687BBE0D4F /* Pods_NexEditorSDKObservationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5974F8B499B449D20C2F62ED /* Pods_NexEditorSDKObservationTests.framework */; };
+		BB1F85D81F44089B008361F3 /* T&O - RMN Z1.cube in Resources */ = {isa = PBXBuildFile; fileRef = BB1F85D61F44089B008361F3 /* T&O - RMN Z1.cube */; };
+		BB1F85D91F44089B008361F3 /* T&O - RMN Z2.cube in Resources */ = {isa = PBXBuildFile; fileRef = BB1F85D71F44089B008361F3 /* T&O - RMN Z2.cube */; };
+		BBCF91521F45286600E0909E /* NXELutRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF91511F45286600E0909E /* NXELutRegistryTests.swift */; };
+		E2491D1D2033CD1F0071295C /* ZTemplate3xTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2491D182033C7220071295C /* ZTemplate3xTest.swift */; };
+		E28B89041F261D81003E4AC2 /* LayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B89031F261D81003E4AC2 /* LayerTests.swift */; };
+		E2A2BFB51EE563E4002611E8 /* TemplateSingleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2BFB41EE563E4002611E8 /* TemplateSingleTests.swift */; };
+		E2A33E3D1F29BF57004BB1CF /* HostAppAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43232801F0622DB001AF02A /* HostAppAccess.swift */; };
+		E2A33E3E1F29BF5A004BB1CF /* EditorTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432327F1F0622DB001AF02A /* EditorTestTool.swift */; };
+		E2BD2CC61EA5D33D00E17BDA /* TextEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD2CC51EA5D33D00E17BDA /* TextEffectTests.swift */; };
+		E2D9A6911F29DA480030EBE3 /* ZTextEffectDemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A6901F29DA480030EBE3 /* ZTextEffectDemoTest.swift */; };
+		E2D9A6931F29DA760030EBE3 /* ZTemplateExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A6921F29DA760030EBE3 /* ZTemplateExportTests.swift */; };
+		E2D9A6951F29DACE0030EBE3 /* ZTemplateAlternativeItemsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A6941F29DACE0030EBE3 /* ZTemplateAlternativeItemsTest.swift */; };
+		E2D9A6971F29DB620030EBE3 /* ZTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A6961F29DB620030EBE3 /* ZTemplateTests.swift */; };
+		E2E64BF41FD76609005473B6 /* CollageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E64BF21FD76601005473B6 /* CollageTests.swift */; };
+		EF523E5B992BE3FE7E343585 /* Pods_NexEditorSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D551617F63066F360B0A55 /* Pods_NexEditorSDKTests.framework */; };
+		F4038FBA1EA6FC39004C687B /* AssetItemIdAspectModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4038FB91EA6FC39004C687B /* AssetItemIdAspectModeTests.swift */; };
+		F408F6231E9DC844000F305D /* DecryptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F408F6221E9DC844000F305D /* DecryptionTests.m */; };
+		F408F62C1E9E118C000F305D /* encrypted.bin in Resources */ = {isa = PBXBuildFile; fileRef = F408F62B1E9E118C000F305D /* encrypted.bin */; };
+		F409675E1F2972AF004CFACB /* ClipTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F409675D1F2972AF004CFACB /* ClipTest.swift */; };
+		F41568C51FE39242000A72BE /* AssetLibraryCollageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41568C41FE39242000A72BE /* AssetLibraryCollageTests.swift */; };
+		F4177BFD1E5531BF0042AD86 /* AssetLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4177BFC1E5531BF0042AD86 /* AssetLibraryTests.swift */; };
+		F41A521420328A3F00A52EBA /* ClipZoomPanningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A521320328A3F00A52EBA /* ClipZoomPanningTests.swift */; };
+		F43232811F0622DB001AF02A /* EditorTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432327F1F0622DB001AF02A /* EditorTestTool.swift */; };
+		F43232831F0622DB001AF02A /* HostAppAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43232801F0622DB001AF02A /* HostAppAccess.swift */; };
+		F44E7F821EDFF05600CDDA1F /* GoogleDriveFolderDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44E7F811EDFF05600CDDA1F /* GoogleDriveFolderDownloader.swift */; };
+		F45DE5D61ECC0AB000ADC751 /* SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45DE5D51ECC0AB000ADC751 /* SeekTests.swift */; };
+		F4629E8B1ED65C4F00955B06 /* PreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4629E8A1ED65C4F00955B06 /* PreviewTests.swift */; };
+		F465F6831E5E842700871B0E /* LUTMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F465F6821E5E842700871B0E /* LUTMapTests.swift */; };
+		F46D4A161EA05F4900F6EE43 /* EncryptedAssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D4A151EA05F4900F6EE43 /* EncryptedAssetTests.swift */; };
+		F47BE3DE1E3995F9009D7CFE /* LimitSizeMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BE3DD1E3995F9009D7CFE /* LimitSizeMaxTests.swift */; };
+		F47EB8321E36E3410088EB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EB8311E36E3410088EB4B /* AppDelegate.swift */; };
+		F47EB8341E36E3410088EB4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EB8331E36E3410088EB4B /* ViewController.swift */; };
+		F47EB8371E36E3410088EB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47EB8351E36E3410088EB4B /* Main.storyboard */; };
+		F47EB8391E36E3410088EB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47EB8381E36E3410088EB4B /* Assets.xcassets */; };
+		F47EB83C1E36E3410088EB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47EB83A1E36E3410088EB4B /* LaunchScreen.storyboard */; };
+		F47EB8471E36E3420088EB4B /* EditorFrameworkTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EB8461E36E3420088EB4B /* EditorFrameworkTestTests.swift */; };
+		F47EB85D1E36E5CB0088EB4B /* TextRenderingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EB85C1E36E5CB0088EB4B /* TextRenderingTests.swift */; };
+		F48CB8FA1E81FCE800D7C9E1 /* AspectRatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CB8F91E81FCE800D7C9E1 /* AspectRatioTests.swift */; };
+		F48CB90E1E834B9500D7C9E1 /* AssetLibraryProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CB90D1E834B9500D7C9E1 /* AssetLibraryProxyTests.swift */; };
+		F492252D1EDBEF50005C8DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F492252C1EDBEF4F005C8DAB /* GoogleService-Info.plist */; };
+		F49225361EDBFE93005C8DAB /* TestResourceSyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49225341EDBFC8E005C8DAB /* TestResourceSyncViewController.swift */; };
+		F4A8D6F11FE100BB00487E5F /* CollageDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8D6F01FE100BB00487E5F /* CollageDataTests.swift */; };
+		F4C19B371EA77FDF00D306B4 /* TemplateAssetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C19B361EA77FDF00D306B4 /* TemplateAssetsTests.swift */; };
+		F4C2AA0F1EDE9E5F009E4C18 /* GoogleDriveFolderScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2AA0B1EDE9E1D009E4C18 /* GoogleDriveFolderScanner.swift */; };
+		F4E9DF681F305175009201A1 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E9DF671F305175009201A1 /* TemplateTests.swift */; };
+		F4EBCE0D1E6CF8F6000FDC36 /* AssetLibraryTextEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EBCE0C1E6CF8F6000FDC36 /* AssetLibraryTextEffectTests.swift */; };
+		F4FE71991E96230100AD2CD0 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE71981E96230100AD2CD0 /* ProjectTests.swift */; };
+		F4FE71A01E962AE100AD2CD0 /* ClipSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE719F1E962AE100AD2CD0 /* ClipSourceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2A33E341F29B7E2004BB1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E78F71C1C9684A300AC3347 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47EB82E1E36E3410088EB4B;
+			remoteInfo = NexEditorSDKTest;
+		};
+		F47EB8431E36E3420088EB4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E78F71C1C9684A300AC3347 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47EB82E1E36E3410088EB4B;
+			remoteInfo = EditorFrameworkTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F47EBA961E36EFB70088EB4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0763DEE81E63C50700850655 /* TemplateValidatioin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateValidatioin.swift; sourceTree = "<group>"; };
+		07C95F896E5A79C740886A2A /* Pods-NexEditorSDKObservationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorSDKObservationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorSDKObservationTests/Pods-NexEditorSDKObservationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		07EC7E8E1DF91AB500357D25 /* libNxFFSubtitle_ios_na_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNxFFSubtitle_ios_na_debug.a; path = NexEditorFramework/nexeditorengine/extern_lib/NxFFSubtitle/v2.19.1/libNxFFSubtitle_ios_na_debug.a; sourceTree = "<group>"; };
+		1802AF9714CC6F7A3D2CC6D0 /* Pods-NexEditorSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorSDKTests/Pods-NexEditorSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E0C5ADF1CD7805800C0797B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		21A2D5F525D5A90F546927DB /* Pods-NexEditorSDKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorSDKTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorSDKTest/Pods-NexEditorSDKTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5974F8B499B449D20C2F62ED /* Pods_NexEditorSDKObservationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorSDKObservationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CBDC5DDB11DF3980EE87264 /* Pods_NexEditorSDKTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorSDKTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D551617F63066F360B0A55 /* Pods_NexEditorSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C06B27F1EAE1CB38951481 /* Pods-NexEditorSDKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorSDKTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorSDKTest/Pods-NexEditorSDKTest.release.xcconfig"; sourceTree = "<group>"; };
+		B80490386869AF386E77C51E /* Pods-NexEditorSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorSDKTests/Pods-NexEditorSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB1F85D61F44089B008361F3 /* T&O - RMN Z1.cube */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "T&O - RMN Z1.cube"; path = "bundles/T&O - RMN Z1.cube"; sourceTree = "<group>"; };
+		BB1F85D71F44089B008361F3 /* T&O - RMN Z2.cube */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "T&O - RMN Z2.cube"; path = "bundles/T&O - RMN Z2.cube"; sourceTree = "<group>"; };
+		BBCF91511F45286600E0909E /* NXELutRegistryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NXELutRegistryTests.swift; sourceTree = "<group>"; };
+		C2C5F0C3D1502CB2426A9B64 /* Pods-NexEditorSDKObservationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorSDKObservationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorSDKObservationTests/Pods-NexEditorSDKObservationTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2491D182033C7220071295C /* ZTemplate3xTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTemplate3xTest.swift; sourceTree = "<group>"; };
+		E28B89031F261D81003E4AC2 /* LayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTests.swift; sourceTree = "<group>"; };
+		E2A2BFB41EE563E4002611E8 /* TemplateSingleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateSingleTests.swift; sourceTree = "<group>"; };
+		E2A33E2F1F29B7E2004BB1CF /* NexEditorSDKObservationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexEditorSDKObservationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A33E331F29B7E2004BB1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BD2CC51EA5D33D00E17BDA /* TextEffectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffectTests.swift; sourceTree = "<group>"; };
+		E2D9A6901F29DA480030EBE3 /* ZTextEffectDemoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTextEffectDemoTest.swift; sourceTree = "<group>"; };
+		E2D9A6921F29DA760030EBE3 /* ZTemplateExportTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTemplateExportTests.swift; sourceTree = "<group>"; };
+		E2D9A6941F29DACE0030EBE3 /* ZTemplateAlternativeItemsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTemplateAlternativeItemsTest.swift; sourceTree = "<group>"; };
+		E2D9A6961F29DB620030EBE3 /* ZTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTemplateTests.swift; sourceTree = "<group>"; };
+		E2E64BF21FD76601005473B6 /* CollageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageTests.swift; sourceTree = "<group>"; };
+		F4038FB91EA6FC39004C687B /* AssetItemIdAspectModeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetItemIdAspectModeTests.swift; sourceTree = "<group>"; };
+		F408F6221E9DC844000F305D /* DecryptionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecryptionTests.m; sourceTree = "<group>"; };
+		F408F62B1E9E118C000F305D /* encrypted.bin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.macbinary; path = encrypted.bin; sourceTree = "<group>"; };
+		F409675D1F2972AF004CFACB /* ClipTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipTest.swift; sourceTree = "<group>"; };
+		F41568C41FE39242000A72BE /* AssetLibraryCollageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLibraryCollageTests.swift; sourceTree = "<group>"; };
+		F4177BFC1E5531BF0042AD86 /* AssetLibraryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetLibraryTests.swift; sourceTree = "<group>"; };
+		F41A521320328A3F00A52EBA /* ClipZoomPanningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipZoomPanningTests.swift; sourceTree = "<group>"; };
+		F432327F1F0622DB001AF02A /* EditorTestTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorTestTool.swift; sourceTree = "<group>"; };
+		F43232801F0622DB001AF02A /* HostAppAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostAppAccess.swift; sourceTree = "<group>"; };
+		F44E7F811EDFF05600CDDA1F /* GoogleDriveFolderDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveFolderDownloader.swift; sourceTree = "<group>"; };
+		F45DE5D51ECC0AB000ADC751 /* SeekTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekTests.swift; sourceTree = "<group>"; };
+		F4629E8A1ED65C4F00955B06 /* PreviewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTests.swift; sourceTree = "<group>"; };
+		F465F6821E5E842700871B0E /* LUTMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUTMapTests.swift; sourceTree = "<group>"; };
+		F46D4A151EA05F4900F6EE43 /* EncryptedAssetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptedAssetTests.swift; sourceTree = "<group>"; };
+		F47BE3DD1E3995F9009D7CFE /* LimitSizeMaxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitSizeMaxTests.swift; sourceTree = "<group>"; };
+		F47EB82F1E36E3410088EB4B /* NexEditorSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexEditorSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47EB8311E36E3410088EB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F47EB8331E36E3410088EB4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F47EB8361E36E3410088EB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F47EB8381E36E3410088EB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47EB83B1E36E3410088EB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F47EB83D1E36E3410088EB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47EB8421E36E3420088EB4B /* NexEditorSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexEditorSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47EB8461E36E3420088EB4B /* EditorFrameworkTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorFrameworkTestTests.swift; sourceTree = "<group>"; };
+		F47EB8481E36E3420088EB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47EB85C1E36E5CB0088EB4B /* TextRenderingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRenderingTests.swift; sourceTree = "<group>"; };
+		F47EB85F1E36ED100088EB4B /* NexEditorSDKTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NexEditorSDKTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F48CB8F91E81FCE800D7C9E1 /* AspectRatioTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectRatioTests.swift; sourceTree = "<group>"; };
+		F48CB90D1E834B9500D7C9E1 /* AssetLibraryProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetLibraryProxyTests.swift; sourceTree = "<group>"; };
+		F492252C1EDBEF4F005C8DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F49225341EDBFC8E005C8DAB /* TestResourceSyncViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResourceSyncViewController.swift; sourceTree = "<group>"; };
+		F4A8D6F01FE100BB00487E5F /* CollageDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageDataTests.swift; sourceTree = "<group>"; };
+		F4C19B361EA77FDF00D306B4 /* TemplateAssetsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateAssetsTests.swift; sourceTree = "<group>"; };
+		F4C2AA0B1EDE9E1D009E4C18 /* GoogleDriveFolderScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveFolderScanner.swift; sourceTree = "<group>"; };
+		F4E9DF671F305175009201A1 /* TemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
+		F4EBCE0C1E6CF8F6000FDC36 /* AssetLibraryTextEffectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetLibraryTextEffectTests.swift; sourceTree = "<group>"; };
+		F4FE71981E96230100AD2CD0 /* ProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		F4FE719F1E962AE100AD2CD0 /* ClipSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipSourceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2A33E2C1F29B7E2004BB1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCF29E73AA73A687BBE0D4F /* Pods_NexEditorSDKObservationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47EB82C1E36E3410088EB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874490DA5E27711A3C9E87C6 /* Pods_NexEditorSDKTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47EB83F1E36E3420088EB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF523E5B992BE3FE7E343585 /* Pods_NexEditorSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E78F71B1C9684A300AC3347 = {
+			isa = PBXGroup;
+			children = (
+				1E0C5ADF1CD7805800C0797B /* AudioToolbox.framework */,
+				F47EB8301E36E3410088EB4B /* NexEditorSDKTest */,
+				F47EB8451E36E3420088EB4B /* NexEditorSDKTests */,
+				F432327E1F0622DB001AF02A /* TestCommon */,
+				E2A33E301F29B7E2004BB1CF /* NexEditorSDKObservationTests */,
+				1E78F7261C9684A300AC3347 /* Products */,
+				1EFC32FA1DE28F6F000C217B /* Frameworks */,
+				938FDD023A4AB7ABF2849C32 /* Pods */,
+				E2165B4220285E9E007E3F8A /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		1E78F7261C9684A300AC3347 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47EB82F1E36E3410088EB4B /* NexEditorSDKTest.app */,
+				F47EB8421E36E3420088EB4B /* NexEditorSDKTests.xctest */,
+				E2A33E2F1F29B7E2004BB1CF /* NexEditorSDKObservationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EFC32FA1DE28F6F000C217B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07EC7E8E1DF91AB500357D25 /* libNxFFSubtitle_ios_na_debug.a */,
+				5974F8B499B449D20C2F62ED /* Pods_NexEditorSDKObservationTests.framework */,
+				6CBDC5DDB11DF3980EE87264 /* Pods_NexEditorSDKTest.framework */,
+				79D551617F63066F360B0A55 /* Pods_NexEditorSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		938FDD023A4AB7ABF2849C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07C95F896E5A79C740886A2A /* Pods-NexEditorSDKObservationTests.debug.xcconfig */,
+				C2C5F0C3D1502CB2426A9B64 /* Pods-NexEditorSDKObservationTests.release.xcconfig */,
+				21A2D5F525D5A90F546927DB /* Pods-NexEditorSDKTest.debug.xcconfig */,
+				A1C06B27F1EAE1CB38951481 /* Pods-NexEditorSDKTest.release.xcconfig */,
+				B80490386869AF386E77C51E /* Pods-NexEditorSDKTests.debug.xcconfig */,
+				1802AF9714CC6F7A3D2CC6D0 /* Pods-NexEditorSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB1F85CE1F43EB54008361F3 /* bundles */ = {
+			isa = PBXGroup;
+			children = (
+				BB1F85D61F44089B008361F3 /* T&O - RMN Z1.cube */,
+				BB1F85D71F44089B008361F3 /* T&O - RMN Z2.cube */,
+			);
+			name = bundles;
+			sourceTree = "<group>";
+		};
+		E2165B4220285E9E007E3F8A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		E2A33E301F29B7E2004BB1CF /* NexEditorSDKObservationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2D9A6941F29DACE0030EBE3 /* ZTemplateAlternativeItemsTest.swift */,
+				E2D9A6921F29DA760030EBE3 /* ZTemplateExportTests.swift */,
+				E2D9A6901F29DA480030EBE3 /* ZTextEffectDemoTest.swift */,
+				E2D9A6961F29DB620030EBE3 /* ZTemplateTests.swift */,
+				E2491D182033C7220071295C /* ZTemplate3xTest.swift */,
+				E2A33E331F29B7E2004BB1CF /* Info.plist */,
+			);
+			path = NexEditorSDKObservationTests;
+			sourceTree = "<group>";
+		};
+		F408F6261E9DC899000F305D /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Keys;
+			sourceTree = "<group>";
+		};
+		F408F6281E9E117B000F305D /* encryptedSamples */ = {
+			isa = PBXGroup;
+			children = (
+				F408F62B1E9E118C000F305D /* encrypted.bin */,
+			);
+			name = encryptedSamples;
+			sourceTree = "<group>";
+		};
+		F41071631E92282D00EBD26A /* EditorAssets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = EditorAssets;
+			path = ../../EditorAssets;
+			sourceTree = "<group>";
+		};
+		F432327E1F0622DB001AF02A /* TestCommon */ = {
+			isa = PBXGroup;
+			children = (
+				F432327F1F0622DB001AF02A /* EditorTestTool.swift */,
+				F43232801F0622DB001AF02A /* HostAppAccess.swift */,
+			);
+			path = TestCommon;
+			sourceTree = "<group>";
+		};
+		F47EB8301E36E3410088EB4B /* NexEditorSDKTest */ = {
+			isa = PBXGroup;
+			children = (
+				F408F6281E9E117B000F305D /* encryptedSamples */,
+				F408F6261E9DC899000F305D /* Keys */,
+				F41071631E92282D00EBD26A /* EditorAssets */,
+				F47EB8311E36E3410088EB4B /* AppDelegate.swift */,
+				F47EB8331E36E3410088EB4B /* ViewController.swift */,
+				F47EB8351E36E3410088EB4B /* Main.storyboard */,
+				F47EB8381E36E3410088EB4B /* Assets.xcassets */,
+				F47EB83A1E36E3410088EB4B /* LaunchScreen.storyboard */,
+				F47EB83D1E36E3410088EB4B /* Info.plist */,
+				F492252C1EDBEF4F005C8DAB /* GoogleService-Info.plist */,
+				F49225341EDBFC8E005C8DAB /* TestResourceSyncViewController.swift */,
+				F4C2AA0B1EDE9E1D009E4C18 /* GoogleDriveFolderScanner.swift */,
+				F44E7F811EDFF05600CDDA1F /* GoogleDriveFolderDownloader.swift */,
+			);
+			path = NexEditorSDKTest;
+			sourceTree = "<group>";
+		};
+		F47EB8451E36E3420088EB4B /* NexEditorSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				F41A521320328A3F00A52EBA /* ClipZoomPanningTests.swift */,
+				F41568C41FE39242000A72BE /* AssetLibraryCollageTests.swift */,
+				F4A8D6F01FE100BB00487E5F /* CollageDataTests.swift */,
+				BB1F85CE1F43EB54008361F3 /* bundles */,
+				F409675D1F2972AF004CFACB /* ClipTest.swift */,
+				E2E64BF21FD76601005473B6 /* CollageTests.swift */,
+				F4E9DF671F305175009201A1 /* TemplateTests.swift */,
+				E28B89031F261D81003E4AC2 /* LayerTests.swift */,
+				E2A2BFB41EE563E4002611E8 /* TemplateSingleTests.swift */,
+				F4629E8A1ED65C4F00955B06 /* PreviewTests.swift */,
+				F45DE5D51ECC0AB000ADC751 /* SeekTests.swift */,
+				F4C19B361EA77FDF00D306B4 /* TemplateAssetsTests.swift */,
+				F4038FB91EA6FC39004C687B /* AssetItemIdAspectModeTests.swift */,
+				E2BD2CC51EA5D33D00E17BDA /* TextEffectTests.swift */,
+				F46D4A151EA05F4900F6EE43 /* EncryptedAssetTests.swift */,
+				F408F6221E9DC844000F305D /* DecryptionTests.m */,
+				F4FE719F1E962AE100AD2CD0 /* ClipSourceTests.swift */,
+				F4FE71981E96230100AD2CD0 /* ProjectTests.swift */,
+				F48CB90D1E834B9500D7C9E1 /* AssetLibraryProxyTests.swift */,
+				F48CB8F91E81FCE800D7C9E1 /* AspectRatioTests.swift */,
+				F4EBCE0C1E6CF8F6000FDC36 /* AssetLibraryTextEffectTests.swift */,
+				0763DEE81E63C50700850655 /* TemplateValidatioin.swift */,
+				F465F6821E5E842700871B0E /* LUTMapTests.swift */,
+				BBCF91511F45286600E0909E /* NXELutRegistryTests.swift */,
+				F4177BFC1E5531BF0042AD86 /* AssetLibraryTests.swift */,
+				F47BE3DD1E3995F9009D7CFE /* LimitSizeMaxTests.swift */,
+				F47EB85C1E36E5CB0088EB4B /* TextRenderingTests.swift */,
+				F47EB8461E36E3420088EB4B /* EditorFrameworkTestTests.swift */,
+				F47EB8481E36E3420088EB4B /* Info.plist */,
+				F47EB85F1E36ED100088EB4B /* NexEditorSDKTests-Bridging-Header.h */,
+			);
+			path = NexEditorSDKTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2A33E2E1F29B7E2004BB1CF /* NexEditorSDKObservationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A33E3A1F29B7E2004BB1CF /* Build configuration list for PBXNativeTarget "NexEditorSDKObservationTests" */;
+			buildPhases = (
+				74CACC2632E628F1CD50BB01 /* [CP] Check Pods Manifest.lock */,
+				E2A33E2B1F29B7E2004BB1CF /* Sources */,
+				E2A33E2C1F29B7E2004BB1CF /* Frameworks */,
+				E2A33E2D1F29B7E2004BB1CF /* Resources */,
+				B324008BA75646F8EC828CAA /* [CP] Embed Pods Frameworks */,
+				5FEBA8035877BD1BBD348126 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2A33E351F29B7E2004BB1CF /* PBXTargetDependency */,
+			);
+			name = NexEditorSDKObservationTests;
+			productName = NexEditorSDKObservationTests;
+			productReference = E2A33E2F1F29B7E2004BB1CF /* NexEditorSDKObservationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F47EB82E1E36E3410088EB4B /* NexEditorSDKTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47EB84D1E36E3420088EB4B /* Build configuration list for PBXNativeTarget "NexEditorSDKTest" */;
+			buildPhases = (
+				BB688360B2C7446C58FBF784 /* [CP] Check Pods Manifest.lock */,
+				F47EB82B1E36E3410088EB4B /* Sources */,
+				F47EB82C1E36E3410088EB4B /* Frameworks */,
+				F47EB82D1E36E3410088EB4B /* Resources */,
+				F47EBA961E36EFB70088EB4B /* Embed Frameworks */,
+				DA0A566ADA575CD688BDDD31 /* [CP] Embed Pods Frameworks */,
+				9D8FDCB754BEAF6AB3C8A2A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NexEditorSDKTest;
+			productName = EditorFrameworkTest;
+			productReference = F47EB82F1E36E3410088EB4B /* NexEditorSDKTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F47EB8411E36E3420088EB4B /* NexEditorSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47EB84E1E36E3420088EB4B /* Build configuration list for PBXNativeTarget "NexEditorSDKTests" */;
+			buildPhases = (
+				DAC6C00CD7C15F97176C9922 /* [CP] Check Pods Manifest.lock */,
+				F47EB83E1E36E3420088EB4B /* Sources */,
+				F47EB83F1E36E3420088EB4B /* Frameworks */,
+				F47EB8401E36E3420088EB4B /* Resources */,
+				CBA2C86B4A9FA45E8839B109 /* [CP] Embed Pods Frameworks */,
+				03A43F19C3C8DAC992C0E24D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47EB8441E36E3420088EB4B /* PBXTargetDependency */,
+			);
+			name = NexEditorSDKTests;
+			productName = EditorFrameworkTestTests;
+			productReference = F47EB8421E36E3420088EB4B /* NexEditorSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E78F71C1C9684A300AC3347 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "NexStreaming Corp.";
+				TargetAttributes = {
+					E2A33E2E1F29B7E2004BB1CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 963NNYFPCH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F47EB82E1E36E3410088EB4B;
+					};
+					F47EB82E1E36E3410088EB4B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 963NNYFPCH;
+						ProvisioningStyle = Automatic;
+					};
+					F47EB8411E36E3420088EB4B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 963NNYFPCH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F47EB82E1E36E3410088EB4B;
+					};
+				};
+			};
+			buildConfigurationList = 1E78F71F1C9684A300AC3347 /* Build configuration list for PBXProject "NexEditorSDKTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E78F71B1C9684A300AC3347;
+			productRefGroup = 1E78F7261C9684A300AC3347 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47EB82E1E36E3410088EB4B /* NexEditorSDKTest */,
+				F47EB8411E36E3420088EB4B /* NexEditorSDKTests */,
+				E2A33E2E1F29B7E2004BB1CF /* NexEditorSDKObservationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2A33E2D1F29B7E2004BB1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47EB82D1E36E3410088EB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47EB83C1E36E3410088EB4B /* LaunchScreen.storyboard in Resources */,
+				F492252D1EDBEF50005C8DAB /* GoogleService-Info.plist in Resources */,
+				BB1F85D81F44089B008361F3 /* T&O - RMN Z1.cube in Resources */,
+				BB1F85D91F44089B008361F3 /* T&O - RMN Z2.cube in Resources */,
+				F47EB8391E36E3410088EB4B /* Assets.xcassets in Resources */,
+				F408F62C1E9E118C000F305D /* encrypted.bin in Resources */,
+				F47EB8371E36E3410088EB4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47EB8401E36E3420088EB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A43F19C3C8DAC992C0E24D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTests/Pods-NexEditorSDKTests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTests/Pods-NexEditorSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FEBA8035877BD1BBD348126 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKObservationTests/Pods-NexEditorSDKObservationTests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKObservationTests/Pods-NexEditorSDKObservationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CACC2632E628F1CD50BB01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NexEditorSDKObservationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8FDCB754BEAF6AB3C8A2A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTest/Pods-NexEditorSDKTest-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTest/Pods-NexEditorSDKTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B324008BA75646F8EC828CAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKObservationTests/Pods-NexEditorSDKObservationTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AssetReader/AssetReader.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorEngine/NexEditorEngine.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorFramework/NexEditorFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorSDKTestHeaders/NexEditorSDKTestHeaders.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssetReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorEngine.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorSDKTestHeaders.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKObservationTests/Pods-NexEditorSDKObservationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB688360B2C7446C58FBF784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NexEditorSDKTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA2C86B4A9FA45E8839B109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTests/Pods-NexEditorSDKTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AssetReader/AssetReader.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorEngine/NexEditorEngine.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorFramework/NexEditorFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorSDKTestHeaders/NexEditorSDKTestHeaders.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssetReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorEngine.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorSDKTestHeaders.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTests/Pods-NexEditorSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0A566ADA575CD688BDDD31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTest/Pods-NexEditorSDKTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AssetReader/AssetReader.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorEngine/NexEditorEngine.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorFramework/NexEditorFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/NexEditorSDKTestHeaders/NexEditorSDKTestHeaders.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssetReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorEngine.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NexEditorSDKTestHeaders.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexEditorSDKTest/Pods-NexEditorSDKTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC6C00CD7C15F97176C9922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NexEditorSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2A33E2B1F29B7E2004BB1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2491D1D2033CD1F0071295C /* ZTemplate3xTest.swift in Sources */,
+				E2A33E3E1F29BF5A004BB1CF /* EditorTestTool.swift in Sources */,
+				E2D9A6911F29DA480030EBE3 /* ZTextEffectDemoTest.swift in Sources */,
+				E2D9A6951F29DACE0030EBE3 /* ZTemplateAlternativeItemsTest.swift in Sources */,
+				E2D9A6931F29DA760030EBE3 /* ZTemplateExportTests.swift in Sources */,
+				E2D9A6971F29DB620030EBE3 /* ZTemplateTests.swift in Sources */,
+				E2A33E3D1F29BF57004BB1CF /* HostAppAccess.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47EB82B1E36E3410088EB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49225361EDBFE93005C8DAB /* TestResourceSyncViewController.swift in Sources */,
+				F4C2AA0F1EDE9E5F009E4C18 /* GoogleDriveFolderScanner.swift in Sources */,
+				F47EB8341E36E3410088EB4B /* ViewController.swift in Sources */,
+				F47EB8321E36E3410088EB4B /* AppDelegate.swift in Sources */,
+				F44E7F821EDFF05600CDDA1F /* GoogleDriveFolderDownloader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47EB83E1E36E3420088EB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCF91521F45286600E0909E /* NXELutRegistryTests.swift in Sources */,
+				E2A2BFB51EE563E4002611E8 /* TemplateSingleTests.swift in Sources */,
+				0763DEE91E63C50700850655 /* TemplateValidatioin.swift in Sources */,
+				F4FE71991E96230100AD2CD0 /* ProjectTests.swift in Sources */,
+				F48CB90E1E834B9500D7C9E1 /* AssetLibraryProxyTests.swift in Sources */,
+				E2E64BF41FD76609005473B6 /* CollageTests.swift in Sources */,
+				F43232811F0622DB001AF02A /* EditorTestTool.swift in Sources */,
+				F408F6231E9DC844000F305D /* DecryptionTests.m in Sources */,
+				F409675E1F2972AF004CFACB /* ClipTest.swift in Sources */,
+				F4629E8B1ED65C4F00955B06 /* PreviewTests.swift in Sources */,
+				F47EB8471E36E3420088EB4B /* EditorFrameworkTestTests.swift in Sources */,
+				E28B89041F261D81003E4AC2 /* LayerTests.swift in Sources */,
+				F45DE5D61ECC0AB000ADC751 /* SeekTests.swift in Sources */,
+				F465F6831E5E842700871B0E /* LUTMapTests.swift in Sources */,
+				F4EBCE0D1E6CF8F6000FDC36 /* AssetLibraryTextEffectTests.swift in Sources */,
+				F41568C51FE39242000A72BE /* AssetLibraryCollageTests.swift in Sources */,
+				F4177BFD1E5531BF0042AD86 /* AssetLibraryTests.swift in Sources */,
+				F46D4A161EA05F4900F6EE43 /* EncryptedAssetTests.swift in Sources */,
+				F4A8D6F11FE100BB00487E5F /* CollageDataTests.swift in Sources */,
+				F4FE71A01E962AE100AD2CD0 /* ClipSourceTests.swift in Sources */,
+				F47BE3DE1E3995F9009D7CFE /* LimitSizeMaxTests.swift in Sources */,
+				F43232831F0622DB001AF02A /* HostAppAccess.swift in Sources */,
+				F4038FBA1EA6FC39004C687B /* AssetItemIdAspectModeTests.swift in Sources */,
+				F47EB85D1E36E5CB0088EB4B /* TextRenderingTests.swift in Sources */,
+				F4E9DF681F305175009201A1 /* TemplateTests.swift in Sources */,
+				F48CB8FA1E81FCE800D7C9E1 /* AspectRatioTests.swift in Sources */,
+				F4C19B371EA77FDF00D306B4 /* TemplateAssetsTests.swift in Sources */,
+				E2BD2CC61EA5D33D00E17BDA /* TextEffectTests.swift in Sources */,
+				F41A521420328A3F00A52EBA /* ClipZoomPanningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2A33E351F29B7E2004BB1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47EB82E1E36E3410088EB4B /* NexEditorSDKTest */;
+			targetProxy = E2A33E341F29B7E2004BB1CF /* PBXContainerItemProxy */;
+		};
+		F47EB8441E36E3420088EB4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47EB82E1E36E3410088EB4B /* NexEditorSDKTest */;
+			targetProxy = F47EB8431E36E3420088EB4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F47EB8351E36E3410088EB4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47EB8361E36E3410088EB4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F47EB83A1E36E3410088EB4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47EB83B1E36E3410088EB4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E78F72B1C9684A300AC3347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.5.5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E78F72C1C9684A300AC3347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.5.5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2A33E361F29B7E2004BB1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C95F896E5A79C740886A2A /* Pods-NexEditorSDKObservationTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 963NNYFPCH;
+				INFOPLIST_FILE = NexEditorSDKObservationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.dev.NexEditorSDKObservationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexEditorSDKTest.app/NexEditorSDKTest";
+			};
+			name = Debug;
+		};
+		E2A33E371F29B7E2004BB1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C5F0C3D1502CB2426A9B64 /* Pods-NexEditorSDKObservationTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 963NNYFPCH;
+				INFOPLIST_FILE = NexEditorSDKObservationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.dev.NexEditorSDKObservationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexEditorSDKTest.app/NexEditorSDKTest";
+			};
+			name = Release;
+		};
+		F47EB8491E36E3420088EB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A2D5F525D5A90F546927DB /* Pods-NexEditorSDKTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 963NNYFPCH;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NexEditorSDKTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.NexEditorSDKTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F47EB84A1E36E3420088EB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C06B27F1EAE1CB38951481 /* Pods-NexEditorSDKTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 963NNYFPCH;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NexEditorSDKTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.NexEditorSDKTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F47EB84B1E36E3420088EB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80490386869AF386E77C51E /* Pods-NexEditorSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 963NNYFPCH;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NexEditorSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.EditorFrameworkTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "NexEditorSDKTests/NexEditorSDKTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexEditorSDKTest.app/NexEditorSDKTest";
+			};
+			name = Debug;
+		};
+		F47EB84C1E36E3420088EB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1802AF9714CC6F7A3D2CC6D0 /* Pods-NexEditorSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 963NNYFPCH;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NexEditorSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.EditorFrameworkTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NexEditorSDKTests/NexEditorSDKTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexEditorSDKTest.app/NexEditorSDKTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E78F71F1C9684A300AC3347 /* Build configuration list for PBXProject "NexEditorSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E78F72B1C9684A300AC3347 /* Debug */,
+				1E78F72C1C9684A300AC3347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A33E3A1F29B7E2004BB1CF /* Build configuration list for PBXNativeTarget "NexEditorSDKObservationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A33E361F29B7E2004BB1CF /* Debug */,
+				E2A33E371F29B7E2004BB1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47EB84D1E36E3420088EB4B /* Build configuration list for PBXNativeTarget "NexEditorSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47EB8491E36E3420088EB4B /* Debug */,
+				F47EB84A1E36E3420088EB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47EB84E1E36E3420088EB4B /* Build configuration list for PBXNativeTarget "NexEditorSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47EB84B1E36E3420088EB4B /* Debug */,
+				F47EB84C1E36E3420088EB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E78F71C1C9684A300AC3347 /* Project object */;
+}

@@ -1,0 +1,15 @@
+<effect categorytitle="@string/category_color_fx" hidden="true" icon="fx_pink.2895ff5a27eafb2241ebe044df9441d1143e111a.png" id="com.nexstreaming.kinemaster.builtin2.accent.pink" intime="3000" intimefirst="0" name="@string/fx_pink" outtime="3000" outtimelast="0" repeat="no" type="title">
+
+<texture id="videoframe" video="1" />
+
+<animatedvalue id="fade">
+<part type="in"><keyframe value="0" /><keyframe value="1" /></part>
+<part type="mid"><keyframe value="1" /></part>
+<part type="out"><keyframe value="1" /><keyframe value="0" /></part>
+</animatedvalue>
+		
+<style brightness="@fade*0.1" contrast="@fade*-0.3" saturation="@fade*-0.6" tint="#9c4f4f">
+<rect bounds="-1 1 1 -1" texture="@videoframe" />
+</style>
+	
+</effect>

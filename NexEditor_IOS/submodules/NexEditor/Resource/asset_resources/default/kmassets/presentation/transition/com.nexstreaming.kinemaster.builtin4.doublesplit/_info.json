@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.doublesplit",
+  "label": {
+    "pt": "Divisão dupla",
+    "ja": "二分割",
+    "fr": "Double scission",
+    "zh-CN": "双重分割",
+    "ko-KR": "이중 분할",
+    "ar": "تقسيم مزدوج",
+    "zh-TW": "雙重分割",
+    "en": "Double Split",
+    "zh-HK": "雙重分割",
+    "de-DE": "Doppel-Teilen",
+    "ru": "Двойное разделение",
+    "es": "Dividir doble"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

@@ -1,0 +1,105 @@
+<effect id="com.nexstreaming.kinemaster.builtin.title.stylishsub" name="Stylish Subtitle" categorytitle="More Title Effects" type="title" intime="2000" intimefirst="2000" outtime="2000" outtimelast="2000" icon="fx_text_stylishsub.png">
+
+    <texture id="video1" video="1" />
+    <userfield id="f_text" type="text">
+        <fieldlabel locale="en" value="Title Text" />
+    </userfield>
+    <userfield id="f_color_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="Text Color" />
+	</userfield>
+
+	<userfield id="f_color_line" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="Line Color" />
+	</userfield>
+    
+    <texture 
+    	id="text_2" 
+    	text="%1 " 
+    	width="1132" 
+    	height="124" 
+    	srcfield="@f_text"  
+    	textsize="150"  
+    	textmargin="0"  
+    	textalign="right"  
+    	textvalign="bottom"  
+    	maxlines="2"  
+    	autosize="false"  
+    	typeface="asset:greatvibes-regular.ttf"  
+    	fillcolor="@f_color_text"  
+    	fill="true"  
+    	shadowcolor="0 0 0 0.75"  
+    	shadowoffset="5 5"  
+    	shadowradius="8"  
+    	shadow="true"   />
+    <animatedvalue id="text_2_alpha">
+        <part type="in">
+            <keyframe value="0" />
+            <keyframe value="1" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="text_2_pos">
+        <part type="in">
+            <keyframe value="-756.5 165" />
+            <keyframe value="756.5 165" />
+        </part>
+        <part type="mid">
+            <keyframe value="756.5 165" />
+            <keyframe value="756.5 165" />
+        </part>
+        <part type="out">
+            <keyframe value="756.5 165" />
+            <keyframe value="956.5 165" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="line_alpha">
+        <part type="in">
+            <keyframe value="0" />
+            <keyframe value="1" time="0.5" />
+        </part>
+        <part type="mid">
+            <keyframe value="1" />
+        </part>
+        <part type="out">
+            <keyframe value="1" />
+            <keyframe value="0" />
+        </part>
+    </animatedvalue>
+    <animatedvalue id="line_pos">
+        <part type="in">
+            <keyframe value="-642.5 116" />
+            <keyframe value="642.5 116" time="0.6" />
+        </part>
+        <part type="mid">
+            <keyframe value="642.5 116" />
+            <keyframe value="642.5 116" />
+        </part>
+        <part type="out">
+            <keyframe value="642.5 116" />
+            <keyframe value="642.5 116" />
+        </part>
+    </animatedvalue>
+    <projection type="perspective" fov="45" aspect="1.777777" near="0.01" far="60000">
+        <translate offset="-640 -360 -870">
+            <rect bounds="0 720 1280 0" texture="@video1" />
+            <translate offset="@line_pos">
+                <style alpha="@line_alpha">
+                    <rect bounds="-642.5 5 642.5 -5" color="#00000055" />
+                    <rect bounds="-642.5 4 642.5 -4" color="@f_color_line" />
+                </style>
+            </translate>
+            <translate offset="@text_2_pos">
+                <style alpha="@text_2_alpha">
+                    <rect bounds="-503.5 55.5 503.5 -55.5" texture="@text_2" />
+                </style>
+            </translate>
+        </translate>
+    </projection>
+
+</effect>

@@ -1,0 +1,367 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.family.9v16.opening" 
+	type="title" 
+	repeat="yes"
+	intime="1600" 
+	intimefirst="1600"
+	outtime="800" 
+	outtimelast="800"
+	cycleTime="800"
+	name="Family Opening 9v16">
+
+<!-- NEW FAMILY APP RESOURCES -->
+  <texture id="video1" video="1" />
+  <texture id="texture_bk_blue" 			src="bk_blue.png" />
+  <texture id="texture_bk_light_yellow" 	src="bk_light_yellow.png" />
+  <texture id="texture_bk_pink_yellow" 		src="bk_pink_yellow.png" />
+  <texture id="texture_bk_green" 			src="bk_green.png" />
+  <texture id="texture_bk_large_orange" 	src="bk_large_orange.png" />
+  <texture id="texture_bk_rainbow" 			src="bk_rainbow.png" />
+  <texture id="texture_bk_blue_cyan" 		src="bk_blue_cyan.png" />
+  <texture id="texture_bk_small" 			src="bk_small.png" />
+  <texture id="texture_bk_normal" 			src="bk_normal.png" />
+
+	<animatedvalue id="t" scope="whole" timingfunction="linear">
+		<keyframe value="0" />
+		<keyframe value="20" />
+	</animatedvalue>
+	
+	<function id="glowfunc" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="4" />
+	<function id="glowfuncb" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="5" />
+	<function id="glowfuncc" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="7" />
+	<function id="swingfunc" type="simplexpure" inputscale="1 1 0.2" inputbias="30 20 10" outputscale="0.5" />
+	<function id="swingfuncb" type="simplexpure" inputscale="1 1 0.18" inputbias="20 50 44" outputscale="15" />
+	<function id="swingfuncc" type="simplexpure" inputscale="1 1 0.2" inputbias="30 20 10" outputscale="30" />
+
+  <animatedvalue id="anim_bk_blue" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="170.404 1300" />
+		    <keyframe time="0.7" value="120 1153" />
+		    <keyframe time="0.7" value="120 1153" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="170.404 1300" />
+		    <keyframe time="0.7" value="120 1153" />
+		    <keyframe time="0.7" value="120 1153" />
+        </part>
+        <part type="out">
+		    <keyframe value="120 1153" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_light_yellow" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="-50 850" />
+		    <keyframe time="0.7" value="106 1086" />
+		    <keyframe time="1" value="106 1086" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="-50 850" />
+		    <keyframe time="0.7" value="106 1086" />
+		    <keyframe time="1" value="106 1086" />
+        </part>
+        <part type="out">
+		    <keyframe time="1" value="106 1086" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_pink_yellow" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="-150 1100" />
+		    <keyframe time="0.7" value="-57 1063" />
+		    <keyframe time="1" value="-57 1063" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="-150 1100" />
+		    <keyframe time="0.7" value="-57 1063" />
+		    <keyframe time="1" value="-57 1063" />
+        </part>
+        <part type="out">
+		    <keyframe value="-57 1063" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_blue_cyan" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="205 890" />
+		    <keyframe time="0.7" value="265 950" />
+		    <keyframe time="1" value="265 950" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="205 890" />
+		    <keyframe time="0.7" value="265 950" />
+		    <keyframe time="1" value="265 950" />
+        </part>
+        <part type="out">
+		    <keyframe value="265 950" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_green" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="300 1150" />
+		    <keyframe time="0.7" value="423 1067" />
+		    <keyframe time="1" value="423 1067" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="300 1150" />
+		    <keyframe time="0.7" value="423 1067" />
+		    <keyframe time="1" value="423 1067" />
+        </part>
+        <part type="out">
+		    <keyframe value="423 1067" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_rainbow" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="750 1220" />
+		    <keyframe time="0.7" value="564 1023" />
+		    <keyframe time="1" value="564 1023" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="750 1220" />
+		    <keyframe time="0.7" value="564 1023" />
+		    <keyframe time="1" value="564 1023" />
+        </part>
+        <part type="out">
+		    <keyframe value="564 1023" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_large_orange" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="1050 1400" />
+		    <keyframe time="0.7" value="905 1275" />
+		    <keyframe time="1" value="905 1275" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="1050 1400" />
+		    <keyframe time="0.7" value="905 1275" />
+		    <keyframe time="1" value="905 1275" />
+        </part>
+        <part type="out">
+		    <keyframe value="905 1275" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_small1" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="50 1110" />
+		    <keyframe time="0.7" value="127 1010" />
+		    <keyframe time="1" value="127 1010" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="50 1110" />
+		    <keyframe time="0.7" value="127 1010" />
+		    <keyframe time="1" value="127 1010" />
+        </part>
+        <part type="out">
+		    <keyframe value="127 1010" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_small2" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="450 1000" />
+		    <keyframe time="0.7" value="526 1106" />
+		    <keyframe time="1" value="526 1106" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="450 1000" />
+		    <keyframe time="0.7" value="526 1106" />
+		    <keyframe time="1" value="526 1106" />
+        </part>
+        <part type="out">
+		    <keyframe value="526 1106" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_small3" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="650 899" />
+		    <keyframe time="0.7" value="687 749" />
+		    <keyframe time="1" value="687 749" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="650 899" />
+		    <keyframe time="0.7" value="687 749" />
+		    <keyframe time="1" value="687 749" />
+        </part>
+        <part type="out">
+		    <keyframe value="687 749" />
+        </part>
+  </animatedvalue>
+  <animatedvalue id="anim_bk_normal" timingfunction="linear" scope="whole">
+	<part type="in">
+		<keyframe time="0" value="550 890" />
+		<keyframe time="0.7" value="564 1049" />
+		<keyframe time="1" value="564 1049" />
+	</part>
+	<part type="mid">
+		<keyframe time="0" value="550 890" />
+		<keyframe time="0.7" value="564 1049" />
+		<keyframe time="1" value="554 1049" />
+	</part>
+	<part type="out">
+		<keyframe value="564 1049" />
+	</part>
+  </animatedvalue>
+  
+  <animatedvalue id="alpha_bk_blue" timingfunction="linear" scope="whole">
+        <part type="in">
+		    <keyframe time="0" value="0.2" />
+		    <keyframe time="0.2" value="1" />
+		    <keyframe time="0.95" value="1" />
+		    <keyframe time="1" value="0" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="0.2" />
+		    <keyframe time="0.2" value="1" />
+		    <keyframe time="0.95" value="1" />
+		    <keyframe time="1" value="0" />
+        </part>
+        <part type="out">
+		    <keyframe time="0.5" value="1" />
+		    <keyframe time="1" value="0.3" />
+        </part>
+  </animatedvalue>
+
+  <animatedvalue id="text_alpha" timingfunction="linear" scope="whole"  >
+        <part type="in">
+		    <keyframe time="0" value="0" />
+		    <keyframe time="0.2" value="0.95" />
+		    <keyframe time="0.9" value="0.95" />
+		    <keyframe time="1" value="0.95" />
+        </part>
+        <part type="mid">
+		    <keyframe time="0" value="0.95" />
+		    <keyframe time="0.3" value="0.95" />
+		    <keyframe time="0.7" value="0" />
+		    <keyframe time="1" value="0" />
+        </part>
+        <part type="out">
+		    <keyframe time="1" value="0" />
+        </part>
+	</animatedvalue>
+
+  	<animatedvalue id="angle" basis="clipindexshuffle">
+		<keyframe value="0" />
+		<keyframe value="-9" />
+		<keyframe value="6" />
+		<keyframe value="-3" />
+		<keyframe value="3" />
+		<keyframe value="-6" />
+		<keyframe value="9" />
+	</animatedvalue>
+<!-- --> 
+  	
+  	
+  <projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="-360 -640 -1546.666667">
+        <translate offset="360 640">
+	      <rect bounds="-360 -640 360 640" texture="@video1" />
+        </translate>
+        <style alpha="@alpha_bk_blue">
+			<rotate angle="@angle">
+				<translate offset="@anim_bk_blue">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+							  <rect bounds="-75 -75 75 75" texture="@texture_bk_blue" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_light_yellow">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfuncb(@r.x @r.y @t)">
+						  <rect bounds="-100 -100 100 100" texture="@texture_bk_light_yellow" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_pink_yellow">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+						 <rect bounds="-125 -125 125 125" texture="@texture_bk_pink_yellow" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_blue_cyan">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+						  <rect bounds="-95 -95 95 95" texture="@texture_bk_blue_cyan" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+	
+				<translate offset="@anim_bk_green">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfuncc(@r.x @r.y @t)">
+						  <rect bounds="-115 -115 115 115" texture="@texture_bk_green" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+
+				<translate offset="@anim_bk_rainbow">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+						  <rect bounds="-150 -150 150 150" texture="@texture_bk_rainbow" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_large_orange">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfuncb(@r.x @r.y @t)">
+						  <rect bounds="-400 -400 400 400" texture="@texture_bk_large_orange" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+
+				<translate offset="@anim_bk_small1">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+						  <rect bounds="-50 -50 50 50" texture="@texture_bk_small" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_small2">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfuncc(@r.x @r.y @t)">
+						  <rect bounds="-75 -75 75 75" texture="@texture_bk_small" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_small3">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+						  <rect bounds="-116.500 -117 116.500 117" texture="@texture_bk_small" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+				<translate offset="@anim_bk_normal">
+				  <rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+					  <rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+						<style alpha="@glowfunc(@r.x @r.y @t)">
+						  <rect bounds="-65 -65 65 65" texture="@texture_bk_normal" />
+						</style>
+					  </rotate>
+					</rotate>
+				</translate>
+			</rotate>
+		</style>
+      </translate>
+    </scale>
+  </projection>
+  
+</effect>

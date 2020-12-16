@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.sports_9v16.interlaced_normal",
+  "label": {
+    "en": "sports 9v16 interlaced_normal"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "9v16" ],
+  "hidden": "true"
+}

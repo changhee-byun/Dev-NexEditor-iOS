@@ -1,0 +1,179 @@
+<effect
+  id="com.nexstreaming.kmsdk.lg.love_2v1.trans_circle1"
+  type="transition"
+  effectoffset="100"
+  videooverlap="100"
+  minduration="500"
+  maxduration="5000"
+  defaultduration="2000"
+  name="Love Circle1">
+
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+  <texture id="light" src="nex_sample_1_1.png" />
+
+  <animatedvalue id="anim_1" timingfunction="linear">
+    <keyframe time="0" value="1" />
+    <keyframe time="1" value="12.37" />
+  </animatedvalue>
+  <animatedvalue id="anim_2" timingfunction="linear">
+    <keyframe time="0" value="1" />
+    <keyframe time="1" value="12.510" />
+  </animatedvalue>
+  <animatedvalue id="anim_3" timingfunction="linear">
+    <keyframe time="0.25" value="1" />
+    <keyframe time="0.95" value="9.53" />
+  </animatedvalue>
+  <animatedvalue id="anim_4" timingfunction="linear">
+    <keyframe time="0.25" value="1" />
+    <keyframe time="0.95" value="9.610" />
+  </animatedvalue>
+
+
+  <animatedvalue id="circle_alpha1" timingfunction="ease-in">
+    <keyframe time="0" value="0.3" />
+    <keyframe time="0.25" value="1" />
+    <keyframe time="0.4" value="1" />
+    <keyframe time="0.6" value="0" />
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_move1" timingfunction="ease-out">
+    <keyframe time="0.1" value="-5625 895" />
+    <keyframe time="0.5" value="2160 0" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_scale1" timingfunction="linear">
+    <keyframe time="0" value="0" />
+    <keyframe time="0.3" value="10" />
+    <keyframe time="1" value="10" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_move2" timingfunction="ease-out">
+    <keyframe time="0.5" value="4050 360" />
+    <keyframe time="1" value="-1440 360" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_alpha2" timingfunction="ease-in">
+    <keyframe time="0" value="0.3" />
+    <keyframe time="0.25" value="1" />
+    <keyframe time="0.4" value="1" />
+    <keyframe time="0.6" value="0" />
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_scale2" timingfunction="linear">
+    <keyframe time="0.25" value="12" />
+    <keyframe time="0.95" value="12" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_move3" timingfunction="ease-out">
+    <keyframe time="0.6" value="810 2000" />
+    <keyframe time="0.9" value="0 -1000" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_alpha3" timingfunction="linear">
+    <keyframe time="0" value="0.3" />
+    <keyframe time="0.25" value="1" />
+    <keyframe time="0.79" value="1" />
+    <keyframe time="0.95" value="0" />
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+
+  <animatedvalue id="circle_scale3" timingfunction="ease-out">
+    <keyframe time="0" value="1" />
+    <keyframe time="1" value="1.5" />
+  </animatedvalue>
+
+  <animatedvalue id="angle" basis="clipindexshuffle">
+    <keyframe value="-90" />
+    <keyframe value="0" />
+    <keyframe value="90" />
+  </animatedvalue>
+
+
+  <projection type="perspective" fov="45" aspect="2" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+
+        <translate offset="720 360">
+          <rect bounds="-720 -360 720 360" texture="@video1" />
+        </translate>
+
+        <translate offset="720 360">
+              <style compmode="multiply">
+                <rect bounds="-720 -360 720 360" color="#ffe7b8" />
+          </style>
+        </translate>
+
+
+        <translate offset="38.25 895">
+          <scale uniform="@anim_1">
+            <circle center="0 0" color="1 1 1" radius="150" />
+          </scale>
+        </translate>
+
+        <translate offset="38.25 895">
+          <style dest="stencil">          
+            <scale uniform="@anim_2">
+              <circle center="0 0" color="0.392 1 0.196" radius="148" />
+            </scale>
+          </style>
+        </translate>
+
+        <translate offset="1444.5 889">
+          <style dest="stencil">
+            <scale uniform="@anim_4">
+              <circle center="0 0" color="1 0 0" radius="148" />
+            </scale>
+          </style>
+        </translate>
+
+        <translate offset="1444.5 889">
+          <scale uniform="@anim_3">
+            <circle center="0 0" color="1 1 1" radius="150" />
+          </scale>
+        </translate>
+
+        <style rendertest="stencil">
+          <translate offset="720 360">
+            <rect bounds="-721.125 -361 721.125 361" color="#000000" />
+            <rect bounds="-720 -360 720 360" texture="@video2" />
+          </translate>
+
+          <translate offset="720 360">
+            <style compmode="multiply">
+              <rect bounds="-720 -360 720 360" color="#ffe7b8" />
+            </style>
+          </translate>
+
+          <translate offset="@circle_move1">
+            <style compmode="screen" alpha="@circle_alpha1">
+              <scale uniform="@circle_scale1">
+                <rect bounds="-150 -150 150 150" texture="@light"/>
+              </scale>
+            </style>
+          </translate>
+
+          <rotate angle="@angle">              
+            <translate offset="@circle_move2">
+              <style compmode="screen" alpha="@circle_alpha2">
+                <scale uniform="@circle_scale2">
+                  <rect bounds="-150 -150 150 150" texture="@light"/>
+                </scale>
+              </style>
+            </translate>
+
+            <translate offset="@circle_move3">
+              <style compmode="screen" alpha="@circle_alpha3">
+                  <scale uniform="@circle_scale3">
+                    <rect bounds="-1000 -1000 1000 1000" texture="@light"/>
+                  </scale>
+              </style>
+            </translate>
+          </rotate>
+        </style>
+      </translate>
+    </scale>
+  </projection>
+</effect>

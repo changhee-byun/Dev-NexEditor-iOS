@@ -1,0 +1,10 @@
+{
+  "filename": "renderitem.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.csd.crack_transition",
+  "label": {
+    "en": "Cracked Glass"
+  },
+  "type": "nex.renderitem",
+  "hidden": false
+}

@@ -1,0 +1,15 @@
+{
+  "assetName": {
+    "en": "Renderitem filter sample"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "effect/blur",
+    "effect/blur2",
+    "effect/fastblur",
+    "effect/overlayblurall"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

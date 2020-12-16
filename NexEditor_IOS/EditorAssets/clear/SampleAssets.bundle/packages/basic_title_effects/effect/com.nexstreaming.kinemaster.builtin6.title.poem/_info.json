@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin6.title.poem",
+  "label": {
+    "pt": "Poema",
+    "ja": "ポエム",
+    "fr": "Poème",
+    "zh-CN": "诗歌",
+    "ko-KR": "시",
+    "ar": "قصيدة",
+    "zh-TW": "詩篇特效",
+    "en": "Poem",
+    "zh-HK": "詩篇特效",
+    "de-DE": "Gedicht",
+    "ru": "Поэма",
+    "es": "Poem"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

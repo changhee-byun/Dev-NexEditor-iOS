@@ -1,0 +1,10 @@
+{
+    "filename": "template_2v1_oldfilm.json",
+    "hidden": false,
+    "icon": "thumbnail.png",
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.template.2v1.oldfilm",
+    "label": {
+        "en": "template_2v1_oldfilm"
+    },
+    "type": "nex.template"
+}

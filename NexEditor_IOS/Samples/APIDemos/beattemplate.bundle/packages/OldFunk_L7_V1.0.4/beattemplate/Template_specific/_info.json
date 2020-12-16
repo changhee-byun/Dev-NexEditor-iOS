@@ -1,0 +1,10 @@
+{
+  "id" : "com.kinemaster.beattemplate.old_school_specific",
+  "filename" : "template.json",
+  "icon" : "asset_icon.png",
+  "label" : {
+    "en" : "Old Funk"
+  },
+  "type" : "nex.template",
+  "hidden" : false
+}

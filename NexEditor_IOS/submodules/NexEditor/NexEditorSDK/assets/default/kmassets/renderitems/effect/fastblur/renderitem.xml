@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+	id="com.nexstreaming.editor.fastblurOpt"
+	type="title"
+	intime="1500"
+	outtime="0"
+	intimefirst="1500"
+	outtimelast="0"
+	repeat="no"
+	name="blurall">
+
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+	<shader name="filters_blurH_vertex" language="glsl" src="glsl/filters_fastblurH_vertex.glsl"/>
+	<shader name="filters_blurV_vertex" language="glsl" src="glsl/filters_fastblurV_vertex.glsl"/>
+	<shader name="filters_blur_fragment" language="glsl" src="glsl/filters_fastblur_fragment.glsl"/>
+
+	<program name="BHFx" language="glsl" fragmentShader="filters_blur_fragment" vertexShader="filters_blurH_vertex" />
+	<program name="BVFx" language="glsl" fragmentShader="filters_blur_fragment" vertexShader="filters_blurV_vertex" />
+	<script name="mainScript" language="lua">
+        <![CDATA[
+
+		function main()
+			video_src = kmInitVideoSrc()
+			src_w = kmGetSrcWidth(system.video_left.id)
+			src_h = kmGetSrcHeight(system.video_left.id)
+			tex_w = kmGetTexWidth(system.video_left.id)
+			tex_h = kmGetTexHeight(system.video_left.id)
+			id_matrix = kmNewMatrix()
+			kmLoadIdentity(id_matrix)
+
+			first_pass_tex = system.video_left.id
+
+			second_pass_tex = kmSetRenderToTexture(64, 64)
+			kmDrawTexBox(first_pass_tex, id_matrix, -1, 1, 1, -1, 0, 0)
+			first_pass_tex = second_pass_tex
+
+			second_pass_tex = kmSetRenderToTexture(64, 64)
+			kmDrawTexBox(first_pass_tex, id_matrix, -1, 1, 1, -1, 0, 0)
+			first_pass_tex = second_pass_tex
+
+			second_pass_tex = kmSetRenderToTexture(64, 64)
+
+			BHFx.setMvpMatrix(id_matrix)
+			BHFx.setAlpha(1.0)
+			BHFx.setColorMatrix(id_matrix)
+			BHFx.setTextureSize(64, 64)
+      		BHFx.setReal(system.video_left.real_x, system.video_left.real_y)
+			BHFx.setSTexture0(first_pass_tex)
+			BHFx.drawRect(2, 2)
+
+			kmSetRenderToDefault()
+			BVFx.setAlpha(effect.alpha)
+			BVFx.setColorMatrix(system.video_left.colorconv)
+			BVFx.setMvpMatrix(effect.matrix)
+			BVFx.setTextureSize(64, 64)
+      		BVFx.setReal(system.video_left.real_x, system.video_left.real_y)
+			BVFx.setSTexture0(second_pass_tex)
+			BVFx.setTexMatrix(system.video_left.texmat)
+			BVFx.drawScreen(video_src)
+			kmReleaseTexture(video_src)
+		end
+
+		]]></script>
+</renderitem>

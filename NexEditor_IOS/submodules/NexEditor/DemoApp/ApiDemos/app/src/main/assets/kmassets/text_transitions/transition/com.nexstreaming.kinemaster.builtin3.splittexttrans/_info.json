@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin3.splittexttrans",
+  "label": {
+    "pt": "Dividir título",
+    "ja": "分割タイトル",
+    "fr": "Titre divisé",
+    "zh-CN": "分割标题",
+    "ko-KR": "분할 타이틀",
+    "ar": "تقسيم العنوان",
+    "zh-TW": "分離式標題",
+    "en": "Split Title",
+    "zh-HK": "分離式標題",
+    "de-DE": "Geteilter Titel",
+    "ru": "Название в разделении",
+    "es": "Dividir título"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

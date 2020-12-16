@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.love_2v1.sparkleheart4",
+  "label": {
+    "en": "love 2v1 sparkleheart4"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "res" ],
+  "hidden": "true"
+}

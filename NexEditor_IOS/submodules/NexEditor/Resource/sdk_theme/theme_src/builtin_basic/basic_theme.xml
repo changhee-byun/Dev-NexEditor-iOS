@@ -1,0 +1,17 @@
+<theme 
+	id="com.nexstreaming.kinemaster.basic"
+	icon="theme_thumb_basic.png"
+	preview="basic_preview.mp4"
+	>
+	
+	
+	<string locale="en-us" name="name">Basic</string>
+	<string locale="en-us" name="desc">A very simple theme using cross-fades between clips and plain title text.</string>
+
+	<ref type="accent">com.nexstreaming.kinemaster.basic.accent</ref>
+	<ref type="opening">com.nexstreaming.kinemaster.basic.opening</ref>
+	<ref type="middle">com.nexstreaming.kinemaster.basic.middle</ref>
+	<ref type="ending">com.nexstreaming.kinemaster.basic.ending</ref>
+	<ref type="transition">com.nexstreaming.kinemaster.basic.transition</ref>
+
+</theme>

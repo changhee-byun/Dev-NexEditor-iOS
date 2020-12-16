@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.transition.checker",
+  "label": {
+    "pt": "Virar xadrez",
+    "ja": "チェック柄回転",
+    "fr": "Basculement damier",
+    "zh-CN": "核对旋转",
+    "ko-KR": "체크무늬 회전",
+    "ar": "انعكاس المدقق",
+    "zh-TW": "棋盤旋轉",
+    "en": "Checker Flip",
+    "zh-HK": "棋盤旋轉",
+    "de-DE": "Schachbrett Flip",
+    "ru": "Шахматная доска",
+    "es": "Voltear con patrón a cuadros"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

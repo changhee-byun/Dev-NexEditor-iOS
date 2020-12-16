@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.transition.pip.corners",
+  "label": {
+    "pt": "Cantos",
+    "ja": "コナス",
+    "fr": "Coins",
+    "zh-CN": "角落",
+    "ko-KR": "코너스",
+    "ar": "الجوانب",
+    "zh-TW": "對角切換",
+    "en": "Corners",
+    "zh-HK": "對角切換",
+    "de-DE": "Ecken",
+    "ru": "Уголки",
+    "es": "Esquinas"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

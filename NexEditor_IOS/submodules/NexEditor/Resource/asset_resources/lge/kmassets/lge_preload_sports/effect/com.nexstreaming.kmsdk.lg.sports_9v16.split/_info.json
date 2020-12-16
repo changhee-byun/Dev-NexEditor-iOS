@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.sports_9v16.split",
+  "label": {
+    "en": "sports 9v16 split"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "9v16" ],
+  "hidden": "true"
+}

@@ -1,0 +1,149 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.loveaccent", 
+            "thumbnail": null, 
+            "version": "20160912015911", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.csparkle", 
+            "thumbnail": null, 
+            "version": "20160912015911", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.hearttitle", 
+            "thumbnail": null, 
+            "version": "20160912015911", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.sparkle", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.sparkleheart3", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.trans_fadewipe", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.trans_fadewipe2", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.lovecrossfade", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.trans_lovetransition", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.trans_sparkles", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.intro", 
+            "thumbnail": null, 
+            "version": "20160912015912", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.love_9v16.20160912015913.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.love_9v16.outro", 
+            "thumbnail": null, 
+            "version": "20160912015913", 
+            "dependencies": [], 
+            "package_date": 736219, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

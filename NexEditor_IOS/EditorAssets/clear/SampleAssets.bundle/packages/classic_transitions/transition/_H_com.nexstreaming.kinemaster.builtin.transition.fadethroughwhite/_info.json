@@ -1,0 +1,20 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kinemaster.builtin.transition.fadethroughwhite",
+  "label": {
+    "pt": "Fade Through White",
+    "ja": "Fade Through White",
+    "fr": "Fade Through White",
+    "zh-CN": "Fade Through White",
+    "ko-KR": "Fade Through White",
+    "ar": "Fade Through White",
+    "zh-TW": "Fade Through White",
+    "en": "Fade Through White",
+    "zh-HK": "Fade Through White",
+    "de-DE": "Fade Through White",
+    "ru": "Fade Through White",
+    "es": "Fade Through White"
+  },
+  "type": "nex.kedl",
+  "hidden": true
+}

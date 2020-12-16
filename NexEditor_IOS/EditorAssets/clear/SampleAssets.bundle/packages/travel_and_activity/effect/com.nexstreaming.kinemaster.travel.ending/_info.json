@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.jpg",
+  "id": "com.nexstreaming.kinemaster.travel.ending",
+  "label": {
+    "pt":     "Viagem - A finalizar",
+    "ja":     "旅行 - 終わり",
+    "fr":     "Voyage - Fin",
+    "zh-CN":  "旅行 - 结尾",
+    "ko-KR":  "여행 - 마지막",
+    "zh-TW":  "旅行 - 最後",
+    "en":     "Travel - Ending",
+    "zh-HK":  "旅行 - 最後",
+    "de-DE":  "Reisen - Ende",
+    "ru":     "Путешествие - Завершение",
+    "es":     "Viajes - Final",
+    "ar":     "سفر - إنهاء"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

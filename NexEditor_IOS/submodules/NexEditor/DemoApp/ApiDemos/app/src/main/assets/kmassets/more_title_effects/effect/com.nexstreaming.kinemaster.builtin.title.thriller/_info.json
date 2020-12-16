@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.title.thriller",
+  "label": {
+    "pt": "Suspense",
+    "ja": "スリラー",
+    "fr": "Thriller",
+    "zh-CN": "恐怖",
+    "ko-KR": "스릴러",
+    "ar": "قصة مثيرة",
+    "zh-TW": "恐怖",
+    "en": "Thriller",
+    "zh-HK": "恐怖",
+    "de-DE": "Thriller",
+    "ru": "Триллер",
+    "es": "Terror"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

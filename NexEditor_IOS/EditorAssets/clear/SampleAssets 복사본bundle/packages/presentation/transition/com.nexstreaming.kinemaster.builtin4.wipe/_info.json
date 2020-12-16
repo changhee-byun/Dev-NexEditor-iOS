@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.wipe",
+  "label": {
+    "pt": "Limpar",
+    "ja": "ワイプ",
+    "fr": "Balayage",
+    "zh-CN": "擦除",
+    "ko-KR": "닦아내기",
+    "ar": "مسح",
+    "zh-TW": "抹去",
+    "en": "Wipe",
+    "zh-HK": "抹去",
+    "de-DE": "Wischen",
+    "ru": "Шторка",
+    "es": "Limpiar"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

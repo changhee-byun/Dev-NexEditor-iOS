@@ -1,0 +1,16 @@
+{
+  "assetName": {
+    "en": "RenderItem Test"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "effect/test_effect",
+    "effect/book_effect",
+    "overlay/text_input_top_to_bottom",
+    "overlay/overlay_effect",
+    "overlay/lowerthirds_effect_1"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

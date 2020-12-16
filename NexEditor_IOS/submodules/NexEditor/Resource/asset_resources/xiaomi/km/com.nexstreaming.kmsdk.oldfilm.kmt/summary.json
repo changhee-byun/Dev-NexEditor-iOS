@@ -1,0 +1,125 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm_9v16.accent", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm_9v16.ending", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm_9v16.middle", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm_9v16.opening", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm_9v16.transition", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm.accent", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm.ending", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm.middle", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm.opening", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.oldfilm.20160531012604.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.oldfilm.transition", 
+            "thumbnail": null, 
+            "version": "20160531012604", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

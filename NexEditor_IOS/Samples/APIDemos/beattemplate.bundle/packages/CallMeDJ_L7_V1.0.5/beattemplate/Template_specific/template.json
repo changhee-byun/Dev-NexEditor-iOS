@@ -1,0 +1,168 @@
+{
+  "beatType" : [
+    "specific"
+  ],
+  "effectEntries" : [
+    {
+      "startTime" : 0,
+      "beatIndex" : 0,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.OP.effect",
+      "clipEffectEndTime" : 42.120140075683594
+    },
+    {
+      "startTime" : -96,
+      "sourceChange" : true,
+      "beatIndex" : 4,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT2.effect",
+      "clipEffectEndTime" : 100
+    },
+    {
+      "startTime" : -50,
+      "sourceChange" : true,
+      "beatIndex" : 6,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT1.effect",
+      "clipEffectEndTime" : 100
+    },
+    {
+      "startTime" : -61,
+      "sourceChange" : true,
+      "beatIndex" : 8,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT2.effect",
+      "clipEffectEndTime" : 99.677421569824219
+    },
+    {
+      "startTime" : -61,
+      "sourceChange" : true,
+      "beatIndex" : 10,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT1.effect",
+      "clipEffectEndTime" : 99.895614624023438
+    },
+    {
+      "startTime" : -33,
+      "sourceChange" : true,
+      "beatIndex" : 12,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT2.effect",
+      "clipEffectEndTime" : 99.889259338378906
+    },
+    {
+      "startTime" : -61,
+      "sourceChange" : true,
+      "beatIndex" : 14,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT1.effect",
+      "clipEffectEndTime" : 99.892356872558594
+    },
+    {
+      "startTime" : -62,
+      "sourceChange" : true,
+      "beatIndex" : 16,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT2.effect",
+      "clipEffectEndTime" : 99.892585754394531
+    },
+    {
+      "startTime" : -61,
+      "sourceChange" : true,
+      "beatIndex" : 18,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTT1.effect",
+      "clipEffectEndTime" : 97.991546630859375
+    },
+    {
+      "startTime" : -45,
+      "sourceChange" : true,
+      "beatIndex" : 20,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFT.effect",
+      "clipEffectEndTime" : 98.712448120117188
+    },
+    {
+      "startTime" : 188,
+      "sourceChange" : true,
+      "beatIndex" : 20,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTB.effect",
+      "clipEffectEndTime" : 99.137931823730469
+    },
+    {
+      "startTime" : -46,
+      "sourceChange" : true,
+      "beatIndex" : 21,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFT.effect",
+      "clipEffectEndTime" : 98.712448120117188
+    },
+    {
+      "startTime" : 187,
+      "sourceChange" : true,
+      "beatIndex" : 21,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTB.effect",
+      "clipEffectEndTime" : 99.137931823730469
+    },
+    {
+      "startTime" : -46,
+      "sourceChange" : true,
+      "beatIndex" : 22,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFT.effect",
+      "clipEffectEndTime" : 85.959884643554688
+    },
+    {
+      "startTime" : -162,
+      "sourceChange" : true,
+      "beatIndex" : 23,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTB.effect",
+      "clipEffectEndTime" : 85.959884643554688
+    },
+    {
+      "startTime" : 187,
+      "sourceChange" : true,
+      "beatIndex" : 23,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.LEFTB.effect",
+      "clipEffectEndTime" : 86.206893920898438
+    },
+    {
+      "startTime" : -46,
+      "sourceChange" : true,
+      "beatIndex" : 24,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.Fast3.RIGHTT.effect",
+      "clipEffectEndTime" : 99.849853515625
+    },
+    {
+      "startTime" : 356,
+      "beatIndex" : 26,
+      "clipEffectId" : "none",
+      "colorFilterId" : "none"
+    }
+  ],
+  "baseBpm" : 128,
+  "title" : "Call_Me.m4a meta",
+  "positions" : [
+    0,
+    116,
+    581,
+    1046,
+    1511,
+    1977,
+    2442,
+    2907,
+    3372,
+    3837,
+    4302,
+    4767,
+    5232,
+    5698,
+    6163,
+    6628,
+    7093,
+    7558,
+    8023,
+    8488,
+    8953,
+    9419,
+    9884,
+    10349,
+    10814,
+    11279,
+    11744
+  ],
+  "audioId" : "com.kinemaster.audio.nometa.call_me",
+  "defualtEffect" : {
+    "clipEffectId" : "com.nexstreaming.kmsdk.nex.audiobit.flash",
+    "scColorFilterId" : "none"
+  },
+  "version" : 3
+}

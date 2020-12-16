@@ -1,0 +1,77 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kmsdk.family_9v16.20160225043733.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.family_9v16.accent", 
+            "thumbnail": null, 
+            "version": "20160225043733", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.family_9v16.20160225043733.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.family_9v16.middleillusion", 
+            "thumbnail": null, 
+            "version": "20160225043733", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.family_9v16.20160225043733.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.family_9v16.middlevignette", 
+            "thumbnail": null, 
+            "version": "20160225043733", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.family_9v16.20160225043733.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.family_9v16.opening", 
+            "thumbnail": null, 
+            "version": "20160225043733", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.family_9v16.20160225043733.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.family_9v16.openingtrans", 
+            "thumbnail": null, 
+            "version": "20160225043733", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.family_9v16.20160225043733.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.family_9v16.piptrans1", 
+            "thumbnail": null, 
+            "version": "20160225043733", 
+            "dependencies": [], 
+            "package_date": 736019, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

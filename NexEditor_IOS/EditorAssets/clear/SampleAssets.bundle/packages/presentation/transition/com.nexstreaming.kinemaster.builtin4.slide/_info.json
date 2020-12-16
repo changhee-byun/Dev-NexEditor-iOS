@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.slide",
+  "label": {
+    "pt": "Deslizar",
+    "ja": "スライド",
+    "fr": "Glissement",
+    "zh-CN": "滑入",
+    "ko-KR": "슬라이드",
+    "ar": "انزلاق",
+    "zh-TW": "推入",
+    "en": "Slide",
+    "zh-HK": "推入",
+    "de-DE": "Gleiten",
+    "ru": "Скольжение",
+    "es": "Deslizar"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

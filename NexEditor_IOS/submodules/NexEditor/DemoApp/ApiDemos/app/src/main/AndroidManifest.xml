@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nexstreaming.nexeditorsdkapis">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".ApiDemosConfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".ApiDemosActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".effect.EffectPreviewListActivity"
+            android:label="@string/title_activity_effect_preview_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".effect.EffectPreviewListTestActivity"
+            android:label="@string/title_activity_effect_preview_list_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".effect.EffectPreviewActivity"
+            android:label="@string/title_activity_effect_preview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".edit.ClipInfoActivity"
+            android:label="@string/title_activity_clip_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioSpeedControlActivity"
+            android:label="@string/title_activity_audio_speed_control"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".export.ExportActivity"
+            android:label="@string/title_activity_export"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".overlay.OverlayUserImageActivity"
+            android:label="@string/title_activity_overlay_user_image"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".edit.ProjectEditActivity"
+            android:label="@string/title_activity_project_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".edit.ClipColorAdjustActivity"
+            android:label="@string/title_activity_clip_color_adjust"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".effect.EffectShowTimeActivity"
+            android:label="@string/title_activity_effect_show_time"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".edit.ClipCropTestActivity"
+            android:label="@string/title_activity_clip_crop_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".audio.AudioSoundSettingActivity"
+            android:label="@string/title_activity_audio_sound_setting"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".thumbnail.ThumbnailActivity"
+            android:label="@string/title_activity_thumbnail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".effect.EffectListActivity"
+            android:label="@string/title_activity_effect_list"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".audio.AudioBGMTestActivity"
+            android:label="@string/title_activity_audio_bgm_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".etc.Template20TestActivity"
+            android:label="@string/title_activity_template_demo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".etc.CollageTestActivity"
+            android:label="@string/title_activity_collage_test"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".edit.ClipTrimTestActivity"
+            android:label="@string/title_activity_clip_trim_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".thumbnail.ThumbnailCacnelTestActivity"
+            android:label="@string/title_activity_thumbnail_cacnel_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".etc.MediaPlayerActivity"
+            android:label="@string/title_activity_media_player"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".edit.ClipMultiTrimActivity"
+            android:label="@string/title_activity_clip_multitrim_test"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".etc.SnapShotTestActivity"
+            android:label="@string/title_activity_snap_shot_test"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".etc.ExceptionTestActivity"
+            android:label="@string/title_activity_exception_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".overlay.OverlaySlideShowActivity"
+            android:label="@string/title_activity_overlay_slide_show"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".etc.ReverseTestActivity"
+            android:label="@string/title_activity_reverse_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".etc.Reverse3TestActivity"
+            android:label="@string/title_activity_reverse3_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".thumbnail.ThumbnailSeektabActivity"
+            android:label="@string/title_activity_thumbnail_seektab"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".audio.AudioEnvelopActivity"
+            android:label="@string/title_activity_audio_envelop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".pip.PIPDisplayTestActivity"
+            android:label="@string/title_activity_pipdisplay_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".pip.PIPPlayTestActivity"
+            android:label="@string/title_activity_pipplay_test" >
+        </activity>
+        <activity
+            android:name=".audio.AudioTrackActivity"
+            android:label="@string/title_activity_audio_track" >
+        </activity>
+        <activity
+            android:name=".audio.AudioTrackInfoActivity"
+            android:label="@string/title_activity_audio_track_info" >
+        </activity>
+        <activity
+            android:name=".etc.AutoTrimTestActivity"
+            android:label="AutoTrimTestActivity" >
+        </activity>
+        <activity
+            android:name=".overlay.OverlayFastViewActivity"
+            android:label="@string/title_activity_overlay_fast_view" >
+        </activity>
+        <activity
+            android:name=".etc.TranscodingTestActivity"
+            android:label="@string/title_activity_transcoding_test"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".audio.AudioVoiceChangerActivity"
+            android:label="@string/title_activity_audio_voice_changer" >
+        </activity>
+        <activity
+            android:name=".etc.AutoTrimSpeedCheckActivity"
+            android:label="AutoTrimSpeedCHeck" >
+        </activity>
+        <activity
+            android:name=".effect.ColorEffectListActivity"
+            android:label="@string/title_activity_color_effect_list" >
+        </activity>
+        <activity
+            android:name=".overlay.OverlayKMTextActivity"
+            android:label="@string/title_activity_overlay_kmtext"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".export.TransCoderTestActivity"
+            android:label="@string/title_activity_export_vs_trans_code"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".etc.AspectRatioTestActivity"
+            android:label="@string/title_activity_aspect_ratio_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".qatest.AutoQATestActivity"
+            android:label="@string/title_activity_auto_qatest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".qatest.AutoTestActivity"
+            android:label="@string/title_activity_auto_qatest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".qatest.VideoViewActivity"
+            android:label="@string/title_activity_video_view" >
+        </activity>
+        <activity
+            android:name=".audio.AudioEditActivity"
+            android:label="@string/title_activity_audio_edit">
+        </activity>
+        <activity
+            android:name=".audio.AudioVisualizerActivity"
+            android:label="@string/title_activity_audio_visualizer" >
+        </activity>
+        <activity
+            android:name=".overlay.ChromaKeyTestActivity"
+            android:label="@string/title_activity_chroma_key_test" >
+        </activity>
+        <activity
+            android:name=".effect.ClipEffectPreviewActivity"
+            android:label="@string/title_activity_clip_effect_preview" >
+        </activity>
+        <activity
+            android:name=".etc.AssetListActivity"
+            android:label="@string/title_activity_asset_list" >
+        </activity>
+
+        <service android:name="com.nexstreaming.nexeditorsdk.service.nexAssetService"
+            android:exported="true">
+        </service>
+
+        <activity
+            android:name=".surface.SurfaceViewTestActivity"
+            android:label="@string/title_activity_surface_view_test" />
+        <activity
+            android:name=".surface.EngineViewTestActivity"
+            android:label="@string/title_activity_engine_view_test" />
+        <activity
+            android:name=".etc.FaceDetectorActivity"
+            android:label="@string/title_activity_face_detector" />
+        <activity
+            android:name=".overlay.OverlayFilterPreViewActivity"
+            android:label="@string/title_activity_overlay_filter_pre_view"></activity>
+        <activity
+            android:name=".effect.EffectCaptureActivity"
+            android:label="@string/title_activity_effect_capture"></activity>
+        <activity
+            android:name=".surface.ThemeViewTestActivity"
+            android:label="@string/title_activity_theme_view_test"></activity>
+        <activity
+            android:name=".overlay.OverlayMaskTestActivity"
+            android:label="@string/title_activity_overlay_mask_test"></activity>
+        <activity
+            android:name=".etc.EditorSimpleActivity"
+            android:label="@string/title_activity_editor_simple"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".etc.EditorSampleTemplateActivity"
+            android:label="@string/title_activity_editor_sample_template"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".edit.ProjectEdit2Activity" />
+        <activity android:name=".etc.GifViewActivity"></activity>
+        <activity android:name=".audio.AudioPCMActivity"></activity>
+        <activity android:name=".overlay.OverlayAssetActivity"></activity>
+        <activity android:name=".text.TextEffectActivity"></activity>
+    </application>
+
+</manifest>

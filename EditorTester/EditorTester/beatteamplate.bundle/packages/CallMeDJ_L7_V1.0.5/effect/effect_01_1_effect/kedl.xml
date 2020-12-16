@@ -1,0 +1,64 @@
+<effect
+  id="com.kinemaster.kmsdk.design1.beatsync.Fast3.OP.effect"
+  type="title"
+  syntax="NexEDL:3.0"
+  width="1280"
+  height="720"
+  intime="1000"
+  outtime="1000"
+  intimefirst="0"
+  outtimelast="0"
+  repeat="no">
+  <renderitemcomp id="zoomMirror" uid="com.kinemaster.kmsdk.design1.beatsync.call_me.effect.ri.vas.zoomMirror" />
+  <renderitemcomp id="motionblur" uid="com.kinemaster.kmsdk.design1.beatsync.call_me.effect.ri.vas.motionblur" />
+  <animatedvalue id="anim_1" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="1263.377 360" />
+    <keyframe time="0.023" value="78.961 360" timingfunction="ease-in-out" />
+    <keyframe time="0.056" value="1068.052 360" timingfunction="ease-in-out" />
+    <keyframe time="0.124" value="349.091 360" timingfunction="ease-in-out" />
+    <keyframe time="0.257" value="868.571 360" timingfunction="ease-in-out" />
+    <keyframe time="0.542" value="602.727 360" timingfunction="ease-in-out" />
+    <keyframe time="0.998" value="640 360" timingfunction="ease-in-out" />
+  </animatedvalue>
+  <animatedvalue id="anim_2" scope="whole" timingfunction="linear">
+    <keyframe time="0.257" value="-3" timingfunction="ease-in-out" />
+    <keyframe time="0.382" value="2" />
+    <keyframe time="0.542" value="-1" timingfunction="ease-in-out" />
+    <keyframe time="0.773" value="0.5" timingfunction="ease-in-out" />
+    <keyframe time="0.998" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <animatedvalue id="anim_3" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="6" />
+    <keyframe time="1" value="0" timingfunction="ease-out" />
+  </animatedvalue>
+  <texture id="video1" video="1" />
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -869.1168825">
+        <translate offset="@anim_1">
+          <rotate axis="0 0 1" angle="@anim_2">
+            <scale uniform="3">
+              <rect
+                texture="@video1"
+                bounds="-640 -360 640 360"
+                renderitem="@zoomMirror"
+                ritmparam="range.zoom 20" />
+            </scale>
+          </rotate>
+        </translate>
+        <translate offset="640 360">
+          <rect
+            bounds="-640 -360 640 360"
+            color="1 0.392 0.196 1.0"
+            renderitem="@motionblur"
+            ritmparam="range.f_block_size @anim_3;range.angle 0" />
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

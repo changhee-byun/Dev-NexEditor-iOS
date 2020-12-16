@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.nexstreaming.csd.overlayeffect"
+            type="transition"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+            name="top_to_bottom">
+
+	<shader name="simpleAlphaVertexShader" language="glsl" src="glsl/base_vertex_shader.glsl"/>
+	<shader name="simpleAlphaFragmentShader" language="glsl" src="glsl/base_fragment_shader.glsl"/>
+	<shader name="filters_common_vertex" language="glsl" src="glsl/filters_common_vertex.glsl"/>
+	<shader name="filters_mosaicall_fragment" language="glsl" src="glsl/filters_mosaicall_fragment.glsl"/>
+
+	<program name="MAFx" language="glsl" fragmentShader="filters_mosaicall_fragment" vertexShader="filters_common_vertex" />
+	<program name="simpleFx" language="glsl" fragmentShader="simpleAlphaFragmentShader" vertexShader="simpleAlphaVertexShader" />
+	<script name="mainScript" language="lua"><![CDATA[
+
+		effect = {matrix = 0, left = 0, top = 0, right = 0, bottom = 0}
+
+		function setMatrixRECT(matrix, left, top, right, bottom)
+
+			effect.matrix = matrix
+			effect.left = left
+			effect.top = top
+			effect.right = right
+			effect.bottom = bottom
+		end
+
+		function main()
+			src_tex_id = kmGetScreenTexture(effect.matrix, effect.left, effect.top, effect.right, effect.bottom)
+			w = kmGetTexWidth(src_tex_id)
+			h = kmGetTexHeight(src_tex_id)
+			res_tex = kmSetRenderToTexture(w, h)
+			kmClear(GL_COLOR_BUFFER_BIT)
+			mvp_matrix = kmNewMatrix()
+			kmLoadIdentity(mvp_matrix)
+			MAFx.setMvpMatrix(mvp_matrix)
+			kmSetTexture(0, src_tex_id, program.MAFx.u_sTexture0)
+			MAFx.drawRect(2, 2)
+
+			kmSetRenderToDefault()
+			simpleFx.setMvpMatrix(effect.matrix)
+			simpleFx.setTextureSampler(res_tex)
+			simpleFx.setAlpha(1.0)
+			simpleFx.drawRect(effect.right - effect.left, effect.top - effect.bottom)
+			kmReleaseTexture(src_tex_id)
+		end
+
+		]]></script>
+</renderitem>

@@ -1,0 +1,8 @@
+{
+  "filename": "renderitem.xml",
+  "thumbnail": "asset_icon.png",
+  "label": {
+    "en": "Mosaic"
+  },
+  "type": "nex.renderitem"
+}

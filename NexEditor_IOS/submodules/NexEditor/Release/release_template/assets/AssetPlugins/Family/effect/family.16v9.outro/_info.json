@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.family.16v9.outro.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.family.16v9.outro",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.family.16v9.outro"
+    },
+    "mergePaths": [
+        "16v9"
+    ],
+    "type": "nex.kedl"
+}

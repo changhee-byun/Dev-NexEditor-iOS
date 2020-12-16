@@ -1,0 +1,93 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin.watermark.mov"
+  type="title"
+  intime="0"
+  outtime="0"
+  intimefirst="0"
+  outtimelast="0"
+  hidden="true"
+  repeat="yes"
+  cycletime="13000"
+  name="_">
+  
+  <animatedvalue id="scale">
+    <keyframe value="1" />
+  </animatedvalue>
+  <animatedvalue id="center">
+    <keyframe value="1030 58" />
+  </animatedvalue>
+  <animatedvalue id="anim_angle_1" timingfunction="linear">
+    <keyframe time="0.0" value="0" />
+
+    <keyframe time="0.600" value="0" />
+    <keyframe time="0.650" value="90" />
+
+    <keyframe time="0.850" value="-90" />
+    <keyframe time="0.900" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_alpha_1" timingfunction="linear">
+    <keyframe time="0.0" value="0000.75" />
+
+    <keyframe time="0.600" value="0000.75" />
+    <keyframe time="0.650" value="0" />
+
+    <keyframe time="0.850" value="0" />
+    <keyframe time="0.900" value="0000.75" />
+  </animatedvalue>
+
+
+  <animatedvalue id="anim_angle_2" timingfunction="linear">
+    <keyframe time="0.0" value="-90" />
+
+    <keyframe time="0.600" value="-90" />
+    <keyframe time="0.650" value="0" />
+
+    <keyframe time="0.850" value="0" />
+    <keyframe time="0.900" value="90" />
+  </animatedvalue>
+  <animatedvalue id="anim_alpha_2" timingfunction="linear">
+    <keyframe time="0.0" value="0" />
+
+    <keyframe time="0.600" value="0" />
+    <keyframe time="0.650" value="0000.75" />
+
+    <keyframe time="0.850" value="0000.75" />
+    <keyframe time="0.900" value="0" />
+
+  </animatedvalue>
+
+  <texture id="texture_1" src="watermark.png" />
+  <texture id="texture_2" src="watermark.png" />
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -870">
+
+        <translate offset="@center">
+          <rotate axis="1 0 0" angle="@anim_angle_1">
+            <style alpha="@anim_alpha_1">
+              <scale uniform="@scale">
+                <rect bounds="-100 -50 100 50" texture="@texture_1" />
+              </scale>
+            </style>
+          </rotate>
+        </translate>
+        
+        <translate offset="@center">
+          <rotate axis="1 0 0" angle="@anim_angle_2">
+            <style alpha="@anim_alpha_2">
+              <scale uniform="@scale">
+                <rect bounds="-100 -50 100 50" texture="@texture_2" />
+              </scale>
+            </style>
+          </rotate>
+        </translate>
+        
+      </translate>
+    </scale>
+  </projection>
+</effect>

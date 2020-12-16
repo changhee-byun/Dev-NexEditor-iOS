@@ -1,0 +1,70 @@
+<effect id="com.nexstreaming.kinemaster.builtin.title.thriller" name="Thriller" categorytitle="More Title Effects" type="title" icon="fx_text_thriller.png" intimefirst="700" intime="700" outtime="500" repeat="no" >
+
+	<userfield id="f_text" type="text">
+		<fieldlabel locale="en" value="Title Text" />
+	</userfield>
+
+	<userfield id="f_color_textfill" type="color" default="#88FF44">
+		<fieldlabel locale="en" value="Text Fill" />
+	</userfield>
+
+	<userfield id="f_color_textborder" type="color" default="#00AA00">
+		<fieldlabel locale="en" value="Text Outline" />
+	</userfield>
+
+	<texture id="videoframe" video="1" />
+	
+	<texture id="title_text" text="%1" 
+		typeface="asset:knewave.ttf" 
+		textsize="200" 
+		height="400"
+		width="900" 
+		srcfield="@f_text"
+		fillcolor="@f_color_textfill" 
+		shadowoffset="0 0" shadowradius="12" shadowcolor="0 0 0 1"
+		textmargin="12"
+		textalign="center"
+		maxlines="4"
+		strokecolor="@f_color_textborder"
+		textstrokewidth="5"
+		fill="true" stroke="true" shadow="true" />
+	
+	<rect bounds="-1 1 1 -1" texture="@videoframe" />
+	
+	<animatedvalue id="fade">
+		<part type="in"><keyframe value="0" /><keyframe value="1" /></part>
+		<part type="mid"><keyframe value="1" /></part>
+		<part type="out"><keyframe value="1" /><keyframe value="0" /></part>
+	</animatedvalue>
+	
+	<animatedvalue id="spin">
+		<part type="in"><keyframe value="-100" /><keyframe value="16" /></part>
+		<part type="mid"><keyframe value="16" /></part>
+		<part type="out"><keyframe value="16" /><keyframe value="16" /></part>
+	</animatedvalue>
+	
+	<animatedvalue id="zoom" timingfunction="linear">
+		<part type="in">
+			<keyframe value="0.1" />
+			<keyframe value="1.2" timingfunction="ease-in" time="0.8" />
+			<keyframe value="1" timingfunction="ease-out" />
+		</part>
+		<part type="mid"><keyframe value="1" /></part>
+		<part type="out"><keyframe value="1" /><keyframe value="1.4" timingfunction="ease" /></part>
+	</animatedvalue>
+	
+	<projection type="perspective" aspect="1.77777" fov="45" top="1" near="1" far="40">
+		<translate offset="0 0 -21.69">
+			<scale uniform="0.025">
+				<style alpha="@fade">
+					<scale uniform="@zoom">
+						<rotate angle="@spin">
+							<rect location="0 0" height="450" width="950" scalemode="fit" anchor="center" texture="@title_text" />
+						</rotate>
+					</scale>
+				</style>
+			</scale>
+		</translate>
+	</projection>
+	
+</effect>

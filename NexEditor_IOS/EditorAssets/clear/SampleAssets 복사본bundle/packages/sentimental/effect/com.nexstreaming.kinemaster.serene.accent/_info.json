@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.jpg",
+  "id": "com.nexstreaming.kinemaster.serene.accent",
+  "label": {
+    "pt":     "Sereno - Enfatizado",
+    "ja":     "静かな - アクセント",
+    "fr":     "Serein - Accent",
+    "zh-CN":  "沉静 - 强调",
+    "ko-KR":  "고요한 - 엑센트",
+    "zh-TW":  "寧靜 - 強調",
+    "en":     "Serene - Accent",
+    "zh-HK":  "寧靜 - 強調",
+    "de-DE":  "Heiter - Akzent",
+    "ru":     "Безмятежность - Акцент",
+    "es":     "Sereno - Énfasis",
+    "ar":     "هادئ - لهجة"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

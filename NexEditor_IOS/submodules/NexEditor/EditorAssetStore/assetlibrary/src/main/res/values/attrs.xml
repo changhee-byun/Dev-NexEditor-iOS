@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="indicatorColor" format="color"/>
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="dividerMargin" format="dimension"/>
+        <attr name="tabPadding" format="dimension"/>
+        <attr name="tabIconPadding" format="dimension"/>
+        <attr name="tabBackgroundColor" format="color"/>
+        <attr name="tabTextSize" format="dimension"/>
+        <attr name="tabTextColor" format="color"/>
+        <attr name="selectedTabTextColor" format="color"/>
+        <attr name="tabTextAllCaps" format="boolean"/>
+        <attr name="tabTextOutline" format="boolean"/>
+        <attr name="scrollOffset" format="dimension"/>
+        <attr name="shouldExpand" format="boolean"/>
+    </declare-styleable>
+</resources>

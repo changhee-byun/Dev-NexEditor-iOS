@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin3.knockaside",
+  "label": {
+    "pt": "Bater de lado",
+    "ja": "端へ押し出す",
+    "fr": "Basculement sur le côté",
+    "zh-CN": "敲除",
+    "ko-KR": "옆으로 밀어내기",
+    "ar": "طرق جانبًا",
+    "zh-TW": "推敲",
+    "en": "Knock Aside",
+    "zh-HK": "推敲",
+    "de-DE": "Knock Aside",
+    "ru": "Выбивание",
+    "es": "Empujar a un lado"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

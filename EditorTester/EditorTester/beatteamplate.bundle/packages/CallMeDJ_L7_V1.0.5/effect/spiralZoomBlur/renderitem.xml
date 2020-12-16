@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.kinemaster.kmsdk.design1.beatsync.effect.ri.vas.spiralZoomBlur"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+            name="spiralZoomBlur">
+
+	  <parameter id="radius" type="range" default="65" minvalue="1" maxvalue="100">
+      <string name="label" lang="en">Radius</string>
+    </parameter>
+
+    <parameter id="spiralStrength" type="range" default="8" minvalue="0" maxvalue="20">
+      <string name="label" lang="en">spiralStrength</string>
+    </parameter>
+
+  <parameter id="enableZoomOut" type="range" default="1" minvalue="0" maxvalue="1">
+    <string name="label" lang="en">enableZoomOut</string>
+  </parameter>
+
+  <parameter id="qualityLevel" type="range" default="2" minvalue="0" maxvalue="10">
+    <string name="label" lang="en">qualityLevel</string>
+  </parameter>
+
+  <parameter id="centerX" type="range" default="50" minvalue="0" maxvalue="100">
+    <string name="label" lang="en"> centerX </string>
+  </parameter>
+  <parameter id="centerY" type="range" default="50" minvalue="0" maxvalue="100">
+    <string name="label" lang="en"> centerY </string>
+  </parameter>
+
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+	<shader name="filters_common_vertex" language="glsl" src="glsl/filters_common_vertex.glsl"/>
+	<shader name="filters_spiralZoomBlur_fragment" language="glsl" src="glsl/filters_spiralZoomBlur_fragment.glsl"/>
+	<program name="SWFx" language="glsl" fragmentShader="filters_spiralZoomBlur_fragment" vertexShader="filters_common_vertex" />
+
+	<script name="mainScript" language="lua">
+        <![CDATA[
+
+		function main()
+      video_src = kmInitVideoSrc()
+			src_tex_id = system.video_left.id
+      SWFx.setV2SrcResolution(kmGetSrcWidth(src_tex_id), kmGetSrcHeight(src_tex_id))
+      SWFx.setV2Resolution(kmGetTexWidth(src_tex_id), kmGetTexHeight(src_tex_id))
+			SWFx.setSTexture0(src_tex_id)
+			SWFx.setAlpha(effect.alpha)
+			SWFx.setColorMatrix(system.video_left.colorconv)
+			SWFx.setTexMatrix(system.video_left.texmat)
+			SWFx.setMvpMatrix(effect.matrix)
+      SWFx.setUserInputPosition(range.centerX*0.01, range.centerY*0.01);
+      SWFx.setUserInputRadius(range.radius * 0.01)  
+      SWFx.setUserInputStrength(range.spiralStrength * 0.003)
+      SWFx.setEnableZoomOut(range.enableZoomOut * 1.0)
+      SWFx.setQualityLevl(range.qualityLevel * 1.0 + 8.0)
+      SWFx.drawScreen(video_src)
+      kmReleaseTexture(video_src)
+		end
+
+		]]>
+	</script>
+</renderitem>

@@ -1,0 +1,72 @@
+<effect
+  id="com.nexstreaming.kmsdk.lg.sports.camcord"
+  type="title"
+  intime="1000"
+  outtime="1000"
+  intimefirst="1000"
+  outtimelast="1000"
+  cycletime="1000"
+  repeat="yes"
+  name="Sports Camcording">
+  <texture id="video1" video="1" />
+  <texture id="tex_corner" src="camcordfx_corner.png" />
+  <texture id="tex_cropmark" src="camcordfx_cropmark.png" />
+  <texture id="tex_rectext" src="camcordfx_rec.png" />
+  <texture id="tex_recmark" src="camcordfx_reccir.png" />
+  <texture id="tex_green" src="camcordfx_green.png" />
+  
+  <animatedvalue id="recmark" timingfunction="linear">
+    <keyframe value="1" />
+    <keyframe value="0" />
+  </animatedvalue>
+
+  <animatedvalue id="recfadeinout" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="0" />
+    <keyframe time="0.1" value="1" />
+    <keyframe time="0.9" value="1" />
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -870">
+        <translate offset="640 360">
+          <rect bounds="-640 -360 640 360" texture="@video1" />
+          <style alpha="0.07">
+            <rect bounds="-640 -360 640 360" texture="@tex_green" />
+          </style>
+        </translate>
+        <!-- Border -->
+        <rect bounds="0 0 10 720" color="0 0 0 0.76" />
+        <rect bounds="10 0 1270 13" color="0 0 0 0.76" />
+        <rect bounds="1270 0 1280 720" color="0 0 0 0.76" />
+        <rect bounds="10 707 1270 720" color="0 0 0 0.76" />
+        <rect bounds="10 13 28 31" texture="@tex_corner" />
+        <rect bounds="1270 13 1252 31" texture="@tex_corner" />
+        <rect bounds="10 707 28 689" texture="@tex_corner" />
+        <rect bounds="1270 707 1252 689" texture="@tex_corner" />
+
+        <style alpha="@recfadeinout">
+          <!-- Crop marks -->
+          <translate offset="64 64"><rect bounds="-32 -32 32 32" texture="@tex_cropmark" /></translate>
+          <translate offset="1215 64"><rect bounds="32 -32 -32 32" texture="@tex_cropmark" /></translate>
+          <translate offset="64 656"><rect bounds="-32 32 32 -32" texture="@tex_cropmark" /></translate>
+          <translate offset="1215 656"><rect bounds="32 32 -32 -32" texture="@tex_cropmark" /></translate>
+
+          <!-- Rec indicator -->
+          <translate offset="130 80"><rect bounds="-25 -14 25 14" texture="@tex_rectext" /></translate>
+          <visibility check="@recmark" start="0.5" end="1.5"> 
+            <translate offset="75 80 "><rect bounds="-16 -16 16 16" texture="@tex_recmark" /></translate>
+          </visibility>
+        </style>
+
+
+      </translate>
+    </scale>
+  </projection>
+</effect>

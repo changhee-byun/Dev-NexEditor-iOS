@@ -1,0 +1,212 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.family.9v16.accent_bnw_sunny" 
+	type="title" 
+	repeat="yes"
+	intime="1600" 
+	intimefirst="1600"
+	outtime="800" 
+	outtimelast="800"
+	cycleTime="800"
+	name="Family Accent BNW Sunny 9v16">
+
+  <texture id="video1" video="1" />
+  <texture id="texture_bk_light_yellow" 	src="bk_light_yellow.png" />
+  <texture id="texture_bk_large_orange" 	src="bk_large_orange.png" />
+  <texture id="texture_bk_small" 			src="accent_light.png" />
+  <texture id="texture_bk_normal" 			src="accent_light.png" />
+
+    <animatedvalue id="video_alpha" scope="whole" timingfuntion="linear">
+    	<keyframe time="0" value="0"/>
+    	<keyframe time="1" value="1"/>
+    </animatedvalue>
+
+    <animatedvalue id="r" scope="whole">
+        <keyframe value="720" />
+        <keyframe value="0" />
+        <keyframe value="720" />
+    </animatedvalue>
+    
+	<animatedvalue id="btt_falling" timingfunction="ease_in" scope="whole">
+        <part type="in">
+			<keyframe value="540" />
+			<keyframe value="360" />
+        </part>
+        <part type="mid">
+			<keyframe value="540" />
+			<keyframe value="360" />
+        </part>
+        <part type="out">
+			<keyframe value="540" />
+			<keyframe value="360" />
+        </part>
+	</animatedvalue>
+
+	<animatedvalue id="btt_wind" timingfunction="ease_in" scope="whole">
+        <part type="in">
+			<keyframe value="320" />
+			<keyframe value="0" />
+        </part>
+        <part type="mid">
+			<keyframe value="320" />
+			<keyframe value="0" />
+        </part>
+        <part type="out">
+			<keyframe value="320" />
+			<keyframe value="0" />
+        </part>
+	</animatedvalue>
+
+	<animatedvalue id="btt_fade" scope="whole">
+        <part type="in">
+			<keyframe value="0" />
+        </part>
+        <part type="mid">
+			<keyframe time="0" value="0.2" />
+			<keyframe time="0.2" value="0.3" />
+			<keyframe time="0.6" value="0.6" />
+			<keyframe time="0.9" value="0.1" />
+			<keyframe time="1" value="0" />
+        </part>
+        <part type="out">
+		    <keyframe time="1" value="0" />
+        </part>
+	</animatedvalue>
+  	
+  <animatedvalue id="anim_scale_bokehs" timingfunction="linear" scope="whole">
+        <part type="in">
+			<keyframe time="0" value="1" />
+			<keyframe time="1" value="2" />
+        </part>
+        <part type="mid">
+			<keyframe time="0" value="1" />
+			<keyframe time="1" value="2" />
+        </part>
+        <part type="out">
+		    <keyframe time="1" value="0" />
+        </part>
+  
+  </animatedvalue>
+  <animatedvalue id="anim_scale_bokehs2" timingfunction="linear" scope="whole">
+        <part type="in">
+			<keyframe time="0" value="1" />
+			<keyframe time="1" value="3" />
+        </part>
+        <part type="mid">
+			<keyframe time="0" value="1" />
+			<keyframe time="1" value="3" />
+        </part>
+        <part type="out">
+		    <keyframe time="1" value="0" />
+        </part>
+  </animatedvalue>
+  
+  <animatedvalue id="anim_scale_bokehs3" timingfunction="linear" scope="whole">
+        <part type="in">
+			<keyframe time="0" value="1" />
+			<keyframe time="1" value="4" />
+        </part>
+        <part type="mid">
+			<keyframe time="0" value="1" />
+			<keyframe time="1" value="4" />
+        </part>
+        <part type="out">
+		    <keyframe time="1" value="0" />
+        </part>
+  </animatedvalue>
+
+	<animatedvalue id="angle" basis="clipindexshuffle">
+		<keyframe value="90" />
+		<keyframe value="45" />
+		<keyframe value="0" />
+		<keyframe value="225" />
+		<keyframe value="270" />
+		<keyframe value="135" />
+		<keyframe value="180" />
+	</animatedvalue>
+
+
+	<animatedvalue id="t" scope="whole" timingfunction="linear">
+		<keyframe value="0" />
+		<keyframe value="20" />
+	</animatedvalue>
+
+	<function id="glowfunc" type="simplexfractal" outputbias="0.3" outputscale="0.3" octaves="4" />
+	<function id="glowfuncb" type="simplexfractal" outputbias="0.3" outputscale="0.3" octaves="5" />
+	<function id="glowfuncc" type="simplexfractal" outputbias="0.3" outputscale="0.3" octaves="7" />
+
+  <projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="-360 -640 -1546.666667">
+		<translate offset="360 640">
+			<style brightness="0.15" contrast="0" saturation="-1" >
+				<rect bounds="-360 -640 360 640" texture="@video1" />
+			</style>
+		</translate>
+		<translate offset="360 640">
+			<style alpha="@video_alpha" brightness="0.08" contrast="-0.06" saturation="-0.3" tint="#ccaa54">
+				<rect bounds="-360 -640 360 640" texture="@video1" />
+			</style>
+		</translate>
+     		<style alpha="@btt_fade">
+				<rotate angle="@angle">     		
+					<translate offset="0 0 -7">
+						<translate offset="0 -5 0" repeat="4">
+						<translate offset="@btt_wind @btt_falling -7">
+							<sequence id="r" type="randmix" count="7" start="-1280 -720 -300" end="1280 720 -50" seed="238384829">
+								<translate offset="@r.x @r.y @r.z*12">
+									<scale uniform="@anim_scale_bokehs">
+										<style alpha="@glowfunc(@r.x @r.y @t)">
+											<rect bounds="-100 100 100 -100" texture="@texture_bk_small" />
+										</style>
+									</scale>
+								</translate>
+							</sequence>
+				
+							<sequence id="r" type="randmix" count="6" start="-1280 -720 -200" end="1280 720 -10" seed="238384829">
+								<translate offset="@r.x @r.y @r.z*12">
+									<scale uniform="@anim_scale_bokehs3">
+										<style alpha="@glowfunc(@r.x @r.y @t)">
+											<rect bounds="-100 100 100 -100" texture="@texture_bk_small" />
+										</style>
+									</scale>
+								</translate>
+							</sequence>															
+
+							<sequence id="r" type="randmix" count="3" start="-1280 -720 -200" end="1280 720 -10" seed="054687932">
+								<translate offset="@r.x @r.y @r.z*12">
+									<scale uniform="@anim_scale_bokehs1">
+										<style alpha="@glowfuncb(@r.x @r.y @t)">
+											<rect bounds="-100 100 100 -100" texture="@texture_bk_light_yellow" />
+										</style>
+									</scale>
+								</translate>
+							</sequence>															
+
+							<sequence id="r" type="randmix" count="5" start="-1280 -720 -200" end="1280 720 -10" seed="385423547">
+								<translate offset="@r.x @r.y @r.z*12">
+									<scale uniform="@anim_scale_bokehs3">
+										<style alpha="@glowfunc(@r.x @r.y @t)">
+											<rect bounds="-100 100 100 -100" texture="@texture_bk_small" />
+										</style>
+									</scale>
+								</translate>
+							</sequence>															
+							
+							<sequence id="r" type="randmix" count="4" start="-1280 -720 -200" end="1280 720 -10" seed="014698754">
+								<translate offset="@r.x @r.y @r.z*12">
+									<scale uniform="@anim_scale_bokehs3">
+										<style alpha="@glowfuncb(@r.x @r.y @t)">
+											<rect bounds="-100 100 100 -100" texture="@texture_bk_light_yellow" />
+										</style>
+									</scale>
+								</translate>
+							</sequence>		
+						</translate>
+						</translate>
+					</translate>
+				</rotate>
+			</style>
+		</translate>
+    </scale>
+  </projection>
+</effect>

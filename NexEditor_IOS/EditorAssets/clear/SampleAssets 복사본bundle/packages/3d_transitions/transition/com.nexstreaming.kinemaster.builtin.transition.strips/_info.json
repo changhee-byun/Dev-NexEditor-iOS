@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.transition.strips",
+  "label": {
+    "pt": "Listras",
+    "ja": "ストリップ",
+    "fr": "Bandes",
+    "zh-CN": "地带",
+    "ko-KR": "스트립",
+    "ar": "شرائط",
+    "zh-TW": "帶狀旋轉",
+    "en": "Strips",
+    "zh-HK": "帶狀旋轉",
+    "de-DE": "Streifen",
+    "ru": "Полосы",
+    "es": "Franjas"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

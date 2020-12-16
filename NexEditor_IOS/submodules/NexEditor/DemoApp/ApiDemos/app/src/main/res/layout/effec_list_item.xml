@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_effect_list" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Medium_Text"
+        android:id="@+id/textView_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView_effect_list"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/Small_Text"
+        android:id="@+id/textView_id"
+        android:layout_below="@+id/textView_name"
+        android:layout_toEndOf="@+id/imageView_effect_list"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Large_Text"
+        android:id="@+id/textView_effect_list_title"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView_name"
+        android:textColor="#000000"/>
+</RelativeLayout>

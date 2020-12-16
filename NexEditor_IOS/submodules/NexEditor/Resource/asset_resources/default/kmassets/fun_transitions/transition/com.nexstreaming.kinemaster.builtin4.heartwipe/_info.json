@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.heartwipe",
+  "label": {
+    "pt": "Limpar coração",
+    "ja": "ハート　ワイプ",
+    "fr": "Balayage cœur",
+    "zh-CN": "爱心擦除",
+    "ko-KR": "하트",
+    "ar": "مسح قلب",
+    "zh-TW": "心形抹去",
+    "en": "Heart Wipe",
+    "zh-HK": "心形抹去",
+    "de-DE": "Herz-Wischeffekt",
+    "ru": "Шторка \u0027Сердце\u0027",
+    "es": "Limpiar corazón"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

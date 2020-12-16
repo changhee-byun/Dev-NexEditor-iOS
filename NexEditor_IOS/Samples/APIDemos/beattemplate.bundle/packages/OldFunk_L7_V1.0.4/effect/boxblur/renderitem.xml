@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+	id="com.kinemaster.kmsdk.design1.beatsync.old_school.effect.ri.vas.boxBlur"
+	type="title"
+	intime="1500"
+	outtime="0"
+	intimefirst="1500"
+	outtimelast="0"
+	repeat="no"
+	name="boxBlur"
+  version="1.0.6">
+
+
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+	<shader name="filters_boxblurH_vertex" language="glsl" src="glsl/filters_boxblurH_vertex.glsl"/>
+	<shader name="filters_boxblurV_vertex" language="glsl" src="glsl/filters_boxblurV_vertex.glsl"/>
+  <shader name="filters_boxblur_fragment" language="glsl" src="glsl/filters_boxblur_fragment.glsl"/>
+
+  <shader name="filters_boxblurlast_vertex" language="glsl" src="glsl/filters_boxblurlast_vertex.glsl"/>
+  <shader name="filters_boxblurlast_fragment" language="glsl" src="glsl/filters_boxblurlast_fragment.glsl"/>
+
+  <parameter id="bOriAlpha" type="range" default="0" minvalue="0" maxvalue="1" hidden="true">
+    <string name="label" lang="en">flag : whether the ori alpha value is used </string>
+  </parameter>
+
+	<parameter id="f_block_size" type="range" default="6" minvalue="0" maxvalue="20">
+    <string name="label" lang="en"> BlurStrength </string>
+	</parameter>
+
+  <parameter id="rhombusOrSquare" type="range" default="1" minvalue="0" maxvalue="1">
+    <string name="label" lang="en"> rhombusOrSquare </string>
+  </parameter>
+  
+  <program name="BEHFx" language="glsl" fragmentShader="filters_boxblur_fragment" vertexShader="filters_boxblurH_vertex" />
+	<program name="BEVFx" language="glsl" fragmentShader="filters_boxblur_fragment" vertexShader="filters_boxblurV_vertex" />
+  <program name="BEFx" language="glsl" fragmentShader="filters_boxblurlast_fragment" vertexShader="filters_boxblurlast_vertex" />
+
+  <script name="mainScript" language="lua" src="main.lua"/>
+  
+</renderitem>

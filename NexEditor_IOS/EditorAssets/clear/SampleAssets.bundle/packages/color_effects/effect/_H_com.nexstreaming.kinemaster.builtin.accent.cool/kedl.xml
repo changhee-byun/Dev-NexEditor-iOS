@@ -1,0 +1,15 @@
+<effect categorytitle="@string/category_color_fx" hidden="true" icon="fx_cool.64fe061b3c0ab1f29136d612fb04166e0f3cc660.png" id="com.nexstreaming.kinemaster.builtin.accent.cool" intime="3000" intimefirst="0" name="@string/fx_cool" outtime="3000" outtimelast="0" repeat="no" type="title">
+
+<texture id="videoframe" video="1" />
+
+<animatedvalue id="fade">
+<part type="in"><keyframe value="0" /><keyframe value="-0.3" /></part>
+<part type="mid"><keyframe value="-0.3" /></part>
+<part type="out"><keyframe value="-0.3" /><keyframe value="0" /></part>
+</animatedvalue>
+		
+<style brightness="@fade*-0.4" contrast="@fade*0.4" saturation="@fade" tint="#144270">
+<rect bounds="-1 1 1 -1" texture="@videoframe" />
+</style>
+	
+</effect>

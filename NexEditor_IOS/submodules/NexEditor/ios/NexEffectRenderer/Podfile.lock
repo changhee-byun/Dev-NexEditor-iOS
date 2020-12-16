@@ -1,0 +1,16 @@
+PODS:
+  - NexRenderer (0.10.5)
+
+DEPENDENCIES:
+  - NexRenderer (from `../..`)
+
+EXTERNAL SOURCES:
+  NexRenderer:
+    :path: ../..
+
+SPEC CHECKSUMS:
+  NexRenderer: eeaa43df0d0d2818bfa5019cd3fe3172cc807362
+
+PODFILE CHECKSUM: 2e71c251a7cac3e6b2ea2ae4ce7fc0965d0cb225
+
+COCOAPODS: 1.2.1

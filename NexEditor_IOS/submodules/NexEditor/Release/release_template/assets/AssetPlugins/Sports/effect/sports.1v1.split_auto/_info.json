@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.1v1.split_auto.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.1v1.split_auto",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.1v1.split_auto"
+    },
+    "mergePaths": [
+        "1v1"
+    ],
+    "type": "nex.kedl"
+}

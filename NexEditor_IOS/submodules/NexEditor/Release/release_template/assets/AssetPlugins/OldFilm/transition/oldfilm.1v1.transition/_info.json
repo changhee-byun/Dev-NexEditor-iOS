@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.transition.oldfilm.1v1.transition.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.transition.oldfilm.1v1.transition",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.transition.oldfilm.1v1.transition"
+    },
+    "mergePaths": [
+        "1v1"
+    ],
+    "type": "nex.kedl"
+}

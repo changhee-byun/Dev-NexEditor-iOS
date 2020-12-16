@@ -1,0 +1,47 @@
+<effect id="com.nexstreaming.kinemaster.builtin.title.creditsmid" name="Credits" categorytitle="More Title Effects" type="title" icon="fx_credit_mid.png" intimefirst="0" outtimelast="0" intime="0" outtime="0" repeat="no" >
+
+    <userfield id="f_text_ml" type="text" maxlines="50">
+        <fieldlabel locale="en" value="Credits Text" />
+    </userfield>
+
+	<userfield id="f_color_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="Text Color" />
+	</userfield>
+
+    <texture id="video1" video="1" />
+    <texture 
+    	id="text_1" 
+    	text="%1" 
+    	width="512" 
+    	height="2048" 
+    	srcfield="@f_text_ml"  
+    	textsize="80"  
+    	textmargin="0"  
+    	textalign="center"  
+    	textvalign="top"  
+    	maxlines="100"  
+    	autosize="false"  
+    	typeface="asset:lato-bold.ttf"  
+    	fillcolor="@f_color_text"  
+    	fill="true"  
+    	shadowcolor="0 0 0 0.75"  
+    	shadowoffset="5 5"  
+    	shadowradius="8"  
+    	shadow="true"   />
+    	
+    	
+    <animatedvalue id="text_1_pos" timingfunction="linear">
+        <keyframe value="640 -1024" />
+        <keyframe value="640 1744" />
+    </animatedvalue>
+    	
+    <projection type="perspective" fov="45" aspect="1.777777" near="0.01" far="60000">
+        <translate offset="-640 -360 -870">
+            <rect bounds="0 720 1280 0" texture="@video1" />
+            <translate offset="@text_1_pos">
+                <rect bounds="-256 1024 256 -1024" texture="@text_1" />
+            </translate>
+        </translate>
+    </projection>
+	
+</effect>

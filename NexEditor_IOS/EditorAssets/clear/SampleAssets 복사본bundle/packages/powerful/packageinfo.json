@@ -1,0 +1,27 @@
+{
+  "assetName": {
+    "pt": "Poderoso",
+    "ja": "パワフル",
+    "fr": "Puissant",
+    "zh-CN": "强大",
+    "ko-KR": "강력함",
+    "ar": "قوي",
+    "zh-TW": "強大",
+    "en": "Powerful",
+    "zh-HK": "強大",
+    "de-DE": "Leistung",
+    "ru": "Мощный",
+    "es": "Potente"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "effect/com.nexstreaming.kinemaster.onstage.middle",
+    "effect/com.nexstreaming.kinemaster.onstage.opening",
+    "effect/com.nexstreaming.kinemaster.onstage.accent",
+    "effect/com.nexstreaming.kinemaster.onstage.ending",
+    "transition/com.nexstreaming.kinemaster.onstage.transition"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

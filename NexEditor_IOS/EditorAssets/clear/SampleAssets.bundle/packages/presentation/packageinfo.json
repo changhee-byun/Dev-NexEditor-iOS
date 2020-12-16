@@ -1,0 +1,35 @@
+{
+  "assetName": {
+    "pt": "Apresentação",
+    "ja": "プレゼンテーション",
+    "fr": "Présentation",
+    "zh-CN": "展示",
+    "ko-KR": "프레젠테이션",
+    "ar": "عرض تقديمي",
+    "zh-TW": "展示",
+    "en": "Presentation",
+    "zh-HK": "展示",
+    "de-DE": "Präsentation",
+    "ru": "Презентация",
+    "es": "Presentación"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "transition/com.nexstreaming.kinemaster.builtin4.split",
+    "transition/com.nexstreaming.kinemaster.builtin4.cover",
+    "transition/com.nexstreaming.kinemaster.builtin4.spin",
+    "transition/com.nexstreaming.kinemaster.builtin4.slide",
+    "transition/com.nexstreaming.kinemaster.builtin4.wipe",
+    "transition/com.nexstreaming.kinemaster.builtin4.stripwipe",
+    "transition/com.nexstreaming.kinemaster.builtin.transition.zoominout",
+    "transition/com.nexstreaming.kinemaster.builtin4.blockin",
+    "transition/com.nexstreaming.kinemaster.builtin4.clockwipe",
+    "transition/com.nexstreaming.kinemaster.builtin.transition.slideleft",
+    "transition/com.nexstreaming.kinemaster.builtin4.uncover",
+    "transition/com.nexstreaming.kinemaster.builtin4.doublesplit",
+    "transition/com.nexstreaming.kinemaster.builtin.transition.slideright"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

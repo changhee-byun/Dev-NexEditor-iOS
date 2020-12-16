@@ -1,0 +1,9 @@
+{
+    "filename": "sports.png",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.lut.sports",
+    "label": {
+        "en": "sports"
+    },
+    "type": "nex.lut"
+}

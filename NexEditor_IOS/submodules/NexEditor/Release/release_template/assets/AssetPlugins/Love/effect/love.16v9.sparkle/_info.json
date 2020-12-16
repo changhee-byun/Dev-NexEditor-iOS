@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.16v9.sparkle.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.16v9.sparkle",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.16v9.sparkle"
+    },
+    "mergePaths": [
+        "16v9"
+    ],
+    "type": "nex.kedl"
+}

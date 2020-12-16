@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.jpg",
+  "id": "com.nexstreaming.kinemaster.serene.opening",
+  "label": {
+    "pt":     "Sereno - Abertura",
+    "ja":     "静かな - 始まり",
+    "fr":     "Serein - Ouverture",
+    "zh-CN":  "沉静 - 开始",
+    "ko-KR":  "고요한 - 시작",
+    "zh-TW":  "寧靜 - 開始",
+    "en":     "Serene - Opening",
+    "zh-HK":  "寧靜 - 開始",
+    "de-DE":  "Heiter - Beginn",
+    "ru":     "Безмятежность - Открытие",
+    "es":     "Sereno - Apertura",
+    "ar":     "هادئ - فتح"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

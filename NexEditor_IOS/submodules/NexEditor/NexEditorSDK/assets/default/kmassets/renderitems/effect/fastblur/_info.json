@@ -1,0 +1,9 @@
+{
+  "filename": "renderitem.xml",
+  "thumbnail": "asset_icon.png",
+  "id": "com.nexstreaming.editor.fastblurOpt",
+  "label": {
+    "en": "Gaussian Blur"
+  },
+  "type": "nex.renderitem"
+}

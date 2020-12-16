@@ -1,0 +1,11 @@
+{
+ "filename": "old_school.m4a",
+ "id": "com.kinemaster.audio.nometa.old_school",
+
+ "label": {
+   "en": "Old Funk"
+ },
+ "type": "nex.audio",
+ "kmcategory" : ["kmc.music"],
+ "hidden": "false"
+}

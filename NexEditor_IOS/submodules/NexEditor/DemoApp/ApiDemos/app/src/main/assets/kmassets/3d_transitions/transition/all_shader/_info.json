@@ -1,0 +1,10 @@
+{
+  "filename": "renderitem.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.all",
+  "label": {
+    "en": "Max Transition"
+  },
+  "type": "nex.renderitem",
+  "hidden": false
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.kinemaster.kmsdk.design1.beatsync.effect.ri.vas.spectrumGlitch"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+            name="spectrumGlitch"
+            version="1.0.5">
+
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+  <parameter id="bOriAlpha" type="range" default="0" minvalue="0" maxvalue="1" hidden="true">
+    <string name="label" lang="en">flag : whether the ori alpha value is used </string>
+  </parameter>
+
+  <parameter id="strength" type="range" default="5" minvalue="0" maxvalue="15">
+    <string name="label" lang="en">strength</string>
+  </parameter>
+
+  <parameter id="quality" type="range" default="20" minvalue="10" maxvalue="25">
+    <string name="label" lang="en">quality</string>
+  </parameter>
+
+
+<parameter id="direction" type="range" default="0" minvalue="0" maxvalue="2">
+    <string name="label" lang="en">direction(0:all, 1:left, 2:right)</string>
+  </parameter>
+
+  
+
+
+  <shader name="filters_spectrumGlitch_vertex" language="glsl" src="glsl/filters_spectrumGlitch_vertex.glsl"/>
+	<shader name="filters_spectrumGlitch_fragment" language="glsl" src="glsl/filters_spectrumGlitch_fragment.glsl"/>
+	<program name="CCFx" language="glsl" fragmentShader="filters_spectrumGlitch_fragment" vertexShader="filters_spectrumGlitch_vertex" />
+
+  <script name="mainScript" language="lua" src="main.lua"/>
+  
+</renderitem>

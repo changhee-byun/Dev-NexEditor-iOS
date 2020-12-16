@@ -1,0 +1,36 @@
+project 'NexEditorSDKTests.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+def common_pods
+  # Pods for NexEditorSDKTest
+  pod 'Google/SignIn'
+  pod 'GoogleAPIClientForREST/Drive', '~> 1.2.1'
+  pod 'Zip', '~> 0.7'
+  pod 'NexEditorEngine', :path=> '../submodules/NexEditor'
+  pod 'NexEditorFramework', :path=> '../'
+  pod 'AssetReader', :path=> '../NexEditorFramework/AssetReader'
+  pod 'NexEditorSDKTestHeaders', :path => './'
+end
+
+target 'NexEditorSDKTest' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  common_pods
+end
+
+target 'NexEditorSDKTests' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  common_pods
+end
+
+target 'NexEditorSDKObservationTests' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  common_pods
+end

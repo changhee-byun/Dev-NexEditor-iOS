@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.2v1.intro.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.2v1.intro",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.love.2v1.intro"
+    },
+    "mergePaths": [
+        "2v1"
+    ],
+    "type": "nex.kedl"
+}

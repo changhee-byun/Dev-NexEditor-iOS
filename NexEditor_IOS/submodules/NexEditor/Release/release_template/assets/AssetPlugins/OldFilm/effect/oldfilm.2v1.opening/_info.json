@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.oldfilm.2v1.opening.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.oldfilm.2v1.opening",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.oldfilm.2v1.opening"
+    },
+    "mergePaths": [
+        "2v1"
+    ],
+    "type": "nex.kedl"
+}

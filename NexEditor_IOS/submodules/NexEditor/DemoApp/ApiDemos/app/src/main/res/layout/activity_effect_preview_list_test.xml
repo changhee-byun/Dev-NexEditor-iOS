@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/videoBorderHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <com.nexstreaming.nexeditorsdk.nexEngineView
+            android:id="@+id/engineview_effect_preview_list_test"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/playButtonBusy"
+            android:layout_width="92dp"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom|right"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="21dp"
+            android:paddingBottom="21dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="@string/Export"
+            android:id="@+id/btn_effectpreview_set"
+            android:layout_gravity="left|top" />
+
+    </FrameLayout>
+
+</LinearLayout>

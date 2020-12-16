@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.title.elegant",
+  "label": {
+    "pt": "Elegante",
+    "ja": "優雅な",
+    "fr": "Élégant",
+    "zh-CN": "优雅",
+    "ko-KR": "우아한",
+    "ar": "أنيق",
+    "zh-TW": "優雅",
+    "en": "Elegant",
+    "zh-HK": "優雅",
+    "de-DE": "Elegant",
+    "ru": "Элегантный",
+    "es": "Elegante"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

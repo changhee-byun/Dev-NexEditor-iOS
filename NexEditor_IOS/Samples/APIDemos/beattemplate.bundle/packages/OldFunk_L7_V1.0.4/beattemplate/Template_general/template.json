@@ -1,0 +1,147 @@
+{
+  "beatType" : [
+    "general"
+  ],
+  "effectEntries" : [
+    {
+      "startTime" : 0,
+      "beatIndex" : 0,
+      "clipEffectId" : "none",
+      "colorFilterId" : "none"
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 1,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 43.916194915771484
+    },
+    {
+      "startTime" : 150,
+      "sourceChange" : true,
+      "transitionEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool.transition",
+      "beatIndex" : 3,
+      "transitionEffectDuration" : 31.880977630615234
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 5,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 42.215335845947266
+    },
+    {
+      "startTime" : 200,
+      "sourceChange" : true,
+      "transitionEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool3.transition",
+      "beatIndex" : 7,
+      "transitionEffectDuration" : 33.670032501220703
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 9,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 42.215335845947266
+    },
+    {
+      "startTime" : 200,
+      "sourceChange" : true,
+      "transitionEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool4.transition",
+      "beatIndex" : 11,
+      "transitionEffectDuration" : 33.670032501220703
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 13,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 42.215335845947266
+    },
+    {
+      "startTime" : 200,
+      "sourceChange" : true,
+      "transitionEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.transition",
+      "beatIndex" : 15,
+      "transitionEffectDuration" : 33.707866668701172
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 17,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 42.215335845947266
+    },
+    {
+      "startTime" : 200,
+      "sourceChange" : true,
+      "transitionEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool.transition",
+      "beatIndex" : 19,
+      "transitionEffectDuration" : 33.670032501220703
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 21,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 42.215335845947266
+    },
+    {
+      "startTime" : 200,
+      "sourceChange" : true,
+      "transitionEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool.transition",
+      "beatIndex" : 23,
+      "transitionEffectDuration" : 33.670032501220703
+    },
+    {
+      "startTime" : 0,
+      "sourceChange" : true,
+      "beatIndex" : 25,
+      "clipEffectId" : "com.kinemaster.kmsdk.design1.beatsync.oldschool5.effect",
+      "clipEffectEndTime" : 54.994953155517578
+    },
+    {
+      "startTime" : 445,
+      "beatIndex" : 26,
+      "clipEffectId" : "none",
+      "colorFilterId" : "none"
+    }
+  ],
+  "baseBpm" : 109,
+  "title" : "old_school.m4a meta",
+  "positions" : [
+    0,
+    136,
+    681,
+    1227,
+    1772,
+    2318,
+    2863,
+    3409,
+    3954,
+    4500,
+    5045,
+    5591,
+    6136,
+    6682,
+    7227,
+    7773,
+    8318,
+    8863,
+    9409,
+    9954,
+    10500,
+    11045,
+    11591,
+    12136,
+    12682,
+    13227,
+    13773
+  ],
+  "audioId" : "com.kinemaster.audio.nometa.old_school",
+  "defualtEffect" : {
+    "clipEffectId" : "com.nexstreaming.kmsdk.nex.audiobit.flash",
+    "scColorFilterId" : "none"
+  },
+  "version" : 3
+}

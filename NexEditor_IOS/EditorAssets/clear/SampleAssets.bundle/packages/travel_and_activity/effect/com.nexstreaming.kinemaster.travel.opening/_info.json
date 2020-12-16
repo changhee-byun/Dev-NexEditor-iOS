@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.jpg",
+  "id": "com.nexstreaming.kinemaster.travel.opening",
+  "label": {
+    "pt":     "Viagem - Abertura",
+    "ja":     "旅行 - 始まり",
+    "fr":     "Voyage - Ouverture",
+    "zh-CN":  "旅行 - 开始",
+    "ko-KR":  "여행 - 시작",
+    "zh-TW":  "旅行 - 開始",
+    "en":     "Travel - Opening",
+    "zh-HK":  "旅行 - 開始",
+    "de-DE":  "Reisen - Beginn",
+    "ru":     "Путешествие - Открытие",
+    "es":     "Viajes - Apertura",
+    "ar":     "سفر - فتح"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

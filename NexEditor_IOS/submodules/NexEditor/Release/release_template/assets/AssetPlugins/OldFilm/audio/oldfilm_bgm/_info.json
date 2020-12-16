@@ -1,0 +1,9 @@
+{
+    "filename": "oldfilm_bgm.mp3",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.audio.oldfilm.bgm",
+    "label": {
+        "en": "oldfilm_bgm"
+    },
+    "type": "nex.audio"
+}

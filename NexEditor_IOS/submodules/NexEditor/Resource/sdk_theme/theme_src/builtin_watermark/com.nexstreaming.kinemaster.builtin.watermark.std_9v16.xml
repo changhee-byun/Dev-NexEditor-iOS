@@ -1,0 +1,25 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin.watermark.std_9v16"
+  type="title"
+  intime="0"
+  outtime="0"
+  intimefirst="0"
+  outtimelast="0"
+  hidden="true"
+  repeat="yes"
+  cycletime="13000"
+  name="_">
+  
+  <texture id="texture_1" src="watermark.png" />
+  <projection type="perspective" fov="45" aspect="0.5625" near="0.01" far="60000"> 
+    <scale y="-1">
+      <translate offset="-360 -640 -1546.666667">
+        <translate offset="580 86">
+          <style alpha="0.75">
+            <rect bounds="-100 -50 100 50" texture="@texture_1" />
+          </style>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

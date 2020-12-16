@@ -1,0 +1,312 @@
+
+<effect
+  id="com.nexstreaming.kmsdk.lg.family_2v1.image_1500ms"
+  type="title"
+  repeat="no"
+  intime="1600" 
+  intimefirst="1600"
+  outtime="800" 
+  outtimelast="800"
+  cycleTime="800"
+  name="Family Image Effect 1500ms">
+
+  <texture id="video1" video="1" />
+
+  <texture id="texture_2" src="bk_normal.png" />
+  <texture id="texture_3" src="bk_green.png" />
+  <texture id="texture_4" src="bk_cyan.png" />
+  <texture id="texture_5" src="bk_large_orange.png" />
+  <texture id="texture_6" src="bk_green.png" />
+  <texture id="texture_7" src="bk_cyan2.png" />
+  <texture id="texture_8" src="bk_normal.png" />
+  <texture id="texture_9" src="bk_cyan2.png" />
+  <texture id="texture_10" src="bk_normal.png" />
+  <texture id="texture_11" src="bk_cyan2.png" />
+  <texture id="texture_12" src="bk_normal.png" />
+  <texture id="texture_13" src="bk_cyan.png" />
+  <texture id="texture_14" src="bk_cyan2.png" />
+
+  <animatedvalue id="t" scope="whole" timingfunction="linear">
+    <keyframe value="0" />
+    <keyframe value="20" />
+  </animatedvalue>
+  
+  <function id="glowfunc" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="4" />
+  <function id="glowfuncb" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="5" />
+  <function id="glowfuncc" type="simplexfractal" outputbias="0.6" outputscale="0.6" octaves="7" />
+
+
+  <animatedvalue id="anim_1" scope="whole" timingfunction="ease_in">
+    <keyframe time="0" value="632.25 210.505" />
+    <keyframe time="1" value="-13.33125 282.266" />
+  </animatedvalue>
+  <animatedvalue id="anim_2" scope="whole" timingfunction="linear">
+    <keyframe time="0" value="1.200" />
+    <keyframe time="1" value="1.200" />
+  </animatedvalue>
+  <animatedvalue id="anim_3" scope="whole" timingfunction="ease_in">
+    <keyframe time="0" value="0" />
+    <keyframe time="0.1" value="1" />
+    <keyframe time="0.3" value="1" />
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_4" scope="whole" timingfunction="ease_out">
+    <keyframe time="0.106" value="1093.5 337" />
+    <keyframe time="1" value="950.257125 478.412" />
+  </animatedvalue>
+  <animatedvalue id="anim_5" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.106" value="1" />
+    <keyframe time="1" value="1.200" />
+  </animatedvalue>
+  <animatedvalue id="anim_6" scope="whole" timingfunction="linear">
+    <keyframe time="0.106" value="0" />
+    <keyframe time="0.42" value="1" />
+    <keyframe time="0.53" value="1" />    
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_7" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.118" value="1276.570125 572.137" />
+    <keyframe time="1" value="1017.54675 550.173" />
+  </animatedvalue>
+  <animatedvalue id="anim_8" scope="whole" timingfunction="linear">
+    <keyframe time="0.118" value="0.754" />
+    <keyframe time="1" value="1.500" />
+  </animatedvalue>
+  <animatedvalue id="anim_9" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.118" value="0" />
+    <keyframe time="0.2" value="1" />
+    <keyframe time="0.3" value="1" />    
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_10" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.093" value="1238.131125 680.322" />
+    <keyframe time="1" value="610.432875 572.080" />
+  </animatedvalue>
+  <animatedvalue id="anim_11" scope="whole" timingfunction="linear">
+    <keyframe time="0.093" value="0.45" />
+    <keyframe time="1" value="1.500" />
+  </animatedvalue>
+  <animatedvalue id="anim_12" scope="whole" timingfunction="ease_out">
+    <keyframe time="0.093" value="0" />
+    <keyframe time="0.2" value="1" />
+    <keyframe time="0.4" value="1" />    
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_13" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.146" value="1100.85975 44.043" />
+    <keyframe time="1" value="782.695125 2.777" />
+  </animatedvalue>
+  <animatedvalue id="anim_14" scope="whole"  timingfunction="linear">
+    <keyframe time="0.146" value="0.89" />
+    <keyframe time="1" value="1.500" />
+  </animatedvalue>
+  <animatedvalue id="anim_15" scope="whole" timingfunction="linear">
+    <keyframe time="0.146" value="0" />
+    <keyframe time="0.2" value="1" />
+    <keyframe time="0.7" value="1" />    
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_16" scope="whole" timingfunction="linear">
+    <keyframe time="0.091" value="1423.850625 41.651" />
+    <keyframe time="1" value="954.95625 141.515" />
+  </animatedvalue>
+  <animatedvalue id="anim_17" scope="whole" timingfunction="ease_out">
+    <keyframe time="0.091" value="0.36" />
+    <keyframe time="1" value="1.500" />
+  </animatedvalue>
+  <animatedvalue id="anim_18" scope="whole" timingfunction="linear">
+    <keyframe time="0.091" value="0" />
+    <keyframe time="0.25" value="1" />
+    <keyframe time="0.55" value="1" />    
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_19" scope="whole" timingfunction="linear">
+    <keyframe time="0.146" value="1294.6545 417.199" />
+    <keyframe time="1" value="1086.8445 241.980" />
+  </animatedvalue>
+  <animatedvalue id="anim_20" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.192" value="1420.875 338" />
+    <keyframe time="1" value="922.6575 337.661" />
+  </animatedvalue>
+  <animatedvalue id="anim_21" scope="whole" timingfunction="linear">
+    <keyframe time="0.192" value="0.28" />
+    <keyframe time="1" value="1.500" />
+  </animatedvalue>
+  <animatedvalue id="anim_22" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.192" value="0" />
+    <keyframe time="0.3" value="1" />
+    <keyframe time="0.58" value="1" />    
+    <keyframe time="1" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_23" scope="whole" timingfunction="ease_out">
+    <keyframe time="0.093" value="1582.023375 696.801" />
+    <keyframe time="1" value="1352.334375 274.492" />
+  </animatedvalue>
+  <animatedvalue id="anim_24" scope="whole" timingfunction="linear">
+    <keyframe time="0.093" value="2" />
+    <keyframe time="1" value="2" />
+  </animatedvalue>
+  <animatedvalue id="anim_25" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.103" value="726.728625 311.950" />
+    <keyframe time="1" value="265.9095 79.322" />
+  </animatedvalue>
+  <animatedvalue id="anim_26" scope="whole" timingfunction="linear">
+    <keyframe time="0.103" value="0.8" />
+    <keyframe time="1" value="1.500" />
+  </animatedvalue>
+  <animatedvalue id="anim_27" scope="whole" timingfunction="linear">
+    <keyframe time="0.103" value="0" />
+    <keyframe time="0.43" value="1" />
+    <keyframe time="0.75" value="1" />    
+    <keyframe time="0.9" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_28" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.068" value="901.807875 550.173" />
+    <keyframe time="1" value="438.854625 428.179" />
+  </animatedvalue>
+  <animatedvalue id="anim_29" scope="whole" timingfunction="linear">
+    <keyframe time="0.068" value="1.200" />
+    <keyframe time="1" value="1.200" />
+  </animatedvalue>
+  <animatedvalue id="anim_30" scope="whole"  timingfunction="linear">
+    <keyframe time="0.068" value="0" />
+    <keyframe time="0.35" value="1" />
+    <keyframe time="0.53" value="1" />    
+    <keyframe time="0.8" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_31" scope="whole" timingfunction="ease_in">
+    <keyframe time="0.052" value="1515.490875 473.628" />
+    <keyframe time="1" value="1068.04575 338.688" />
+  </animatedvalue>
+  <animatedvalue id="anim_32" scope="whole" timingfunction="linear">
+    <keyframe time="0.052" value="0.63" />
+    <keyframe time="1" value="1.900" />
+  </animatedvalue>
+  <animatedvalue id="anim_33" scope="whole"  timingfunction="linear">
+    <keyframe time="0.052" value="0" />
+    <keyframe time="0.28" value="1" />
+    <keyframe time="0.67" value="1" />    
+    <keyframe time="0.95" value="0" />
+  </animatedvalue>
+  <animatedvalue id="anim_34" scope="whole" timingfunction="ease_out">
+    <keyframe time="0.093" value="1721.98575 766.169" />
+    <keyframe time="1" value="1306.57725 664.392" />
+  </animatedvalue>
+
+  <animatedvalue id="angle_test" basis="clipindexshuffle">
+    <keyframe value="0" />
+    <keyframe value="10" />
+    <keyframe value="20" />
+    <keyframe value="-10" />
+    <keyframe value="-20" />
+    <keyframe value="90" />
+  </animatedvalue>
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="2"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+              <rect bounds="-720 -360 720 360" texture="@video1" />
+        </translate>
+        <rotate axis="0 0 1" angle="@angle_test">
+          <translate offset="@anim_1">
+            <scale uniform="@anim_2">
+              <style compmode="screen" alpha="@anim_3 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-125 -125 125 125" texture="@texture_2" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_4">
+            <scale uniform="@anim_5">
+              <style compmode="screen" alpha="@anim_6 + @glowfuncb(@r.x @r.y @t)">
+                <rect bounds="-125 -125 125 125" texture="@texture_3" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_7">
+            <scale uniform="@anim_8">
+              <style compmode="screen" alpha="@anim_9 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-125 -125 125 125" texture="@texture_4" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_10">
+            <scale uniform="@anim_11">
+              <style compmode="screen" alpha="@anim_12 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-128 -117 128 117" texture="@texture_5" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_13">
+            <scale uniform="@anim_14">
+              <style compmode="screen" alpha="@anim_15 + @glowfuncc(@r.x @r.y @t)">
+                <rect bounds="-128 -117 128 117" texture="@texture_6" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_16">
+            <scale uniform="@anim_17">
+              <style compmode="screen" alpha="@anim_18 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-428 -417 428 417" texture="@texture_7" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_19">
+            <scale uniform="@anim_14">
+              <style compmode="screen" alpha="@anim_15 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-128 -117 128 117" texture="@texture_8" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_20">
+            <scale uniform="@anim_21">
+              <style compmode="screen" alpha="@anim_22 + @glowfuncb(@r.x @r.y @t)">
+                <rect bounds="-428 -417 428 417" texture="@texture_9" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_23">
+            <scale uniform="@anim_24">
+              <style compmode="screen" alpha="@anim_12 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-128 -117 128 117" texture="@texture_10" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_25">
+            <scale uniform="@anim_26">
+              <style compmode="screen" alpha="@anim_27 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-428 -417 428 417" texture="@texture_11" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_28">
+            <scale uniform="@anim_29">
+              <style compmode="screen" alpha="@anim_30 + @glowfuncc(@r.x @r.y @t)">
+                <rect bounds="-125 -125 125 125" texture="@texture_12" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_31">
+            <scale uniform="@anim_32">
+              <style compmode="screen" alpha="@anim_33 + @glowfunc(@r.x @r.y @t)">
+                <rect bounds="-125 -125 125 125" texture="@texture_13" />
+              </style>
+            </scale>
+          </translate>
+          <translate offset="@anim_34">
+            <scale uniform="@anim_24">
+              <style compmode="screen" alpha="@anim_12 + @glowfuncc(@r.x @r.y @t)">
+                <rect bounds="-428 -417 428 417" texture="@texture_14" />
+              </style>
+            </scale>
+          </translate>
+        </rotate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

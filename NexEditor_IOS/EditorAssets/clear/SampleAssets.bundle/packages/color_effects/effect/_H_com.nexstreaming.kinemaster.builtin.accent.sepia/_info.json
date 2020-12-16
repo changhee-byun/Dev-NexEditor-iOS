@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.accent.sepia",
+  "label": {
+    "pt": "Sépia",
+    "ja": "セピア",
+    "fr": "Sépia",
+    "zh-CN": "棕褐色",
+    "ko-KR": "세피아",
+    "ar": "بني داكن",
+    "zh-TW": "棕褐色",
+    "en": "Sepia",
+    "zh-HK": "棕褐色",
+    "de-DE": "Sepia",
+    "ru": "Сепия",
+    "es": "Sepia"
+  },
+  "type": "nex.kedl",
+  "hidden": true
+}

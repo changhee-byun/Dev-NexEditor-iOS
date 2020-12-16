@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.oldfilm_9v16.middle",
+  "label": {
+    "en": "oldfilm 9v16 middle"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "9v16" ],
+  "hidden": "true"
+}

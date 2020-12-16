@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_salmon_teal.jpg",
+	"thumbnail":"lut_salmon_teal.jpg",
+	"preset_name":"RED_ALERT",
+	"brightness" : -0.30,
+	"contrast" : -0.19,
+	"saturation" : -1,
+	"tintColor": "0xFFFF0000",
+	"lut_file":""
+}

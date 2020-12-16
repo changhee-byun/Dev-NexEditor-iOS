@@ -1,0 +1,185 @@
+<effect 
+	id="com.nexstreaming.kinemaster.onstage.opening" 
+	name="On-Stage Opening"
+	icon="theme_open.png"
+	theme="true"
+	type="title" 
+	intime="3000" 
+	intimefirst="1700"
+	outtime="2500" 
+	outtimelast="1500">
+
+	<clear color="0 0 0" />
+	
+	<texture id="videoframe" video="1" />
+	<texture id="star" src="star.png" />
+	<texture id="starglow" src="starglow.png" />
+	<texture id="curtain" src="onstage_curtain.png" wraps="repeat" />
+	<texture id="string" src="string.png" />
+	
+	<userfield id="f_text" type="text">
+		<fieldlabel locale="en" value="Title Text" />
+	</userfield>
+	<texture id="title_text_a" text="%1" 
+		srcfield="@f_text"
+		typeface="asset:bevan.ttf" 
+		textsize="127" 
+		height="127"
+		width="1100"
+		shadowoffset="0 0" shadowradius="5" shadowcolor="#FFFFFF"
+		fillcolor="#FFFFFF" 
+		textmargin="5"
+		textalign="center"
+		maxlines="1"
+		fill="true" />
+	
+	<!--<texture id="title_text_b" text="%1" 
+		srcfield="@f_text"
+		typeface="asset:bevan.ttf" 
+		textsize="127" 
+		height="127"
+		width="1100"
+		shadowoffset="0 0" shadowradius="5" shadowcolor="#FFFFFF"
+		fillcolor="#FFFFFF" 
+		textmargin="5"
+		textalign="center"
+		maxlines="1"
+		fill="true" shadow="true" />-->
+	
+	<animatedvalue id="rotate">
+		<keyframe value="0" />
+		<!--<keyframe value="-180" />
+		<keyframe value="180" />-->
+	</animatedvalue>
+	
+	<animatedvalue id="zoom">
+		<part type="in" clip="first">
+			<keyframe value="-40" time="0.25" />
+			<keyframe value="-20" />
+		</part>
+		<part type="in" clip="!first">
+			<keyframe value="-10.885" />
+			<keyframe value="-20" />
+		</part>
+		<part type="mid">
+			<keyframe value="-20" />
+		</part>
+		<part type="out">
+			<keyframe value="-20" />
+			<keyframe value="-10.885" />
+		</part>
+	</animatedvalue>
+	
+	<animatedvalue id="cslide">
+		<part type="in" clip="first">
+			<keyframe value="0" />
+			<keyframe value="30" time="0.8" />
+		</part>
+		<part type="in" clip="!first">
+			<keyframe value="30" />
+		</part>
+		<part type="mid">
+			<keyframe value="30" />
+		</part>
+		<part type="out">
+			<keyframe value="30" />
+			<keyframe value="30" />
+		</part>
+	</animatedvalue>
+	
+	<animatedvalue id="t" scope="whole" timingfunction="linear">
+		<keyframe value="0" />
+		<keyframe value="20" />
+	</animatedvalue>
+	
+	
+	<!--<animatedvalue id="glow" timingfunction="linear" noisefunction="fractal" noise="perlin-simplex" noisesamplebias="0" noisesamplescale="10" noiseoctaves="5" >
+		<keyframe value="0.2" />
+		<keyframe value="1" />
+	</animatedvalue>-->
+	
+	<function id="glowfunc" type="simplexfractal" outputbias="0.5" outputscale="0.5" octaves="4" />
+	<function id="swingfunc" type="simplexpure" inputscale="1 1 0.2" inputbias="30 20 10" outputscale="0.5" />
+	<function id="swingfuncb" type="simplexpure" inputscale="1 1 0.18" inputbias="20 50 44" outputscale="30" />
+	
+	<projection type="perspective" aspect="1.77777" fov="45" top="1" near="1" far="130">
+		<translate offset="0 0 @zoom">
+					
+			<scale x="4" y="1" type="texture">
+				<translate offset="0 0 -45">
+					<style alpha="0.6">
+						<rect bounds="-60 30 60 0" texture="@curtain" />
+					</style>
+					<style alpha="0.2">
+						<rect bounds="-60 -30 60 0" texture="@curtain" />
+					</style>
+				</translate>
+			</scale>
+
+			<translate offset="0 -4.5">
+			<sequence id="s" type="linear" count="2" start="1 1" end="-1 0.3"> <scale x="1" y="@s.x"> <style alpha="@s.y">
+				
+					<sequence id="r" type="randmix" count="18" start="-75 1.5 -9 1.8" end="75 15 -43 2.5" seed="3472">
+						<rotate axis="0 1 0" angle="@r.x">
+							<translate offset="0 @r.y @r.z">
+							
+								<translate offset="0 100 0">
+								<rotate axis="0 0 1" angle="@swingfunc(@r.x @r.y @t)">
+								<translate offset="0 -100 0">
+									
+								<rotate axis="0 1 0" angle="@swingfuncb(@r.x @r.y @t)">
+									<!--<rect bounds="-0.05 @r.w*0.6 0.05 100" texture="@string" />-->
+									<style alpha="@glowfunc(@r.x @r.y @t)">
+										<rect bounds="@r.w*-1 @r.w @r.w @r.w*-1" texture="@starglow" />
+									</style>
+									<!--<style alpha="0.5">
+										<rect bounds="@r.w*-1 @r.w @r.w @r.w*-1" texture="@star" />
+									</style>-->
+								</rotate>
+								
+								</translate>
+								</rotate>
+								</translate>
+								
+							</translate>
+						</rotate>
+					</sequence>
+
+			</style> </scale> </sequence>
+			</translate>
+			
+			<rotate axis="0 1 0" angle="@rotate">
+				<rect bounds="-8 4.5 8 -4.5" texture="@videoframe" />
+				<rect bounds="-8 -13.5 8 -4.5" color="0 0 0 1" />
+				<style alpha="0.2">
+					<rect bounds="-8 -13.5 8 -4.5" texture="@videoframe" />
+				</style>
+			</rotate>
+			
+			<translate offset="0 -4.5 6">
+				<sequence id="s" type="linear" count="2" start="1 1" end="-1 0.3"> <scale x="1" y="@s.x"> <style alpha="@s.y">
+					<!--<rect location="0 0" height="5" width="11" anchor="bottom center" scalemode="fit" mask="@title_text_b" color="#dcb11e" />-->
+					<rect location="0 0" height="6" width="13" anchor="bottom center" scalemode="fit" mask="@title_text_a" color="#dcb11e" />
+				</style> </scale> </sequence>
+			</translate>
+			
+			<part type="in">
+				<scale x="4" y="1" type="texture">
+					<translate offset="0 0 6">
+						<style alpha="1">
+							<translate offset="@cslide*-1 0">
+								<rect bounds="-60 30 0 -30" texture="@curtain" />
+							</translate>
+							<translate offset="@cslide 0">
+								<rect bounds="60 30 0 -30" texture="@curtain" />
+							</translate>
+						</style>
+					</translate>
+				</scale>
+			</part>
+			
+			
+		</translate>
+	</projection>	
+	
+</effect>

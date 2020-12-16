@@ -1,0 +1,16 @@
+<effect id="com.nexstreaming.kinemaster.builtin.transition.zoomout" name="Zoom out" icon="transition_zoom_out.png" type="transition" categorytitle="Classic Transitions"  effectoffset="100" videooverlap="100">
+	<animatedvalue id="scale_amount" timingfunction="ease-in">
+		<keyframe value="1" />
+		<keyframe value="2" />
+	</animatedvalue>
+	<animatedvalue id="fade_amount" timingfunction="ease-in">
+		<keyframe value="1" />
+		<keyframe value="0" />
+	</animatedvalue>
+	<rect bounds="-1 1 1 -1" texture="@video_in" />
+	<style alpha="@fade_amount" >
+		<scale uniform="@scale_amount">
+			<rect bounds="-1 1 1 -1" texture="@video_out" />
+		</scale>
+	</style>
+</effect>

@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.sports_2v1.trans_split",
+  "label": {
+    "en": "sports 2v1 trans_split"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "2v1" ],
+  "hidden": "true"
+}

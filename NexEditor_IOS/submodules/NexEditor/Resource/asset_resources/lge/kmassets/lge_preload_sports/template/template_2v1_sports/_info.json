@@ -1,0 +1,10 @@
+{
+  "filename": "template.json",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.lge.template.2v1.sports",
+  "label": {
+    "en": "LG sports 2v1"
+  },
+  "type": "nex.template",
+  "hidden": false
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Collage Show Type"
+            android:textSize="18sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rCollageShowAll"
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="All"/>
+            <RadioButton
+                android:id="@+id/rCollageShowStatic"
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Static"/>
+            <RadioButton
+                android:id="@+id/rCollageShowDynamic"
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Dynamic"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Collage Store Type"
+            android:textSize="18sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rCollageStoreAll"
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="All"/>
+            <RadioButton
+                android:id="@+id/rCollageStoreStatic"
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Static"/>
+            <RadioButton
+                android:id="@+id/rCollageStoreDynamic"
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Dynamic"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Request Store Source Count"
+            android:textSize="18sp"/>
+
+
+        <EditText
+            android:id="@+id/editText_source_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Vendor"
+            android:textSize="18sp"/>
+
+        <ListView
+            android:id="@+id/listview_bgm"
+            android:layout_width="match_parent"
+            android:layout_height="200dip">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Ani-Gif Quality"
+            android:textSize="18sp"/>
+
+
+        <SeekBar
+            android:id="@+id/seekBar_anigif_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "assetName": {
+    "pt": "Efeitos básico de título",
+    "ja": "基本タイトル効果",
+    "fr": "Effets de titre basiques",
+    "zh-CN": "基本标题效果",
+    "ko-KR": "기본 타이틀 효과",
+    "ar": "تأثيرات العنوان الأساسية",
+    "zh-TW": "基本標題特效",
+    "en": "Basic Title Effects",
+    "zh-HK": "基本標題特效",
+    "de-DE": "Basis-Titeleffekte",
+    "ru": "Эффекты базового названия",
+    "es": "Efectos básicos de títulos"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "effect/com.nexstreaming.kinemaster.builtin.title.simple",
+    "effect/com.nexstreaming.kinemaster.builtin.title.modern",
+    "effect/com.nexstreaming.kinemaster.builtin6.title.poem",
+    "effect/com.nexstreaming.kinemaster.builtin.title.center",
+    "effect/com.nexstreaming.kinemaster.builtin.title.elegant",
+    "effect/com.nexstreaming.kinemaster.builtin.title.bulletin",
+    "effect/com.nexstreaming.kinemaster.builtin5.slideacrosstxt"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

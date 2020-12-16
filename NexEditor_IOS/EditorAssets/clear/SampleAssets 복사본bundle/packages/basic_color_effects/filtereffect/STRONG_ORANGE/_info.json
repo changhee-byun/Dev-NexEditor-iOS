@@ -1,0 +1,11 @@
+{
+	"type":"nex.filtereffect",
+	"filename":"lut_moonlight.jpg",
+	"thumbnail":"lut_moonlight.jpg",
+	"preset_name":"STRONG_ORANGE",
+	"brightness" : 0.08,
+	"contrast" : -0.06,
+	"saturation" : -0.5,
+	"tintColor": "0xFFFFBB00",
+	"lut_file":""
+}

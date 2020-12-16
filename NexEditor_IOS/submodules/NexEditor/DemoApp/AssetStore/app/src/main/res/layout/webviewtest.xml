@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation ="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="2dp">
+
+		<Button
+			android:id="@+id/btn1"
+			android:layout_width="70dp"
+			android:layout_height="40dp"
+			android:layout_alignParentLeft="true"
+			android:text="Back"
+			android:enabled="false"
+			android:alpha="0"/>
+
+
+
+		<Button
+			android:id="@+id/btn2"
+			android:layout_width="70dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:text="Set" />
+
+
+	</RelativeLayout>
+
+	<WebView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/webview" />
+<!--
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:weightSum="1">
+
+			<Button
+				android:text="ch"
+				android:layout_width="49dp"
+				android:layout_height="36dp"
+				android:id="@+id/button3" />
+
+			<TextView
+				android:text="TextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/txt_login" />
+
+			<Button
+				android:text="reau"
+				android:layout_width="57dp"
+				android:layout_height="36dp"
+				android:id="@+id/button4" />
+
+			<Button
+				android:text="del"
+				android:layout_width="44dp"
+				android:layout_height="36dp"
+				android:id="@+id/button5"
+				android:layout_weight="0.10" />
+
+			<Button
+				android:text="info"
+				android:layout_width="50dp"
+				android:layout_height="36dp"
+				android:id="@+id/button6"
+				android:layout_weight="0.07" />
+
+			<Button
+				android:text="fea"
+				android:layout_width="45dp"
+				android:layout_height="36dp"
+				android:id="@+id/button7"
+				android:layout_weight="0.09" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:weightSum="1"
+			android:baselineAligned="false">
+
+			<Button
+				android:text="Button"
+				android:layout_width="50dp"
+				android:layout_height="36dp"
+				android:id="@+id/button8"
+				android:layout_weight="0.03" />
+
+			<Button
+				android:text="new"
+				android:layout_width="54dp"
+				android:layout_height="36dp"
+				android:id="@+id/button9" />
+
+			<Button
+				android:text="lan"
+				android:layout_width="58dp"
+				android:layout_height="34dp"
+				android:id="@+id/button10" />
+
+			<Button
+				android:text="cat"
+				android:layout_width="58dp"
+				android:layout_height="34dp"
+				android:id="@+id/button13"
+				android:layout_weight="0.03" />
+
+		</LinearLayout>
+-->
+
+
+</LinearLayout>

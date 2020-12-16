@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context="com.nexstreaming.editordemo.fragment.kmSTColorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/pallet_title"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            style="@style/Appl.Text5.Style"
+            android:text="Text Color"/>
+
+        <Switch
+            android:id="@+id/btn_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:textOn="On"
+            android:textOff="Off"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/iv_curcolor"
+            android:layout_width="30dp" android:layout_height="30dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_white"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_white"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_lightgray"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_lightgray"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_darkgray"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_darkgray"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_verydarkgray"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_verydarkgray"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_vividred"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_vividred"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_black"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_black"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_vividorange"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_vividorange"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_vividorange2"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_vividorange2"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_pureyellow"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_pureyellow"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent" android:layout_height="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_moderategreen"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_moderategreen"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_limegreen"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_limegreen"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_softblue"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_softblue"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_strongblue"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_strongblue"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_darkblue"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_darkblue"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_verydarkblue"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_verydarkblue"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_mostlydesaturatedmagenta"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_mostlydesaturatedmagenta"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_darkmagenta"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_darkmagenta"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp" android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_vividpink"
+                android:layout_width="30dp" android:layout_height="match_parent"
+                android:background="@color/pallet_vividpink"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent" android:layout_height="16dp"/>
+</LinearLayout>

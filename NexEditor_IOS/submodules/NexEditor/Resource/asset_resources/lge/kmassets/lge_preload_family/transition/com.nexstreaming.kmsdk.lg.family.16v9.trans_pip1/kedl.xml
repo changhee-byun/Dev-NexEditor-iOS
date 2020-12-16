@@ -1,0 +1,43 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.family.16v9.piptrans1"
+	type="transition" 
+	minduration="2000" 
+	maxduration="10000" 
+	effectoffset="100" 
+	effectoverlap="100"
+	cycleTime="800"
+	name="Family PIP1">
+
+  <texture id="video1" video="1" />
+  <texture id="video2" video="2" />
+  <texture id="tex_mask" src="mask_gradient_b.png" />
+
+  <animatedvalue id="slide">
+    <keyframe time="0" value="2 0" />
+    <keyframe time="0.05" value="0 0" />
+    <keyframe time="0.95" value="0 0" />
+    <keyframe time="1" value="-2 0" />
+  </animatedvalue>
+
+  <projection type="perspective" fov="45" aspect="1.777777" near="0.01" far="60000">
+	<scale y="-1">
+	  <translate offset="-640 -360 -870">
+		<translate offset="640 360">
+		  <rect bounds="-640 -360 640 360" texture="@video2" />
+		  <translate maskoffset="@slide">
+			<translate maskoffset="0.5 0.5">
+			  <scale type="mask" x="2" y="0">
+				<translate maskoffset="-0.5 -0.5">
+				  <rect bounds="-640 -360 640 360" texture="@video1" mask="@tex_mask" />
+				</translate>
+			  </scale>
+			</translate>
+		  </translate>
+		</translate>
+			
+	  </translate>
+	</scale>
+	
+  </projection>  
+	
+</effect>

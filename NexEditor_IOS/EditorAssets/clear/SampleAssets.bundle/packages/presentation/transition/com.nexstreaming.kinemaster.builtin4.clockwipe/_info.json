@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin4.clockwipe",
+  "label": {
+    "pt": "Limpar relógio",
+    "ja": "クロックワイプ",
+    "fr": "Balayage horloge",
+    "zh-CN": "时钟擦除",
+    "ko-KR": "시계회전",
+    "ar": "مسح ساعة",
+    "zh-TW": "時鐘抺去",
+    "en": "Clock Wipe",
+    "zh-HK": "時鐘抺去",
+    "de-DE": "Uhr-Wischeffekt",
+    "ru": "Шторка \u0027Часы\u0027",
+    "es": "Limpiar como reloj"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

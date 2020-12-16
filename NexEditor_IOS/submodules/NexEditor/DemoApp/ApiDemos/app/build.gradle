@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    //
+    def directTemplate = "false"
+    task(runProgram) {
+        if(project.hasProperty("bDirectTemplate")) {
+            directTemplate = bDirectTemplate;
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.nexstreaming.nexeditorsdkapis"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('editorsdk.jks')
+            //path to the keystore file
+            keyAlias "editorsdk"
+            storePassword "123456"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "directTemplate", directTemplate
+        }
+        release {
+            buildConfigField "boolean", "directTemplate", directTemplate
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation project(':scmbsdk-release')
+    //implementation project(':nexeditorsdk-release')
+    implementation project(':nexeditorsdk')
+    implementation project(':szfacedetect-release')
+    implementation project(':nexfacedetector-release')
+    implementation project(':gfwfacedetector-release')
+    implementation project(':anigifsdk-release')
+}

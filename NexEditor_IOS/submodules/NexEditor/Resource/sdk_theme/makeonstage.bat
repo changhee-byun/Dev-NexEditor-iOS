@@ -1,0 +1,1 @@
+python kedl.py -p -o output -k kedlkeys_sdk theme_src\onstage_theme\onstage_accent.xml theme_src\onstage_theme\onstage_ending.xml theme_src\onstage_theme\onstage_middle.xml theme_src\onstage_theme\onstage_opening.xml theme_src\onstage_theme\onstage_theme.xml theme_src\onstage_theme\onstage_trans.xml 

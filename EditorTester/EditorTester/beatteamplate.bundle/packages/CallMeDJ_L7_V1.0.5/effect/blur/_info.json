@@ -1,0 +1,11 @@
+{
+  "filename": "renderitem.xml",
+  "thumbnail": "asset_icon.png",
+  "id": "com.kinemaster.kmsdk.design1.beatsync.call_me.effect.ri.editor.blurall",
+  "label": {
+    "en": "Gaussian Blur"
+  },
+  "hidden":"true",
+  "kmcategory" : ["kmc.clipgraphics"],
+  "type": "nex.renderitem"
+}

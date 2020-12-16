@@ -1,0 +1,37 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.oldfilm.accent" 
+	type="title" 
+	repeat="yes"
+	intime="1600" 
+	intimefirst="1600"
+	outtime="800" 
+	outtimelast="800"
+	cycleTime="800"
+	name="Old Film Accent">
+
+  	<texture id="frame" src="lg_photo_frame.png" />
+	<texture id="noise" src="lg_noise.png" animated="4 2 10" />
+    <texture id="video1" video="1" />
+
+	<animatedvalue id="frame" timingfunction="linear">
+		<keyframe value="1" />
+		<keyframe value="10" />
+	</animatedvalue>
+
+	<animatedvalue id="text_alpha" timingfunction="linear">
+		<keyframe value="1" />
+		<keyframe value="10" />
+	</animatedvalue>
+  	
+  <projection type="perspective" fov="45" aspect="1.777777" near="0.01" far="60000">
+    <scale y="-1">
+      <translate offset="0 0 -870">
+        	<rect bounds="-640 -360 640 360" texture="@video1" />
+            <style alpha="0.5" animframe="@frame">
+              <rect bounds="-640 -360 640 360" texture="@noise" />
+	        </style>
+    	    <rect bounds="-640 -360 640 360" texture="@frame" />
+      </translate>
+    </scale>
+  </projection>
+</effect>

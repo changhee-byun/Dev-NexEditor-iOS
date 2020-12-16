@@ -1,0 +1,35 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.sports_2v1.zoom_slow" 
+	type="title" 
+  intime="1500"
+  outtime="0"
+  intimefirst="1500"
+  outtimelast="0"
+  repeat="no"
+  name="Sports Zoom Slow">
+  
+  <texture id="video1" video="1" />
+
+  <animatedvalue id="zoom" scope="whole" timingfunction="linear" >
+      <keyframe time="0" value="4" />
+      <keyframe time="0.5" value="1" />
+      <keyframe time="1" value="1" />
+  </animatedvalue>
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="2"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+    	 	<scale uniform="@zoom">
+	          <rect bounds="-720 -360 720 360" texture="@video1" />
+	        </scale>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

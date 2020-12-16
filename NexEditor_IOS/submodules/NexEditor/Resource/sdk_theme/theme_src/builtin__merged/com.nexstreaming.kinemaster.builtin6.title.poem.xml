@@ -1,0 +1,91 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin6.title.poem"
+  type="title"
+  intime="1200"
+  outtime="1200"
+  intimefirst="1200"
+  outtimelast="1200"
+  repeat="no"
+  name="Poem"
+  categorytitle="Basic Title Effects"
+  icon="fx_poem.png"
+  >
+  <animatedvalue id="anim_1" timingfunction="linear">
+      <part type="in">
+        <keyframe value="640 360" />
+        <keyframe value="640 360" timingfunction="ease-in" />
+      </part>
+      <part type="mid">
+        <keyframe value="640 360" />
+        <keyframe value="640 360" timingfunction="linear"  />
+      </part>
+      <part type="out">
+        <keyframe value="640 360" />
+        <keyframe value="640 360" timingfunction="ease-out" />
+      </part>
+  </animatedvalue>
+  <animatedvalue id="anim_2" timingfunction="linear">
+      <part type="in">
+        <keyframe value="0" />
+        <keyframe value="1" timingfunction="ease-in" />
+      </part>
+      <part type="mid">
+        <keyframe value="1" />
+        <keyframe value="1" timingfunction="linear"  />
+      </part>
+      <part type="out">
+        <keyframe value="1" />
+        <keyframe value="0" timingfunction="ease-out" />
+      </part>
+  </animatedvalue>
+      <userfield id="f_text" type="text" maxlines="50">
+        <fieldlabel locale="en" value="Title Text" />
+    </userfield>
+    
+    <userfield id="f_color_linea" type="color" default="#FFFFFF">
+    <fieldlabel locale="en" value="Text Color" />
+  </userfield>
+
+  <userfield id="f_textalign" type="selection" editor="icontoggle" default="1">
+    <option value="0" icon="textleft" />
+    <option value="1" icon="textcenter" />
+    <option value="2" icon="textright" />
+  </userfield>
+
+  <texture id="video1" video="1" />
+  <texture
+    id="text1"
+    srcfield="@f_text"
+    textsize="40"
+    height="616"
+    width="836"
+    fillcolor="@f_color_linea"
+    fill="true"
+    textalign="@f_textalign"
+    textvalign="center"
+    autosize="false"
+    typeface="asset:lato-bold.ttf"  
+    maxlines="100"  
+    text="%1" 
+    />
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -870">
+        <translate offset="640 360">
+          <rect bounds="-640 -360 640 360" texture="@video1" />
+        </translate>
+        <translate offset="@anim_1">
+          <style alpha="@anim_2">
+            <rect bounds="-418 -308 418 308" texture="@text1" />
+          </style>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

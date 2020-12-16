@@ -1,0 +1,7 @@
+<effect id="com.nexstreaming.kinemaster.basic.accent" intime="2000" intimefirst="2000" outtime="2000" outtimelast="2000" theme="true" type="title">
+	
+<texture id="video" video="1" />
+
+<rect bounds="-1 1 1 -1" texture="@video" />
+
+</effect>

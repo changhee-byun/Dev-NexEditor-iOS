@@ -1,0 +1,10 @@
+{
+  "filename": "kedl.xml",
+  "id": "com.nexstreaming.kmsdk.lg.oldfilm_9v16.accent",
+  "label": {
+    "en": "oldfilm 9v16 accent"
+  },
+  "type": "nex.kedl",
+  "mergePaths" : [ "9v16" ],
+  "hidden": "true"
+}

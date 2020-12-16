@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.nexstreaming.csd.bookeffect"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+			screentype="ALPHA|DEPTH"
+            name="3d_bookeffect">
+
+	<shader name="simpleAlphaVertexShader" language="glsl" src="glsl/base_vertex_shader.glsl"/>
+	<shader name="simpleAlphaFragmentShader" language="glsl" src="glsl/base_fragment_shader.glsl"/>
+	<shader name="MotionBlur" language="glsl" src="glsl/motion_blur.glsl"/>
+	<texture name="input_text" src="image/text.png"/>
+	<nexeffect name="crack" src="nexeffect/book.nef"/>
+	<userfield id="f_dir" type="selection" default="255 0 0 255">
+		<option value="255 0 0 255">
+			<fieldlabel locale="en" value="red" />
+		</option>
+		<option value="0 255 0 255">
+			<fieldlabel locale="en" value="green" />
+		</option>
+		<option value="0 0 255 255">
+			<fieldlabel locale="en" value="blue" />
+		</option>
+	</userfield>
+	<userfield id="text" type="selection" default="'google'">
+		<option value="'google'">
+			<fieldlabel locale="en" value="red" />
+		</option>
+		<option value="'naver'">
+			<fieldlabel locale="en" value="green" />
+		</option>
+		<option value="'bing'">
+			<fieldlabel locale="en" value="blue" />
+		</option>
+	</userfield>
+	<userfield default="#008000" id="f_color_text" type="color">
+	<fieldlabel locale="en" value="@string/userfld_text_color" />
+	</userfield>
+	<userfield id="f_text" type="text">
+		<fieldlabel locale="en" value="@string/userfld_title_text" />
+	</userfield>
+	<program name="mosaicFx" language="glsl" fragmentShader="CrossfadeFragmentShader" vertexShader="simpleAlphaVertexShader" />
+	<program name="motionFx" language="glsl" fragmentShader="MotionBlur" vertexShader="simpleAlphaVertexShader" />
+	<program name="simpleFx" language="glsl" fragmentShader="simpleAlphaFragmentShader" vertexShader="simpleAlphaVertexShader" />
+	<script name="mainScript" language="lua"><![CDATA[
+
+		text_scale_x = 1
+		text_scale_y = 1
+
+		TextField = {
+
+			typeface		=	"asset:orbitron-bold.ttf",
+			textSize		=	90,
+			spacingMult		=	1,
+			textFlags		=	4,
+			textAlign		=	1,			
+			textVAlign		=	1,
+			maxLines		=	2,
+		    fillColorX 		= 	255,
+		    fillColorY 		= 	255,
+		    fillColorZ 		= 	255,
+		    fillColorW 		= 	255,
+		    shadowColorX 	= 	0,
+		    shadowColorY 	= 	255,
+		    shadowColorZ 	= 	0,
+		    shadowColorW 	= 	255,
+		    bgColorX		=	255,
+		    bgColorY		=	0,
+		    bgColorZ		=	0,
+		    bgColorW		=	255,
+		    shadowRadius	=	6,
+		    shadowOffsetX 	= 	0,
+		    shadowOffsetY 	= 	0,
+		    shadowOffsetZ 	= 	0,
+		    shadowOffsetW 	= 	0,
+		    reqWidth		= 	1208,
+		    reqHeight		= 	150,
+		    text 			= 	"%1 "
+		}
+		
+		function backup()
+			TextField.titleText = selection.text.x .. text.f_text;
+			TextField.fillColorX = color.f_color_text.z
+			TextField.fillColorY = color.f_color_text.y
+			TextField.fillColorZ = color.f_color_text.x
+			TextField.fillColorW = color.f_color_text.w
+			TextField.bgColorX = selection.f_dir.z
+			TextField.bgColorY = selection.f_dir.y
+			TextField.bgColorZ = selection.f_dir.x
+			TextField.bgColorW = selection.f_dir.w
+			test_text = kmDrawText(TextField)
+			general_mvp_matrix = kmGetDefault3DMatrix()
+			speed_factor = 3.0
+			if system.play_percentage < (1 / speed_factor) then
+				kmTranslate(general_mvp_matrix, general_mvp_matrix, 640.0, 360.0 * system.play_percentage * 2 * speed_factor - kmGetTexHeight(test_text), 0.0)
+				kmScale(general_mvp_matrix, general_mvp_matrix, kmGetTexWidth(test_text), kmGetTexHeight(test_text) * (4.0 - system.play_percentage * 3 * speed_factor), 1.0)
+				motionFx.setMvpMatrix(general_mvp_matrix)
+				motionFx.setTextureSampler(test_text)
+				motionFx.setAlpha(1.0)
+				motionFx.setVelocity(0.0, (1.0 - system.play_percentage) * 0.05 * speed_factor)
+				motionFx.drawRect(text_scale_x, text_scale_y)		
+			else
+				kmTranslate(general_mvp_matrix, general_mvp_matrix, 640.0, 360.0 * 2.0 - kmGetTexHeight(test_text), 0.0)
+				kmScale(general_mvp_matrix, general_mvp_matrix, kmGetTexWidth(test_text), kmGetTexHeight(test_text), 1.0)
+				simpleFx.setMvpMatrix(general_mvp_matrix)
+				simpleFx.setTextureSampler(test_text)
+				simpleFx.setAlpha(1.0)
+				simpleFx.drawRect(text_scale_x, text_scale_y)
+			end
+		end
+
+		function main()
+
+			selected_effect = nexeffect.crack
+			kmDrawNexEffect(selected_effect, 0, 0, 0, 0, system.play_percentage * kmGetFrameNexEffect(selected_effect))
+		end
+
+		]]></script>
+</renderitem>

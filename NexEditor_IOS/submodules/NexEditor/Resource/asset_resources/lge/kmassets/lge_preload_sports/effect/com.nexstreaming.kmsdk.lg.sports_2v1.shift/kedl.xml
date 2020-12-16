@@ -1,0 +1,122 @@
+<effect 
+	id="com.nexstreaming.kmsdk.lg.sports_2v1.shift" 
+	type="title" 
+  intime="1500"
+  outtime="0"
+  intimefirst="1500"
+  outtimelast="0"
+  repeat="no"
+  name="Sports Shift">
+  
+  <texture id="video1" video="1" />
+
+  <animatedvalue id="slide" scope="whole">
+    <keyframe value="20 0" />
+    <keyframe value="-30 0" />
+  </animatedvalue>
+  
+  <animatedvalue id="clipcolor" basis="clipindexshuffle" timingfunction="linear">
+    <keyframe value="0.874 0.694 0.415" />
+    <keyframe value="0.874 0.874 0.874" />
+    
+<!--     <keyframe value="#ff936adf" />
+         <keyframe value="#ff6ab7df" />
+         <keyframe value="#ffdfb16a" />
+         <keyframe value="#ffd8df6a" />
+ --><!--     <keyframe value="#000000ff" />
+    <keyframe value="#ffffffff" />
+ -->  </animatedvalue>
+ 
+ 
+   <animatedvalue id="mask_position" timingfunction="linear" scope="whole">
+    <part clip="even">
+	    <keyframe time="0" value="2452.5 300" />
+	    <keyframe time="0.6" value="1777.5 300" />
+	    <keyframe time="1" value="1777.5 300" />
+	    
+    </part>
+    <part clip="odd">
+	    <keyframe time="0" value="787.5 1300" />
+	    <keyframe time="0.6" value="877.5 950" />
+	    <keyframe time="1" value="877.5 950" />
+    </part>
+    
+  </animatedvalue>  
+<!--
+    <keyframe value="640 360" />
+    <keyframe value="640 0" />
+    <keyframe value="640 360" />
+    <keyframe value="640 360" />
+-->
+
+ 
+  <animatedvalue id="zoom" scope="whole" timingfunction="linear" >
+    <part clip="even">
+      <keyframe time="0" value="1.2" />
+      <keyframe time="0.3" value="1.5" />
+      <keyframe time="1" value="1.5" />
+    </part>
+    <part clip="odd">
+      <keyframe time="0" value="1.8" />
+      <keyframe time="0.3" value="1.2" />
+      <keyframe time="1" value="1.2" />
+    </part>
+  </animatedvalue>
+  
+  <animatedvalue id="spin" scope="whole" timingfunction="linear">
+    <part clip="even">
+      <keyframe value="0" />
+      <keyframe value="-8" />
+    </part>
+    <part clip="odd">
+      <keyframe value="0" />
+      <keyframe value="8" />
+    </part>
+  </animatedvalue>
+
+  <animatedvalue id="shift" scope="whole" timingfunction="linear">
+    <part clip="even">
+      <keyframe value="-30 30" />
+      <keyframe value="30 -30" />
+    </part>
+    <part clip="odd">
+      <keyframe value="30 -30" />
+      <keyframe value="-30 30" />
+    </part>
+  </animatedvalue>
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="2"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-720 -360 -870">
+        <translate offset="720 360">
+          <rect bounds="-720 -360 640 360" texture="@video1" />
+        </translate>
+        
+         <style dest="stencil">
+          <translate offset="@mask_position">
+          	<rotate angle="@spin">
+               <rect bounds="-1012.5 -500 1012.5 500" color="#ffffff"  />
+            </rotate>
+          </translate>
+        </style>
+
+        <style rendertest="stencil">
+          <translate offset="720 360">
+            <translate offset="@slide"><scale uniform="@zoom">
+              <style saturation="-0.3" contrast="-0.2" >
+                <rect bounds="-720 -360 720 360" texture="@video1" />
+              </style>
+            </scale></translate>
+            
+          </translate>
+        </style>
+
+      </translate>
+    </scale>
+  </projection>
+</effect>

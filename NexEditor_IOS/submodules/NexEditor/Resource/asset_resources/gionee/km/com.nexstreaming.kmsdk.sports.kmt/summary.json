@@ -1,0 +1,149 @@
+{
+    "themes": [], 
+    "effects": [
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports_9v16.camcord", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports_9v16.flash", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports_9v16.ghost", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports_9v16.split_auto", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports_9v16.split_small", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports_9v16.zoom", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.camcord", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.flash", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.ghost", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.split_auto", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.split_small", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }, 
+        {
+            "package": "com.nexstreaming.kmsdk.sports.20160531012617.kmt", 
+            "optional_dependencies": [], 
+            "package_type": "kedl", 
+            "id": "com.nexstreaming.kmsdk.sports.zoom", 
+            "thumbnail": null, 
+            "version": "20160531012617", 
+            "dependencies": [], 
+            "package_date": 736115, 
+            "preview": null, 
+            "strings": {}
+        }
+    ]
+}

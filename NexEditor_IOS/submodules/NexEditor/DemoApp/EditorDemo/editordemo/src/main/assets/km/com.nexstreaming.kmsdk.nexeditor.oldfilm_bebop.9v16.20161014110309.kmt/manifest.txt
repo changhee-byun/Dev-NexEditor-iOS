@@ -1,0 +1,19 @@
+KineMaster Manifest/0100
+summary.json=8a99dea48edb1b2719d43b3b40527c29424fe71a
+[published-effects]
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.ending=e97d669b30d7a8043f844121fcc513f6c047a793
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.intro=2f2f1570218c8d7c09596b7074ef171d070e160c
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.loop=dbc8605b7dcc2c3dc16293112388d428902c1d1f
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.loop_right_to_left=b61e0cce98b30f6e7ebe713e6ddcdee4e0f83100
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.loop_top_to_bottom=43761878a975b3fcc617e32bdb70ac20fe12d1f1
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.transition=e9ff272043e8d9e37e1a68eed328e785da44ab29
+com.nexstreaming.kmsdk.nexeditor.oldfilm_bebop.9v16.transition_top_to_bottom=17c1434e0cad1645ebbf163abf96f29a2aa239f8
+[internal-dependencies]
+r0=a9b4ca63d98ab8eb4ffc03e59310839a6c9abed7
+r1=d2097785a8dccddd8a028759f6b95b89c33c1425
+r2=8ac5ac60c5100a9452c9e844a6db2aa2d54a506b
+r3=cc809bc5f3d26debcc0a7ea396f9f21e40043edb
+r4=8fd48af49d48e141e6b905e0e7c4e850a0638860
+r5=160314f8304f6365be2f645399937f28ec561c08
+[external-dependencies]
+[opt-external-dependencies]

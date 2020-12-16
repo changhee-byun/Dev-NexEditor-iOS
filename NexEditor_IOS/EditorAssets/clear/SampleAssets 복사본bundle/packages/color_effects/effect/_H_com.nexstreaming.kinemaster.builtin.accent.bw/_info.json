@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin.accent.bw",
+  "label": {
+    "pt": "Preto e branco",
+    "ja": "白黒",
+    "fr": "Noir \u0026 Blanc",
+    "zh-CN": "黑白",
+    "ko-KR": "흑백",
+    "ar": "أبيض وأسود",
+    "zh-TW": "黑白",
+    "en": "Black \u0026 White",
+    "zh-HK": "黑白",
+    "de-DE": "Schwarz-weiß",
+    "ru": "Черно-белый",
+    "es": "Blanco y negro"
+  },
+  "type": "nex.kedl",
+  "hidden": true
+}

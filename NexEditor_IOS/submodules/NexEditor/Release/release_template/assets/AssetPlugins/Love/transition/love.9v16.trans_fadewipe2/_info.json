@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.9v16.trans_fadewipe2.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.9v16.trans_fadewipe2",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.transition.love.9v16.trans_fadewipe2"
+    },
+    "mergePaths": [
+        "9v16"
+    ],
+    "type": "nex.kedl"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_selected ="true"
+        android:drawable="@mipmap/ic_menu_tap_adjustment_focus_28dp"/>
+    <item
+        android:state_enabled="true"
+        android:state_selected ="false"
+        android:drawable="@mipmap/ic_menu_tap_adjustment_nor_28dp"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@mipmap/ic_menu_tap_adjustment_dim_28dp"/>
+</selector>

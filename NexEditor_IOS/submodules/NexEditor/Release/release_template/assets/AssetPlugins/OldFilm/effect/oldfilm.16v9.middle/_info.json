@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.oldfilm.16v9.middle.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.oldfilm.16v9.middle",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.oldfilm.16v9.middle"
+    },
+    "mergePaths": [
+        "16v9"
+    ],
+    "type": "nex.kedl"
+}

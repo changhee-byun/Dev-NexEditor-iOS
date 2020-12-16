@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.nexstreaming.csd.lowerthirds_effect_1"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+			screentype="ALPHA|STENCIL"
+            name="lowthirds_effect">
+
+	<shader name="simpleAlphaVertexShader" language="glsl" src="glsl/base_vertex_shader.glsl"/>
+	<shader name="simpleAlphaFragmentShader" language="glsl" src="glsl/base_fragment_shader.glsl"/>
+	<shader name="solidFragmentShader" language="glsl" src="glsl/solid_fragment_shader.glsl"/>
+	<texture name="input_text" src="image/text.png"/>
+
+	<userfield id="f_title_text" type="text" default="NEXEDITOR SDK">
+		<fieldlabel locale="en" value="@string/userfld_title_text" />
+	</userfield>
+
+	<userfield id="f_subtitle_text" type="text" maxlines="2" default="An advanced editor SDK providing the best performances on every device for the fastest recording and editing in your app.">
+		<fieldlabel locale="en" value="@string/userfld_title_text" />
+	</userfield>
+
+	<userfield id="f_color_title_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="@string/userfld_text_color" />
+	</userfield>
+
+	<userfield id="f_color_subtitle_text" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="@string/userfld_text_color" />
+	</userfield>
+
+	<userfield id="f_color_line" type="color" default="#FFFFFF">
+		<fieldlabel locale="en" value="@string/userfld_line_color" />
+	</userfield>
+
+	<animatedvalue id="ani_rect_scale" scope="whole" timingfunction="linear">
+		<keyframe time="0" value="0" />
+		<keyframe time="0.1" value="1" />
+		<keyframe time="0.9" value="1" />
+		<keyframe time="0.95" value="0" />
+	</animatedvalue>
+
+	<animatedvalue id="ani_text_title" scope="whole" timingfunction="linear">
+		<keyframe time="0.1" value="0" />
+		<keyframe time="0.35" value="1" />
+		<keyframe time="0.78" value="1" />
+		<keyframe time="0.9" value="0" />
+	</animatedvalue>
+
+	<animatedvalue id="ani_text_subtitle" scope="whole" timingfunction="linear">
+		<keyframe time="0.2" value="0" />
+		<keyframe time="0.45" value="1" />
+		<keyframe time="0.78" value="1" />
+		<keyframe time="0.9" value="0" />
+	</animatedvalue>
+
+	<program name="simpleFx" language="glsl" fragmentShader="simpleAlphaFragmentShader" vertexShader="simpleAlphaVertexShader" />
+	<program name="solidFx" language="glsl" fragmentShader="solidFragmentShader" vertexShader="simpleAlphaVertexShader" />
+	<script name="mainScript" language="lua"><![CDATA[
+
+		TextTitle = {
+			typeface 		=	"asset:orbitron-bold.ttf",
+			textSize 		=	45,
+			spacingMult		=	1,
+			textFlags		=	4,
+			textAlign		=	0,
+			textVAlign		=	1,
+			maxLines		=	1,
+		    fillColorX 		= 	255,
+		    fillColorY 		= 	255,
+		    fillColorZ 		= 	255,
+		    fillColorW 		= 	255,
+		    reqWidth		= 	1100,
+		    reqHeight		= 	60,
+			text 			=	"%1"
+		}
+
+		TextSubTitle = {
+			typeface 		=	"asset:orbitron-bold.ttf",
+			textSize 		=	32,
+			spacingMult		=	1,
+			textFlags		=	4,
+			textAlign		=	0,
+			textVAlign		=	0,
+			textMargin 		=   5,
+			maxLines		=	2,
+		    fillColorX 		= 	255,
+		    fillColorY 		= 	255,
+		    fillColorZ 		= 	255,
+		    fillColorW 		= 	255,
+		    reqWidth		= 	1100,
+		    reqHeight		= 	100,
+			text 			=	"%1"
+		}
+
+		function main()
+
+			kmClear(GL_STENCIL_BUFFER_BIT)
+			general_mvp_matrix = kmGetDefault3DMatrix()
+			temp_matrix = kmNewMatrix()
+
+			kmTranslate(temp_matrix, general_mvp_matrix, 69, 672, 0)
+			kmScale(temp_matrix, temp_matrix, 1, animatedvalue.ani_rect_scale.x, 1)
+			solidFx.setMvpMatrix(temp_matrix)
+			solidFx.setUserColor(color.f_color_line.x / 255.0, color.f_color_line.y / 255.0, color.f_color_line.z / 255.0, 1.0)
+			solidFx.setAlpha(1.0)
+			solidFx.drawBound(-2, -120, 2, 0)
+
+			kmSetRenderDest(1, 0)
+			kmTranslate(temp_matrix, general_mvp_matrix, 90, 572, 0)
+			kmScale(temp_matrix, temp_matrix, animatedvalue.ani_text_title.x, 1, 1)
+			solidFx.setMvpMatrix(temp_matrix)
+			solidFx.setUserColor(1.0, 1.0, 1.0)
+			solidFx.drawBound(0, -30, 1100, 30)
+
+			kmTranslate(temp_matrix, general_mvp_matrix, 90, 645, 0)
+			kmScale(temp_matrix, temp_matrix, animatedvalue.ani_text_subtitle.x, 1, 1)
+			solidFx.setMvpMatrix(temp_matrix)
+			solidFx.setUserColor(1.0, 1.0, 1.0)
+			solidFx.drawBound(0, -50, 1100, 50)
+
+			kmSetRenderDest(0, 1)
+			TextTitle.titleText = text.f_title_text
+			TextTitle.fillColorX = color.f_color_title_text.z
+			TextTitle.fillColorY = color.f_color_title_text.y
+			TextTitle.fillColorZ = color.f_color_title_text.x
+			TextTitle.fillColorW = color.f_color_title_text.w
+			title_text = kmDrawText(TextTitle)
+			kmTranslate(temp_matrix, general_mvp_matrix, 640, 572, 0)
+			kmScale(temp_matrix, temp_matrix, 1, 1, 1)
+			simpleFx.setMvpMatrix(temp_matrix)
+			simpleFx.setTextureSampler(title_text)
+			simpleFx.setAlpha(1.0)
+			simpleFx.drawBound(-550, -30, 550, 30)
+
+			TextSubTitle.titleText = text.f_subtitle_text
+			TextSubTitle.fillColorX = color.f_color_subtitle_text.z
+			TextSubTitle.fillColorY = color.f_color_subtitle_text.y
+			TextSubTitle.fillColorZ = color.f_color_subtitle_text.x
+			TextSubTitle.fillColorW = color.f_color_subtitle_text.w
+			subtitle_text = kmDrawText(TextSubTitle)
+			kmTranslate(temp_matrix, general_mvp_matrix, 640, 645, 0)
+			kmScale(temp_matrix, temp_matrix, 1, 1, 1)
+			simpleFx.setMvpMatrix(temp_matrix)
+			simpleFx.setTextureSampler(subtitle_text)
+			simpleFx.drawBound(-550, -50, 550, 50)
+
+			kmSetRenderDest(0, 0)
+		end
+
+		]]></script>
+</renderitem>

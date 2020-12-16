@@ -1,0 +1,21 @@
+<effect 
+	id="com.nexstreaming.kinemaster.basic.transition"
+	name="Basic Transition"
+	icon="theme_transition.png"
+	theme="true"
+	type="transition" 
+	minduration="500" 
+	maxduration="3000" 
+	effectoffset="100" 
+	effectoverlap="100">
+	
+	<animatedvalue id="fade_amount">
+		<keyframe value="1" />
+		<keyframe value="0" />
+	</animatedvalue>
+	<rect bounds="-1 1 1 -1" texture="@video_in" />
+	<style alpha="@fade_amount">
+		<rect bounds="-1 1 1 -1" texture="@video_out" />
+	</style>
+	
+</effect>

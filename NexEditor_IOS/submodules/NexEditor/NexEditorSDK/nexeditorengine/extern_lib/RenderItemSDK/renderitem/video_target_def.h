@@ -1,0 +1,9 @@
+#pragma once
+
+enum{
+
+	E_TARGET_VIDEO_SRC,
+	E_TARGET_VIDEO_LEFT,
+	E_TARGET_VIDEO_RIGHT,
+	E_TARGET_OVER
+};

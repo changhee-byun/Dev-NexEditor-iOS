@@ -1,0 +1,19 @@
+source 'https://github.com/KineMasterCorp/NexPods.git'
+
+target 'EditorTester' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for EditorTester
+  pod 'NexEditorEngine'
+
+  target 'EditorTesterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'EditorTesterUITests' do
+    # Pods for testing
+  end
+
+end

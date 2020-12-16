@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.kinemaster.kmsdk.design1.beatsync.old_school.effect.ri.vas.zoomMirror"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+            name="zoomMirror"
+            version="1.0.0">
+
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+  <parameter id="bOriAlpha" type="range" default="0" minvalue="0" maxvalue="1" hidden="true">
+    <string name="label" lang="en">flag : whether the ori alpha value is used </string>
+  </parameter>
+
+  <parameter id="zoom" type="range" default="15" minvalue="0" maxvalue="100">
+    <string name="label" lang="en">zoom</string>
+  </parameter>
+
+  <parameter id="oriMix" type="range" default="0" minvalue="0" maxvalue="1">
+    <string name="label" lang="en">enable ori Mix</string>
+  </parameter>
+
+  <parameter id="mixMode" type="range" default="1" minvalue="0" maxvalue="1">
+    <string name="label" lang="en">ori Mix mode</string>
+  </parameter>
+
+
+  <shader name="filters_zoomMirror_vertex" language="glsl" src="glsl/filters_zoomMirror_vertex.glsl"/>
+	<shader name="filters_zoomMirror_fragment" language="glsl" src="glsl/filters_zoomMirror_fragment.glsl"/>
+	<program name="CCFx" language="glsl" fragmentShader="filters_zoomMirror_fragment" vertexShader="filters_zoomMirror_vertex" />
+
+  <script name="mainScript" language="lua" src="main.lua"/>
+  
+</renderitem>

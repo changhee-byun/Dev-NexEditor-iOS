@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.nexstreaming.editordemo.activity.kmVideoActivity"
+    android:background="@color/statusBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <VideoView
+            android:id="@+id/videoview"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+        <FrameLayout
+            android:layout_width="40dp" android:layout_height="56dp">
+            <ImageView
+                android:id="@+id/preview_back"
+                android:layout_width="24dp" android:layout_height="24dp"
+                android:layout_gravity="center_vertical|right" android:scaleType="fitCenter"
+                android:src="@mipmap/ic_arrow_back_white_24dp"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

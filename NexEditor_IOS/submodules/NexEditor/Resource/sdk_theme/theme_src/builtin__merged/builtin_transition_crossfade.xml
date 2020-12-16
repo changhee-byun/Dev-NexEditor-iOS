@@ -1,0 +1,10 @@
+<effect id="com.nexstreaming.kinemaster.builtin.transition.crossfade" name="Crossfade" icon="transition_crossfade.png" categorytitle="Classic Transitions" type="transition" effectoffset="100" videooverlap="100" defaultduration="2000" minduration="500" maxduration="3000">
+	<animatedvalue id="fade_amount">
+		<keyframe value="1" />
+		<keyframe value="0" />
+	</animatedvalue>
+	<rect bounds="-1 1 1 -1" texture="@video_in" />
+	<style alpha="@fade_amount">
+		<rect bounds="-1 1 1 -1" texture="@video_out" />
+	</style>
+</effect>

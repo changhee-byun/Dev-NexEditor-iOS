@@ -1,0 +1,27 @@
+{
+  "assetName": {
+    "pt": "Transições divertidas",
+    "ja": "おもしろい転換",
+    "fr": "Transitions Sympas",
+    "zh-CN": "有趣的转场",
+    "ko-KR": "재미있는 장면전환 효과",
+    "ar": "تحويلات مرحة",
+    "zh-TW": "有趣的轉場",
+    "en": "Fun Transitions",
+    "zh-HK": "有趣的轉場",
+    "de-DE": "Fun Übergänge",
+    "ru": "Развлекательные переходы",
+    "es": "Transiciones divertidas"
+  },
+  "format": "com.kinemaster.assetpackage",
+  "itemRoots": [
+    "transition/com.nexstreaming.kinemaster.builtin2.transition.circlewipe",
+    "transition/com.nexstreaming.kinemaster.builtin3.knockaside",
+    "transition/com.nexstreaming.kinemaster.builtin2.transition.manycircles",
+    "transition/com.nexstreaming.kinemaster.builtin4.heartwipe",
+    "transition/com.nexstreaming.kinemaster.builtin4.starwipe"
+  ],
+  "minVersionCode": 2,
+  "packageContentVersion": 1,
+  "targetVersionCode": 4
+}

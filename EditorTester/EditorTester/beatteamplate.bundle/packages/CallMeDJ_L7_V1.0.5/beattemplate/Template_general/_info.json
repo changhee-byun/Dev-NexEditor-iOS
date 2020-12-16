@@ -1,0 +1,10 @@
+{
+  "id" : "com.kinemaster.beattemplate.Call_Me_DJ_general",
+  "filename" : "template.json",
+  "icon" : "asset_icon.png",
+  "label" : {
+    "en" : "Call Me DJ"
+  },
+  "type" : "nex.template",
+  "hidden" : false
+}

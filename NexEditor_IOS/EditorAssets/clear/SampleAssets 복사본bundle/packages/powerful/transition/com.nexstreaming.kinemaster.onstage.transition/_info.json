@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.onstage.transition",
+  "label": {
+    "pt":     "No palco",
+    "ja":     "ステージ",
+    "fr":     "Sur scène",
+    "zh-CN":  "舞台",
+    "ko-KR":  "스테이지",
+    "ar":     "على المسرح",
+    "zh-TW":  "舞臺",
+    "en":     "On-Stage",
+    "zh-HK":  "舞臺",
+    "de-DE":  "Auf der Bühne",
+    "ru":     "На сцене",
+    "es":     "En escena"
+  },
+  "type": "nex.kedl",
+  "hidden": false
+}

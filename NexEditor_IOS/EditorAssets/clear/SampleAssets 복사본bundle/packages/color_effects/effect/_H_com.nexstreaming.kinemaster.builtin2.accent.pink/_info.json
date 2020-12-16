@@ -1,0 +1,21 @@
+{
+  "filename": "kedl.xml",
+  "icon": "asset_icon.png",
+  "id": "com.nexstreaming.kinemaster.builtin2.accent.pink",
+  "label": {
+    "pt": "Rosa",
+    "ja": "ピンク",
+    "fr": "Rose",
+    "zh-CN": "粉红",
+    "ko-KR": "분홍",
+    "ar": "وردي",
+    "zh-TW": "粉紅",
+    "en": "Pink",
+    "zh-HK": "粉紅",
+    "de-DE": "Pink",
+    "ru": "Розовый",
+    "es": "Rosado"
+  },
+  "type": "nex.kedl",
+  "hidden": true
+}

@@ -1,0 +1,3 @@
+include ':app', ':nexeditorsdk-release', ':scmbsdk-release', ':szfacedetect-release', ':nexfacedetector-release', ':gfwfacedetector-release', ':anigifsdk-release'
+include ':nexeditorsdk'
+project(':nexeditorsdk').projectDir = new File(settingsDir, '../../NexEditorSDK/nexeditorsdk')

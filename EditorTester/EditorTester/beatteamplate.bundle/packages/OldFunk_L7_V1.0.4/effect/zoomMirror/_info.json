@@ -1,0 +1,10 @@
+{
+  "filename": "renderitem.xml",
+  "id": "com.kinemaster.kmsdk.design1.beatsync.old_school.effect.ri.vas.zoomMirror",
+  "label": {
+    "en": "zoomMirror"
+  },
+  "type": "nex.renderitem",
+  "kmcategory" : ["kmc.clipgraphics"],
+  "hidden": true
+}

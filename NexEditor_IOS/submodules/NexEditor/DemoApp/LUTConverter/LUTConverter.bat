@@ -1,0 +1,1 @@
+java -jar LUTConverter.jar LUTFiles ConvertedLUTFiles

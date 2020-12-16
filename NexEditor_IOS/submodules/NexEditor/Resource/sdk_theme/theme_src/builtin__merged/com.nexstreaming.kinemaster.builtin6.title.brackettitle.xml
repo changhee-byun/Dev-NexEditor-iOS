@@ -1,0 +1,126 @@
+<effect
+  id="com.nexstreaming.kinemaster.builtin6.title.brackettitle"
+  type="title"
+  intime="1200"
+  outtime="1200"
+  intimefirst="1200"
+  outtimelast="1200"
+  repeat="no"
+  name="Floating Braces"
+  categorytitle="More Title Effects"
+  icon="fx_floatingbraces.png"
+  >
+  <animatedvalue id="anim_1" timingfunction="linear">
+      <part type="in">
+        <keyframe value="691 360" />
+        <keyframe value="941.821 360.107" timingfunction="ease-in" />
+      </part>
+      <part type="mid">
+        <keyframe value="941.821 360.107" />
+        <keyframe value="981.821 360.107" timingfunction="linear"  />
+      </part>
+      <part type="out">
+        <keyframe value="981.821 360.107" />
+        <keyframe value="1081 360" timingfunction="ease-out" />
+      </part>
+  </animatedvalue>
+  <animatedvalue id="anim_2" timingfunction="linear">
+      <part type="in">
+        <keyframe value="0" />
+        <keyframe value="1" timingfunction="ease-in" />
+      </part>
+      <part type="mid">
+        <keyframe value="1" />
+        <keyframe value="1" timingfunction="linear"  />
+      </part>
+      <part type="out">
+        <keyframe value="1" />
+        <keyframe value="0" timingfunction="ease-out" />
+      </part>
+  </animatedvalue>
+  <animatedvalue id="anim_3" timingfunction="linear">
+      <part type="in">
+        <keyframe value="591 360" />
+        <keyframe value="341.821 360.107" timingfunction="ease-in" />
+      </part>
+      <part type="mid">
+        <keyframe value="341.821 360.107" />
+        <keyframe value="301.821 360.107" timingfunction="linear"  />
+      </part>
+      <part type="out">
+        <keyframe value="301.821 360.107" />
+        <keyframe value="201 360" timingfunction="ease-out" />
+      </part>
+  </animatedvalue>
+  <animatedvalue id="anim_4" timingfunction="linear">
+      <part type="in">
+        <keyframe value="0.100" />
+        <keyframe value="1" timingfunction="ease-in" />
+      </part>
+      <part type="mid">
+        <keyframe value="1" />
+        <keyframe value="1.050" timingfunction="linear"  />
+      </part>
+      <part type="out">
+        <keyframe value="1.050" />
+        <keyframe value="1.300" timingfunction="ease-out" />
+      </part>
+  </animatedvalue>
+  <texture id="texture_1" src="parenr.png" />
+  <texture id="texture_2" src="paren.png" />
+    <userfield id="f_text" type="text">
+        <fieldlabel locale="en" value="Title Text" />
+    </userfield>
+    
+    <userfield id="f_color_linea" type="color" default="#FFFFFF">
+    <fieldlabel locale="en" value="Title Text" />
+  </userfield>
+  <userfield id="f_color_bracket" type="color" default="#FFFFFF">
+    <fieldlabel locale="en" value="Brace Color" />
+  </userfield>
+  <texture id="video1" video="1" />
+  <rect bounds="-1 1 1 -1" texture="@video1" />
+  <texture
+    id="text1"
+    srcfield="@f_text"
+    textsize="100"
+    height="199"
+    width="530"
+    fillcolor="@f_color_linea"
+    fill="true"
+    textalign="center"
+    textvalign="center"
+    autosize="false"
+    typeface="asset:lato-bold.ttf"  
+    text="%1" 
+    />
+
+  <projection
+    type="perspective"
+    fov="45"
+    aspect="1.777777"
+    near="0.01"
+    far="60000">
+    <scale y="-1">
+      <translate offset="-640 -360 -870">
+        <translate offset="@anim_1">
+          <style alpha="@anim_2">
+            <rect bounds="-45.500 -150 45.500 150" mask="@texture_1" color="@f_color_bracket" />
+          </style>
+        </translate>
+        <translate offset="@anim_3">
+          <style alpha="@anim_2">
+            <rect bounds="-45.500 -150 45.500 150" mask="@texture_2" color="@f_color_bracket" />
+          </style>
+        </translate>
+        <translate offset="640 360">
+          <scale uniform="@anim_4">
+            <style alpha="@anim_2">
+              <rect bounds="-265 -99.500 265 99.500" texture="@text1" />
+            </style>
+          </scale>
+        </translate>
+      </translate>
+    </scale>
+  </projection>
+</effect>

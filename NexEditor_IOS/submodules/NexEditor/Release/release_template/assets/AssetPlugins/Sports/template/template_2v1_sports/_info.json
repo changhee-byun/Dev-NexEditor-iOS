@@ -1,0 +1,10 @@
+{
+    "filename": "template_2v1_sports.json",
+    "hidden": false,
+    "icon": "thumbnail.png",
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.template.2v1.sports",
+    "label": {
+        "en": "template_2v1_sports"
+    },
+    "type": "nex.template"
+}

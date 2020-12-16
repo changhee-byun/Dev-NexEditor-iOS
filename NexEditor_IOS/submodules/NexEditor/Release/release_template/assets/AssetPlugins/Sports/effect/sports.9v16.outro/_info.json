@@ -1,0 +1,12 @@
+{
+    "filename": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.9v16.outro.xml",
+    "hidden": false,
+    "id": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.9v16.outro",
+    "label": {
+        "en": "com.nexstreaming.kmsdk.design.nexeditor.effect.sports.9v16.outro"
+    },
+    "mergePaths": [
+        "9v16"
+    ],
+    "type": "nex.kedl"
+}

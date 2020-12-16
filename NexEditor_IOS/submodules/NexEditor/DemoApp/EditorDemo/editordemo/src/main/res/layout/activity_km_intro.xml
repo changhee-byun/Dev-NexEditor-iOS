@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@mipmap/img_home_bg" tools:context=".KM_IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material"/>
+
+        <ImageView
+            android:layout_width="match_parent" android:layout_height="172dp"
+            android:scaleType="fitCenter" android:src="@mipmap/ic_logo"/>
+
+        <TextView
+            android:id="@+id/intro_version"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="4dp" style="@style/Appl.Text3.Style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:weightSum="4" android:orientation="vertical">
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+
+            <Button
+                android:id="@+id/theme"
+                android:layout_width="match_parent" android:layout_height="47dp"
+                android:layout_marginRight="38dp" android:layout_marginLeft="38dp"
+                android:text="Theme" android:layout_gravity="center|top"
+                android:background="@drawable/button_ripple" style="@style/Appl.Text2.Style"/>
+
+        </LinearLayout>
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".7">
+
+            <Button
+                android:id="@+id/template"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_marginRight="38dp" android:layout_marginLeft="38dp"
+                android:text="Template" android:layout_gravity="center|top"
+                android:background="@drawable/button_ripple" style="@style/Appl.Text2.Style"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".7">
+
+            <Button
+                android:id="@+id/new_video_editor"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_marginRight="38dp" android:layout_marginLeft="38dp"
+                android:text="Clip Editing Tools" android:layout_gravity="center|top"
+                android:enabled="true" android:background="@drawable/button_ripple" style="@style/Appl.Text2.Style"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".7">
+
+            <Button
+                android:id="@+id/gallery_slideshow"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_marginRight="38dp" android:layout_marginLeft="38dp"
+                android:text="Gallery SlideShow " android:layout_gravity="center|top"
+                android:background="@drawable/button_ripple" style="@style/Appl.Text2.Style"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".4"/>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent" android:layout_height="47dp"
+                android:layout_marginRight="38dp" android:layout_marginLeft="38dp"
+                android:text="New Video Editor" android:layout_gravity="center|top"
+                android:enabled="false" android:background="@drawable/button_ripple" style="@style/Appl.Text2.Style"/>
+
+        </LinearLayout>
+-->
+    </LinearLayout>
+
+</LinearLayout>
