@@ -1,8 +1,8 @@
 PODS:
   - AssetReader (1.1.0)
-  - NexEditorEngine (2.12.41):
-    - NexEditorEngine/NexEditor (= 2.12.41)
-  - NexEditorEngine/NexEditor (2.12.41)
+  - NexEditorEngine (2.16.33):
+    - NexEditorEngine/NexEditor (= 2.16.33)
+  - NexEditorEngine/NexEditor (2.16.33)
   - NexEditorFramework (1.6.0):
     - AssetReader
     - NexEditorEngine
@@ -10,7 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - AssetReader (from `../../NexEditorFramework/AssetReader`)
-  - NexEditorEngine (from `../../submodules/NexEditor`)
+  - NexEditorEngine (from `../../../../NexEditor`)
   - NexEditorFramework (from `../../`)
   - SampleClipSources (from `../../SampleClipSources`)
 
@@ -18,18 +18,18 @@ EXTERNAL SOURCES:
   AssetReader:
     :path: "../../NexEditorFramework/AssetReader"
   NexEditorEngine:
-    :path: "../../submodules/NexEditor"
+    :path: "../../../../NexEditor"
   NexEditorFramework:
     :path: "../../"
   SampleClipSources:
     :path: "../../SampleClipSources"
 
 SPEC CHECKSUMS:
-  AssetReader: 352e6a8503a783d2d3e8f3ee44fcc59ee6ae0c34
-  NexEditorEngine: f9cf1546401f8c3f3569db4707eebaba48cfcd9b
-  NexEditorFramework: 470b35d358497239dbd2326b86df2e1be3410d44
-  SampleClipSources: 5b5ce7dec2ec9ad4205097378fc72c2ec7200bcd
+  AssetReader: 7fe43f67114e0b3ad338d826e70c570621ce53bb
+  NexEditorEngine: 223a462b4c888abbbbc53fbe6581602c79ff2e11
+  NexEditorFramework: 1ea9a5008908f956016f9d2bef93b0a0fa56ec44
+  SampleClipSources: 507432a06a1eba62a2eabe9d84dcb96e4accd10f
 
-PODFILE CHECKSUM: e703716dd0838f48c307d6a8bf67850d1f0de674
+PODFILE CHECKSUM: b4bcd3edd4f548856b0c76056452c372d8e8120b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.0

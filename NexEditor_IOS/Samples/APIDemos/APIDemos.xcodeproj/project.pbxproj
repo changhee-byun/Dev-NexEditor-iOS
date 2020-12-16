@@ -1235,7 +1235,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-APIDemos/Pods-APIDemos-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-APIDemos/Pods-APIDemos-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AssetReader/AssetReader.framework",
 				"${BUILT_PRODUCTS_DIR}/NexEditorEngine/NexEditorEngine.framework",
 				"${BUILT_PRODUCTS_DIR}/NexEditorFramework/NexEditorFramework.framework",
@@ -1248,7 +1248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APIDemos/Pods-APIDemos-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APIDemos/Pods-APIDemos-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A12E9A0172987806C3F43CAF /* [CP] Copy Pods Resources */ = {
@@ -1257,7 +1257,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-APIDemos/Pods-APIDemos-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-APIDemos/Pods-APIDemos-resources.sh",
 				"${PODS_ROOT}/../../../SampleClipSources/clipsources",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1266,7 +1266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APIDemos/Pods-APIDemos-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APIDemos/Pods-APIDemos-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A52F2081AB814A9EC4324CF1 /* [CP] Check Pods Manifest.lock */ = {
@@ -1671,7 +1671,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "APIDemosUITests/APIDemosUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = APIDemos;
 			};
 			name = Debug;
@@ -1690,7 +1690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nexstreaming.nexeditor.dev.APIDemosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "APIDemosUITests/APIDemosUITests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = APIDemos;
 			};
 			name = Release;

@@ -8,7 +8,7 @@ target 'APIDemos' do
   # Pods for APIDemos
   pod 'NexEditorFramework', :path => '../../'
   pod 'AssetReader', :path => '../../NexEditorFramework/AssetReader'
-  pod 'NexEditorEngine', :path => '../../submodules/NexEditor'
+  pod 'NexEditorEngine', :path => '../../../../NexEditor'
   pod 'SampleClipSources', :path=> '../../SampleClipSources'
 
   target 'APIDemosTests' do
