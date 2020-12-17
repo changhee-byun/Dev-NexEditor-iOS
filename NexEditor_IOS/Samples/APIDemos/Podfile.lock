@@ -1,35 +1,16 @@
 PODS:
-  - AssetReader (1.1.0)
-  - NexEditorEngine (2.16.33):
-    - NexEditorEngine/NexEditor (= 2.16.33)
-  - NexEditorEngine/NexEditor (2.16.33)
-  - NexEditorFramework (1.6.0):
-    - AssetReader
-    - NexEditorEngine
   - SampleClipSources (0.0.1)
 
 DEPENDENCIES:
-  - AssetReader (from `../../NexEditorFramework/AssetReader`)
-  - NexEditorEngine (from `../../../../NexEditor`)
-  - NexEditorFramework (from `../../`)
   - SampleClipSources (from `../../SampleClipSources`)
 
 EXTERNAL SOURCES:
-  AssetReader:
-    :path: "../../NexEditorFramework/AssetReader"
-  NexEditorEngine:
-    :path: "../../../../NexEditor"
-  NexEditorFramework:
-    :path: "../../"
   SampleClipSources:
     :path: "../../SampleClipSources"
 
 SPEC CHECKSUMS:
-  AssetReader: 7fe43f67114e0b3ad338d826e70c570621ce53bb
-  NexEditorEngine: 223a462b4c888abbbbc53fbe6581602c79ff2e11
-  NexEditorFramework: 1ea9a5008908f956016f9d2bef93b0a0fa56ec44
   SampleClipSources: 507432a06a1eba62a2eabe9d84dcb96e4accd10f
 
-PODFILE CHECKSUM: b4bcd3edd4f548856b0c76056452c372d8e8120b
+PODFILE CHECKSUM: ddcf51686ed2e3708080afd7f6801a192a66ffda
 
 COCOAPODS: 1.10.0
