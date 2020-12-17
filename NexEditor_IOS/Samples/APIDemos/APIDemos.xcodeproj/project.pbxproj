@@ -46,11 +46,10 @@
 		2DC3017F1DBA755B005CE3A3 /* EffectEditTypeCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC301711DBA755B005CE3A3 /* EffectEditTypeCViewController.m */; };
 		2DC301801DBA755B005CE3A3 /* EffectItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC301731DBA755B005CE3A3 /* EffectItemTableViewController.m */; };
 		2DC301831DBA755B005CE3A3 /* EffectOptionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3017A1DBA755B005CE3A3 /* EffectOptionTableViewController.m */; };
-		37C0C33D258B146C000DC834 /* NexEditorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C06F16258B0AF8000DC834 /* NexEditorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		37C0C346258B149E000DC834 /* NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C06F16258B0AF8000DC834 /* NexEditorFramework.framework */; };
-		37C0C347258B149E000DC834 /* NexEditorFramework.framework.dSYM in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C0C341258B148C000DC834 /* NexEditorFramework.framework.dSYM */; };
-		37C0C348258B149E000DC834 /* libPods-NexEditorFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C0C345258B148C000DC834 /* libPods-NexEditorFramework.a */; };
-		37C0C349258B149E000DC834 /* libAssetReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C0C344258B148C000DC834 /* libAssetReader.a */; };
+		37BB47D8258B58940051DF95 /* libAssetReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BB47D6258B58940051DF95 /* libAssetReader.a */; };
+		37BB47D9258B58940051DF95 /* libNexEditorEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BB47D7258B58940051DF95 /* libNexEditorEngine.a */; };
+		37BB47E6258B59090051DF95 /* NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BB47D4258B58820051DF95 /* NexEditorFramework.framework */; };
+		37BB47E7258B59090051DF95 /* NexEditorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37BB47D4258B58820051DF95 /* NexEditorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87965D41AF54C0662C2D49FD /* Pods_APIDemosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0AA06CA0057E6C3D32B9D9 /* Pods_APIDemosUITests.framework */; };
 		A64DEA7C2565093400EB8367 /* beattemplate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A64DEA702565073D00EB8367 /* beattemplate.bundle */; };
 		B653E44722926E520051409B /* semisphere1.png in Resources */ = {isa = PBXBuildFile; fileRef = B653E44622926E500051409B /* semisphere1.png */; };
@@ -170,7 +169,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37C0C33D258B146C000DC834 /* NexEditorFramework.framework in Embed Frameworks */,
+				37BB47E7258B59090051DF95 /* NexEditorFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,12 +255,9 @@
 		2DC301791DBA755B005CE3A3 /* EffectOptionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectOptionTableViewController.h; sourceTree = "<group>"; };
 		2DC3017A1DBA755B005CE3A3 /* EffectOptionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectOptionTableViewController.m; sourceTree = "<group>"; };
 		2E98263ADA3488319B5E3F79 /* Pods-APIDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIDemos/Pods-APIDemos.release.xcconfig"; sourceTree = "<group>"; };
-		37C06F16258B0AF8000DC834 /* NexEditorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NexEditorFramework.framework; path = ../../NewFramework/NexEditorFramework.framework; sourceTree = "<group>"; };
-		37C0C341258B148C000DC834 /* NexEditorFramework.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = NexEditorFramework.framework.dSYM; path = ../../NewFramework/NexEditorFramework.framework.dSYM; sourceTree = "<group>"; };
-		37C0C343258B148C000DC834 /* libNexEditorEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNexEditorEngine.a; sourceTree = "<group>"; };
-		37C0C344258B148C000DC834 /* libAssetReader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAssetReader.a; path = ../../NewFramework/libAssetReader.a; sourceTree = "<group>"; };
-		37C0C345258B148C000DC834 /* libPods-NexEditorFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NexEditorFramework.a"; path = "../../NewFramework/libPods-NexEditorFramework.a"; sourceTree = "<group>"; };
-		37C0C34B258B149F000DC834 /* libNexEditorEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNexEditorEngine.a; sourceTree = "<group>"; };
+		37BB47D4258B58820051DF95 /* NexEditorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NexEditorFramework.framework; path = ../../NewFramework/NexEditorFramework.framework; sourceTree = "<group>"; };
+		37BB47D6258B58940051DF95 /* libAssetReader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAssetReader.a; path = ../../NewFramework/libAssetReader.a; sourceTree = "<group>"; };
+		37BB47D7258B58940051DF95 /* libNexEditorEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNexEditorEngine.a; path = ../../NewFramework/NexEditorEngine/libNexEditorEngine.a; sourceTree = "<group>"; };
 		9C43CA7A956D01DCAF107577 /* Pods-APIDemosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIDemosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIDemosUITests/Pods-APIDemosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9CC1A08D34ED5AFB2CE4870F /* Pods-APIDemosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIDemosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIDemosTests/Pods-APIDemosTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FF17D3E0C28BA982A10E387 /* Pods_APIDemosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APIDemosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -394,11 +390,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C0C346258B149E000DC834 /* NexEditorFramework.framework in Frameworks */,
-				37C0C347258B149E000DC834 /* NexEditorFramework.framework.dSYM in Frameworks */,
-				37C0C348258B149E000DC834 /* libPods-NexEditorFramework.a in Frameworks */,
-				37C0C349258B149E000DC834 /* libAssetReader.a in Frameworks */,
+				37BB47D8258B58940051DF95 /* libAssetReader.a in Frameworks */,
+				37BB47D9258B58940051DF95 /* libNexEditorEngine.a in Frameworks */,
 				D5E8EB9268B45D4683517060 /* Pods_APIDemos.framework in Frameworks */,
+				37BB47E6258B59090051DF95 /* NexEditorFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,33 +779,12 @@
 			path = effectOptionEditScene;
 			sourceTree = "<group>";
 		};
-		37C0C342258B148C000DC834 /* NexEditorEngine */ = {
-			isa = PBXGroup;
-			children = (
-				37C0C343258B148C000DC834 /* libNexEditorEngine.a */,
-			);
-			name = NexEditorEngine;
-			path = ../../NewFramework/NexEditorEngine;
-			sourceTree = "<group>";
-		};
-		37C0C34A258B149F000DC834 /* NexEditorEngine */ = {
-			isa = PBXGroup;
-			children = (
-				37C0C34B258B149F000DC834 /* libNexEditorEngine.a */,
-			);
-			name = NexEditorEngine;
-			path = ../../NewFramework/NexEditorEngine;
-			sourceTree = "<group>";
-		};
 		643B99F99B17F2F48C75E6EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37C0C34A258B149F000DC834 /* NexEditorEngine */,
-				37C0C344258B148C000DC834 /* libAssetReader.a */,
-				37C0C345258B148C000DC834 /* libPods-NexEditorFramework.a */,
-				37C0C342258B148C000DC834 /* NexEditorEngine */,
-				37C0C341258B148C000DC834 /* NexEditorFramework.framework.dSYM */,
-				37C06F16258B0AF8000DC834 /* NexEditorFramework.framework */,
+				37BB47D6258B58940051DF95 /* libAssetReader.a */,
+				37BB47D7258B58940051DF95 /* libNexEditorEngine.a */,
+				37BB47D4258B58820051DF95 /* NexEditorFramework.framework */,
 				E1A57B17C88E2C96A7870B83 /* Pods_APIDemos.framework */,
 				9FF17D3E0C28BA982A10E387 /* Pods_APIDemosTests.framework */,
 				AD0AA06CA0057E6C3D32B9D9 /* Pods_APIDemosUITests.framework */,
@@ -1595,10 +1569,7 @@
 					"$(inherited)",
 					"/Users/CHANGHEE2/Projects/Dev-NexEditor-iOS/NexEditor_IOS/NewFramework/**",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/CHANGHEE2/Projects/Dev-NexEditor-iOS/NexEditor_IOS/NewFramework/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = APIDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1633,10 +1604,7 @@
 					"$(inherited)",
 					"/Users/CHANGHEE2/Projects/Dev-NexEditor-iOS/NexEditor_IOS/NewFramework/**",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/CHANGHEE2/Projects/Dev-NexEditor-iOS/NexEditor_IOS/NewFramework/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = APIDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
