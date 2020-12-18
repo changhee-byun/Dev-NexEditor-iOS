@@ -1,0 +1,6 @@
+framework module NexEditorFramework {
+  umbrella header "NexEditorFramework.h"
+
+  export *
+  module * { export * }
+}

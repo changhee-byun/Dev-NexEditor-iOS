@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		085D2FAD471D9B0BE3DEE588 /* Pods_EditorTester_EditorTesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46200CA5FA9D5FDC7689EA6 /* Pods_EditorTester_EditorTesterUITests.framework */; };
+		37BB48E6258BA5740051DF95 /* NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BB48E1258BA5690051DF95 /* NexEditorFramework.framework */; };
+		37BB48E7258BA5740051DF95 /* NexEditorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37BB48E1258BA5690051DF95 /* NexEditorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71A7D7B3DCDD7BF8D48CE2D5 /* Pods_EditorTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2604E8E55A86BA0AD412FFE7 /* Pods_EditorTester.framework */; };
 		9CADFD00156620A50BF0E357 /* Pods_EditorTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAA732414AB845053D060F3 /* Pods_EditorTesterTests.framework */; };
 		A618F7E725415F5C006123FB /* EditorTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618F7E625415F5C006123FB /* EditorTesterApp.swift */; };
@@ -17,182 +19,6 @@
 		A618F7F925415F5D006123FB /* EditorTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618F7F825415F5D006123FB /* EditorTesterTests.swift */; };
 		A618F80425415F5D006123FB /* EditorTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618F80325415F5D006123FB /* EditorTesterUITests.swift */; };
 		A69B95052546F11B0077ECDB /* EngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B95042546F11B0077ECDB /* EngineView.swift */; };
-		A69BAB3E2547F1E20077ECDB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A69BAA162547F1E10077ECDB /* LICENSE */; };
-		A69BAB3F2547F1E20077ECDB /* MediaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA1B2547F1E10077ECDB /* MediaInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB402547F1E20077ECDB /* NSString+ValueReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA1E2547F1E10077ECDB /* NSString+ValueReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB412547F1E20077ECDB /* NSError+ErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA232547F1E10077ECDB /* NSError+ErrorCode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB422547F1E20077ECDB /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA252547F1E10077ECDB /* NSString+Color.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB432547F1E20077ECDB /* CollageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA262547F1E10077ECDB /* CollageUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB442547F1E20077ECDB /* UIImage+Blending.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA282547F1E10077ECDB /* UIImage+Blending.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB452547F1E20077ECDB /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA292547F1E10077ECDB /* UIImage+Resize.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB462547F1E20077ECDB /* NXEEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA2B2547F1E10077ECDB /* NXEEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB472547F1E20077ECDB /* NXEAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA2F2547F1E10077ECDB /* NXEAssetLibrary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB482547F1E20077ECDB /* NXELayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA302547F1E10077ECDB /* NXELayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB492547F1E20077ECDB /* NXEColorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA312547F1E10077ECDB /* NXEColorEffect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB4A2547F1E20077ECDB /* NXEProject+TemplateInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA352547F1E10077ECDB /* NXEProject+TemplateInternal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB4B2547F1E20077ECDB /* NXECropRectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA382547F1E10077ECDB /* NXECropRectTool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB4C2547F1E20077ECDB /* NXELutRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA392547F1E10077ECDB /* NXELutRegistry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB4D2547F1E20077ECDB /* NXEVideoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA3A2547F1E10077ECDB /* NXEVideoLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB4E2547F1E20077ECDB /* NXEEffectAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA3B2547F1E10077ECDB /* NXEEffectAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB4F2547F1E20077ECDB /* NXETextEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA3E2547F1E10077ECDB /* NXETextEffect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB502547F1E20077ECDB /* NXEAudioEnvelop.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA3F2547F1E10077ECDB /* NXEAudioEnvelop.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB512547F1E20077ECDB /* NexLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA402547F1E10077ECDB /* NexLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB522547F1E20077ECDB /* NXEAssetItemGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA412547F1E10077ECDB /* NXEAssetItemGroup.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB532547F1E20077ECDB /* NXEError.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA422547F1E10077ECDB /* NXEError.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB542547F1E20077ECDB /* NXEClip.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA432547F1E10077ECDB /* NXEClip.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB552547F1E20077ECDB /* NXETextEffectAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA442547F1E10077ECDB /* NXETextEffectAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB562547F1E20077ECDB /* NXEProject.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA472547F1E10077ECDB /* NXEProject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB572547F1E20077ECDB /* NXETextEffect+KMLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA492547F1E10077ECDB /* NXETextEffect+KMLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB582547F1E20077ECDB /* NXETemplateAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA4A2547F1E10077ECDB /* NXETemplateAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB592547F1E20077ECDB /* NXETextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA4B2547F1E10077ECDB /* NXETextLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB5A2547F1E20077ECDB /* NXEImageLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA4D2547F1E10077ECDB /* NXEImageLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB5B2547F1E20077ECDB /* NXEBeatAssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA4E2547F1E10077ECDB /* NXEBeatAssetItemInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB5C2547F1E20077ECDB /* NXETransitionAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA4F2547F1E10077ECDB /* NXETransitionAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB5D2547F1E20077ECDB /* NXELutSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA512547F1E10077ECDB /* NXELutSource.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB5E2547F1E20077ECDB /* NXEClipTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA522547F1E10077ECDB /* NXEClipTransform.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB5F2547F1E20077ECDB /* NXEClipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA542547F1E10077ECDB /* NXEClipInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB602547F1E20077ECDB /* NXEBeatAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA552547F1E10077ECDB /* NXEBeatAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB612547F1E20077ECDB /* NXEEffectOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA562547F1E10077ECDB /* NXEEffectOptions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB622547F1E20077ECDB /* NXEAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA572547F1E10077ECDB /* NXEAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB632547F1E20077ECDB /* NXEClipSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA582547F1E10077ECDB /* NXEClipSource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB642547F1E20077ECDB /* ThemeResourceLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA5A2547F1E10077ECDB /* ThemeResourceLoader.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB652547F1E20077ECDB /* FontTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA5B2547F1E10077ECDB /* FontTools.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB662547F1E20077ECDB /* EffectAssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA602547F1E10077ECDB /* EffectAssetItemInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB672547F1E20077ECDB /* InternalAssetLibrary+AssetLibraryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA632547F1E10077ECDB /* InternalAssetLibrary+AssetLibraryProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB682547F1E20077ECDB /* AssetLibraryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA642547F1E10077ECDB /* AssetLibraryProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB692547F1E20077ECDB /* NXEAssetItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA672547F1E10077ECDB /* NXEAssetItemFactory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB6A2547F1E20077ECDB /* TransitionAssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA682547F1E10077ECDB /* TransitionAssetItemInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB6B2547F1E20077ECDB /* AssetResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA692547F1E10077ECDB /* AssetResourceLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB6C2547F1E20077ECDB /* AssetXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA6B2547F1E10077ECDB /* AssetXMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB6D2547F1E20077ECDB /* AssetResourceDecrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA6D2547F1E10077ECDB /* AssetResourceDecrypter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB6E2547F1E20077ECDB /* AssetKeysetRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA702547F1E10077ECDB /* AssetKeysetRegistry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB6F2547F1E20077ECDB /* AssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA722547F1E10077ECDB /* AssetLibrary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB702547F1E20077ECDB /* InternalAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA752547F1E10077ECDB /* InternalAssetLibrary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB722547F1E20077ECDB /* AssetDecrypter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA7B2547F1E10077ECDB /* AssetDecrypter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB732547F1E20077ECDB /* NXEEngineEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA7E2547F1E10077ECDB /* NXEEngineEventListener.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB742547F1E20077ECDB /* NexImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA802547F1E10077ECDB /* NexImage.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB752547F1E20077ECDB /* NXEEngineUIEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA832547F1E10077ECDB /* NXEEngineUIEventListener.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB762547F1E20077ECDB /* RenderDataEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA862547F1E10077ECDB /* RenderDataEncoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB772547F1E20077ECDB /* CollageData.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA882547F1E10077ECDB /* CollageData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB782547F1E20077ECDB /* CollageTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA892547F1E10077ECDB /* CollageTextStyle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB792547F1E20077ECDB /* CollageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA8B2547F1E10077ECDB /* CollageInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB7A2547F1E20077ECDB /* NXEBeatEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA922547F1E10077ECDB /* NXEBeatEffect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB7B2547F1E20077ECDB /* NXEBeatEffectDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA952547F1E10077ECDB /* NXEBeatEffectDefault.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB7C2547F1E20077ECDB /* NXEBeatTemplateProject.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA972547F1E10077ECDB /* NXEBeatTemplateProject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB7D2547F1E20077ECDB /* NXETemplateProject.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA9A2547F1E10077ECDB /* NXETemplateProject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB7E2547F1E20077ECDB /* NXETemplateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA9C2547F1E10077ECDB /* NXETemplateParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB7F2547F1E20077ECDB /* LUTMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA9E2547F1E10077ECDB /* LUTMap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB802547F1E30077ECDB /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAA12547F1E10077ECDB /* ImageUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB812547F1E30077ECDB /* OverlayTitleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAA32547F1E10077ECDB /* OverlayTitleInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB822547F1E30077ECDB /* MathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAA42547F1E10077ECDB /* MathUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB832547F1E30077ECDB /* NXEOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAA62547F1E10077ECDB /* NXEOperationQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB842547F1E30077ECDB /* ImageUtil+KMLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAA82547F1E10077ECDB /* ImageUtil+KMLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB852547F1E30077ECDB /* EditorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAAA2547F1E10077ECDB /* EditorUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB862547F1E30077ECDB /* BundleResource.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAAC2547F1E10077ECDB /* BundleResource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB872547F1E30077ECDB /* AspectRatioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAAF2547F1E10077ECDB /* AspectRatioTool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB882547F1E30077ECDB /* NSDictionary+ValueForKeyDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAB12547F1E10077ECDB /* NSDictionary+ValueForKeyDefault.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB892547F1E30077ECDB /* NXEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAB22547F1E10077ECDB /* NXEOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB8A2547F1E30077ECDB /* MatrixUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAB52547F1E10077ECDB /* MatrixUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB8B2547F1E30077ECDB /* KMTextLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAABB2547F1E10077ECDB /* KMTextLayer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB8C2547F1E30077ECDB /* KMVideoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAABF2547F1E10077ECDB /* KMVideoLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB8D2547F1E30077ECDB /* KMAnimationInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAC42547F1E10077ECDB /* KMAnimationInterpolation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB8E2547F1E30077ECDB /* KMAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAC52547F1E10077ECDB /* KMAnimation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB8F2547F1E30077ECDB /* KMAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAC72547F1E20077ECDB /* KMAnimationEffect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB902547F1E30077ECDB /* LayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAACA2547F1E20077ECDB /* LayerManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB912547F1E30077ECDB /* NXELayersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAACB2547F1E20077ECDB /* NXELayersManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB922547F1E30077ECDB /* KMLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAACE2547F1E20077ECDB /* KMLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB932547F1E30077ECDB /* KMImageLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69BAACF2547F1E20077ECDB /* KMImageLayer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB942547F1E30077ECDB /* KMEffectLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAD02547F1E20077ECDB /* KMEffectLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB952547F1E30077ECDB /* KMLut.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAD12547F1E20077ECDB /* KMLut.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB962547F1E30077ECDB /* NXETextureDisposeBag.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAD22547F1E20077ECDB /* NXETextureDisposeBag.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB972547F1E30077ECDB /* KMWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAD42547F1E20077ECDB /* KMWaterMark.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB982547F1E30077ECDB /* UserField.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAD72547F1E20077ECDB /* UserField.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB992547F1E30077ECDB /* TemplateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAADA2547F1E20077ECDB /* TemplateHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB9A2547F1E30077ECDB /* TemplateV3Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAADB2547F1E20077ECDB /* TemplateV3Handler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB9B2547F1E30077ECDB /* TemplateV2Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAADC2547F1E20077ECDB /* TemplateV2Handler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB9C2547F1E30077ECDB /* TemplateHelper+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAADF2547F1E20077ECDB /* TemplateHelper+Utility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB9D2547F1E30077ECDB /* TemplateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAE32547F1E20077ECDB /* TemplateHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB9E2547F1E30077ECDB /* TemplateV1Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAE42547F1E20077ECDB /* TemplateV1Handler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BAB9F2547F1E30077ECDB /* NXELayerEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAE62547F1E20077ECDB /* NXELayerEditorView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BABA02547F1E30077ECDB /* NXESimpleLayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAE72547F1E20077ECDB /* NXESimpleLayerEditor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BABA12547F1E30077ECDB /* NXECollageProject.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAE92547F1E20077ECDB /* NXECollageProject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BABA22547F1E30077ECDB /* NXECollageAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAEA2547F1E20077ECDB /* NXECollageAssetItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BABA32547F1E30077ECDB /* NXECollageSlotConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAEB2547F1E20077ECDB /* NXECollageSlotConfiguration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BABA42547F1E30077ECDB /* NXECollageTitleConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAAEE2547F1E20077ECDB /* NXECollageTitleConfiguration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A69BABA52547F1E30077ECDB /* lut_gloomy.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF22547F1E20077ECDB /* lut_gloomy.png */; };
-		A69BABA62547F1E30077ECDB /* lut_rainy.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF32547F1E20077ECDB /* lut_rainy.png */; };
-		A69BABA72547F1E30077ECDB /* lut_vintage_flower.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF42547F1E20077ECDB /* lut_vintage_flower.png */; };
-		A69BABA82547F1E30077ECDB /* lut_ludwig.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF52547F1E20077ECDB /* lut_ludwig.png */; };
-		A69BABA92547F1E30077ECDB /* lut_espresso.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF62547F1E20077ECDB /* lut_espresso.png */; };
-		A69BABAA2547F1E30077ECDB /* lut_vivid.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF72547F1E20077ECDB /* lut_vivid.png */; };
-		A69BABAB2547F1E30077ECDB /* lut_tangerine.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF82547F1E20077ECDB /* lut_tangerine.png */; };
-		A69BABAC2547F1E30077ECDB /* lut_moonlight.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAF92547F1E20077ECDB /* lut_moonlight.png */; };
-		A69BABAD2547F1E30077ECDB /* lut_lavendar.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAFA2547F1E20077ECDB /* lut_lavendar.png */; };
-		A69BABAE2547F1E30077ECDB /* lut_raspberry.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAFB2547F1E20077ECDB /* lut_raspberry.png */; };
-		A69BABAF2547F1E30077ECDB /* lut_newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAFC2547F1E20077ECDB /* lut_newspaper.png */; };
-		A69BABB02547F1E30077ECDB /* lut_dbright.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAFD2547F1E20077ECDB /* lut_dbright.png */; };
-		A69BABB12547F1E30077ECDB /* lut_stoneedge.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAFE2547F1E20077ECDB /* lut_stoneedge.png */; };
-		A69BABB22547F1E30077ECDB /* lut_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAAFF2547F1E20077ECDB /* lut_blue.png */; };
-		A69BABB32547F1E30077ECDB /* lut_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB002547F1E20077ECDB /* lut_sunset.png */; };
-		A69BABB42547F1E30077ECDB /* lut_sherbert.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB012547F1E20077ECDB /* lut_sherbert.png */; };
-		A69BABB52547F1E30077ECDB /* lut_boring.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB022547F1E20077ECDB /* lut_boring.png */; };
-		A69BABB62547F1E30077ECDB /* lut_smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB032547F1E20077ECDB /* lut_smoke.png */; };
-		A69BABB72547F1E30077ECDB /* lut_autumn.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB042547F1E20077ECDB /* lut_autumn.png */; };
-		A69BABB82547F1E30077ECDB /* lut_sweet.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB052547F1E20077ECDB /* lut_sweet.png */; };
-		A69BABB92547F1E30077ECDB /* lut_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB062547F1E20077ECDB /* lut_cloud.png */; };
-		A69BABBA2547F1E30077ECDB /* lut_salmon_teal.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB072547F1E20077ECDB /* lut_salmon_teal.png */; };
-		A69BABBB2547F1E30077ECDB /* lut_almond_blossom.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB082547F1E20077ECDB /* lut_almond_blossom.png */; };
-		A69BABBC2547F1E30077ECDB /* lut_heat.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB092547F1E20077ECDB /* lut_heat.png */; };
-		A69BABBD2547F1E30077ECDB /* lut_symphony_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB0A2547F1E20077ECDB /* lut_symphony_blue.png */; };
-		A69BABBE2547F1E30077ECDB /* lut_vintage_romance.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB0B2547F1E20077ECDB /* lut_vintage_romance.png */; };
-		A69BABBF2547F1E30077ECDB /* lut_eyeshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB0C2547F1E20077ECDB /* lut_eyeshadow.png */; };
-		A69BABC02547F1E30077ECDB /* lut_blueonly.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB0D2547F1E20077ECDB /* lut_blueonly.png */; };
-		A69BABC12547F1E30077ECDB /* lut_dawn.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB0E2547F1E20077ECDB /* lut_dawn.png */; };
-		A69BABC22547F1E30077ECDB /* lut_jazz.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB0F2547F1E20077ECDB /* lut_jazz.png */; };
-		A69BABC32547F1E30077ECDB /* lut_tiffany.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB102547F1E20077ECDB /* lut_tiffany.png */; };
-		A69BABC42547F1E30077ECDB /* lut_afternoon.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB112547F1E20077ECDB /* lut_afternoon.png */; };
-		A69BABC52547F1E30077ECDB /* lut_oldfilm.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB122547F1E20077ECDB /* lut_oldfilm.png */; };
-		A69BABC62547F1E30077ECDB /* lut_negative.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB132547F1E20077ECDB /* lut_negative.png */; };
-		A69BABC72547F1E30077ECDB /* lut_peach.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB142547F1E20077ECDB /* lut_peach.png */; };
-		A69BABC82547F1E30077ECDB /* lut_england.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB152547F1E20077ECDB /* lut_england.png */; };
-		A69BABC92547F1E30077ECDB /* lut_shiny.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB162547F1E20077ECDB /* lut_shiny.png */; };
-		A69BABCA2547F1E30077ECDB /* lut_warm.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB172547F1E20077ECDB /* lut_warm.png */; };
-		A69BABCB2547F1E30077ECDB /* lut_paris.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB182547F1E20077ECDB /* lut_paris.png */; };
-		A69BABCC2547F1E30077ECDB /* lut_daisy.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB192547F1E20077ECDB /* lut_daisy.png */; };
-		A69BABCD2547F1E30077ECDB /* lut_caribbean.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB1A2547F1E20077ECDB /* lut_caribbean.png */; };
-		A69BABCE2547F1E30077ECDB /* lut_cranberry.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB1B2547F1E20077ECDB /* lut_cranberry.png */; };
-		A69BABCF2547F1E30077ECDB /* lut_caramel_candy.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB1C2547F1E20077ECDB /* lut_caramel_candy.png */; };
-		A69BABD02547F1E30077ECDB /* lut_sunrising.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB1D2547F1E20077ECDB /* lut_sunrising.png */; };
-		A69BABD12547F1E30077ECDB /* lut_retro.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB1E2547F1E20077ECDB /* lut_retro.png */; };
-		A69BABD22547F1E30077ECDB /* lut_sunprint.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB1F2547F1E20077ECDB /* lut_sunprint.png */; };
-		A69BABD32547F1E30077ECDB /* lut_rosy.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB202547F1E20077ECDB /* lut_rosy.png */; };
-		A69BABD42547F1E30077ECDB /* lut_disney.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB212547F1E20077ECDB /* lut_disney.png */; };
-		A69BABD52547F1E30077ECDB /* lut_coral_candy.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB222547F1E20077ECDB /* lut_coral_candy.png */; };
-		A69BABD62547F1E30077ECDB /* lut_cinnamon.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB232547F1E20077ECDB /* lut_cinnamon.png */; };
-		A69BABD72547F1E30077ECDB /* keepfileFG2HJ6D4 in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB252547F1E20077ECDB /* keepfileFG2HJ6D4 */; };
-		A69BABD82547F1E30077ECDB /* vignette_9v16.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB262547F1E20077ECDB /* vignette_9v16.png */; };
-		A69BABD92547F1E30077ECDB /* grip_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB272547F1E20077ECDB /* grip_scale.png */; };
-		A69BABDA2547F1E30077ECDB /* grip_rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB282547F1E20077ECDB /* grip_rotate.png */; };
-		A69BABDB2547F1E30077ECDB /* template_vignette_9v16.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB292547F1E20077ECDB /* template_vignette_9v16.png */; };
-		A69BABDC2547F1E30077ECDB /* vignette.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB2A2547F1E20077ECDB /* vignette.png */; };
-		A69BABDD2547F1E30077ECDB /* template_vignette.png in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB2B2547F1E20077ECDB /* template_vignette.png */; };
-		A69BABDE2547F1E30077ECDB /* goudystm-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB2D2547F1E20077ECDB /* goudystm-italic.ttf */; };
-		A69BABDF2547F1E30077ECDB /* lindenhill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB2E2547F1E20077ECDB /* lindenhill.ttf */; };
-		A69BABE02547F1E30077ECDB /* lato-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB2F2547F1E20077ECDB /* lato-bold.ttf */; };
-		A69BABE12547F1E30077ECDB /* justanotherhand-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB302547F1E20077ECDB /* justanotherhand-regular.ttf */; };
-		A69BABE22547F1E30077ECDB /* orbitron-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB312547F1E20077ECDB /* orbitron-medium.ttf */; };
-		A69BABE32547F1E30077ECDB /* bevan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB322547F1E20077ECDB /* bevan.ttf */; };
-		A69BABE42547F1E30077ECDB /* Tangerine_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB332547F1E20077ECDB /* Tangerine_Regular.ttf */; };
-		A69BABE52547F1E30077ECDB /* leaguegothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB342547F1E20077ECDB /* leaguegothic.ttf */; };
-		A69BABE62547F1E30077ECDB /* creepster-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB352547F1E20077ECDB /* creepster-regular.ttf */; };
-		A69BABE72547F1E30077ECDB /* redressed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB362547F1E20077ECDB /* redressed.ttf */; };
-		A69BABE82547F1E30077ECDB /* leaguescriptthin-leaguescript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB372547F1E20077ECDB /* leaguescriptthin-leaguescript.ttf */; };
-		A69BABE92547F1E30077ECDB /* knewave.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB382547F1E20077ECDB /* knewave.ttf */; };
-		A69BABEA2547F1E30077ECDB /* junctionregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB392547F1E20077ECDB /* junctionregular.ttf */; };
-		A69BABEB2547F1E30077ECDB /* orbitron-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB3A2547F1E20077ECDB /* orbitron-bold.ttf */; };
-		A69BABEC2547F1E30077ECDB /* releway-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB3B2547F1E20077ECDB /* releway-thin.ttf */; };
-		A69BABED2547F1E30077ECDB /* sniglet.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB3C2547F1E20077ECDB /* sniglet.ttf */; };
-		A69BABEE2547F1E30077ECDB /* greatvibes-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69BAB3D2547F1E20077ECDB /* greatvibes-regular.ttf */; };
 		A69BAD89254848DB0077ECDB /* AssetReader.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A69BAD43254848DB0077ECDB /* AssetReader.podspec */; };
 		A69BAD8A254848DB0077ECDB /* AssetImplicitRules.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAD51254848DB0077ECDB /* AssetImplicitRules.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A69BAD8B254848DB0077ECDB /* AssetItemPathInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAD52254848DB0077ECDB /* AssetItemPathInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -208,7 +34,6 @@
 		A69BAD95254848DC0077ECDB /* AssetDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAD66254848DB0077ECDB /* AssetDB.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A69BAD96254848DC0077ECDB /* AssetEncryptionManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = A69BAD67254848DB0077ECDB /* AssetEncryptionManifest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A69BADB42548531D0077ECDB /* zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BADB22548531D0077ECDB /* zlib.framework */; };
-		A69BADEB254854480077ECDB /* assetkey_demangler.c in Sources */ = {isa = PBXBuildFile; fileRef = A69BAA7A2547F1E10077ECDB /* assetkey_demangler.c */; };
 		A69BC23B25501A660077ECDB /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC23A25501A660077ECDB /* PhotoPickerView.swift */; };
 		A6C3BA342541B00B00E1424D /* EditorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3BA332541B00B00E1424D /* EditorManager.swift */; };
 /* End PBXBuildFile section */
@@ -251,8 +76,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		37BB48E8258BA5740051DF95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37BB48E7258BA5740051DF95 /* NexEditorFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2604E8E55A86BA0AD412FFE7 /* Pods_EditorTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EditorTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37BB48E1258BA5690051DF95 /* NexEditorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NexEditorFramework.framework; path = "NexEditorFramework-Release/NexEditorFramework.framework"; sourceTree = "<group>"; };
 		3DA92681FA6CDD260602C0DA /* Pods-EditorTester-EditorTesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorTester-EditorTesterUITests.debug.xcconfig"; path = "Target Support Files/Pods-EditorTester-EditorTesterUITests/Pods-EditorTester-EditorTesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44F629B2069167DD3DAC39D9 /* Pods-EditorTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorTester.release.xcconfig"; path = "Target Support Files/Pods-EditorTester/Pods-EditorTester.release.xcconfig"; sourceTree = "<group>"; };
 		6BAABB1D63A6EE1B91756917 /* Pods-EditorTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorTesterTests.release.xcconfig"; path = "Target Support Files/Pods-EditorTesterTests/Pods-EditorTesterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,312 +110,6 @@
 		A618F80325415F5D006123FB /* EditorTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTesterUITests.swift; sourceTree = "<group>"; };
 		A618F80525415F5D006123FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69B95042546F11B0077ECDB /* EngineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineView.swift; sourceTree = "<group>"; };
-		A69BA9EF2547F1E00077ECDB /* NXEProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEProject.h; sourceTree = "<group>"; };
-		A69BA9F02547F1E00077ECDB /* NXEClip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClip.h; sourceTree = "<group>"; };
-		A69BA9F12547F1E00077ECDB /* NXEImageLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEImageLayer.h; sourceTree = "<group>"; };
-		A69BA9F22547F1E00077ECDB /* NXESimpleLayerEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXESimpleLayerEditor.h; sourceTree = "<group>"; };
-		A69BA9F32547F1E00077ECDB /* NXETextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETextLayer.h; sourceTree = "<group>"; };
-		A69BA9F42547F1E00077ECDB /* NXEClipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClipInfo.h; sourceTree = "<group>"; };
-		A69BA9F52547F1E00077ECDB /* NXEClipTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClipTransform.h; sourceTree = "<group>"; };
-		A69BA9F62547F1E00077ECDB /* NXEBeatTemplateProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatTemplateProject.h; sourceTree = "<group>"; };
-		A69BA9F72547F1E00077ECDB /* NXEEditorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEditorType.h; sourceTree = "<group>"; };
-		A69BA9F92547F1E00077ECDB /* NXETemplateProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETemplateProject.h; sourceTree = "<group>"; };
-		A69BA9FA2547F1E00077ECDB /* NXEClipSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClipSource.h; sourceTree = "<group>"; };
-		A69BA9FB2547F1E00077ECDB /* NXELutSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELutSource.h; sourceTree = "<group>"; };
-		A69BA9FC2547F1E00077ECDB /* NXEEffectOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEffectOptions.h; sourceTree = "<group>"; };
-		A69BA9FD2547F1E00077ECDB /* NXEEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEngine.h; sourceTree = "<group>"; };
-		A69BA9FE2547F1E00077ECDB /* NXEEditorErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEditorErrorCode.h; sourceTree = "<group>"; };
-		A69BA9FF2547F1E00077ECDB /* NXELayerEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELayerEditorView.h; sourceTree = "<group>"; };
-		A69BAA002547F1E00077ECDB /* NXELayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELayer.h; sourceTree = "<group>"; };
-		A69BAA012547F1E00077ECDB /* NXEVideoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEVideoLayer.h; sourceTree = "<group>"; };
-		A69BAA022547F1E00077ECDB /* NXELutRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELutRegistry.h; sourceTree = "<group>"; };
-		A69BAA032547F1E00077ECDB /* NXEError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEError.h; sourceTree = "<group>"; };
-		A69BAA052547F1E00077ECDB /* NXETextEffectAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETextEffectAssetItem.h; sourceTree = "<group>"; };
-		A69BAA062547F1E00077ECDB /* NXETemplateAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETemplateAssetItem.h; sourceTree = "<group>"; };
-		A69BAA072547F1E00077ECDB /* NXETransitionAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETransitionAssetItem.h; sourceTree = "<group>"; };
-		A69BAA082547F1E00077ECDB /* NXEAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAssetItem.h; sourceTree = "<group>"; };
-		A69BAA092547F1E00077ECDB /* NXEBeatAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatAssetItem.h; sourceTree = "<group>"; };
-		A69BAA0A2547F1E00077ECDB /* NXECollageAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECollageAssetItem.h; sourceTree = "<group>"; };
-		A69BAA0B2547F1E00077ECDB /* NXEAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAssetLibrary.h; sourceTree = "<group>"; };
-		A69BAA0C2547F1E00077ECDB /* NXEEffectAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEffectAssetItem.h; sourceTree = "<group>"; };
-		A69BAA0D2547F1E00077ECDB /* NXEAssetItemGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAssetItemGroup.h; sourceTree = "<group>"; };
-		A69BAA0E2547F1E00077ECDB /* NexLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NexLogger.h; sourceTree = "<group>"; };
-		A69BAA0F2547F1E00077ECDB /* NXEAudioEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAudioEnvelop.h; sourceTree = "<group>"; };
-		A69BAA102547F1E10077ECDB /* NXETextEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETextEffect.h; sourceTree = "<group>"; };
-		A69BAA122547F1E10077ECDB /* NXECollageTitleConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECollageTitleConfiguration.h; sourceTree = "<group>"; };
-		A69BAA132547F1E10077ECDB /* NXECollageProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECollageProject.h; sourceTree = "<group>"; };
-		A69BAA142547F1E10077ECDB /* NXECollageSlotConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECollageSlotConfiguration.h; sourceTree = "<group>"; };
-		A69BAA162547F1E10077ECDB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A69BAA172547F1E10077ECDB /* NexEditorFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NexEditorFramework.h; sourceTree = "<group>"; };
-		A69BAA1A2547F1E10077ECDB /* MediaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfo.h; sourceTree = "<group>"; };
-		A69BAA1B2547F1E10077ECDB /* MediaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInfo.m; sourceTree = "<group>"; };
-		A69BAA1C2547F1E10077ECDB /* NexEditorVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NexEditorVersion.h; sourceTree = "<group>"; };
-		A69BAA1E2547F1E10077ECDB /* NSString+ValueReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ValueReader.m"; sourceTree = "<group>"; };
-		A69BAA1F2547F1E10077ECDB /* CollageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageUtil.h; sourceTree = "<group>"; };
-		A69BAA202547F1E10077ECDB /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
-		A69BAA212547F1E10077ECDB /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		A69BAA222547F1E10077ECDB /* UIImage+Blending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blending.h"; sourceTree = "<group>"; };
-		A69BAA232547F1E10077ECDB /* NSError+ErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+ErrorCode.m"; sourceTree = "<group>"; };
-		A69BAA242547F1E10077ECDB /* NSString+ValueReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ValueReader.h"; sourceTree = "<group>"; };
-		A69BAA252547F1E10077ECDB /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
-		A69BAA262547F1E10077ECDB /* CollageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollageUtil.m; sourceTree = "<group>"; };
-		A69BAA272547F1E10077ECDB /* NSError+ErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+ErrorCode.h"; sourceTree = "<group>"; };
-		A69BAA282547F1E10077ECDB /* UIImage+Blending.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blending.m"; sourceTree = "<group>"; };
-		A69BAA292547F1E10077ECDB /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		A69BAA2B2547F1E10077ECDB /* NXEEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEEngine.m; sourceTree = "<group>"; };
-		A69BAA2C2547F1E10077ECDB /* NXEEnginePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEnginePrivate.h; sourceTree = "<group>"; };
-		A69BAA2D2547F1E10077ECDB /* NXEErrorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEErrorPrivate.h; sourceTree = "<group>"; };
-		A69BAA2E2547F1E10077ECDB /* NXETransitionAssetItemPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETransitionAssetItemPrivate.h; sourceTree = "<group>"; };
-		A69BAA2F2547F1E10077ECDB /* NXEAssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEAssetLibrary.m; sourceTree = "<group>"; };
-		A69BAA302547F1E10077ECDB /* NXELayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXELayer.m; sourceTree = "<group>"; };
-		A69BAA312547F1E10077ECDB /* NXEColorEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEColorEffect.m; sourceTree = "<group>"; };
-		A69BAA322547F1E10077ECDB /* NXEProjectInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEProjectInternal.h; sourceTree = "<group>"; };
-		A69BAA332547F1E10077ECDB /* NXEClipTransformPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClipTransformPrivate.h; sourceTree = "<group>"; };
-		A69BAA342547F1E10077ECDB /* NXETextEffect+KMLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NXETextEffect+KMLayer.h"; sourceTree = "<group>"; };
-		A69BAA352547F1E10077ECDB /* NXEProject+TemplateInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NXEProject+TemplateInternal.m"; sourceTree = "<group>"; };
-		A69BAA362547F1E10077ECDB /* NXEAssetItemPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAssetItemPrivate.h; sourceTree = "<group>"; };
-		A69BAA372547F1E10077ECDB /* NXEClipInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClipInternal.h; sourceTree = "<group>"; };
-		A69BAA382547F1E10077ECDB /* NXECropRectTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXECropRectTool.m; sourceTree = "<group>"; };
-		A69BAA392547F1E10077ECDB /* NXELutRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXELutRegistry.m; sourceTree = "<group>"; };
-		A69BAA3A2547F1E10077ECDB /* NXEVideoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEVideoLayer.m; sourceTree = "<group>"; };
-		A69BAA3B2547F1E10077ECDB /* NXEEffectAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEEffectAssetItem.m; sourceTree = "<group>"; };
-		A69BAA3C2547F1E10077ECDB /* NXETextLayerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETextLayerPrivate.h; sourceTree = "<group>"; };
-		A69BAA3D2547F1E10077ECDB /* NXELutSourcePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELutSourcePrivate.h; sourceTree = "<group>"; };
-		A69BAA3E2547F1E10077ECDB /* NXETextEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETextEffect.m; sourceTree = "<group>"; };
-		A69BAA3F2547F1E10077ECDB /* NXEAudioEnvelop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEAudioEnvelop.m; sourceTree = "<group>"; };
-		A69BAA402547F1E10077ECDB /* NexLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NexLogger.m; sourceTree = "<group>"; };
-		A69BAA412547F1E10077ECDB /* NXEAssetItemGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEAssetItemGroup.m; sourceTree = "<group>"; };
-		A69BAA422547F1E10077ECDB /* NXEError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEError.m; sourceTree = "<group>"; };
-		A69BAA432547F1E10077ECDB /* NXEClip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEClip.m; sourceTree = "<group>"; };
-		A69BAA442547F1E10077ECDB /* NXETextEffectAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETextEffectAssetItem.m; sourceTree = "<group>"; };
-		A69BAA452547F1E10077ECDB /* NXEClipSourcePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEClipSourcePrivate.h; sourceTree = "<group>"; };
-		A69BAA462547F1E10077ECDB /* NXEEffectAssetItemPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEffectAssetItemPrivate.h; sourceTree = "<group>"; };
-		A69BAA472547F1E10077ECDB /* NXEProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEProject.m; sourceTree = "<group>"; };
-		A69BAA482547F1E10077ECDB /* NXEAssetItemGroupPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAssetItemGroupPrivate.h; sourceTree = "<group>"; };
-		A69BAA492547F1E10077ECDB /* NXETextEffect+KMLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NXETextEffect+KMLayer.m"; sourceTree = "<group>"; };
-		A69BAA4A2547F1E10077ECDB /* NXETemplateAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETemplateAssetItem.m; sourceTree = "<group>"; };
-		A69BAA4B2547F1E10077ECDB /* NXETextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETextLayer.m; sourceTree = "<group>"; };
-		A69BAA4C2547F1E10077ECDB /* NXEColorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEColorEffect.h; sourceTree = "<group>"; };
-		A69BAA4D2547F1E10077ECDB /* NXEImageLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEImageLayer.m; sourceTree = "<group>"; };
-		A69BAA4E2547F1E10077ECDB /* NXEBeatAssetItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatAssetItemInfo.m; sourceTree = "<group>"; };
-		A69BAA4F2547F1E10077ECDB /* NXETransitionAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETransitionAssetItem.m; sourceTree = "<group>"; };
-		A69BAA502547F1E10077ECDB /* NXECropRectTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECropRectTool.h; sourceTree = "<group>"; };
-		A69BAA512547F1E10077ECDB /* NXELutSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NXELutSource.mm; sourceTree = "<group>"; };
-		A69BAA522547F1E10077ECDB /* NXEClipTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEClipTransform.m; sourceTree = "<group>"; };
-		A69BAA532547F1E10077ECDB /* NXEProject+TemplateInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NXEProject+TemplateInternal.h"; sourceTree = "<group>"; };
-		A69BAA542547F1E10077ECDB /* NXEClipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEClipInfo.m; sourceTree = "<group>"; };
-		A69BAA552547F1E10077ECDB /* NXEBeatAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatAssetItem.m; sourceTree = "<group>"; };
-		A69BAA562547F1E10077ECDB /* NXEEffectOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEEffectOptions.m; sourceTree = "<group>"; };
-		A69BAA572547F1E10077ECDB /* NXEAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEAssetItem.m; sourceTree = "<group>"; };
-		A69BAA582547F1E10077ECDB /* NXEClipSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEClipSource.m; sourceTree = "<group>"; };
-		A69BAA5A2547F1E10077ECDB /* ThemeResourceLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ThemeResourceLoader.mm; sourceTree = "<group>"; };
-		A69BAA5B2547F1E10077ECDB /* FontTools.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FontTools.mm; sourceTree = "<group>"; };
-		A69BAA5C2547F1E10077ECDB /* FontTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontTools.h; sourceTree = "<group>"; };
-		A69BAA5D2547F1E10077ECDB /* ThemeResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeResourceLoader.h; sourceTree = "<group>"; };
-		A69BAA5F2547F1E10077ECDB /* TransitionAssetItemAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAssetItemAttributes.h; sourceTree = "<group>"; };
-		A69BAA602547F1E10077ECDB /* EffectAssetItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectAssetItemInfo.m; sourceTree = "<group>"; };
-		A69BAA622547F1E10077ECDB /* AssetLibraryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetLibraryProxy.h; sourceTree = "<group>"; };
-		A69BAA632547F1E10077ECDB /* InternalAssetLibrary+AssetLibraryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InternalAssetLibrary+AssetLibraryProxy.m"; sourceTree = "<group>"; };
-		A69BAA642547F1E10077ECDB /* AssetLibraryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetLibraryProxy.m; sourceTree = "<group>"; };
-		A69BAA652547F1E10077ECDB /* InternalAssetLibrary+AssetLibraryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InternalAssetLibrary+AssetLibraryProxy.h"; sourceTree = "<group>"; };
-		A69BAA662547F1E10077ECDB /* AssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetLibrary.h; sourceTree = "<group>"; };
-		A69BAA672547F1E10077ECDB /* NXEAssetItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEAssetItemFactory.m; sourceTree = "<group>"; };
-		A69BAA682547F1E10077ECDB /* TransitionAssetItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAssetItemInfo.m; sourceTree = "<group>"; };
-		A69BAA692547F1E10077ECDB /* AssetResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetResourceLoader.m; sourceTree = "<group>"; };
-		A69BAA6A2547F1E10077ECDB /* InternalAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalAssetLibrary.h; sourceTree = "<group>"; };
-		A69BAA6B2547F1E10077ECDB /* AssetXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetXMLParser.m; sourceTree = "<group>"; };
-		A69BAA6D2547F1E10077ECDB /* AssetResourceDecrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetResourceDecrypter.m; sourceTree = "<group>"; };
-		A69BAA6E2547F1E10077ECDB /* AssetKeysetRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetKeysetRegistry.h; sourceTree = "<group>"; };
-		A69BAA6F2547F1E10077ECDB /* AssetResourceDecrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetResourceDecrypter.h; sourceTree = "<group>"; };
-		A69BAA702547F1E10077ECDB /* AssetKeysetRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetKeysetRegistry.m; sourceTree = "<group>"; };
-		A69BAA712547F1E10077ECDB /* assetkey_demangler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assetkey_demangler.h; sourceTree = "<group>"; };
-		A69BAA722547F1E10077ECDB /* AssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetLibrary.m; sourceTree = "<group>"; };
-		A69BAA732547F1E10077ECDB /* ConfigurableAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurableAssetItem.h; sourceTree = "<group>"; };
-		A69BAA742547F1E10077ECDB /* EffectAssetItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectAssetItemInfo.h; sourceTree = "<group>"; };
-		A69BAA752547F1E10077ECDB /* InternalAssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternalAssetLibrary.m; sourceTree = "<group>"; };
-		A69BAA762547F1E10077ECDB /* AssetResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetResourceLoader.h; sourceTree = "<group>"; };
-		A69BAA772547F1E10077ECDB /* AssetDecrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetDecrypter.h; sourceTree = "<group>"; };
-		A69BAA782547F1E10077ECDB /* TransitionAssetItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAssetItemInfo.h; sourceTree = "<group>"; };
-		A69BAA792547F1E10077ECDB /* NXEAssetItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEAssetItemFactory.h; sourceTree = "<group>"; };
-		A69BAA7A2547F1E10077ECDB /* assetkey_demangler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = assetkey_demangler.c; sourceTree = "<group>"; };
-		A69BAA7B2547F1E10077ECDB /* AssetDecrypter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AssetDecrypter.mm; sourceTree = "<group>"; };
-		A69BAA7C2547F1E10077ECDB /* AssetXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetXMLParser.h; sourceTree = "<group>"; };
-		A69BAA7E2547F1E10077ECDB /* NXEEngineEventListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEEngineEventListener.m; sourceTree = "<group>"; };
-		A69BAA7F2547F1E10077ECDB /* NXEEngineUIEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEngineUIEventListener.h; sourceTree = "<group>"; };
-		A69BAA802547F1E10077ECDB /* NexImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NexImage.mm; sourceTree = "<group>"; };
-		A69BAA812547F1E10077ECDB /* NXEEngineEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEngineEventListener.h; sourceTree = "<group>"; };
-		A69BAA822547F1E10077ECDB /* UIListenerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIListenerProtocol.h; sourceTree = "<group>"; };
-		A69BAA832547F1E10077ECDB /* NXEEngineUIEventListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEEngineUIEventListener.m; sourceTree = "<group>"; };
-		A69BAA842547F1E10077ECDB /* NexImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NexImage.h; sourceTree = "<group>"; };
-		A69BAA862547F1E10077ECDB /* RenderDataEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderDataEncoder.m; sourceTree = "<group>"; };
-		A69BAA872547F1E10077ECDB /* CollageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageInfo.h; sourceTree = "<group>"; };
-		A69BAA882547F1E10077ECDB /* CollageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollageData.m; sourceTree = "<group>"; };
-		A69BAA892547F1E10077ECDB /* CollageTextStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollageTextStyle.m; sourceTree = "<group>"; };
-		A69BAA8A2547F1E10077ECDB /* CollageTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageTextStyle.h; sourceTree = "<group>"; };
-		A69BAA8B2547F1E10077ECDB /* CollageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollageInfo.m; sourceTree = "<group>"; };
-		A69BAA8C2547F1E10077ECDB /* CollageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageData.h; sourceTree = "<group>"; };
-		A69BAA8D2547F1E10077ECDB /* RenderDataEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderDataEncoder.h; sourceTree = "<group>"; };
-		A69BAA8E2547F1E10077ECDB /* CollageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageType.h; sourceTree = "<group>"; };
-		A69BAA8F2547F1E10077ECDB /* CollageInfoInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageInfoInternal.h; sourceTree = "<group>"; };
-		A69BAA912547F1E10077ECDB /* NXEBeatEffectDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatEffectDefault.h; sourceTree = "<group>"; };
-		A69BAA922547F1E10077ECDB /* NXEBeatEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatEffect.m; sourceTree = "<group>"; };
-		A69BAA932547F1E10077ECDB /* NXEBeatAssetItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatAssetItemInfo.h; sourceTree = "<group>"; };
-		A69BAA942547F1E10077ECDB /* NXEBeatEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatEffect.h; sourceTree = "<group>"; };
-		A69BAA952547F1E10077ECDB /* NXEBeatEffectDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatEffectDefault.m; sourceTree = "<group>"; };
-		A69BAA962547F1E10077ECDB /* NXEBeatAssetItemPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatAssetItemPrivate.h; sourceTree = "<group>"; };
-		A69BAA972547F1E10077ECDB /* NXEBeatTemplateProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatTemplateProject.m; sourceTree = "<group>"; };
-		A69BAA992547F1E10077ECDB /* NXETemplateParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETemplateParser.h; sourceTree = "<group>"; };
-		A69BAA9A2547F1E10077ECDB /* NXETemplateProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETemplateProject.m; sourceTree = "<group>"; };
-		A69BAA9B2547F1E10077ECDB /* NXETemplateProject+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NXETemplateProject+Internal.h"; sourceTree = "<group>"; };
-		A69BAA9C2547F1E10077ECDB /* NXETemplateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETemplateParser.m; sourceTree = "<group>"; };
-		A69BAA9E2547F1E10077ECDB /* LUTMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUTMap.m; sourceTree = "<group>"; };
-		A69BAA9F2547F1E10077ECDB /* EditorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorUtil.h; sourceTree = "<group>"; };
-		A69BAAA02547F1E10077ECDB /* AspectRatioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectRatioTool.h; sourceTree = "<group>"; };
-		A69BAAA12547F1E10077ECDB /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
-		A69BAAA22547F1E10077ECDB /* BundleResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleResource.h; sourceTree = "<group>"; };
-		A69BAAA32547F1E10077ECDB /* OverlayTitleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayTitleInfo.m; sourceTree = "<group>"; };
-		A69BAAA42547F1E10077ECDB /* MathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtil.m; sourceTree = "<group>"; };
-		A69BAAA52547F1E10077ECDB /* NXEOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEOperation.h; sourceTree = "<group>"; };
-		A69BAAA62547F1E10077ECDB /* NXEOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEOperationQueue.m; sourceTree = "<group>"; };
-		A69BAAA72547F1E10077ECDB /* NSDictionary+ValueForKeyDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ValueForKeyDefault.h"; sourceTree = "<group>"; };
-		A69BAAA82547F1E10077ECDB /* ImageUtil+KMLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImageUtil+KMLayer.m"; sourceTree = "<group>"; };
-		A69BAAA92547F1E10077ECDB /* MatrixUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixUtil.h; sourceTree = "<group>"; };
-		A69BAAAA2547F1E10077ECDB /* EditorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorUtil.m; sourceTree = "<group>"; };
-		A69BAAAB2547F1E10077ECDB /* LUTMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUTMap.h; sourceTree = "<group>"; };
-		A69BAAAC2547F1E10077ECDB /* BundleResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleResource.m; sourceTree = "<group>"; };
-		A69BAAAD2547F1E10077ECDB /* OverlayTitleLayerInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayTitleLayerInternal.h; sourceTree = "<group>"; };
-		A69BAAAE2547F1E10077ECDB /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
-		A69BAAAF2547F1E10077ECDB /* AspectRatioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectRatioTool.m; sourceTree = "<group>"; };
-		A69BAAB02547F1E10077ECDB /* NXEOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEOperationQueue.h; sourceTree = "<group>"; };
-		A69BAAB12547F1E10077ECDB /* NSDictionary+ValueForKeyDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ValueForKeyDefault.m"; sourceTree = "<group>"; };
-		A69BAAB22547F1E10077ECDB /* NXEOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEOperation.m; sourceTree = "<group>"; };
-		A69BAAB32547F1E10077ECDB /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
-		A69BAAB42547F1E10077ECDB /* OverlayTitleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayTitleInfo.h; sourceTree = "<group>"; };
-		A69BAAB52547F1E10077ECDB /* MatrixUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixUtil.m; sourceTree = "<group>"; };
-		A69BAAB62547F1E10077ECDB /* ImageUtil+KMLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageUtil+KMLayer.h"; sourceTree = "<group>"; };
-		A69BAAB82547F1E10077ECDB /* KMLut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMLut.h; sourceTree = "<group>"; };
-		A69BAAB92547F1E10077ECDB /* KMEffectLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMEffectLayer.h; sourceTree = "<group>"; };
-		A69BAABA2547F1E10077ECDB /* KMImageLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageLayer.h; sourceTree = "<group>"; };
-		A69BAABB2547F1E10077ECDB /* KMTextLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KMTextLayer.mm; sourceTree = "<group>"; };
-		A69BAABC2547F1E10077ECDB /* KMLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMLayer.h; sourceTree = "<group>"; };
-		A69BAABD2547F1E10077ECDB /* KMWaterMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMWaterMark.h; sourceTree = "<group>"; };
-		A69BAABE2547F1E10077ECDB /* LayerGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerGLContext.h; sourceTree = "<group>"; };
-		A69BAABF2547F1E10077ECDB /* KMVideoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMVideoLayer.m; sourceTree = "<group>"; };
-		A69BAAC02547F1E10077ECDB /* NXETextureDisposeBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXETextureDisposeBag.h; sourceTree = "<group>"; };
-		A69BAAC12547F1E10077ECDB /* KMTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTextLayer.h; sourceTree = "<group>"; };
-		A69BAAC32547F1E10077ECDB /* KMAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAnimationEffect.h; sourceTree = "<group>"; };
-		A69BAAC42547F1E10077ECDB /* KMAnimationInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAnimationInterpolation.m; sourceTree = "<group>"; };
-		A69BAAC52547F1E10077ECDB /* KMAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAnimation.m; sourceTree = "<group>"; };
-		A69BAAC62547F1E20077ECDB /* KMAnimationInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAnimationInterpolation.h; sourceTree = "<group>"; };
-		A69BAAC72547F1E20077ECDB /* KMAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAnimationEffect.m; sourceTree = "<group>"; };
-		A69BAAC82547F1E20077ECDB /* KMAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAnimation.h; sourceTree = "<group>"; };
-		A69BAACA2547F1E20077ECDB /* LayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerManager.m; sourceTree = "<group>"; };
-		A69BAACB2547F1E20077ECDB /* NXELayersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXELayersManager.m; sourceTree = "<group>"; };
-		A69BAACC2547F1E20077ECDB /* LayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerManager.h; sourceTree = "<group>"; };
-		A69BAACD2547F1E20077ECDB /* NXELayersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELayersManager.h; sourceTree = "<group>"; };
-		A69BAACE2547F1E20077ECDB /* KMLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMLayer.m; sourceTree = "<group>"; };
-		A69BAACF2547F1E20077ECDB /* KMImageLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KMImageLayer.mm; sourceTree = "<group>"; };
-		A69BAAD02547F1E20077ECDB /* KMEffectLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMEffectLayer.m; sourceTree = "<group>"; };
-		A69BAAD12547F1E20077ECDB /* KMLut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMLut.m; sourceTree = "<group>"; };
-		A69BAAD22547F1E20077ECDB /* NXETextureDisposeBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXETextureDisposeBag.m; sourceTree = "<group>"; };
-		A69BAAD32547F1E20077ECDB /* KMVideoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMVideoLayer.h; sourceTree = "<group>"; };
-		A69BAAD42547F1E20077ECDB /* KMWaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMWaterMark.m; sourceTree = "<group>"; };
-		A69BAAD62547F1E20077ECDB /* UserField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserField.h; sourceTree = "<group>"; };
-		A69BAAD72547F1E20077ECDB /* UserField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserField.m; sourceTree = "<group>"; };
-		A69BAAD92547F1E20077ECDB /* TemplateHelper+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TemplateHelper+Utility.h"; sourceTree = "<group>"; };
-		A69BAADA2547F1E20077ECDB /* TemplateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateHelper.m; sourceTree = "<group>"; };
-		A69BAADB2547F1E20077ECDB /* TemplateV3Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateV3Handler.m; sourceTree = "<group>"; };
-		A69BAADC2547F1E20077ECDB /* TemplateV2Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateV2Handler.m; sourceTree = "<group>"; };
-		A69BAADD2547F1E20077ECDB /* TemplateV1Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateV1Handler.h; sourceTree = "<group>"; };
-		A69BAADE2547F1E20077ECDB /* TemplateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateHandler.h; sourceTree = "<group>"; };
-		A69BAADF2547F1E20077ECDB /* TemplateHelper+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TemplateHelper+Utility.m"; sourceTree = "<group>"; };
-		A69BAAE02547F1E20077ECDB /* TemplateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateHelper.h; sourceTree = "<group>"; };
-		A69BAAE12547F1E20077ECDB /* TemplateV2Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateV2Handler.h; sourceTree = "<group>"; };
-		A69BAAE22547F1E20077ECDB /* TemplateV3Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateV3Handler.h; sourceTree = "<group>"; };
-		A69BAAE32547F1E20077ECDB /* TemplateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateHandler.m; sourceTree = "<group>"; };
-		A69BAAE42547F1E20077ECDB /* TemplateV1Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateV1Handler.m; sourceTree = "<group>"; };
-		A69BAAE62547F1E20077ECDB /* NXELayerEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXELayerEditorView.m; sourceTree = "<group>"; };
-		A69BAAE72547F1E20077ECDB /* NXESimpleLayerEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXESimpleLayerEditor.m; sourceTree = "<group>"; };
-		A69BAAE92547F1E20077ECDB /* NXECollageProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXECollageProject.m; sourceTree = "<group>"; };
-		A69BAAEA2547F1E20077ECDB /* NXECollageAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXECollageAssetItem.m; sourceTree = "<group>"; };
-		A69BAAEB2547F1E20077ECDB /* NXECollageSlotConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXECollageSlotConfiguration.m; sourceTree = "<group>"; };
-		A69BAAEC2547F1E20077ECDB /* NXECollageTitleConfigurationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECollageTitleConfigurationInternal.h; sourceTree = "<group>"; };
-		A69BAAED2547F1E20077ECDB /* NXECollageSlotConfigurationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXECollageSlotConfigurationInternal.h; sourceTree = "<group>"; };
-		A69BAAEE2547F1E20077ECDB /* NXECollageTitleConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXECollageTitleConfiguration.m; sourceTree = "<group>"; };
-		A69BAAF22547F1E20077ECDB /* lut_gloomy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_gloomy.png; sourceTree = "<group>"; };
-		A69BAAF32547F1E20077ECDB /* lut_rainy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_rainy.png; sourceTree = "<group>"; };
-		A69BAAF42547F1E20077ECDB /* lut_vintage_flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_vintage_flower.png; sourceTree = "<group>"; };
-		A69BAAF52547F1E20077ECDB /* lut_ludwig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_ludwig.png; sourceTree = "<group>"; };
-		A69BAAF62547F1E20077ECDB /* lut_espresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_espresso.png; sourceTree = "<group>"; };
-		A69BAAF72547F1E20077ECDB /* lut_vivid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_vivid.png; sourceTree = "<group>"; };
-		A69BAAF82547F1E20077ECDB /* lut_tangerine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_tangerine.png; sourceTree = "<group>"; };
-		A69BAAF92547F1E20077ECDB /* lut_moonlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_moonlight.png; sourceTree = "<group>"; };
-		A69BAAFA2547F1E20077ECDB /* lut_lavendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_lavendar.png; sourceTree = "<group>"; };
-		A69BAAFB2547F1E20077ECDB /* lut_raspberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_raspberry.png; sourceTree = "<group>"; };
-		A69BAAFC2547F1E20077ECDB /* lut_newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_newspaper.png; sourceTree = "<group>"; };
-		A69BAAFD2547F1E20077ECDB /* lut_dbright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_dbright.png; sourceTree = "<group>"; };
-		A69BAAFE2547F1E20077ECDB /* lut_stoneedge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_stoneedge.png; sourceTree = "<group>"; };
-		A69BAAFF2547F1E20077ECDB /* lut_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_blue.png; sourceTree = "<group>"; };
-		A69BAB002547F1E20077ECDB /* lut_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_sunset.png; sourceTree = "<group>"; };
-		A69BAB012547F1E20077ECDB /* lut_sherbert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_sherbert.png; sourceTree = "<group>"; };
-		A69BAB022547F1E20077ECDB /* lut_boring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_boring.png; sourceTree = "<group>"; };
-		A69BAB032547F1E20077ECDB /* lut_smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_smoke.png; sourceTree = "<group>"; };
-		A69BAB042547F1E20077ECDB /* lut_autumn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_autumn.png; sourceTree = "<group>"; };
-		A69BAB052547F1E20077ECDB /* lut_sweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_sweet.png; sourceTree = "<group>"; };
-		A69BAB062547F1E20077ECDB /* lut_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_cloud.png; sourceTree = "<group>"; };
-		A69BAB072547F1E20077ECDB /* lut_salmon_teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_salmon_teal.png; sourceTree = "<group>"; };
-		A69BAB082547F1E20077ECDB /* lut_almond_blossom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_almond_blossom.png; sourceTree = "<group>"; };
-		A69BAB092547F1E20077ECDB /* lut_heat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_heat.png; sourceTree = "<group>"; };
-		A69BAB0A2547F1E20077ECDB /* lut_symphony_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_symphony_blue.png; sourceTree = "<group>"; };
-		A69BAB0B2547F1E20077ECDB /* lut_vintage_romance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_vintage_romance.png; sourceTree = "<group>"; };
-		A69BAB0C2547F1E20077ECDB /* lut_eyeshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_eyeshadow.png; sourceTree = "<group>"; };
-		A69BAB0D2547F1E20077ECDB /* lut_blueonly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_blueonly.png; sourceTree = "<group>"; };
-		A69BAB0E2547F1E20077ECDB /* lut_dawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_dawn.png; sourceTree = "<group>"; };
-		A69BAB0F2547F1E20077ECDB /* lut_jazz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_jazz.png; sourceTree = "<group>"; };
-		A69BAB102547F1E20077ECDB /* lut_tiffany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_tiffany.png; sourceTree = "<group>"; };
-		A69BAB112547F1E20077ECDB /* lut_afternoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_afternoon.png; sourceTree = "<group>"; };
-		A69BAB122547F1E20077ECDB /* lut_oldfilm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_oldfilm.png; sourceTree = "<group>"; };
-		A69BAB132547F1E20077ECDB /* lut_negative.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_negative.png; sourceTree = "<group>"; };
-		A69BAB142547F1E20077ECDB /* lut_peach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_peach.png; sourceTree = "<group>"; };
-		A69BAB152547F1E20077ECDB /* lut_england.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_england.png; sourceTree = "<group>"; };
-		A69BAB162547F1E20077ECDB /* lut_shiny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_shiny.png; sourceTree = "<group>"; };
-		A69BAB172547F1E20077ECDB /* lut_warm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_warm.png; sourceTree = "<group>"; };
-		A69BAB182547F1E20077ECDB /* lut_paris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_paris.png; sourceTree = "<group>"; };
-		A69BAB192547F1E20077ECDB /* lut_daisy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_daisy.png; sourceTree = "<group>"; };
-		A69BAB1A2547F1E20077ECDB /* lut_caribbean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_caribbean.png; sourceTree = "<group>"; };
-		A69BAB1B2547F1E20077ECDB /* lut_cranberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_cranberry.png; sourceTree = "<group>"; };
-		A69BAB1C2547F1E20077ECDB /* lut_caramel_candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_caramel_candy.png; sourceTree = "<group>"; };
-		A69BAB1D2547F1E20077ECDB /* lut_sunrising.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_sunrising.png; sourceTree = "<group>"; };
-		A69BAB1E2547F1E20077ECDB /* lut_retro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_retro.png; sourceTree = "<group>"; };
-		A69BAB1F2547F1E20077ECDB /* lut_sunprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_sunprint.png; sourceTree = "<group>"; };
-		A69BAB202547F1E20077ECDB /* lut_rosy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_rosy.png; sourceTree = "<group>"; };
-		A69BAB212547F1E20077ECDB /* lut_disney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_disney.png; sourceTree = "<group>"; };
-		A69BAB222547F1E20077ECDB /* lut_coral_candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_coral_candy.png; sourceTree = "<group>"; };
-		A69BAB232547F1E20077ECDB /* lut_cinnamon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut_cinnamon.png; sourceTree = "<group>"; };
-		A69BAB252547F1E20077ECDB /* keepfileFG2HJ6D4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keepfileFG2HJ6D4; sourceTree = "<group>"; };
-		A69BAB262547F1E20077ECDB /* vignette_9v16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vignette_9v16.png; sourceTree = "<group>"; };
-		A69BAB272547F1E20077ECDB /* grip_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grip_scale.png; sourceTree = "<group>"; };
-		A69BAB282547F1E20077ECDB /* grip_rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grip_rotate.png; sourceTree = "<group>"; };
-		A69BAB292547F1E20077ECDB /* template_vignette_9v16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template_vignette_9v16.png; sourceTree = "<group>"; };
-		A69BAB2A2547F1E20077ECDB /* vignette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vignette.png; sourceTree = "<group>"; };
-		A69BAB2B2547F1E20077ECDB /* template_vignette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template_vignette.png; sourceTree = "<group>"; };
-		A69BAB2D2547F1E20077ECDB /* goudystm-italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "goudystm-italic.ttf"; sourceTree = "<group>"; };
-		A69BAB2E2547F1E20077ECDB /* lindenhill.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lindenhill.ttf; sourceTree = "<group>"; };
-		A69BAB2F2547F1E20077ECDB /* lato-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lato-bold.ttf"; sourceTree = "<group>"; };
-		A69BAB302547F1E20077ECDB /* justanotherhand-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "justanotherhand-regular.ttf"; sourceTree = "<group>"; };
-		A69BAB312547F1E20077ECDB /* orbitron-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-medium.ttf"; sourceTree = "<group>"; };
-		A69BAB322547F1E20077ECDB /* bevan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bevan.ttf; sourceTree = "<group>"; };
-		A69BAB332547F1E20077ECDB /* Tangerine_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tangerine_Regular.ttf; sourceTree = "<group>"; };
-		A69BAB342547F1E20077ECDB /* leaguegothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = leaguegothic.ttf; sourceTree = "<group>"; };
-		A69BAB352547F1E20077ECDB /* creepster-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "creepster-regular.ttf"; sourceTree = "<group>"; };
-		A69BAB362547F1E20077ECDB /* redressed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = redressed.ttf; sourceTree = "<group>"; };
-		A69BAB372547F1E20077ECDB /* leaguescriptthin-leaguescript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "leaguescriptthin-leaguescript.ttf"; sourceTree = "<group>"; };
-		A69BAB382547F1E20077ECDB /* knewave.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = knewave.ttf; sourceTree = "<group>"; };
-		A69BAB392547F1E20077ECDB /* junctionregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = junctionregular.ttf; sourceTree = "<group>"; };
-		A69BAB3A2547F1E20077ECDB /* orbitron-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-bold.ttf"; sourceTree = "<group>"; };
-		A69BAB3B2547F1E20077ECDB /* releway-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "releway-thin.ttf"; sourceTree = "<group>"; };
-		A69BAB3C2547F1E20077ECDB /* sniglet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sniglet.ttf; sourceTree = "<group>"; };
-		A69BAB3D2547F1E20077ECDB /* greatvibes-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "greatvibes-regular.ttf"; sourceTree = "<group>"; };
 		A69BAD3F254848DB0077ECDB /* AssetReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AssetReader.xcodeproj; sourceTree = "<group>"; };
 		A69BAD43254848DB0077ECDB /* AssetReader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssetReader.podspec; sourceTree = "<group>"; };
 		A69BAD46254848DB0077ECDB /* AssetEncryptionManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetEncryptionManifest.h; sourceTree = "<group>"; };
@@ -624,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BB48E6258BA5740051DF95 /* NexEditorFramework.framework in Frameworks */,
 				71A7D7B3DCDD7BF8D48CE2D5 /* Pods_EditorTester.framework in Frameworks */,
 				A69BADB42548531D0077ECDB /* zlib.framework in Frameworks */,
 			);
@@ -688,7 +223,6 @@
 			children = (
 				A69BADAF2548531D0077ECDB /* Frameworks */,
 				A69BAD37254848DB0077ECDB /* AssetReader */,
-				A69BA9ED2547F1E00077ECDB /* NexEditorFramework */,
 				A618F7E625415F5C006123FB /* EditorTesterApp.swift */,
 				A69B95042546F11B0077ECDB /* EngineView.swift */,
 				A618F7E825415F5C006123FB /* ContentView.swift */,
@@ -726,559 +260,6 @@
 				A618F80525415F5D006123FB /* Info.plist */,
 			);
 			path = EditorTesterUITests;
-			sourceTree = "<group>";
-		};
-		A69BA9ED2547F1E00077ECDB /* NexEditorFramework */ = {
-			isa = PBXGroup;
-			children = (
-				A69BA9EE2547F1E00077ECDB /* include */,
-				A69BAA152547F1E10077ECDB /* Keyczar */,
-				A69BAA172547F1E10077ECDB /* NexEditorFramework.h */,
-				A69BAA182547F1E10077ECDB /* nexeditor */,
-				A69BAAEF2547F1E20077ECDB /* resource */,
-			);
-			path = NexEditorFramework;
-			sourceTree = "<group>";
-		};
-		A69BA9EE2547F1E00077ECDB /* include */ = {
-			isa = PBXGroup;
-			children = (
-				A69BA9EF2547F1E00077ECDB /* NXEProject.h */,
-				A69BA9F02547F1E00077ECDB /* NXEClip.h */,
-				A69BA9F12547F1E00077ECDB /* NXEImageLayer.h */,
-				A69BA9F22547F1E00077ECDB /* NXESimpleLayerEditor.h */,
-				A69BA9F32547F1E00077ECDB /* NXETextLayer.h */,
-				A69BA9F42547F1E00077ECDB /* NXEClipInfo.h */,
-				A69BA9F52547F1E00077ECDB /* NXEClipTransform.h */,
-				A69BA9F62547F1E00077ECDB /* NXEBeatTemplateProject.h */,
-				A69BA9F72547F1E00077ECDB /* NXEEditorType.h */,
-				A69BA9F82547F1E00077ECDB /* template */,
-				A69BA9FA2547F1E00077ECDB /* NXEClipSource.h */,
-				A69BA9FB2547F1E00077ECDB /* NXELutSource.h */,
-				A69BA9FC2547F1E00077ECDB /* NXEEffectOptions.h */,
-				A69BA9FD2547F1E00077ECDB /* NXEEngine.h */,
-				A69BA9FE2547F1E00077ECDB /* NXEEditorErrorCode.h */,
-				A69BA9FF2547F1E00077ECDB /* NXELayerEditorView.h */,
-				A69BAA002547F1E00077ECDB /* NXELayer.h */,
-				A69BAA012547F1E00077ECDB /* NXEVideoLayer.h */,
-				A69BAA022547F1E00077ECDB /* NXELutRegistry.h */,
-				A69BAA032547F1E00077ECDB /* NXEError.h */,
-				A69BAA042547F1E00077ECDB /* assetlib */,
-				A69BAA0E2547F1E00077ECDB /* NexLogger.h */,
-				A69BAA0F2547F1E00077ECDB /* NXEAudioEnvelop.h */,
-				A69BAA102547F1E10077ECDB /* NXETextEffect.h */,
-				A69BAA112547F1E10077ECDB /* collage */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		A69BA9F82547F1E00077ECDB /* template */ = {
-			isa = PBXGroup;
-			children = (
-				A69BA9F92547F1E00077ECDB /* NXETemplateProject.h */,
-			);
-			path = template;
-			sourceTree = "<group>";
-		};
-		A69BAA042547F1E00077ECDB /* assetlib */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA052547F1E00077ECDB /* NXETextEffectAssetItem.h */,
-				A69BAA062547F1E00077ECDB /* NXETemplateAssetItem.h */,
-				A69BAA072547F1E00077ECDB /* NXETransitionAssetItem.h */,
-				A69BAA082547F1E00077ECDB /* NXEAssetItem.h */,
-				A69BAA092547F1E00077ECDB /* NXEBeatAssetItem.h */,
-				A69BAA0A2547F1E00077ECDB /* NXECollageAssetItem.h */,
-				A69BAA0B2547F1E00077ECDB /* NXEAssetLibrary.h */,
-				A69BAA0C2547F1E00077ECDB /* NXEEffectAssetItem.h */,
-				A69BAA0D2547F1E00077ECDB /* NXEAssetItemGroup.h */,
-			);
-			path = assetlib;
-			sourceTree = "<group>";
-		};
-		A69BAA112547F1E10077ECDB /* collage */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA122547F1E10077ECDB /* NXECollageTitleConfiguration.h */,
-				A69BAA132547F1E10077ECDB /* NXECollageProject.h */,
-				A69BAA142547F1E10077ECDB /* NXECollageSlotConfiguration.h */,
-			);
-			path = collage;
-			sourceTree = "<group>";
-		};
-		A69BAA152547F1E10077ECDB /* Keyczar */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA162547F1E10077ECDB /* LICENSE */,
-			);
-			path = Keyczar;
-			sourceTree = "<group>";
-		};
-		A69BAA182547F1E10077ECDB /* nexeditor */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA192547F1E10077ECDB /* mediainfo */,
-				A69BAA1C2547F1E10077ECDB /* NexEditorVersion.h */,
-				A69BAA1D2547F1E10077ECDB /* editorUtil */,
-				A69BAA2A2547F1E10077ECDB /* apis */,
-				A69BAA592547F1E10077ECDB /* externalResourceProvider */,
-				A69BAA5E2547F1E10077ECDB /* asset */,
-				A69BAA7D2547F1E10077ECDB /* videoeditor */,
-				A69BAA852547F1E10077ECDB /* collageLoader */,
-				A69BAA902547F1E10077ECDB /* beat */,
-				A69BAA982547F1E10077ECDB /* template */,
-				A69BAA9D2547F1E10077ECDB /* common */,
-				A69BAAB72547F1E10077ECDB /* layer */,
-				A69BAAD52547F1E20077ECDB /* packages */,
-				A69BAAD82547F1E20077ECDB /* templateLoader */,
-				A69BAAE52547F1E20077ECDB /* view */,
-				A69BAAE82547F1E20077ECDB /* collage */,
-			);
-			path = nexeditor;
-			sourceTree = "<group>";
-		};
-		A69BAA192547F1E10077ECDB /* mediainfo */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA1A2547F1E10077ECDB /* MediaInfo.h */,
-				A69BAA1B2547F1E10077ECDB /* MediaInfo.m */,
-			);
-			path = mediainfo;
-			sourceTree = "<group>";
-		};
-		A69BAA1D2547F1E10077ECDB /* editorUtil */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA1E2547F1E10077ECDB /* NSString+ValueReader.m */,
-				A69BAA1F2547F1E10077ECDB /* CollageUtil.h */,
-				A69BAA202547F1E10077ECDB /* NSString+Color.h */,
-				A69BAA212547F1E10077ECDB /* UIImage+Resize.h */,
-				A69BAA222547F1E10077ECDB /* UIImage+Blending.h */,
-				A69BAA232547F1E10077ECDB /* NSError+ErrorCode.m */,
-				A69BAA242547F1E10077ECDB /* NSString+ValueReader.h */,
-				A69BAA252547F1E10077ECDB /* NSString+Color.m */,
-				A69BAA262547F1E10077ECDB /* CollageUtil.m */,
-				A69BAA272547F1E10077ECDB /* NSError+ErrorCode.h */,
-				A69BAA282547F1E10077ECDB /* UIImage+Blending.m */,
-				A69BAA292547F1E10077ECDB /* UIImage+Resize.m */,
-			);
-			path = editorUtil;
-			sourceTree = "<group>";
-		};
-		A69BAA2A2547F1E10077ECDB /* apis */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA2B2547F1E10077ECDB /* NXEEngine.m */,
-				A69BAA2C2547F1E10077ECDB /* NXEEnginePrivate.h */,
-				A69BAA2D2547F1E10077ECDB /* NXEErrorPrivate.h */,
-				A69BAA2E2547F1E10077ECDB /* NXETransitionAssetItemPrivate.h */,
-				A69BAA2F2547F1E10077ECDB /* NXEAssetLibrary.m */,
-				A69BAA302547F1E10077ECDB /* NXELayer.m */,
-				A69BAA312547F1E10077ECDB /* NXEColorEffect.m */,
-				A69BAA322547F1E10077ECDB /* NXEProjectInternal.h */,
-				A69BAA332547F1E10077ECDB /* NXEClipTransformPrivate.h */,
-				A69BAA342547F1E10077ECDB /* NXETextEffect+KMLayer.h */,
-				A69BAA352547F1E10077ECDB /* NXEProject+TemplateInternal.m */,
-				A69BAA362547F1E10077ECDB /* NXEAssetItemPrivate.h */,
-				A69BAA372547F1E10077ECDB /* NXEClipInternal.h */,
-				A69BAA382547F1E10077ECDB /* NXECropRectTool.m */,
-				A69BAA392547F1E10077ECDB /* NXELutRegistry.m */,
-				A69BAA3A2547F1E10077ECDB /* NXEVideoLayer.m */,
-				A69BAA3B2547F1E10077ECDB /* NXEEffectAssetItem.m */,
-				A69BAA3C2547F1E10077ECDB /* NXETextLayerPrivate.h */,
-				A69BAA3D2547F1E10077ECDB /* NXELutSourcePrivate.h */,
-				A69BAA3E2547F1E10077ECDB /* NXETextEffect.m */,
-				A69BAA3F2547F1E10077ECDB /* NXEAudioEnvelop.m */,
-				A69BAA402547F1E10077ECDB /* NexLogger.m */,
-				A69BAA412547F1E10077ECDB /* NXEAssetItemGroup.m */,
-				A69BAA422547F1E10077ECDB /* NXEError.m */,
-				A69BAA432547F1E10077ECDB /* NXEClip.m */,
-				A69BAA442547F1E10077ECDB /* NXETextEffectAssetItem.m */,
-				A69BAA452547F1E10077ECDB /* NXEClipSourcePrivate.h */,
-				A69BAA462547F1E10077ECDB /* NXEEffectAssetItemPrivate.h */,
-				A69BAA472547F1E10077ECDB /* NXEProject.m */,
-				A69BAA482547F1E10077ECDB /* NXEAssetItemGroupPrivate.h */,
-				A69BAA492547F1E10077ECDB /* NXETextEffect+KMLayer.m */,
-				A69BAA4A2547F1E10077ECDB /* NXETemplateAssetItem.m */,
-				A69BAA4B2547F1E10077ECDB /* NXETextLayer.m */,
-				A69BAA4C2547F1E10077ECDB /* NXEColorEffect.h */,
-				A69BAA4D2547F1E10077ECDB /* NXEImageLayer.m */,
-				A69BAA4E2547F1E10077ECDB /* NXEBeatAssetItemInfo.m */,
-				A69BAA4F2547F1E10077ECDB /* NXETransitionAssetItem.m */,
-				A69BAA502547F1E10077ECDB /* NXECropRectTool.h */,
-				A69BAA512547F1E10077ECDB /* NXELutSource.mm */,
-				A69BAA522547F1E10077ECDB /* NXEClipTransform.m */,
-				A69BAA532547F1E10077ECDB /* NXEProject+TemplateInternal.h */,
-				A69BAA542547F1E10077ECDB /* NXEClipInfo.m */,
-				A69BAA552547F1E10077ECDB /* NXEBeatAssetItem.m */,
-				A69BAA562547F1E10077ECDB /* NXEEffectOptions.m */,
-				A69BAA572547F1E10077ECDB /* NXEAssetItem.m */,
-				A69BAA582547F1E10077ECDB /* NXEClipSource.m */,
-			);
-			path = apis;
-			sourceTree = "<group>";
-		};
-		A69BAA592547F1E10077ECDB /* externalResourceProvider */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA5A2547F1E10077ECDB /* ThemeResourceLoader.mm */,
-				A69BAA5B2547F1E10077ECDB /* FontTools.mm */,
-				A69BAA5C2547F1E10077ECDB /* FontTools.h */,
-				A69BAA5D2547F1E10077ECDB /* ThemeResourceLoader.h */,
-			);
-			path = externalResourceProvider;
-			sourceTree = "<group>";
-		};
-		A69BAA5E2547F1E10077ECDB /* asset */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA5F2547F1E10077ECDB /* TransitionAssetItemAttributes.h */,
-				A69BAA602547F1E10077ECDB /* EffectAssetItemInfo.m */,
-				A69BAA612547F1E10077ECDB /* proxy */,
-				A69BAA662547F1E10077ECDB /* AssetLibrary.h */,
-				A69BAA672547F1E10077ECDB /* NXEAssetItemFactory.m */,
-				A69BAA682547F1E10077ECDB /* TransitionAssetItemInfo.m */,
-				A69BAA692547F1E10077ECDB /* AssetResourceLoader.m */,
-				A69BAA6A2547F1E10077ECDB /* InternalAssetLibrary.h */,
-				A69BAA6B2547F1E10077ECDB /* AssetXMLParser.m */,
-				A69BAA6C2547F1E10077ECDB /* decryption */,
-				A69BAA712547F1E10077ECDB /* assetkey_demangler.h */,
-				A69BAA722547F1E10077ECDB /* AssetLibrary.m */,
-				A69BAA732547F1E10077ECDB /* ConfigurableAssetItem.h */,
-				A69BAA742547F1E10077ECDB /* EffectAssetItemInfo.h */,
-				A69BAA752547F1E10077ECDB /* InternalAssetLibrary.m */,
-				A69BAA762547F1E10077ECDB /* AssetResourceLoader.h */,
-				A69BAA772547F1E10077ECDB /* AssetDecrypter.h */,
-				A69BAA782547F1E10077ECDB /* TransitionAssetItemInfo.h */,
-				A69BAA792547F1E10077ECDB /* NXEAssetItemFactory.h */,
-				A69BAA7A2547F1E10077ECDB /* assetkey_demangler.c */,
-				A69BAA7B2547F1E10077ECDB /* AssetDecrypter.mm */,
-				A69BAA7C2547F1E10077ECDB /* AssetXMLParser.h */,
-			);
-			path = asset;
-			sourceTree = "<group>";
-		};
-		A69BAA612547F1E10077ECDB /* proxy */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA622547F1E10077ECDB /* AssetLibraryProxy.h */,
-				A69BAA632547F1E10077ECDB /* InternalAssetLibrary+AssetLibraryProxy.m */,
-				A69BAA642547F1E10077ECDB /* AssetLibraryProxy.m */,
-				A69BAA652547F1E10077ECDB /* InternalAssetLibrary+AssetLibraryProxy.h */,
-			);
-			path = proxy;
-			sourceTree = "<group>";
-		};
-		A69BAA6C2547F1E10077ECDB /* decryption */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA6D2547F1E10077ECDB /* AssetResourceDecrypter.m */,
-				A69BAA6E2547F1E10077ECDB /* AssetKeysetRegistry.h */,
-				A69BAA6F2547F1E10077ECDB /* AssetResourceDecrypter.h */,
-				A69BAA702547F1E10077ECDB /* AssetKeysetRegistry.m */,
-			);
-			path = decryption;
-			sourceTree = "<group>";
-		};
-		A69BAA7D2547F1E10077ECDB /* videoeditor */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA7E2547F1E10077ECDB /* NXEEngineEventListener.m */,
-				A69BAA7F2547F1E10077ECDB /* NXEEngineUIEventListener.h */,
-				A69BAA802547F1E10077ECDB /* NexImage.mm */,
-				A69BAA812547F1E10077ECDB /* NXEEngineEventListener.h */,
-				A69BAA822547F1E10077ECDB /* UIListenerProtocol.h */,
-				A69BAA832547F1E10077ECDB /* NXEEngineUIEventListener.m */,
-				A69BAA842547F1E10077ECDB /* NexImage.h */,
-			);
-			path = videoeditor;
-			sourceTree = "<group>";
-		};
-		A69BAA852547F1E10077ECDB /* collageLoader */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA862547F1E10077ECDB /* RenderDataEncoder.m */,
-				A69BAA872547F1E10077ECDB /* CollageInfo.h */,
-				A69BAA882547F1E10077ECDB /* CollageData.m */,
-				A69BAA892547F1E10077ECDB /* CollageTextStyle.m */,
-				A69BAA8A2547F1E10077ECDB /* CollageTextStyle.h */,
-				A69BAA8B2547F1E10077ECDB /* CollageInfo.m */,
-				A69BAA8C2547F1E10077ECDB /* CollageData.h */,
-				A69BAA8D2547F1E10077ECDB /* RenderDataEncoder.h */,
-				A69BAA8E2547F1E10077ECDB /* CollageType.h */,
-				A69BAA8F2547F1E10077ECDB /* CollageInfoInternal.h */,
-			);
-			path = collageLoader;
-			sourceTree = "<group>";
-		};
-		A69BAA902547F1E10077ECDB /* beat */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA912547F1E10077ECDB /* NXEBeatEffectDefault.h */,
-				A69BAA922547F1E10077ECDB /* NXEBeatEffect.m */,
-				A69BAA932547F1E10077ECDB /* NXEBeatAssetItemInfo.h */,
-				A69BAA942547F1E10077ECDB /* NXEBeatEffect.h */,
-				A69BAA952547F1E10077ECDB /* NXEBeatEffectDefault.m */,
-				A69BAA962547F1E10077ECDB /* NXEBeatAssetItemPrivate.h */,
-				A69BAA972547F1E10077ECDB /* NXEBeatTemplateProject.m */,
-			);
-			path = beat;
-			sourceTree = "<group>";
-		};
-		A69BAA982547F1E10077ECDB /* template */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA992547F1E10077ECDB /* NXETemplateParser.h */,
-				A69BAA9A2547F1E10077ECDB /* NXETemplateProject.m */,
-				A69BAA9B2547F1E10077ECDB /* NXETemplateProject+Internal.h */,
-				A69BAA9C2547F1E10077ECDB /* NXETemplateParser.m */,
-			);
-			path = template;
-			sourceTree = "<group>";
-		};
-		A69BAA9D2547F1E10077ECDB /* common */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAA9E2547F1E10077ECDB /* LUTMap.m */,
-				A69BAA9F2547F1E10077ECDB /* EditorUtil.h */,
-				A69BAAA02547F1E10077ECDB /* AspectRatioTool.h */,
-				A69BAAA12547F1E10077ECDB /* ImageUtil.m */,
-				A69BAAA22547F1E10077ECDB /* BundleResource.h */,
-				A69BAAA32547F1E10077ECDB /* OverlayTitleInfo.m */,
-				A69BAAA42547F1E10077ECDB /* MathUtil.m */,
-				A69BAAA52547F1E10077ECDB /* NXEOperation.h */,
-				A69BAAA62547F1E10077ECDB /* NXEOperationQueue.m */,
-				A69BAAA72547F1E10077ECDB /* NSDictionary+ValueForKeyDefault.h */,
-				A69BAAA82547F1E10077ECDB /* ImageUtil+KMLayer.m */,
-				A69BAAA92547F1E10077ECDB /* MatrixUtil.h */,
-				A69BAAAA2547F1E10077ECDB /* EditorUtil.m */,
-				A69BAAAB2547F1E10077ECDB /* LUTMap.h */,
-				A69BAAAC2547F1E10077ECDB /* BundleResource.m */,
-				A69BAAAD2547F1E10077ECDB /* OverlayTitleLayerInternal.h */,
-				A69BAAAE2547F1E10077ECDB /* ImageUtil.h */,
-				A69BAAAF2547F1E10077ECDB /* AspectRatioTool.m */,
-				A69BAAB02547F1E10077ECDB /* NXEOperationQueue.h */,
-				A69BAAB12547F1E10077ECDB /* NSDictionary+ValueForKeyDefault.m */,
-				A69BAAB22547F1E10077ECDB /* NXEOperation.m */,
-				A69BAAB32547F1E10077ECDB /* MathUtil.h */,
-				A69BAAB42547F1E10077ECDB /* OverlayTitleInfo.h */,
-				A69BAAB52547F1E10077ECDB /* MatrixUtil.m */,
-				A69BAAB62547F1E10077ECDB /* ImageUtil+KMLayer.h */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		A69BAAB72547F1E10077ECDB /* layer */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAB82547F1E10077ECDB /* KMLut.h */,
-				A69BAAB92547F1E10077ECDB /* KMEffectLayer.h */,
-				A69BAABA2547F1E10077ECDB /* KMImageLayer.h */,
-				A69BAABB2547F1E10077ECDB /* KMTextLayer.mm */,
-				A69BAABC2547F1E10077ECDB /* KMLayer.h */,
-				A69BAABD2547F1E10077ECDB /* KMWaterMark.h */,
-				A69BAABE2547F1E10077ECDB /* LayerGLContext.h */,
-				A69BAABF2547F1E10077ECDB /* KMVideoLayer.m */,
-				A69BAAC02547F1E10077ECDB /* NXETextureDisposeBag.h */,
-				A69BAAC12547F1E10077ECDB /* KMTextLayer.h */,
-				A69BAAC22547F1E10077ECDB /* animation */,
-				A69BAAC92547F1E20077ECDB /* manager */,
-				A69BAACE2547F1E20077ECDB /* KMLayer.m */,
-				A69BAACF2547F1E20077ECDB /* KMImageLayer.mm */,
-				A69BAAD02547F1E20077ECDB /* KMEffectLayer.m */,
-				A69BAAD12547F1E20077ECDB /* KMLut.m */,
-				A69BAAD22547F1E20077ECDB /* NXETextureDisposeBag.m */,
-				A69BAAD32547F1E20077ECDB /* KMVideoLayer.h */,
-				A69BAAD42547F1E20077ECDB /* KMWaterMark.m */,
-			);
-			path = layer;
-			sourceTree = "<group>";
-		};
-		A69BAAC22547F1E10077ECDB /* animation */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAC32547F1E10077ECDB /* KMAnimationEffect.h */,
-				A69BAAC42547F1E10077ECDB /* KMAnimationInterpolation.m */,
-				A69BAAC52547F1E10077ECDB /* KMAnimation.m */,
-				A69BAAC62547F1E20077ECDB /* KMAnimationInterpolation.h */,
-				A69BAAC72547F1E20077ECDB /* KMAnimationEffect.m */,
-				A69BAAC82547F1E20077ECDB /* KMAnimation.h */,
-			);
-			path = animation;
-			sourceTree = "<group>";
-		};
-		A69BAAC92547F1E20077ECDB /* manager */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAACA2547F1E20077ECDB /* LayerManager.m */,
-				A69BAACB2547F1E20077ECDB /* NXELayersManager.m */,
-				A69BAACC2547F1E20077ECDB /* LayerManager.h */,
-				A69BAACD2547F1E20077ECDB /* NXELayersManager.h */,
-			);
-			path = manager;
-			sourceTree = "<group>";
-		};
-		A69BAAD52547F1E20077ECDB /* packages */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAD62547F1E20077ECDB /* UserField.h */,
-				A69BAAD72547F1E20077ECDB /* UserField.m */,
-			);
-			path = packages;
-			sourceTree = "<group>";
-		};
-		A69BAAD82547F1E20077ECDB /* templateLoader */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAD92547F1E20077ECDB /* TemplateHelper+Utility.h */,
-				A69BAADA2547F1E20077ECDB /* TemplateHelper.m */,
-				A69BAADB2547F1E20077ECDB /* TemplateV3Handler.m */,
-				A69BAADC2547F1E20077ECDB /* TemplateV2Handler.m */,
-				A69BAADD2547F1E20077ECDB /* TemplateV1Handler.h */,
-				A69BAADE2547F1E20077ECDB /* TemplateHandler.h */,
-				A69BAADF2547F1E20077ECDB /* TemplateHelper+Utility.m */,
-				A69BAAE02547F1E20077ECDB /* TemplateHelper.h */,
-				A69BAAE12547F1E20077ECDB /* TemplateV2Handler.h */,
-				A69BAAE22547F1E20077ECDB /* TemplateV3Handler.h */,
-				A69BAAE32547F1E20077ECDB /* TemplateHandler.m */,
-				A69BAAE42547F1E20077ECDB /* TemplateV1Handler.m */,
-			);
-			path = templateLoader;
-			sourceTree = "<group>";
-		};
-		A69BAAE52547F1E20077ECDB /* view */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAE62547F1E20077ECDB /* NXELayerEditorView.m */,
-				A69BAAE72547F1E20077ECDB /* NXESimpleLayerEditor.m */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		A69BAAE82547F1E20077ECDB /* collage */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAE92547F1E20077ECDB /* NXECollageProject.m */,
-				A69BAAEA2547F1E20077ECDB /* NXECollageAssetItem.m */,
-				A69BAAEB2547F1E20077ECDB /* NXECollageSlotConfiguration.m */,
-				A69BAAEC2547F1E20077ECDB /* NXECollageTitleConfigurationInternal.h */,
-				A69BAAED2547F1E20077ECDB /* NXECollageSlotConfigurationInternal.h */,
-				A69BAAEE2547F1E20077ECDB /* NXECollageTitleConfiguration.m */,
-			);
-			path = collage;
-			sourceTree = "<group>";
-		};
-		A69BAAEF2547F1E20077ECDB /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAF02547F1E20077ECDB /* asset */,
-				A69BAB242547F1E20077ECDB /* image */,
-				A69BAB2C2547F1E20077ECDB /* font */,
-			);
-			path = resource;
-			sourceTree = "<group>";
-		};
-		A69BAAF02547F1E20077ECDB /* asset */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAF12547F1E20077ECDB /* lut */,
-			);
-			path = asset;
-			sourceTree = "<group>";
-		};
-		A69BAAF12547F1E20077ECDB /* lut */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAAF22547F1E20077ECDB /* lut_gloomy.png */,
-				A69BAAF32547F1E20077ECDB /* lut_rainy.png */,
-				A69BAAF42547F1E20077ECDB /* lut_vintage_flower.png */,
-				A69BAAF52547F1E20077ECDB /* lut_ludwig.png */,
-				A69BAAF62547F1E20077ECDB /* lut_espresso.png */,
-				A69BAAF72547F1E20077ECDB /* lut_vivid.png */,
-				A69BAAF82547F1E20077ECDB /* lut_tangerine.png */,
-				A69BAAF92547F1E20077ECDB /* lut_moonlight.png */,
-				A69BAAFA2547F1E20077ECDB /* lut_lavendar.png */,
-				A69BAAFB2547F1E20077ECDB /* lut_raspberry.png */,
-				A69BAAFC2547F1E20077ECDB /* lut_newspaper.png */,
-				A69BAAFD2547F1E20077ECDB /* lut_dbright.png */,
-				A69BAAFE2547F1E20077ECDB /* lut_stoneedge.png */,
-				A69BAAFF2547F1E20077ECDB /* lut_blue.png */,
-				A69BAB002547F1E20077ECDB /* lut_sunset.png */,
-				A69BAB012547F1E20077ECDB /* lut_sherbert.png */,
-				A69BAB022547F1E20077ECDB /* lut_boring.png */,
-				A69BAB032547F1E20077ECDB /* lut_smoke.png */,
-				A69BAB042547F1E20077ECDB /* lut_autumn.png */,
-				A69BAB052547F1E20077ECDB /* lut_sweet.png */,
-				A69BAB062547F1E20077ECDB /* lut_cloud.png */,
-				A69BAB072547F1E20077ECDB /* lut_salmon_teal.png */,
-				A69BAB082547F1E20077ECDB /* lut_almond_blossom.png */,
-				A69BAB092547F1E20077ECDB /* lut_heat.png */,
-				A69BAB0A2547F1E20077ECDB /* lut_symphony_blue.png */,
-				A69BAB0B2547F1E20077ECDB /* lut_vintage_romance.png */,
-				A69BAB0C2547F1E20077ECDB /* lut_eyeshadow.png */,
-				A69BAB0D2547F1E20077ECDB /* lut_blueonly.png */,
-				A69BAB0E2547F1E20077ECDB /* lut_dawn.png */,
-				A69BAB0F2547F1E20077ECDB /* lut_jazz.png */,
-				A69BAB102547F1E20077ECDB /* lut_tiffany.png */,
-				A69BAB112547F1E20077ECDB /* lut_afternoon.png */,
-				A69BAB122547F1E20077ECDB /* lut_oldfilm.png */,
-				A69BAB132547F1E20077ECDB /* lut_negative.png */,
-				A69BAB142547F1E20077ECDB /* lut_peach.png */,
-				A69BAB152547F1E20077ECDB /* lut_england.png */,
-				A69BAB162547F1E20077ECDB /* lut_shiny.png */,
-				A69BAB172547F1E20077ECDB /* lut_warm.png */,
-				A69BAB182547F1E20077ECDB /* lut_paris.png */,
-				A69BAB192547F1E20077ECDB /* lut_daisy.png */,
-				A69BAB1A2547F1E20077ECDB /* lut_caribbean.png */,
-				A69BAB1B2547F1E20077ECDB /* lut_cranberry.png */,
-				A69BAB1C2547F1E20077ECDB /* lut_caramel_candy.png */,
-				A69BAB1D2547F1E20077ECDB /* lut_sunrising.png */,
-				A69BAB1E2547F1E20077ECDB /* lut_retro.png */,
-				A69BAB1F2547F1E20077ECDB /* lut_sunprint.png */,
-				A69BAB202547F1E20077ECDB /* lut_rosy.png */,
-				A69BAB212547F1E20077ECDB /* lut_disney.png */,
-				A69BAB222547F1E20077ECDB /* lut_coral_candy.png */,
-				A69BAB232547F1E20077ECDB /* lut_cinnamon.png */,
-			);
-			path = lut;
-			sourceTree = "<group>";
-		};
-		A69BAB242547F1E20077ECDB /* image */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAB252547F1E20077ECDB /* keepfileFG2HJ6D4 */,
-				A69BAB262547F1E20077ECDB /* vignette_9v16.png */,
-				A69BAB272547F1E20077ECDB /* grip_scale.png */,
-				A69BAB282547F1E20077ECDB /* grip_rotate.png */,
-				A69BAB292547F1E20077ECDB /* template_vignette_9v16.png */,
-				A69BAB2A2547F1E20077ECDB /* vignette.png */,
-				A69BAB2B2547F1E20077ECDB /* template_vignette.png */,
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
-		A69BAB2C2547F1E20077ECDB /* font */ = {
-			isa = PBXGroup;
-			children = (
-				A69BAB2D2547F1E20077ECDB /* goudystm-italic.ttf */,
-				A69BAB2E2547F1E20077ECDB /* lindenhill.ttf */,
-				A69BAB2F2547F1E20077ECDB /* lato-bold.ttf */,
-				A69BAB302547F1E20077ECDB /* justanotherhand-regular.ttf */,
-				A69BAB312547F1E20077ECDB /* orbitron-medium.ttf */,
-				A69BAB322547F1E20077ECDB /* bevan.ttf */,
-				A69BAB332547F1E20077ECDB /* Tangerine_Regular.ttf */,
-				A69BAB342547F1E20077ECDB /* leaguegothic.ttf */,
-				A69BAB352547F1E20077ECDB /* creepster-regular.ttf */,
-				A69BAB362547F1E20077ECDB /* redressed.ttf */,
-				A69BAB372547F1E20077ECDB /* leaguescriptthin-leaguescript.ttf */,
-				A69BAB382547F1E20077ECDB /* knewave.ttf */,
-				A69BAB392547F1E20077ECDB /* junctionregular.ttf */,
-				A69BAB3A2547F1E20077ECDB /* orbitron-bold.ttf */,
-				A69BAB3B2547F1E20077ECDB /* releway-thin.ttf */,
-				A69BAB3C2547F1E20077ECDB /* sniglet.ttf */,
-				A69BAB3D2547F1E20077ECDB /* greatvibes-regular.ttf */,
-			);
-			path = font;
 			sourceTree = "<group>";
 		};
 		A69BAD37254848DB0077ECDB /* AssetReader */ = {
@@ -1398,6 +379,7 @@
 		EE11EE14A96AD9333757854B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37BB48E1258BA5690051DF95 /* NexEditorFramework.framework */,
 				2604E8E55A86BA0AD412FFE7 /* Pods_EditorTester.framework */,
 				D46200CA5FA9D5FDC7689EA6 /* Pods_EditorTester_EditorTesterUITests.framework */,
 				BAAA732414AB845053D060F3 /* Pods_EditorTesterTests.framework */,
@@ -1417,6 +399,7 @@
 				A618F7E025415F5C006123FB /* Frameworks */,
 				A618F7E125415F5C006123FB /* Resources */,
 				A21909E06AFA5B2FBD561128 /* [CP] Embed Pods Frameworks */,
+				37BB48E8258BA5740051DF95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1544,84 +527,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69BABAD2547F1E30077ECDB /* lut_lavendar.png in Resources */,
-				A69BABD22547F1E30077ECDB /* lut_sunprint.png in Resources */,
-				A69BABD62547F1E30077ECDB /* lut_cinnamon.png in Resources */,
-				A69BABB82547F1E30077ECDB /* lut_sweet.png in Resources */,
-				A69BABB02547F1E30077ECDB /* lut_dbright.png in Resources */,
-				A69BABDD2547F1E30077ECDB /* template_vignette.png in Resources */,
-				A69BABB52547F1E30077ECDB /* lut_boring.png in Resources */,
-				A69BABCC2547F1E30077ECDB /* lut_daisy.png in Resources */,
-				A69BABE92547F1E30077ECDB /* knewave.ttf in Resources */,
-				A69BABE12547F1E30077ECDB /* justanotherhand-regular.ttf in Resources */,
-				A69BABB22547F1E30077ECDB /* lut_blue.png in Resources */,
-				A69BABCA2547F1E30077ECDB /* lut_warm.png in Resources */,
-				A69BABC82547F1E30077ECDB /* lut_england.png in Resources */,
-				A69BABBF2547F1E30077ECDB /* lut_eyeshadow.png in Resources */,
-				A69BABEB2547F1E30077ECDB /* orbitron-bold.ttf in Resources */,
-				A69BABC92547F1E30077ECDB /* lut_shiny.png in Resources */,
-				A69BABAF2547F1E30077ECDB /* lut_newspaper.png in Resources */,
-				A69BABBC2547F1E30077ECDB /* lut_heat.png in Resources */,
 				A69BAD89254848DB0077ECDB /* AssetReader.podspec in Resources */,
-				A69BABBB2547F1E30077ECDB /* lut_almond_blossom.png in Resources */,
-				A69BABDB2547F1E30077ECDB /* template_vignette_9v16.png in Resources */,
-				A69BABE72547F1E30077ECDB /* redressed.ttf in Resources */,
-				A69BABDE2547F1E30077ECDB /* goudystm-italic.ttf in Resources */,
-				A69BABC32547F1E30077ECDB /* lut_tiffany.png in Resources */,
-				A69BABC22547F1E30077ECDB /* lut_jazz.png in Resources */,
-				A69BABC42547F1E30077ECDB /* lut_afternoon.png in Resources */,
-				A69BABA82547F1E30077ECDB /* lut_ludwig.png in Resources */,
-				A69BABC02547F1E30077ECDB /* lut_blueonly.png in Resources */,
-				A69BABC62547F1E30077ECDB /* lut_negative.png in Resources */,
-				A69BABA52547F1E30077ECDB /* lut_gloomy.png in Resources */,
-				A69BABD02547F1E30077ECDB /* lut_sunrising.png in Resources */,
-				A69BABD82547F1E30077ECDB /* vignette_9v16.png in Resources */,
-				A69BABA62547F1E30077ECDB /* lut_rainy.png in Resources */,
-				A69BABE52547F1E30077ECDB /* leaguegothic.ttf in Resources */,
-				A69BABCE2547F1E30077ECDB /* lut_cranberry.png in Resources */,
-				A69BABB12547F1E30077ECDB /* lut_stoneedge.png in Resources */,
-				A69BABC52547F1E30077ECDB /* lut_oldfilm.png in Resources */,
-				A69BABEC2547F1E30077ECDB /* releway-thin.ttf in Resources */,
-				A69BABE42547F1E30077ECDB /* Tangerine_Regular.ttf in Resources */,
-				A69BABAE2547F1E30077ECDB /* lut_raspberry.png in Resources */,
-				A69BABD72547F1E30077ECDB /* keepfileFG2HJ6D4 in Resources */,
-				A69BABDC2547F1E30077ECDB /* vignette.png in Resources */,
-				A69BABEA2547F1E30077ECDB /* junctionregular.ttf in Resources */,
-				A69BABB92547F1E30077ECDB /* lut_cloud.png in Resources */,
-				A69BABB32547F1E30077ECDB /* lut_sunset.png in Resources */,
-				A69BABA92547F1E30077ECDB /* lut_espresso.png in Resources */,
-				A69BABBE2547F1E30077ECDB /* lut_vintage_romance.png in Resources */,
-				A69BABB42547F1E30077ECDB /* lut_sherbert.png in Resources */,
-				A69BABD32547F1E30077ECDB /* lut_rosy.png in Resources */,
-				A69BAB3E2547F1E20077ECDB /* LICENSE in Resources */,
-				A69BABD12547F1E30077ECDB /* lut_retro.png in Resources */,
-				A69BABCB2547F1E30077ECDB /* lut_paris.png in Resources */,
-				A69BABBD2547F1E30077ECDB /* lut_symphony_blue.png in Resources */,
-				A69BABCF2547F1E30077ECDB /* lut_caramel_candy.png in Resources */,
-				A69BABB62547F1E30077ECDB /* lut_smoke.png in Resources */,
-				A69BABE82547F1E30077ECDB /* leaguescriptthin-leaguescript.ttf in Resources */,
-				A69BABE22547F1E30077ECDB /* orbitron-medium.ttf in Resources */,
-				A69BABD92547F1E30077ECDB /* grip_scale.png in Resources */,
-				A69BABED2547F1E30077ECDB /* sniglet.ttf in Resources */,
-				A69BABB72547F1E30077ECDB /* lut_autumn.png in Resources */,
-				A69BABAC2547F1E30077ECDB /* lut_moonlight.png in Resources */,
-				A69BABE32547F1E30077ECDB /* bevan.ttf in Resources */,
-				A69BABDF2547F1E30077ECDB /* lindenhill.ttf in Resources */,
-				A69BABCD2547F1E30077ECDB /* lut_caribbean.png in Resources */,
-				A69BABBA2547F1E30077ECDB /* lut_salmon_teal.png in Resources */,
-				A69BABA72547F1E30077ECDB /* lut_vintage_flower.png in Resources */,
 				A618F7EE25415F5D006123FB /* Preview Assets.xcassets in Resources */,
-				A69BABAB2547F1E30077ECDB /* lut_tangerine.png in Resources */,
-				A69BABC12547F1E30077ECDB /* lut_dawn.png in Resources */,
-				A69BABE62547F1E30077ECDB /* creepster-regular.ttf in Resources */,
-				A69BABC72547F1E30077ECDB /* lut_peach.png in Resources */,
 				A618F7EB25415F5D006123FB /* Assets.xcassets in Resources */,
-				A69BABD52547F1E30077ECDB /* lut_coral_candy.png in Resources */,
-				A69BABAA2547F1E30077ECDB /* lut_vivid.png in Resources */,
-				A69BABEE2547F1E30077ECDB /* greatvibes-regular.ttf in Resources */,
-				A69BABDA2547F1E30077ECDB /* grip_rotate.png in Resources */,
-				A69BABE02547F1E30077ECDB /* lato-bold.ttf in Resources */,
-				A69BABD42547F1E30077ECDB /* lut_disney.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1749,126 +657,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69BADEB254854480077ECDB /* assetkey_demangler.c in Sources */,
-				A69BAB592547F1E20077ECDB /* NXETextLayer.m in Sources */,
-				A69BAB4B2547F1E20077ECDB /* NXECropRectTool.m in Sources */,
-				A69BAB512547F1E20077ECDB /* NexLogger.m in Sources */,
-				A69BAB552547F1E20077ECDB /* NXETextEffectAssetItem.m in Sources */,
-				A69BAB412547F1E20077ECDB /* NSError+ErrorCode.m in Sources */,
-				A69BAB7D2547F1E20077ECDB /* NXETemplateProject.m in Sources */,
-				A69BAB882547F1E30077ECDB /* NSDictionary+ValueForKeyDefault.m in Sources */,
 				A69BAD90254848DB0077ECDB /* AssetCategory.m in Sources */,
 				A69BAD94254848DC0077ECDB /* AssetItem.m in Sources */,
 				A69B95052546F11B0077ECDB /* EngineView.swift in Sources */,
-				A69BAB752547F1E20077ECDB /* NXEEngineUIEventListener.m in Sources */,
-				A69BAB992547F1E30077ECDB /* TemplateHelper.m in Sources */,
-				A69BAB952547F1E30077ECDB /* KMLut.m in Sources */,
-				A69BAB7F2547F1E20077ECDB /* LUTMap.m in Sources */,
-				A69BAB3F2547F1E20077ECDB /* MediaInfo.m in Sources */,
-				A69BAB9D2547F1E30077ECDB /* TemplateHandler.m in Sources */,
-				A69BAB762547F1E20077ECDB /* RenderDataEncoder.m in Sources */,
-				A69BAB542547F1E20077ECDB /* NXEClip.m in Sources */,
-				A69BAB612547F1E20077ECDB /* NXEEffectOptions.m in Sources */,
-				A69BAB942547F1E30077ECDB /* KMEffectLayer.m in Sources */,
-				A69BAB9F2547F1E30077ECDB /* NXELayerEditorView.m in Sources */,
-				A69BAB9A2547F1E30077ECDB /* TemplateV3Handler.m in Sources */,
-				A69BAB812547F1E30077ECDB /* OverlayTitleInfo.m in Sources */,
-				A69BAB632547F1E20077ECDB /* NXEClipSource.m in Sources */,
-				A69BAB842547F1E30077ECDB /* ImageUtil+KMLayer.m in Sources */,
-				A69BAB6D2547F1E20077ECDB /* AssetResourceDecrypter.m in Sources */,
-				A69BAB912547F1E30077ECDB /* NXELayersManager.m in Sources */,
-				A69BAB902547F1E30077ECDB /* LayerManager.m in Sources */,
-				A69BAB582547F1E20077ECDB /* NXETemplateAssetItem.m in Sources */,
-				A69BAB9E2547F1E30077ECDB /* TemplateV1Handler.m in Sources */,
 				A69BAD8A254848DB0077ECDB /* AssetImplicitRules.m in Sources */,
-				A69BAB7C2547F1E20077ECDB /* NXEBeatTemplateProject.m in Sources */,
-				A69BAB522547F1E20077ECDB /* NXEAssetItemGroup.m in Sources */,
-				A69BAB462547F1E20077ECDB /* NXEEngine.m in Sources */,
-				A69BAB6E2547F1E20077ECDB /* AssetKeysetRegistry.m in Sources */,
 				A69BAD8E254848DB0077ECDB /* AssetVolume.m in Sources */,
 				A618F7E925415F5C006123FB /* ContentView.swift in Sources */,
-				A69BAB772547F1E20077ECDB /* CollageData.m in Sources */,
-				A69BAB7E2547F1E20077ECDB /* NXETemplateParser.m in Sources */,
 				A69BAD8B254848DB0077ECDB /* AssetItemPathInfo.m in Sources */,
-				A69BAB5F2547F1E20077ECDB /* NXEClipInfo.m in Sources */,
-				A69BAB4E2547F1E20077ECDB /* NXEEffectAssetItem.m in Sources */,
 				A69BC23B25501A660077ECDB /* PhotoPickerView.swift in Sources */,
-				A69BAB832547F1E30077ECDB /* NXEOperationQueue.m in Sources */,
 				A6C3BA342541B00B00E1424D /* EditorManager.swift in Sources */,
-				A69BAB5C2547F1E20077ECDB /* NXETransitionAssetItem.m in Sources */,
-				A69BAB892547F1E30077ECDB /* NXEOperation.m in Sources */,
-				A69BAB8C2547F1E30077ECDB /* KMVideoLayer.m in Sources */,
-				A69BAB852547F1E30077ECDB /* EditorUtil.m in Sources */,
-				A69BAB422547F1E20077ECDB /* NSString+Color.m in Sources */,
-				A69BAB6F2547F1E20077ECDB /* AssetLibrary.m in Sources */,
-				A69BAB4C2547F1E20077ECDB /* NXELutRegistry.m in Sources */,
-				A69BAB702547F1E20077ECDB /* InternalAssetLibrary.m in Sources */,
-				A69BAB572547F1E20077ECDB /* NXETextEffect+KMLayer.m in Sources */,
-				A69BAB602547F1E20077ECDB /* NXEBeatAssetItem.m in Sources */,
-				A69BAB7A2547F1E20077ECDB /* NXEBeatEffect.m in Sources */,
-				A69BAB722547F1E20077ECDB /* AssetDecrypter.mm in Sources */,
-				A69BAB822547F1E30077ECDB /* MathUtil.m in Sources */,
-				A69BAB5D2547F1E20077ECDB /* NXELutSource.mm in Sources */,
-				A69BAB502547F1E20077ECDB /* NXEAudioEnvelop.m in Sources */,
-				A69BAB9C2547F1E30077ECDB /* TemplateHelper+Utility.m in Sources */,
-				A69BAB652547F1E20077ECDB /* FontTools.mm in Sources */,
-				A69BAB922547F1E30077ECDB /* KMLayer.m in Sources */,
-				A69BABA32547F1E30077ECDB /* NXECollageSlotConfiguration.m in Sources */,
-				A69BAB802547F1E30077ECDB /* ImageUtil.m in Sources */,
-				A69BAB6C2547F1E20077ECDB /* AssetXMLParser.m in Sources */,
-				A69BAB5E2547F1E20077ECDB /* NXEClipTransform.m in Sources */,
-				A69BAB9B2547F1E30077ECDB /* TemplateV2Handler.m in Sources */,
-				A69BAB442547F1E20077ECDB /* UIImage+Blending.m in Sources */,
-				A69BAB682547F1E20077ECDB /* AssetLibraryProxy.m in Sources */,
-				A69BAB742547F1E20077ECDB /* NexImage.mm in Sources */,
-				A69BABA22547F1E30077ECDB /* NXECollageAssetItem.m in Sources */,
-				A69BAB732547F1E20077ECDB /* NXEEngineEventListener.m in Sources */,
 				A69BAD8F254848DB0077ECDB /* AssetReader.m in Sources */,
-				A69BAB642547F1E20077ECDB /* ThemeResourceLoader.mm in Sources */,
-				A69BAB662547F1E20077ECDB /* EffectAssetItemInfo.m in Sources */,
-				A69BAB4F2547F1E20077ECDB /* NXETextEffect.m in Sources */,
-				A69BAB402547F1E20077ECDB /* NSString+ValueReader.m in Sources */,
-				A69BABA02547F1E30077ECDB /* NXESimpleLayerEditor.m in Sources */,
-				A69BAB5A2547F1E20077ECDB /* NXEImageLayer.m in Sources */,
-				A69BAB8A2547F1E30077ECDB /* MatrixUtil.m in Sources */,
-				A69BAB982547F1E30077ECDB /* UserField.m in Sources */,
-				A69BAB8E2547F1E30077ECDB /* KMAnimation.m in Sources */,
-				A69BAB672547F1E20077ECDB /* InternalAssetLibrary+AssetLibraryProxy.m in Sources */,
-				A69BAB862547F1E30077ECDB /* BundleResource.m in Sources */,
-				A69BAB492547F1E20077ECDB /* NXEColorEffect.m in Sources */,
-				A69BAB4D2547F1E20077ECDB /* NXEVideoLayer.m in Sources */,
-				A69BAB8B2547F1E30077ECDB /* KMTextLayer.mm in Sources */,
-				A69BAB482547F1E20077ECDB /* NXELayer.m in Sources */,
-				A69BAB452547F1E20077ECDB /* UIImage+Resize.m in Sources */,
-				A69BAB6B2547F1E20077ECDB /* AssetResourceLoader.m in Sources */,
-				A69BABA42547F1E30077ECDB /* NXECollageTitleConfiguration.m in Sources */,
 				A69BAD95254848DC0077ECDB /* AssetDB.m in Sources */,
-				A69BAB472547F1E20077ECDB /* NXEAssetLibrary.m in Sources */,
-				A69BAB432547F1E20077ECDB /* CollageUtil.m in Sources */,
-				A69BAB4A2547F1E20077ECDB /* NXEProject+TemplateInternal.m in Sources */,
-				A69BAB622547F1E20077ECDB /* NXEAssetItem.m in Sources */,
-				A69BAB8F2547F1E30077ECDB /* KMAnimationEffect.m in Sources */,
 				A69BAD91254848DC0077ECDB /* AssetDBIndexed.m in Sources */,
-				A69BAB872547F1E30077ECDB /* AspectRatioTool.m in Sources */,
-				A69BABA12547F1E30077ECDB /* NXECollageProject.m in Sources */,
-				A69BAB6A2547F1E20077ECDB /* TransitionAssetItemInfo.m in Sources */,
-				A69BAB7B2547F1E20077ECDB /* NXEBeatEffectDefault.m in Sources */,
-				A69BAB962547F1E30077ECDB /* NXETextureDisposeBag.m in Sources */,
 				A69BAD8C254848DB0077ECDB /* DefaultSlowAssetIndexer.m in Sources */,
 				A69BAD8D254848DB0077ECDB /* AssetLoader.m in Sources */,
-				A69BAB692547F1E20077ECDB /* NXEAssetItemFactory.m in Sources */,
 				A69BAD93254848DC0077ECDB /* AssetItemInfo.m in Sources */,
-				A69BAB562547F1E20077ECDB /* NXEProject.m in Sources */,
 				A69BAD92254848DC0077ECDB /* AssetPackage.m in Sources */,
-				A69BAB8D2547F1E30077ECDB /* KMAnimationInterpolation.m in Sources */,
-				A69BAB782547F1E20077ECDB /* CollageTextStyle.m in Sources */,
 				A69BAD96254848DC0077ECDB /* AssetEncryptionManifest.m in Sources */,
-				A69BAB5B2547F1E20077ECDB /* NXEBeatAssetItemInfo.m in Sources */,
 				A618F7E725415F5C006123FB /* EditorTesterApp.swift in Sources */,
-				A69BAB932547F1E30077ECDB /* KMImageLayer.mm in Sources */,
-				A69BAB972547F1E30077ECDB /* KMWaterMark.m in Sources */,
-				A69BAB792547F1E20077ECDB /* CollageInfo.m in Sources */,
-				A69BAB532547F1E20077ECDB /* NXEError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2030,10 +836,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"EditorTester/Preview Content\"";
 				DEVELOPMENT_TEAM = Y59HNQR68T;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EditorTester/Frameworks/Framework",
+					"$(PROJECT_DIR)/NexEditorFramework-Release",
+					"$(SRCROOT)/NexEditorFramework-Release/**",
 				);
 				INFOPLIST_FILE = EditorTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -2047,6 +856,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/NexEditorFramework-Release/NexEditorFramework.framework/Headers/**";
 			};
 			name = Debug;
 		};
@@ -2060,10 +870,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"EditorTester/Preview Content\"";
 				DEVELOPMENT_TEAM = Y59HNQR68T;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EditorTester/Frameworks/Framework",
+					"$(PROJECT_DIR)/NexEditorFramework-Release",
+					"$(SRCROOT)/NexEditorFramework-Release/**",
 				);
 				INFOPLIST_FILE = EditorTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -2076,6 +889,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "EditorTester/EditorTester-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/NexEditorFramework-Release/NexEditorFramework.framework/Headers/**";
 			};
 			name = Release;
 		};
