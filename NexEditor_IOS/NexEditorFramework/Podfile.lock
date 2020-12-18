@@ -4,15 +4,15 @@ PODS:
   - NexEditorEngine/NexEditor (2.16.33)
 
 DEPENDENCIES:
-  - NexEditorEngine (from `../../../NexEditor`)
+  - NexEditorEngine
 
-EXTERNAL SOURCES:
-  NexEditorEngine:
-    :path: "../../../NexEditor"
+SPEC REPOS:
+  https://github.com/KineMasterCorp/NexPods.git:
+    - NexEditorEngine
 
 SPEC CHECKSUMS:
-  NexEditorEngine: 223a462b4c888abbbbc53fbe6581602c79ff2e11
+  NexEditorEngine: 29a99f287335ee3a53f194711a7d072c592ff30b
 
-PODFILE CHECKSUM: ade889c296ea75c718ed00a4ecfef621d1f86a06
+PODFILE CHECKSUM: dbb4e2c957f5e44b0930e7976258310838991245
 
 COCOAPODS: 1.10.0

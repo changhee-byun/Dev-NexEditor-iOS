@@ -1,3 +1,4 @@
+source 'https://github.com/KineMasterCorp/NexPods.git'
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
@@ -10,6 +11,7 @@ target 'APIDemos' do
   # pod 'AssetReader', :path => '../../NexEditorFramework/AssetReader'
   # pod 'NexEditorEngine', :path => '../../../../NexEditor'
   pod 'SampleClipSources', :path=> '../../SampleClipSources'
+  pod 'NexEditorEngine'
 
   target 'APIDemosTests' do
     inherit! :search_paths
