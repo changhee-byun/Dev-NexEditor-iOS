@@ -59,6 +59,37 @@
 		37C06EF6258B04C2000DC834 /* NXEBeatTemplateProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C06EF1258B04C2000DC834 /* NXEBeatTemplateProject.m */; };
 		37C06EF7258B04C2000DC834 /* NXEBeatEffectDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C06EF2258B04C2000DC834 /* NXEBeatEffectDefault.m */; };
 		37C06EF8258B04C2000DC834 /* NXEBeatAssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C06EF3258B04C2000DC834 /* NXEBeatAssetItemInfo.m */; };
+		37EDF18A258C839B006A0BF7 /* AssetEncryptionManifest.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF167258C839B006A0BF7 /* AssetEncryptionManifest.h */; };
+		37EDF18B258C839B006A0BF7 /* AssetPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF168258C839B006A0BF7 /* AssetPackage.h */; };
+		37EDF18C258C839B006A0BF7 /* AssetCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF169258C839B006A0BF7 /* AssetCategory.h */; };
+		37EDF18D258C839B006A0BF7 /* AssetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16A258C839B006A0BF7 /* AssetReader.h */; };
+		37EDF18E258C839B006A0BF7 /* AssetIndexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16B258C839B006A0BF7 /* AssetIndexer.h */; };
+		37EDF18F258C839B006A0BF7 /* AssetResourceDecryptionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16C258C839B006A0BF7 /* AssetResourceDecryptionDelegate.h */; };
+		37EDF190258C839B006A0BF7 /* AssetItemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16D258C839B006A0BF7 /* AssetItemInfo.h */; };
+		37EDF191258C839B006A0BF7 /* AssetDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16E258C839B006A0BF7 /* AssetDB.h */; };
+		37EDF192258C839B006A0BF7 /* AssetItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16F258C839B006A0BF7 /* AssetItem.h */; };
+		37EDF193258C839B006A0BF7 /* AssetImplicitRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF172258C839B006A0BF7 /* AssetImplicitRules.m */; };
+		37EDF194258C839B006A0BF7 /* AssetItemPathInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF173258C839B006A0BF7 /* AssetItemPathInfo.m */; };
+		37EDF195258C839B006A0BF7 /* DefaultSlowAssetIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF174258C839B006A0BF7 /* DefaultSlowAssetIndexer.m */; };
+		37EDF196258C839B006A0BF7 /* AssetLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF175258C839B006A0BF7 /* AssetLoader.h */; };
+		37EDF197258C839B006A0BF7 /* AssetVolume.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF176258C839B006A0BF7 /* AssetVolume.h */; };
+		37EDF198258C839B006A0BF7 /* AssetImplicitRules.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF177258C839B006A0BF7 /* AssetImplicitRules.h */; };
+		37EDF199258C839B006A0BF7 /* AssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF178258C839B006A0BF7 /* AssetLoader.m */; };
+		37EDF19A258C839B006A0BF7 /* DefaultSlowAssetIndexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF179258C839B006A0BF7 /* DefaultSlowAssetIndexer.h */; };
+		37EDF19B258C839B006A0BF7 /* AssetItemPathInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF17A258C839B006A0BF7 /* AssetItemPathInfo.h */; };
+		37EDF19C258C839B006A0BF7 /* AssetLoaderPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF17B258C839B006A0BF7 /* AssetLoaderPrivate.h */; };
+		37EDF19D258C839B006A0BF7 /* AssetVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17C258C839B006A0BF7 /* AssetVolume.m */; };
+		37EDF19E258C839B006A0BF7 /* AssetReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17D258C839B006A0BF7 /* AssetReader.m */; };
+		37EDF19F258C839B006A0BF7 /* AssetCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17F258C839B006A0BF7 /* AssetCategory.m */; };
+		37EDF1A0258C839B006A0BF7 /* AssetDBIndexed.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF181258C839B006A0BF7 /* AssetDBIndexed.h */; };
+		37EDF1A1258C839B006A0BF7 /* AssetDBIndexed.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF182258C839B006A0BF7 /* AssetDBIndexed.m */; };
+		37EDF1A2258C839B006A0BF7 /* AssetPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF183258C839B006A0BF7 /* AssetPackage.m */; };
+		37EDF1A3258C839B006A0BF7 /* AssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF184258C839B006A0BF7 /* AssetItemInfo.m */; };
+		37EDF1A4258C839B006A0BF7 /* AssetItemPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF185258C839B006A0BF7 /* AssetItemPrivate.h */; };
+		37EDF1A5258C839B006A0BF7 /* AssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF186258C839B006A0BF7 /* AssetItem.m */; };
+		37EDF1A6258C839B006A0BF7 /* AssetDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF187258C839B006A0BF7 /* AssetDB.m */; };
+		37EDF1A7258C839B006A0BF7 /* AssetEncryptionManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */; };
+		37EDF1A8258C839B006A0BF7 /* AssetItemInfoPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF189258C839B006A0BF7 /* AssetItemInfoPrivate.h */; };
 		BB0374461FE2651700D5B470 /* FontTools.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0374451FE2651700D5B470 /* FontTools.h */; };
 		BB0374481FE2652B00D5B470 /* FontTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB0374471FE2652B00D5B470 /* FontTools.mm */; };
 		BB0AE48C20108B7C000F3EB3 /* ImageUtil+KMLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0AE48A20108B7C000F3EB3 /* ImageUtil+KMLayer.h */; };
@@ -85,8 +116,8 @@
 		CF2E753C1CF7DBD900A01146 /* NexImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2E75341CF7DBD900A01146 /* NexImage.h */; };
 		CF2E753D1CF7DBD900A01146 /* NexImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2E75351CF7DBD900A01146 /* NexImage.mm */; };
 		CF2E753E1CF7DBD900A01146 /* UIListenerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2E75361CF7DBD900A01146 /* UIListenerProtocol.h */; };
-		CF3B506C1D6FB37000425E3D /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		CF3B506D1D6FB37100425E3D /* BuildFile in Headers */ = {isa = PBXBuildFile; };
+		CF3B506C1D6FB37000425E3D /* (null) in Sources */ = {isa = PBXBuildFile; };
+		CF3B506D1D6FB37100425E3D /* (null) in Headers */ = {isa = PBXBuildFile; };
 		CF7E76561D51EC0F000278A9 /* NXEVideoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E76391D51EC0F000278A9 /* NXEVideoLayer.m */; };
 		CF7E76591D51EC0F000278A9 /* NXEClip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E763C1D51EC0F000278A9 /* NXEClip.m */; };
 		CF7E765E1D51EC0F000278A9 /* NXEEffectOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E76411D51EC0F000278A9 /* NXEEffectOptions.m */; };
@@ -252,43 +283,11 @@
 		F4C303231FF25353001D64BB /* NXECollageSlotConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C3031E1FF25353001D64BB /* NXECollageSlotConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C303241FF25353001D64BB /* NXECollageTitleConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C3031F1FF25353001D64BB /* NXECollageTitleConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4CD84601E51C0DC006EFC94 /* NXEAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CD845E1E51C0DC006EFC94 /* NXEAssetLibrary.m */; };
-		F4CD84751E51D08E006EFC94 /* libAssetReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47643771E51846800611E74 /* libAssetReader.a */; };
 		F4F213EA1E79673500AC7C46 /* keyczar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F213E81E79673500AC7C46 /* keyczar.framework */; };
 		F4F213EB1E79673500AC7C46 /* zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F213E91E79673500AC7C46 /* zlib.framework */; };
 		F4FE71A41E962B7A00AD2CD0 /* NXEClipSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE71A21E962B7A00AD2CD0 /* NXEClipSource.m */; };
 		F4FEFF8C1E88B35300DF0E26 /* NXETextLayerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FEFF8B1E88B35300DF0E26 /* NXETextLayerPrivate.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F47643761E51846800611E74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F47643721E51846700611E74 /* AssetReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F47643661E51846700611E74;
-			remoteInfo = AssetReader;
-		};
-		F4CD84551E51B696006EFC94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F47643721E51846700611E74 /* AssetReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F476439C1E51854D00611E74;
-			remoteInfo = AssetReaderApp;
-		};
-		F4CD84571E51B696006EFC94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F47643721E51846700611E74 /* AssetReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F47643AF1E51854D00611E74;
-			remoteInfo = AssetReaderAppTests;
-		};
-		F4CD84691E51CEBE006EFC94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F47643721E51846700611E74 /* AssetReader.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F47643651E51846700611E74;
-			remoteInfo = AssetReader;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07059C871E55221E00351F69 /* TemplateHelper+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TemplateHelper+Utility.h"; sourceTree = "<group>"; };
@@ -333,6 +332,37 @@
 		37C06EF1258B04C2000DC834 /* NXEBeatTemplateProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatTemplateProject.m; sourceTree = "<group>"; };
 		37C06EF2258B04C2000DC834 /* NXEBeatEffectDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatEffectDefault.m; sourceTree = "<group>"; };
 		37C06EF3258B04C2000DC834 /* NXEBeatAssetItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEBeatAssetItemInfo.m; sourceTree = "<group>"; };
+		37EDF167258C839B006A0BF7 /* AssetEncryptionManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetEncryptionManifest.h; sourceTree = "<group>"; };
+		37EDF168258C839B006A0BF7 /* AssetPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetPackage.h; sourceTree = "<group>"; };
+		37EDF169258C839B006A0BF7 /* AssetCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCategory.h; sourceTree = "<group>"; };
+		37EDF16A258C839B006A0BF7 /* AssetReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetReader.h; sourceTree = "<group>"; };
+		37EDF16B258C839B006A0BF7 /* AssetIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetIndexer.h; sourceTree = "<group>"; };
+		37EDF16C258C839B006A0BF7 /* AssetResourceDecryptionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetResourceDecryptionDelegate.h; sourceTree = "<group>"; };
+		37EDF16D258C839B006A0BF7 /* AssetItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetItemInfo.h; sourceTree = "<group>"; };
+		37EDF16E258C839B006A0BF7 /* AssetDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetDB.h; sourceTree = "<group>"; };
+		37EDF16F258C839B006A0BF7 /* AssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetItem.h; sourceTree = "<group>"; };
+		37EDF172258C839B006A0BF7 /* AssetImplicitRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetImplicitRules.m; sourceTree = "<group>"; };
+		37EDF173258C839B006A0BF7 /* AssetItemPathInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetItemPathInfo.m; sourceTree = "<group>"; };
+		37EDF174258C839B006A0BF7 /* DefaultSlowAssetIndexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSlowAssetIndexer.m; sourceTree = "<group>"; };
+		37EDF175258C839B006A0BF7 /* AssetLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetLoader.h; sourceTree = "<group>"; };
+		37EDF176258C839B006A0BF7 /* AssetVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetVolume.h; sourceTree = "<group>"; };
+		37EDF177258C839B006A0BF7 /* AssetImplicitRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetImplicitRules.h; sourceTree = "<group>"; };
+		37EDF178258C839B006A0BF7 /* AssetLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetLoader.m; sourceTree = "<group>"; };
+		37EDF179258C839B006A0BF7 /* DefaultSlowAssetIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSlowAssetIndexer.h; sourceTree = "<group>"; };
+		37EDF17A258C839B006A0BF7 /* AssetItemPathInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetItemPathInfo.h; sourceTree = "<group>"; };
+		37EDF17B258C839B006A0BF7 /* AssetLoaderPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetLoaderPrivate.h; sourceTree = "<group>"; };
+		37EDF17C258C839B006A0BF7 /* AssetVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetVolume.m; sourceTree = "<group>"; };
+		37EDF17D258C839B006A0BF7 /* AssetReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetReader.m; sourceTree = "<group>"; };
+		37EDF17F258C839B006A0BF7 /* AssetCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCategory.m; sourceTree = "<group>"; };
+		37EDF181258C839B006A0BF7 /* AssetDBIndexed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetDBIndexed.h; sourceTree = "<group>"; };
+		37EDF182258C839B006A0BF7 /* AssetDBIndexed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetDBIndexed.m; sourceTree = "<group>"; };
+		37EDF183258C839B006A0BF7 /* AssetPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetPackage.m; sourceTree = "<group>"; };
+		37EDF184258C839B006A0BF7 /* AssetItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetItemInfo.m; sourceTree = "<group>"; };
+		37EDF185258C839B006A0BF7 /* AssetItemPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetItemPrivate.h; sourceTree = "<group>"; };
+		37EDF186258C839B006A0BF7 /* AssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetItem.m; sourceTree = "<group>"; };
+		37EDF187258C839B006A0BF7 /* AssetDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetDB.m; sourceTree = "<group>"; };
+		37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetEncryptionManifest.m; sourceTree = "<group>"; };
+		37EDF189258C839B006A0BF7 /* AssetItemInfoPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetItemInfoPrivate.h; sourceTree = "<group>"; };
 		3AAF34916D51D35EF8018DD9 /* Pods-NexEditorFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorFramework/Pods-NexEditorFramework.release.xcconfig"; sourceTree = "<group>"; };
 		B5B8642F961E5251F8F10F8C /* Pods-NexEditorFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorFramework/Pods-NexEditorFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		BB0374451FE2651700D5B470 /* FontTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontTools.h; sourceTree = "<group>"; };
@@ -492,7 +522,6 @@
 		F470B2DA1E7A214100505F95 /* NXEVideoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEVideoLayer.h; sourceTree = "<group>"; };
 		F470B2F01E7A22E100505F95 /* NXEEditorErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEditorErrorCode.h; sourceTree = "<group>"; };
 		F470B2F21E7A22E100505F95 /* NXELayerEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELayerEditorView.h; sourceTree = "<group>"; };
-		F47643721E51846700611E74 /* AssetReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AssetReader.xcodeproj; path = AssetReader/AssetReader.xcodeproj; sourceTree = "<group>"; };
 		F47662801FE77DCB0035D291 /* NXEAssetItemGroupPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXEAssetItemGroupPrivate.h; sourceTree = "<group>"; };
 		F478647C1E7F665000BE30A6 /* AssetLibraryProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AssetLibraryProxy.h; path = asset/proxy/AssetLibraryProxy.h; sourceTree = "<group>"; };
 		F478647D1E7F66F300BE30A6 /* AssetLibraryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssetLibraryProxy.m; path = asset/proxy/AssetLibraryProxy.m; sourceTree = "<group>"; };
@@ -541,7 +570,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4CD84751E51D08E006EFC94 /* libAssetReader.a in Frameworks */,
 				F4F213EA1E79673500AC7C46 /* keyczar.framework in Frameworks */,
 				F4F213EB1E79673500AC7C46 /* zlib.framework in Frameworks */,
 				1E0C5AE01CD7805800C0797B /* AudioToolbox.framework in Frameworks */,
@@ -609,7 +637,6 @@
 		1E78F71B1C9684A300AC3347 = {
 			isa = PBXGroup;
 			children = (
-				F47643721E51846700611E74 /* AssetReader.xcodeproj */,
 				07EC7E931DF91E5D00357D25 /* resource */,
 				1E0C5ADF1CD7805800C0797B /* AudioToolbox.framework */,
 				1E78F7271C9684A300AC3347 /* NexEditorFramework */,
@@ -631,12 +658,91 @@
 		1E78F7271C9684A300AC3347 /* NexEditorFramework */ = {
 			isa = PBXGroup;
 			children = (
+				37EDF165258C839B006A0BF7 /* AssetReaderModule */,
 				F470B2C51E7A20E100505F95 /* include */,
 				CF9B605E1CEAA8D200583A58 /* nexeditor */,
 				1E78F7281C9684A300AC3347 /* NexEditorFramework.h */,
 				1E78F72A1C9684A300AC3347 /* Info.plist */,
 			);
 			path = NexEditorFramework;
+			sourceTree = "<group>";
+		};
+		37EDF165258C839B006A0BF7 /* AssetReaderModule */ = {
+			isa = PBXGroup;
+			children = (
+				37EDF166258C839B006A0BF7 /* include */,
+				37EDF170258C839B006A0BF7 /* src */,
+			);
+			path = AssetReaderModule;
+			sourceTree = SOURCE_ROOT;
+		};
+		37EDF166258C839B006A0BF7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				37EDF167258C839B006A0BF7 /* AssetEncryptionManifest.h */,
+				37EDF168258C839B006A0BF7 /* AssetPackage.h */,
+				37EDF169258C839B006A0BF7 /* AssetCategory.h */,
+				37EDF16A258C839B006A0BF7 /* AssetReader.h */,
+				37EDF16B258C839B006A0BF7 /* AssetIndexer.h */,
+				37EDF16C258C839B006A0BF7 /* AssetResourceDecryptionDelegate.h */,
+				37EDF16D258C839B006A0BF7 /* AssetItemInfo.h */,
+				37EDF16E258C839B006A0BF7 /* AssetDB.h */,
+				37EDF16F258C839B006A0BF7 /* AssetItem.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		37EDF170258C839B006A0BF7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				37EDF171258C839B006A0BF7 /* AssetLoader */,
+				37EDF17D258C839B006A0BF7 /* AssetReader.m */,
+				37EDF17E258C839B006A0BF7 /* AssetDB */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		37EDF171258C839B006A0BF7 /* AssetLoader */ = {
+			isa = PBXGroup;
+			children = (
+				37EDF172258C839B006A0BF7 /* AssetImplicitRules.m */,
+				37EDF173258C839B006A0BF7 /* AssetItemPathInfo.m */,
+				37EDF174258C839B006A0BF7 /* DefaultSlowAssetIndexer.m */,
+				37EDF175258C839B006A0BF7 /* AssetLoader.h */,
+				37EDF176258C839B006A0BF7 /* AssetVolume.h */,
+				37EDF177258C839B006A0BF7 /* AssetImplicitRules.h */,
+				37EDF178258C839B006A0BF7 /* AssetLoader.m */,
+				37EDF179258C839B006A0BF7 /* DefaultSlowAssetIndexer.h */,
+				37EDF17A258C839B006A0BF7 /* AssetItemPathInfo.h */,
+				37EDF17B258C839B006A0BF7 /* AssetLoaderPrivate.h */,
+				37EDF17C258C839B006A0BF7 /* AssetVolume.m */,
+			);
+			path = AssetLoader;
+			sourceTree = "<group>";
+		};
+		37EDF17E258C839B006A0BF7 /* AssetDB */ = {
+			isa = PBXGroup;
+			children = (
+				37EDF17F258C839B006A0BF7 /* AssetCategory.m */,
+				37EDF180258C839B006A0BF7 /* DBIndexed */,
+				37EDF183258C839B006A0BF7 /* AssetPackage.m */,
+				37EDF184258C839B006A0BF7 /* AssetItemInfo.m */,
+				37EDF185258C839B006A0BF7 /* AssetItemPrivate.h */,
+				37EDF186258C839B006A0BF7 /* AssetItem.m */,
+				37EDF187258C839B006A0BF7 /* AssetDB.m */,
+				37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */,
+				37EDF189258C839B006A0BF7 /* AssetItemInfoPrivate.h */,
+			);
+			path = AssetDB;
+			sourceTree = "<group>";
+		};
+		37EDF180258C839B006A0BF7 /* DBIndexed */ = {
+			isa = PBXGroup;
+			children = (
+				37EDF181258C839B006A0BF7 /* AssetDBIndexed.h */,
+				37EDF182258C839B006A0BF7 /* AssetDBIndexed.m */,
+			);
+			path = DBIndexed;
 			sourceTree = "<group>";
 		};
 		938FDD023A4AB7ABF2849C32 /* Pods */ = {
@@ -974,16 +1080,6 @@
 			path = include;
 			sourceTree = "<group>";
 		};
-		F47643731E51846700611E74 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F47643771E51846800611E74 /* libAssetReader.a */,
-				F4CD84561E51B696006EFC94 /* AssetReaderApp.app */,
-				F4CD84581E51B696006EFC94 /* AssetReaderAppTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F47864791E7F65E600BE30A6 /* proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1060,18 +1156,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFC66BA1F41721300EACF6A /* NXELutRegistry.h in Headers */,
+				37EDF18C258C839B006A0BF7 /* AssetCategory.h in Headers */,
+				37EDF198258C839B006A0BF7 /* AssetImplicitRules.h in Headers */,
 				BB1F85BD1F41874C008361F3 /* NXELutSource.h in Headers */,
 				F410CD291E9B850900FF4001 /* NXEClipSourcePrivate.h in Headers */,
 				F4C303241FF25353001D64BB /* NXECollageTitleConfiguration.h in Headers */,
+				37EDF18F258C839B006A0BF7 /* AssetResourceDecryptionDelegate.h in Headers */,
 				E2E64BCF1FD6A3B6005473B6 /* CollageInfo.h in Headers */,
+				37EDF1A4258C839B006A0BF7 /* AssetItemPrivate.h in Headers */,
 				CF2E753E1CF7DBD900A01146 /* UIListenerProtocol.h in Headers */,
+				37EDF19B258C839B006A0BF7 /* AssetItemPathInfo.h in Headers */,
 				37C06ED3258B00EC000DC834 /* NXEBeatAssetItemInfo.h in Headers */,
 				071E67CB1E23552800801664 /* KMAnimation.h in Headers */,
 				F48CB8F41E81226500D7C9E1 /* BundleResource.h in Headers */,
 				F4214B9C1E8C8D300032CF67 /* NXEEngineUIEventListener.h in Headers */,
-				CF3B506D1D6FB37100425E3D /* BuildFile in Headers */,
+				CF3B506D1D6FB37100425E3D /* (null) in Headers */,
 				CF2E753C1CF7DBD900A01146 /* NexImage.h in Headers */,
 				F470B2DD1E7A214100505F95 /* NXEAudioEnvelop.h in Headers */,
+				37EDF1A8258C839B006A0BF7 /* AssetItemInfoPrivate.h in Headers */,
 				E209ED3F2002E566001E9E47 /* CollageUtil.h in Headers */,
 				F4C303221FF25353001D64BB /* NXECollageProject.h in Headers */,
 				F4FEFF8C1E88B35300DF0E26 /* NXETextLayerPrivate.h in Headers */,
@@ -1080,7 +1182,9 @@
 				37C06ECC258B00EC000DC834 /* NXEEffectEntry.h in Headers */,
 				F46D4A211EA082B600F6EE43 /* AssetKeysetRegistry.h in Headers */,
 				CFDBFDCD1D405AEA0097560A /* MatrixUtil.h in Headers */,
+				37EDF19A258C839B006A0BF7 /* DefaultSlowAssetIndexer.h in Headers */,
 				F470B2E71E7A214100505F95 /* NXEImageLayer.h in Headers */,
+				37EDF192258C839B006A0BF7 /* AssetItem.h in Headers */,
 				F470B2E41E7A214100505F95 /* NXEEffectOptions.h in Headers */,
 				07FC41701E38B1BF002EC835 /* TemplateHandler.h in Headers */,
 				F408F6341E9E33E6000F305D /* assetkey_demangler.h in Headers */,
@@ -1098,8 +1202,10 @@
 				F44BB15F1FE903C600BDD640 /* NXECollageAssetItem.h in Headers */,
 				F4214B7F1E8B6F690032CF67 /* NXETransitionAssetItem.h in Headers */,
 				F410C172206DA39D00554C11 /* NXEClipInfo.h in Headers */,
+				37EDF18D258C839B006A0BF7 /* AssetReader.h in Headers */,
 				F426ACDB1EC05BDE00F1C128 /* NXEColorEffect.h in Headers */,
 				F470B2E81E7A214100505F95 /* NXELayer.h in Headers */,
+				37EDF197258C839B006A0BF7 /* AssetVolume.h in Headers */,
 				CFDBFDE91D405B500097560A /* KMTextLayer.h in Headers */,
 				BB4D96942033F206003E4C3A /* NXEBeatTemplateProject.h in Headers */,
 				BB0AE48C20108B7C000F3EB3 /* ImageUtil+KMLayer.h in Headers */,
@@ -1111,6 +1217,7 @@
 				07CE26161E56E3C8002FA918 /* NXEProject+TemplateInternal.h in Headers */,
 				E246A89C1E88CF7F00FBFC72 /* NXETextEffect+KMLayer.h in Headers */,
 				F4B74CB42043DEFD006B5D9C /* NXECropRectTool.h in Headers */,
+				37EDF19C258C839B006A0BF7 /* AssetLoaderPrivate.h in Headers */,
 				F408F62F1E9E3303000F305D /* AssetDecrypter.h in Headers */,
 				CFDBFDCE1D405AEA0097560A /* ImageUtil.h in Headers */,
 				37C06ECF258B00EC000DC834 /* NXEBeatEffectDefault.h in Headers */,
@@ -1120,6 +1227,8 @@
 				37C06ED5258B00EC000DC834 /* NXEBeatAssetItemPrivate.h in Headers */,
 				F4214B7B1E8B6F690032CF67 /* NXEAssetItem.h in Headers */,
 				F48CB8EC1E80DE5C00D7C9E1 /* AspectRatioTool.h in Headers */,
+				37EDF18E258C839B006A0BF7 /* AssetIndexer.h in Headers */,
+				37EDF191258C839B006A0BF7 /* AssetDB.h in Headers */,
 				F47662811FE77DCB0035D291 /* NXEAssetItemGroupPrivate.h in Headers */,
 				E233A6BD1EE103E50021E084 /* UIImage+Blending.h in Headers */,
 				1E78F7291C9684A300AC3347 /* NexEditorFramework.h in Headers */,
@@ -1139,6 +1248,7 @@
 				CFDBFDCF1D405AEA0097560A /* MathUtil.h in Headers */,
 				F40CB8301E5B10370010FC07 /* AssetXMLParser.h in Headers */,
 				F40CB8341E5B11740010FC07 /* TransitionAssetItemInfo.h in Headers */,
+				37EDF18B258C839B006A0BF7 /* AssetPackage.h in Headers */,
 				F48CB8F11E811F4F00D7C9E1 /* NXEEnginePrivate.h in Headers */,
 				F4932CDA1E529E0D009141A3 /* NXEAssetItemPrivate.h in Headers */,
 				BB4D96962033F224003E4C3A /* NXEBeatAssetItem.h in Headers */,
@@ -1156,6 +1266,7 @@
 				F470B2E51E7A214100505F95 /* NXEEngine.h in Headers */,
 				F49378C81E97621000761133 /* NXEErrorPrivate.h in Headers */,
 				F49FF7352087302900411399 /* NXETextureDisposeBag.h in Headers */,
+				37EDF190258C839B006A0BF7 /* AssetItemInfo.h in Headers */,
 				2DD4F88C1E2A1A3800448DB8 /* TemplateHelper.h in Headers */,
 				07FC416C1E38B087002EC835 /* TemplateV2Handler.h in Headers */,
 				F4214B7E1E8B6F690032CF67 /* NXETemplateAssetItem.h in Headers */,
@@ -1163,8 +1274,11 @@
 				E246A8A21E88CF9E00FBFC72 /* NSDictionary+ValueForKeyDefault.h in Headers */,
 				1E31FEE61DE3E07500A86CB2 /* KMWaterMark.h in Headers */,
 				CFDBFDE31D405B500097560A /* KMImageLayer.h in Headers */,
+				37EDF1A0258C839B006A0BF7 /* AssetDBIndexed.h in Headers */,
 				07FC41681E38B07E002EC835 /* TemplateV1Handler.h in Headers */,
 				F470B2EF1E7A214100505F95 /* NXEVideoLayer.h in Headers */,
+				37EDF196258C839B006A0BF7 /* AssetLoader.h in Headers */,
+				37EDF18A258C839B006A0BF7 /* AssetEncryptionManifest.h in Headers */,
 				F40CB8291E5B07D70010FC07 /* EffectAssetItemInfo.h in Headers */,
 				F4214B7D1E8B6F690032CF67 /* NXEEffectAssetItem.h in Headers */,
 				E246A8961E88CF6C00FBFC72 /* KMAnimationEffect.h in Headers */,
@@ -1204,7 +1318,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F4CD846A1E51CEBE006EFC94 /* PBXTargetDependency */,
 			);
 			name = NexEditorFramework;
 			productName = NexEditorFramework;
@@ -1247,12 +1360,6 @@
 			mainGroup = 1E78F71B1C9684A300AC3347;
 			productRefGroup = 1E78F7261C9684A300AC3347 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F47643731E51846700611E74 /* Products */;
-					ProjectRef = F47643721E51846700611E74 /* AssetReader.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1E78F7241C9684A300AC3347 /* NexEditorFramework */,
@@ -1260,30 +1367,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		F47643771E51846800611E74 /* libAssetReader.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAssetReader.a;
-			remoteRef = F47643761E51846800611E74 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F4CD84561E51B696006EFC94 /* AssetReaderApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = AssetReaderApp.app;
-			remoteRef = F4CD84551E51B696006EFC94 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F4CD84581E51B696006EFC94 /* AssetReaderAppTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AssetReaderAppTests.xctest;
-			remoteRef = F4CD84571E51B696006EFC94 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1E78F7231C9684A300AC3347 /* Resources */ = {
@@ -1356,24 +1439,31 @@
 				CFDBFDEA1D405B500097560A /* KMTextLayer.mm in Sources */,
 				E246A8A31E88CF9E00FBFC72 /* NSDictionary+ValueForKeyDefault.m in Sources */,
 				CFDBFDE21D405B500097560A /* KMEffectLayer.m in Sources */,
+				37EDF193258C839B006A0BF7 /* AssetImplicitRules.m in Sources */,
 				E233A6BE1EE103E50021E084 /* UIImage+Blending.m in Sources */,
 				F4FE71A41E962B7A00AD2CD0 /* NXEClipSource.m in Sources */,
 				CF7E765E1D51EC0F000278A9 /* NXEEffectOptions.m in Sources */,
+				37EDF19F258C839B006A0BF7 /* AssetCategory.m in Sources */,
+				37EDF1A6258C839B006A0BF7 /* AssetDB.m in Sources */,
 				CF7E76591D51EC0F000278A9 /* NXEClip.m in Sources */,
 				F436A9D91E5FFA1E00931F6B /* InternalAssetLibrary.m in Sources */,
 				CFA0F9451D13B8D100422072 /* UserField.m in Sources */,
 				CFDBFDD01D405AEA0097560A /* MathUtil.m in Sources */,
 				F408F6331E9E33E6000F305D /* assetkey_demangler.c in Sources */,
 				F40CB83B1E5B25910010FC07 /* AssetXMLParser.m in Sources */,
+				37EDF199258C839B006A0BF7 /* AssetLoader.m in Sources */,
 				CFDBFDE81D405B500097560A /* KMLut.m in Sources */,
 				E26C2E631E8A4AB800AFB1C1 /* KMAnimationInterpolation.m in Sources */,
 				E2BD2CD51EA5D79D00E17BDA /* NXETextEffect.m in Sources */,
+				37EDF194258C839B006A0BF7 /* AssetItemPathInfo.m in Sources */,
 				07FC41711E38B1BF002EC835 /* TemplateHandler.m in Sources */,
 				BB4D969C2033F860003E4C3A /* NXEBeatAssetItem.m in Sources */,
 				E2BD2CD41EA5D79D00E17BDA /* NXETextEffectAssetItem.m in Sources */,
 				BB0374481FE2652B00D5B470 /* FontTools.mm in Sources */,
+				37EDF19D258C839B006A0BF7 /* AssetVolume.m in Sources */,
 				E246A89D1E88CF7F00FBFC72 /* NXETextEffect+KMLayer.m in Sources */,
 				F48CB8ED1E80DE5C00D7C9E1 /* AspectRatioTool.m in Sources */,
+				37EDF1A2258C839B006A0BF7 /* AssetPackage.m in Sources */,
 				E2165B4620285EDE007E3F8A /* NXETemplateParser.m in Sources */,
 				F4A9AD0B1E4B17E000811B21 /* AssetLibrary.m in Sources */,
 				E2E64BD31FD6A3B6005473B6 /* CollageTextStyle.m in Sources */,
@@ -1388,6 +1478,7 @@
 				CF7E76811D52014D000278A9 /* NXEEngineUIEventListener.m in Sources */,
 				F465F67E1E5E78E100871B0E /* LUTMap.m in Sources */,
 				1E31FED91DE3DFC200A86CB2 /* NXELayersManager.m in Sources */,
+				37EDF1A5258C839B006A0BF7 /* AssetItem.m in Sources */,
 				CFDBFDE61D405B500097560A /* KMLayer.m in Sources */,
 				BB3916902015A445003A6E66 /* NSError+ErrorCode.m in Sources */,
 				F40CB82A1E5B07D70010FC07 /* EffectAssetItemInfo.m in Sources */,
@@ -1395,8 +1486,12 @@
 				CF7E76561D51EC0F000278A9 /* NXEVideoLayer.m in Sources */,
 				E2BBE1651FF46FA100C3256F /* NXECollageAssetItem.m in Sources */,
 				37C06EF8258B04C2000DC834 /* NXEBeatAssetItemInfo.m in Sources */,
+				37EDF1A7258C839B006A0BF7 /* AssetEncryptionManifest.m in Sources */,
 				E29079311F3AE17D00528B1B /* NXESimpleLayerEditor.m in Sources */,
+				37EDF1A1258C839B006A0BF7 /* AssetDBIndexed.m in Sources */,
+				37EDF19E258C839B006A0BF7 /* AssetReader.m in Sources */,
 				F4B74CB52043DEFD006B5D9C /* NXECropRectTool.m in Sources */,
+				37EDF195258C839B006A0BF7 /* DefaultSlowAssetIndexer.m in Sources */,
 				E2E64BCE1FD6A3B6005473B6 /* CollageData.m in Sources */,
 				BB0AE48D20108B7C000F3EB3 /* ImageUtil+KMLayer.m in Sources */,
 				37C06EF4258B04C2000DC834 /* NXEBeatEffect.m in Sources */,
@@ -1417,6 +1512,7 @@
 				F46D4A221EA082B600F6EE43 /* AssetKeysetRegistry.m in Sources */,
 				1E31FEE31DE3E04F00A86CB2 /* NXELayerEditorView.m in Sources */,
 				CFDBFDCA1D405AEA0097560A /* ImageUtil.m in Sources */,
+				37EDF1A3258C839B006A0BF7 /* AssetItemInfo.m in Sources */,
 				E209ED402002E566001E9E47 /* CollageUtil.m in Sources */,
 				F4CD84601E51C0DC006EFC94 /* NXEAssetLibrary.m in Sources */,
 				F40CB8411E5BCBD70010FC07 /* NXETransitionAssetItem.m in Sources */,
@@ -1437,20 +1533,12 @@
 				1E31FEE71DE3E07500A86CB2 /* KMWaterMark.m in Sources */,
 				E246A8A51E88CF9E00FBFC72 /* OverlayTitleInfo.m in Sources */,
 				F4932CE61E52CC6B009141A3 /* AssetResourceLoader.m in Sources */,
-				CF3B506C1D6FB37000425E3D /* BuildFile in Sources */,
+				CF3B506C1D6FB37000425E3D /* (null) in Sources */,
 				F410C174206DA47B00554C11 /* NXEClipInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F4CD846A1E51CEBE006EFC94 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AssetReader;
-			targetProxy = F4CD84691E51CEBE006EFC94 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1E78F72B1C9684A300AC3347 /* Debug */ = {
@@ -1549,6 +1637,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
 				DEFINES_MODULE = YES;
@@ -1604,6 +1693,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
 				DEFINES_MODULE = YES;
