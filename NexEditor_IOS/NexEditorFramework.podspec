@@ -30,7 +30,7 @@ NexEditor framework for internal development
   s.homepage         = 'http://gerrit.nexstreaming.com:8080/#/admin/projects/NexEditor_IOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Proprietary', :file => 'LICENSE' }
-  s.author           = { 'NexStreaming Corp.' => 'simon.kim@nexstreaming.com' }
+  s.author           = { 'KineMaster Corp.' => 'editor@kinemaster.com' }
   #s.source           = { :git => 'ssh://gerrit.nexstreaming.com:29418/NexEditor_IOS', :tag => s.version.to_s }
   s.source           = { :git => 'ssh://gerrit.nexstreaming.com:29418/NexEditor_IOS', :branch => 'master' }
 
@@ -39,6 +39,7 @@ NexEditor framework for internal development
 
   s.requires_arc = [
     'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}',
+    'NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
     ]
   s.source_files = [
     'NexEditorFramework/NexEditorFramework/**/*.{h,m,c,mm,cpp,hpp,swift}',
@@ -64,6 +65,5 @@ NexEditor framework for internal development
 
   s.resource = 'NexEditorFramework/NexEditorFramework/resource'
 
-  s.dependency 'AssetReader'
   s.dependency 'NexEditorEngine'
 end

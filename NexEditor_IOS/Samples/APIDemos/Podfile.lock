@@ -2,10 +2,13 @@ PODS:
   - NexEditorEngine (2.16.33):
     - NexEditorEngine/NexEditor (= 2.16.33)
   - NexEditorEngine/NexEditor (2.16.33)
+  - NexEditorFramework (1.6.0):
+    - NexEditorEngine
   - SampleClipSources (0.0.1)
 
 DEPENDENCIES:
   - NexEditorEngine
+  - NexEditorFramework (from `../../`)
   - SampleClipSources (from `../../SampleClipSources`)
 
 SPEC REPOS:
@@ -13,13 +16,16 @@ SPEC REPOS:
     - NexEditorEngine
 
 EXTERNAL SOURCES:
+  NexEditorFramework:
+    :path: "../../"
   SampleClipSources:
     :path: "../../SampleClipSources"
 
 SPEC CHECKSUMS:
   NexEditorEngine: 29a99f287335ee3a53f194711a7d072c592ff30b
+  NexEditorFramework: bb60bab3fbd3d14599a2a439f3c5ae2c1cd7c3d4
   SampleClipSources: 507432a06a1eba62a2eabe9d84dcb96e4accd10f
 
-PODFILE CHECKSUM: 0e06cc0b1197f0098ec4fdd62be584b8087717ed
+PODFILE CHECKSUM: 4c1e386751a259e74b6a1129c042154f1da2e9ef
 
 COCOAPODS: 1.10.0

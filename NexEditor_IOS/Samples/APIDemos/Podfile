@@ -7,7 +7,7 @@ target 'APIDemos' do
   use_frameworks!
 
   # Pods for APIDemos
-  # pod 'NexEditorFramework', :path => '../../'
+  pod 'NexEditorFramework', :path => '../../'
   # pod 'AssetReader', :path => '../../NexEditorFramework/AssetReader'
   # pod 'NexEditorEngine', :path => '../../../../NexEditor'
   pod 'SampleClipSources', :path=> '../../SampleClipSources'
