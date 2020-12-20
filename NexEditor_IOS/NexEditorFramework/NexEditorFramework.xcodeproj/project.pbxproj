@@ -48,6 +48,7 @@
 		1EFBD07D1D128F0F004A8022 /* NXEOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFBD07B1D128F0F004A8022 /* NXEOperation.h */; };
 		1EFBD07E1D128F0F004A8022 /* NXEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBD07C1D128F0F004A8022 /* NXEOperation.m */; };
 		2DD4F88C1E2A1A3800448DB8 /* TemplateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD4F88A1E2A1A3800448DB8 /* TemplateHelper.h */; };
+		3780484D258F4716008188B0 /* AssetEncryptionManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37C06ECC258B00EC000DC834 /* NXEEffectEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C06EC2258B00EB000DC834 /* NXEEffectEntry.h */; };
 		37C06ECF258B00EC000DC834 /* NXEBeatEffectDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C06EC5258B00EC000DC834 /* NXEBeatEffectDefault.h */; };
 		37C06ED3258B00EC000DC834 /* NXEBeatAssetItemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C06EC9258B00EC000DC834 /* NXEBeatAssetItemInfo.h */; };
@@ -68,27 +69,26 @@
 		37EDF190258C839B006A0BF7 /* AssetItemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16D258C839B006A0BF7 /* AssetItemInfo.h */; };
 		37EDF191258C839B006A0BF7 /* AssetDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16E258C839B006A0BF7 /* AssetDB.h */; };
 		37EDF192258C839B006A0BF7 /* AssetItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF16F258C839B006A0BF7 /* AssetItem.h */; };
-		37EDF193258C839B006A0BF7 /* AssetImplicitRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF172258C839B006A0BF7 /* AssetImplicitRules.m */; };
-		37EDF194258C839B006A0BF7 /* AssetItemPathInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF173258C839B006A0BF7 /* AssetItemPathInfo.m */; };
-		37EDF195258C839B006A0BF7 /* DefaultSlowAssetIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF174258C839B006A0BF7 /* DefaultSlowAssetIndexer.m */; };
+		37EDF193258C839B006A0BF7 /* AssetImplicitRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF172258C839B006A0BF7 /* AssetImplicitRules.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF194258C839B006A0BF7 /* AssetItemPathInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF173258C839B006A0BF7 /* AssetItemPathInfo.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF195258C839B006A0BF7 /* DefaultSlowAssetIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF174258C839B006A0BF7 /* DefaultSlowAssetIndexer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37EDF196258C839B006A0BF7 /* AssetLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF175258C839B006A0BF7 /* AssetLoader.h */; };
 		37EDF197258C839B006A0BF7 /* AssetVolume.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF176258C839B006A0BF7 /* AssetVolume.h */; };
 		37EDF198258C839B006A0BF7 /* AssetImplicitRules.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF177258C839B006A0BF7 /* AssetImplicitRules.h */; };
-		37EDF199258C839B006A0BF7 /* AssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF178258C839B006A0BF7 /* AssetLoader.m */; };
+		37EDF199258C839B006A0BF7 /* AssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF178258C839B006A0BF7 /* AssetLoader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37EDF19A258C839B006A0BF7 /* DefaultSlowAssetIndexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF179258C839B006A0BF7 /* DefaultSlowAssetIndexer.h */; };
 		37EDF19B258C839B006A0BF7 /* AssetItemPathInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF17A258C839B006A0BF7 /* AssetItemPathInfo.h */; };
 		37EDF19C258C839B006A0BF7 /* AssetLoaderPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF17B258C839B006A0BF7 /* AssetLoaderPrivate.h */; };
-		37EDF19D258C839B006A0BF7 /* AssetVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17C258C839B006A0BF7 /* AssetVolume.m */; };
-		37EDF19E258C839B006A0BF7 /* AssetReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17D258C839B006A0BF7 /* AssetReader.m */; };
-		37EDF19F258C839B006A0BF7 /* AssetCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17F258C839B006A0BF7 /* AssetCategory.m */; };
+		37EDF19D258C839B006A0BF7 /* AssetVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17C258C839B006A0BF7 /* AssetVolume.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF19E258C839B006A0BF7 /* AssetReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17D258C839B006A0BF7 /* AssetReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF19F258C839B006A0BF7 /* AssetCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF17F258C839B006A0BF7 /* AssetCategory.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37EDF1A0258C839B006A0BF7 /* AssetDBIndexed.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF181258C839B006A0BF7 /* AssetDBIndexed.h */; };
-		37EDF1A1258C839B006A0BF7 /* AssetDBIndexed.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF182258C839B006A0BF7 /* AssetDBIndexed.m */; };
-		37EDF1A2258C839B006A0BF7 /* AssetPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF183258C839B006A0BF7 /* AssetPackage.m */; };
-		37EDF1A3258C839B006A0BF7 /* AssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF184258C839B006A0BF7 /* AssetItemInfo.m */; };
+		37EDF1A1258C839B006A0BF7 /* AssetDBIndexed.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF182258C839B006A0BF7 /* AssetDBIndexed.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF1A2258C839B006A0BF7 /* AssetPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF183258C839B006A0BF7 /* AssetPackage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF1A3258C839B006A0BF7 /* AssetItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF184258C839B006A0BF7 /* AssetItemInfo.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37EDF1A4258C839B006A0BF7 /* AssetItemPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF185258C839B006A0BF7 /* AssetItemPrivate.h */; };
-		37EDF1A5258C839B006A0BF7 /* AssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF186258C839B006A0BF7 /* AssetItem.m */; };
-		37EDF1A6258C839B006A0BF7 /* AssetDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF187258C839B006A0BF7 /* AssetDB.m */; };
-		37EDF1A7258C839B006A0BF7 /* AssetEncryptionManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */; };
+		37EDF1A5258C839B006A0BF7 /* AssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF186258C839B006A0BF7 /* AssetItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		37EDF1A6258C839B006A0BF7 /* AssetDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF187258C839B006A0BF7 /* AssetDB.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37EDF1A8258C839B006A0BF7 /* AssetItemInfoPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EDF189258C839B006A0BF7 /* AssetItemInfoPrivate.h */; };
 		BB0374461FE2651700D5B470 /* FontTools.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0374451FE2651700D5B470 /* FontTools.h */; };
 		BB0374481FE2652B00D5B470 /* FontTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB0374471FE2652B00D5B470 /* FontTools.mm */; };
@@ -1418,6 +1418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3780484D258F4716008188B0 /* AssetEncryptionManifest.m in Sources */,
 				37C06EEA258B0459000DC834 /* TemplateHelper.m in Sources */,
 				1E2C242D1D1130C500237465 /* NXEOperationQueue.m in Sources */,
 				37C06EF7258B04C2000DC834 /* NXEBeatEffectDefault.m in Sources */,
@@ -1486,7 +1487,6 @@
 				CF7E76561D51EC0F000278A9 /* NXEVideoLayer.m in Sources */,
 				E2BBE1651FF46FA100C3256F /* NXECollageAssetItem.m in Sources */,
 				37C06EF8258B04C2000DC834 /* NXEBeatAssetItemInfo.m in Sources */,
-				37EDF1A7258C839B006A0BF7 /* AssetEncryptionManifest.m in Sources */,
 				E29079311F3AE17D00528B1B /* NXESimpleLayerEditor.m in Sources */,
 				37EDF1A1258C839B006A0BF7 /* AssetDBIndexed.m in Sources */,
 				37EDF19E258C839B006A0BF7 /* AssetReader.m in Sources */,
@@ -1637,7 +1637,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
 				DEFINES_MODULE = YES;
@@ -1693,7 +1693,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
 				DEFINES_MODULE = YES;

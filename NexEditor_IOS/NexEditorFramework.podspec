@@ -40,7 +40,9 @@ NexEditor framework for internal development
   s.requires_arc = [
     'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}',
     ]
-  s.source_files = ['NexEditorFramework/NexEditorFramework/**/*.{h,m,c,mm,cpp,hpp,swift}',
+  s.source_files = [
+    'NexEditorFramework/NexEditorFramework/**/*.{h,m,c,mm,cpp,hpp,swift}',
+    'NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
     ]                    
   s.public_header_files = ['NexEditorFramework/NexEditorFramework/include/*.h',
     'NexEditorFramework/NexEditorFramework/include/assetlib/*.h',
@@ -49,6 +51,7 @@ NexEditor framework for internal development
     'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageInfo.h',
     'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageType.h',
     'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageTextStyle.h',
+    'NexEditorFramework/AssetReaderModule/include/*.h'
     ]
   s.exclude_files = ['NexEditorFramework/NexEditorFramework/Keyczar/Framework/**/*',
     ]

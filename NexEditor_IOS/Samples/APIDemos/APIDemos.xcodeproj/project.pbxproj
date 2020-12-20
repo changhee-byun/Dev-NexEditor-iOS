@@ -46,8 +46,9 @@
 		2DC3017F1DBA755B005CE3A3 /* EffectEditTypeCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC301711DBA755B005CE3A3 /* EffectEditTypeCViewController.m */; };
 		2DC301801DBA755B005CE3A3 /* EffectItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC301731DBA755B005CE3A3 /* EffectItemTableViewController.m */; };
 		2DC301831DBA755B005CE3A3 /* EffectOptionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3017A1DBA755B005CE3A3 /* EffectOptionTableViewController.m */; };
-		37EDF1BE258C87A2006A0BF7 /* NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EDF1BC258C879A006A0BF7 /* NexEditorFramework.framework */; };
-		37EDF1BF258C87A2006A0BF7 /* NexEditorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37EDF1BC258C879A006A0BF7 /* NexEditorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37804807258F3C29008188B0 /* Pods_APIDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A57B17C88E2C96A7870B83 /* Pods_APIDemos.framework */; };
+		3780481F258F3CDD008188B0 /* NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780481D258F3CD7008188B0 /* NexEditorFramework.framework */; };
+		37804820258F3CDD008188B0 /* NexEditorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3780481D258F3CD7008188B0 /* NexEditorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87965D41AF54C0662C2D49FD /* Pods_APIDemosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0AA06CA0057E6C3D32B9D9 /* Pods_APIDemosUITests.framework */; };
 		A64DEA7C2565093400EB8367 /* beattemplate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A64DEA702565073D00EB8367 /* beattemplate.bundle */; };
 		B653E44722926E520051409B /* semisphere1.png in Resources */ = {isa = PBXBuildFile; fileRef = B653E44622926E500051409B /* semisphere1.png */; };
@@ -80,7 +81,6 @@
 		CFDACC521DD55B8A0006E4A5 /* LayerAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDACC511DD55B8A0006E4A5 /* LayerAnimationTableViewController.m */; };
 		CFDACC551DD55B950006E4A5 /* LayerExpressionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDACC541DD55B950006E4A5 /* LayerExpressionTableViewController.m */; };
 		D0A71F84CCAA3958024AC1DE /* Pods_APIDemosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF17D3E0C28BA982A10E387 /* Pods_APIDemosTests.framework */; };
-		D5E8EB9268B45D4683517060 /* Pods_APIDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A57B17C88E2C96A7870B83 /* Pods_APIDemos.framework */; };
 		E28E5A2C1E9F56E0004343D6 /* AssetPickers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28E5A2A1E9F56E0004343D6 /* AssetPickers.storyboard */; };
 		E28E5A2E1E9F65AF004343D6 /* texteffect.png in Resources */ = {isa = PBXBuildFile; fileRef = E28E5A2D1E9F65AF004343D6 /* texteffect.png */; };
 		E28E5A341E9F9BCE004343D6 /* TextEffectTitleEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E5A331E9F9BCE004343D6 /* TextEffectTitleEntriesViewController.swift */; };
@@ -161,13 +161,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37C0C33E258B146C000DC834 /* Embed Frameworks */ = {
+		3780480F258F3C7D008188B0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37EDF1BF258C87A2006A0BF7 /* NexEditorFramework.framework in Embed Frameworks */,
+				37804820258F3CDD008188B0 /* NexEditorFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +253,7 @@
 		2DC301791DBA755B005CE3A3 /* EffectOptionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectOptionTableViewController.h; sourceTree = "<group>"; };
 		2DC3017A1DBA755B005CE3A3 /* EffectOptionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectOptionTableViewController.m; sourceTree = "<group>"; };
 		2E98263ADA3488319B5E3F79 /* Pods-APIDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIDemos/Pods-APIDemos.release.xcconfig"; sourceTree = "<group>"; };
-		37EDF1BC258C879A006A0BF7 /* NexEditorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NexEditorFramework.framework; path = ../../NewFramework/NexEditorFramework.framework; sourceTree = "<group>"; };
+		3780481D258F3CD7008188B0 /* NexEditorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NexEditorFramework.framework; path = ../../NewFramework/NexEditorFramework.framework; sourceTree = "<group>"; };
 		9C43CA7A956D01DCAF107577 /* Pods-APIDemosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIDemosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIDemosUITests/Pods-APIDemosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9CC1A08D34ED5AFB2CE4870F /* Pods-APIDemosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIDemosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIDemosTests/Pods-APIDemosTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FF17D3E0C28BA982A10E387 /* Pods_APIDemosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APIDemosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,8 +386,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37EDF1BE258C87A2006A0BF7 /* NexEditorFramework.framework in Frameworks */,
-				D5E8EB9268B45D4683517060 /* Pods_APIDemos.framework in Frameworks */,
+				3780481F258F3CDD008188B0 /* NexEditorFramework.framework in Frameworks */,
+				37804807258F3C29008188B0 /* Pods_APIDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,7 +776,7 @@
 		643B99F99B17F2F48C75E6EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37EDF1BC258C879A006A0BF7 /* NexEditorFramework.framework */,
+				3780481D258F3CD7008188B0 /* NexEditorFramework.framework */,
 				E1A57B17C88E2C96A7870B83 /* Pods_APIDemos.framework */,
 				9FF17D3E0C28BA982A10E387 /* Pods_APIDemosTests.framework */,
 				AD0AA06CA0057E6C3D32B9D9 /* Pods_APIDemosUITests.framework */,
@@ -1059,8 +1059,8 @@
 				2D55A5841D22618E0032B7B4 /* Frameworks */,
 				2D55A5851D22618E0032B7B4 /* Resources */,
 				A12E9A0172987806C3F43CAF /* [CP] Copy Pods Resources */,
-				37C0C33E258B146C000DC834 /* Embed Frameworks */,
 				10A56E35785F800E321C8CF3 /* [CP] Embed Pods Frameworks */,
+				3780480F258F3C7D008188B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
