@@ -1,4 +1,5 @@
 source 'https://github.com/KineMasterCorp/NexPods.git'
+platform :ios, '9.0'
 
 target 'EditorTester' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -6,6 +7,7 @@ target 'EditorTester' do
 
   # Pods for EditorTester
   pod 'NexEditorEngine'
+  pod 'NexEditorFramework', :path => '../NexEditor_IOS/'
 
   target 'EditorTesterTests' do
     inherit! :search_paths

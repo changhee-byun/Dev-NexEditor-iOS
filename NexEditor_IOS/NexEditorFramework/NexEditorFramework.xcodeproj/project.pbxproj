@@ -1662,16 +1662,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/AAC_Decoder",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxXMLParser/v2.4.0",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NEXMixer/v1.0.0",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NexCodecUtils/v2.1.6",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFReader/v2.59.3",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFSubtitle/v2.19.1",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NexSound/v3.8.5",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFReader/v2.60.4",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFWriter/3.19.6",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/AudioVisualize/v1.0.0",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/StyleTransfer",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/AAC_Decoder",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/**",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxXMLParser/v2.4.0",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NEXMixer/v1.1.0",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NexCodecUtils/v2.1.20",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFReader/v2.61.10",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFSubtitle/v2.19.1",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NexSound/v3.10.44",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFWriter/3.19.7",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/GIF_Encoder",
 				);
 				ONLY_ACTIVE_ARCH = "$(inherited)";
 				OTHER_CFLAGS = (
@@ -1718,16 +1720,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/AAC_Decoder",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxXMLParser/v2.4.0",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NEXMixer/v1.0.0",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NexCodecUtils/v2.1.6",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFReader/v2.59.3",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFSubtitle/v2.19.1",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NexSound/v3.8.5",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFReader/v2.60.4",
-					"$(PROJECT_DIR)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFWriter/3.19.6",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/AudioVisualize/v1.0.0",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/StyleTransfer",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/AAC_Decoder",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/**",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxXMLParser/v2.4.0",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NEXMixer/v1.1.0",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NexCodecUtils/v2.1.20",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFReader/v2.61.10",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFSubtitle/v2.19.1",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NexSound/v3.10.44",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/NxFFWriter/3.19.7",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorSDK/nexeditorengine/extern_lib/ios/GIF_Encoder",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (

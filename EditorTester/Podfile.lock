@@ -1,18 +1,26 @@
 PODS:
-  - NexEditorEngine (2.16.11):
-    - NexEditorEngine/NexEditor (= 2.16.11)
-  - NexEditorEngine/NexEditor (2.16.11)
+  - NexEditorEngine (2.16.33):
+    - NexEditorEngine/NexEditor (= 2.16.33)
+  - NexEditorEngine/NexEditor (2.16.33)
+  - NexEditorFramework (1.6.0):
+    - NexEditorEngine
 
 DEPENDENCIES:
   - NexEditorEngine
+  - NexEditorFramework (from `../NexEditor_IOS/`)
 
 SPEC REPOS:
   https://github.com/KineMasterCorp/NexPods.git:
     - NexEditorEngine
 
-SPEC CHECKSUMS:
-  NexEditorEngine: 81f97e4e770221d37d271aa2ae5a8a882e215655
+EXTERNAL SOURCES:
+  NexEditorFramework:
+    :path: "../NexEditor_IOS/"
 
-PODFILE CHECKSUM: 710104a11d979ea6ba6cd37062e836c78921fcc8
+SPEC CHECKSUMS:
+  NexEditorEngine: 29a99f287335ee3a53f194711a7d072c592ff30b
+  NexEditorFramework: bb60bab3fbd3d14599a2a439f3c5ae2c1cd7c3d4
+
+PODFILE CHECKSUM: 8fa3822a079930d43977b39e733a186a7924a627
 
 COCOAPODS: 1.10.0
