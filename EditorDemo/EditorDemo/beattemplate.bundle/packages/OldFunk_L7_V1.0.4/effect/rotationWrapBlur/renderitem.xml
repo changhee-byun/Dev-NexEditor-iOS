@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderitem xmlns="http://schemas.kinemaster.com/km/renderitem" main="mainScript"
+            id="com.kinemaster.kmsdk.design1.beatsync.old_school.effect.ri.vas.rotationWrapBlur"
+            type="title"
+            intime="1500"
+            outtime="0"
+            intimefirst="1500"
+            outtimelast="0"
+            repeat="no"
+            name="rotationWrapBlur"
+            version="1.0.5">
+
+  <parameter id="bOriAlpha" type="range" default="0" minvalue="0" maxvalue="1" hidden="true">
+    <string name="label" lang="en">flag : whether the ori alpha value is used </string>
+  </parameter>
+
+  <parameter id="step" type="range" default="45" minvalue="30" maxvalue="70">
+    <string name="label" lang="en">blurStep</string>
+  </parameter>
+  
+  <parameter id="angle" type="range" default="50" minvalue="-90" maxvalue="90">
+    <string name="label" lang="en">angle</string>
+  </parameter>
+  
+  <parameter id="strength" type="range" default="8" minvalue="6" maxvalue="15">
+    <string name="label" lang="en">blurStrength</string>
+  </parameter>
+
+  <parameter id="centerX" type="range" default="0" minvalue="0" maxvalue="100">
+    <string name="label" lang="en"> centerX </string>
+  </parameter>
+  <parameter id="centerY" type="range" default="100" minvalue="0" maxvalue="100">
+    <string name="label" lang="en"> centerY </string>
+  </parameter>
+
+  <parameter id="posx" type="range" default="8" minvalue="6" maxvalue="10">
+    <string name="label" lang="en">separatePosX</string>
+  </parameter>
+
+  <parameter id="ellipse" type="range" default="0" minvalue="0" maxvalue="1">
+    <string name="label" lang="en">enable_ellipse</string>
+  </parameter>
+  
+	<script name="default" language="lua" src="nexstreaming.lua"/>
+
+	<shader name="filters_rotationWrapBlur_vertex" language="glsl" src="glsl/filters_rotationWrapBlur_vertex.glsl"/>
+	<shader name="filters_rotationWrapBlur_fragment" language="glsl" src="glsl/filters_rotationWrapBlur_fragment.glsl"/>
+	<program name="BPFx" language="glsl" fragmentShader="filters_rotationWrapBlur_fragment" vertexShader="filters_rotationWrapBlur_vertex" />
+
+  <script name="mainScript" language="lua" src="main.lua"/>
+  
+</renderitem>

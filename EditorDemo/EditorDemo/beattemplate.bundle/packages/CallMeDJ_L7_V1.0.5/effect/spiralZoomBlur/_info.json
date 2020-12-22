@@ -1,0 +1,10 @@
+{
+  "filename": "renderitem.xml",
+  "id": "com.kinemaster.kmsdk.design1.beatsync.call_me.effect.ri.vas.spiralZoomBlur",
+  "label": {
+    "en": "spiralZoomBlur"
+  },
+  "kmcategory" : ["kmc.clipgraphics"],
+  "type": "nex.renderitem",
+  "hidden": true
+}

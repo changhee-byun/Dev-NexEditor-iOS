@@ -1,0 +1,10 @@
+{
+  "filename": "renderitem.xml",
+  "id": "com.kinemaster.kmsdk.design1.beatsync.call_me.effect.ri.vas.boxBlur",
+  "label": {
+    "en": "boxBlur"
+  },
+   "hidden":"true",
+  "kmcategory" : ["kmc.clipgraphics"],
+  "type": "nex.renderitem"
+}

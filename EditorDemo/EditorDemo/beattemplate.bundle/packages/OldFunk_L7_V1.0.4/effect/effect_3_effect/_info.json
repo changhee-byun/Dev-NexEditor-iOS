@@ -1,0 +1,14 @@
+{
+    "id": "com.kinemaster.kmsdk.design1.beatsync.oldschool3.effect",
+    "filename": "kedl.xml",
+    "hidden": "false",
+    "mergePaths": [
+        "common"
+    ],
+     
+    "type": "nex.kedl",
+    "kmcategory" : ["kmc.clipgraphics"],
+    "label": {
+        "en": "02"
+    }
+}

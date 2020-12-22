@@ -1,0 +1,18 @@
+PODS:
+  - NexEditorEngine (2.16.33):
+    - NexEditorEngine/NexEditor (= 2.16.33)
+  - NexEditorEngine/NexEditor (2.16.33)
+
+DEPENDENCIES:
+  - NexEditorEngine
+
+SPEC REPOS:
+  https://github.com/KineMasterCorp/NexPods.git:
+    - NexEditorEngine
+
+SPEC CHECKSUMS:
+  NexEditorEngine: 29a99f287335ee3a53f194711a7d072c592ff30b
+
+PODFILE CHECKSUM: dbb4e2c957f5e44b0930e7976258310838991245
+
+COCOAPODS: 1.10.0

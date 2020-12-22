@@ -1,0 +1,20 @@
+{
+    "hidden": "False",
+    "ratios": [
+        "16:9",
+        "1:1",
+        "9:16"
+    ],
+    "type": "nex.kedl",
+    "filename": "kedl.xml",
+    "mergePaths": [
+        "common"
+    ],
+
+    "label": {
+        "en": "06"
+    },
+    "kmcategory" : ["kmc.clipgraphics"],
+    
+    "id": "com.kinemaster.kmsdk.design1.beatsync.Fast3.RIGHTT.effect"
+}

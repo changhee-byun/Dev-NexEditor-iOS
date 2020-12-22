@@ -54,18 +54,19 @@ struct ContentView: View {
                         isPresented1.toggle()
                     }
                 }
-                .sheet(isPresented: $isPresented2) {
-                    PhotoPickerView(configuration: configVideo,
-                                    //pickerResult: $pickerResult,
-                                    pickerResult: $clipSources,
-                                    isPresented: $isPresented2)
-                }
                 .sheet(isPresented: $isPresented1) {
                     PhotoPickerView(configuration: configImages,
                                     //pickerResult: $pickerResult,
                                     pickerResult: $clipSources,
                                     isPresented: $isPresented1)
                 }
+                .sheet(isPresented: $isPresented2) {
+                    PhotoPickerView(configuration: configVideo,
+                                    //pickerResult: $pickerResult,
+                                    pickerResult: $clipSources,
+                                    isPresented: $isPresented2)
+                }
+                
                 
 
                 Button("Make Project") {

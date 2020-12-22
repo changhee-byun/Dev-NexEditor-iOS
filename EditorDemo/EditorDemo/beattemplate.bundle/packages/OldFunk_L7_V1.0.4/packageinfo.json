@@ -1,0 +1,29 @@
+{
+  "packageContentVersion" : 10004,
+  "minVersionCode" : 2,
+  "targetVersionCode" : 2,
+  "format" : "com.kinemaster.assetpackage",
+  "assetName" : {
+    "en" : "Old Funk"
+  },
+  "itemRoots" : [
+    "audio\/Music",
+    "beattemplate\/Template_general",
+    "beattemplate\/Template_specific",
+    "effect\/boxblur",
+    "effect\/effect_1_effect",
+    "effect\/effect_2_effect",
+    "effect\/effect_3_effect",
+    "effect\/effect_4_effect",
+    "effect\/effect_5_effect",
+    "effect\/radialblur",
+    "effect\/rotationWrapBlur",
+    "effect\/zoomMirror",
+    "transition\/transition_1_transition",
+    "transition\/transition_2_transition",
+    "transition\/transition_3_transition",
+    "transition\/transition_4_transition",
+    "transition\/transition_5_transition"
+  ],
+  "assetLevel" : 7
+}

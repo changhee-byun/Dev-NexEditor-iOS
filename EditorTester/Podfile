@@ -6,8 +6,9 @@ target 'EditorTester' do
   use_frameworks!
 
   # Pods for EditorTester
+  # pod 'NexEditorEngine', '2.16.33', :inhibit_warnings => true
   pod 'NexEditorEngine'
-  pod 'NexEditorFramework', :path => '../NexEditor_IOS/'
+  pod 'NexEditorFramework', :path => '../NexEditorFramework'
 
   target 'EditorTesterTests' do
     inherit! :search_paths

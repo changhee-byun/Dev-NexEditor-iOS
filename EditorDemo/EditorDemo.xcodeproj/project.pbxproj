@@ -3,16 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		37805E2E25919CA2008188B0 /* EditorDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2D25919CA2008188B0 /* EditorDemoApp.swift */; };
-		37805E3025919CA2008188B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2F25919CA2008188B0 /* ContentView.swift */; };
+		37805E3025919CA2008188B0 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2F25919CA2008188B0 /* MainListView.swift */; };
 		37805E3225919CA3008188B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37805E3125919CA3008188B0 /* Assets.xcassets */; };
 		37805E3525919CA3008188B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37805E3425919CA3008188B0 /* Preview Assets.xcassets */; };
 		37805E4025919CA3008188B0 /* EditorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E3F25919CA3008188B0 /* EditorDemoTests.swift */; };
 		37805E4B25919CA4008188B0 /* EditorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E4A25919CA4008188B0 /* EditorDemoUITests.swift */; };
+		3780759E259246CF008188B0 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780759D259246CF008188B0 /* DemoFeature.swift */; };
+		378075A625924D35008188B0 /* BeatTemplateMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075A525924D35008188B0 /* BeatTemplateMainView.swift */; };
+		378075AB25924E61008188B0 /* NexEditorEnginePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075AA25924E61008188B0 /* NexEditorEnginePreview.swift */; };
+		378075B025924EAC008188B0 /* NexEditorEngineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075AF25924EAC008188B0 /* NexEditorEngineWrapper.swift */; };
+		378075D2259257C8008188B0 /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */; };
+		378075E825927D4E008188B0 /* beattemplate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 378075E725927D4E008188B0 /* beattemplate.bundle */; };
+		378075EF25927E61008188B0 /* AssetPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075ED25927E61008188B0 /* AssetPackageManager.swift */; };
+		46BD48E60EF7DF0F92402F6A /* Pods_EditorDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C5AE94E2CCAA862CDE04B7 /* Pods_EditorDemoTests.framework */; };
+		8BD263E9BBE07AD245E7B80F /* Pods_EditorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44F0D4D2E454D802A07E83B /* Pods_EditorDemo.framework */; };
+		B2F087D75E3905BF43956B25 /* Pods_EditorDemo_EditorDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821330220CA51B3E5BBA0171 /* Pods_EditorDemo_EditorDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB1453251DF048E8BC0F068 /* Pods-EditorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo.debug.xcconfig"; path = "Target Support Files/Pods-EditorDemo/Pods-EditorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D115BCEAA9CE3EACB880CAE /* Pods-EditorDemo-EditorDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo-EditorDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D9ABBAEA7399C34BB9C6B05 /* Pods-EditorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo.release.xcconfig"; path = "Target Support Files/Pods-EditorDemo/Pods-EditorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		37805E2A25919CA2008188B0 /* EditorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37805E2D25919CA2008188B0 /* EditorDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoApp.swift; sourceTree = "<group>"; };
-		37805E2F25919CA2008188B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37805E2F25919CA2008188B0 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		37805E3125919CA3008188B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37805E3425919CA3008188B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37805E3625919CA3008188B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +58,20 @@
 		37805E4625919CA3008188B0 /* EditorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EditorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37805E4A25919CA4008188B0 /* EditorDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoUITests.swift; sourceTree = "<group>"; };
 		37805E4C25919CA4008188B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3780759D259246CF008188B0 /* DemoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
+		378075A525924D35008188B0 /* BeatTemplateMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTemplateMainView.swift; sourceTree = "<group>"; };
+		378075AA25924E61008188B0 /* NexEditorEnginePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorEnginePreview.swift; sourceTree = "<group>"; };
+		378075AF25924EAC008188B0 /* NexEditorEngineWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorEngineWrapper.swift; sourceTree = "<group>"; };
+		378075BA25925148008188B0 /* EditorDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditorDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
+		378075E725927D4E008188B0 /* beattemplate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = beattemplate.bundle; path = EditorDemo/beattemplate.bundle; sourceTree = "<group>"; };
+		378075ED25927E61008188B0 /* AssetPackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetPackageManager.swift; sourceTree = "<group>"; };
+		388C66EEA216B58AF9C7E130 /* Pods-EditorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemoTests.release.xcconfig"; path = "Target Support Files/Pods-EditorDemoTests/Pods-EditorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		66C5AE94E2CCAA862CDE04B7 /* Pods_EditorDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EditorDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72378DD700DE6F065267D17C /* Pods-EditorDemo-EditorDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo-EditorDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		821330220CA51B3E5BBA0171 /* Pods_EditorDemo_EditorDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EditorDemo_EditorDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2D7453B9903B5F187F57F5 /* Pods-EditorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-EditorDemoTests/Pods-EditorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C44F0D4D2E454D802A07E83B /* Pods_EditorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EditorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD263E9BBE07AD245E7B80F /* Pods_EditorDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BD48E60EF7DF0F92402F6A /* Pods_EditorDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F087D75E3905BF43956B25 /* Pods_EditorDemo_EditorDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +105,13 @@
 		37805E2125919CA2008188B0 = {
 			isa = PBXGroup;
 			children = (
+				378075E725927D4E008188B0 /* beattemplate.bundle */,
 				37805E2C25919CA2008188B0 /* EditorDemo */,
 				37805E3E25919CA3008188B0 /* EditorDemoTests */,
 				37805E4925919CA3008188B0 /* EditorDemoUITests */,
 				37805E2B25919CA2008188B0 /* Products */,
+				4FE7FED34191E72820A5EB30 /* Pods */,
+				796EC7E16D461E837A3032DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +128,17 @@
 		37805E2C25919CA2008188B0 /* EditorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				378075EC25927E61008188B0 /* AssetPackages */,
+				378075CD259252F8008188B0 /* DemoViews */,
+				378075CA25925284008188B0 /* NexEditor */,
 				37805E2D25919CA2008188B0 /* EditorDemoApp.swift */,
-				37805E2F25919CA2008188B0 /* ContentView.swift */,
+				37805E2F25919CA2008188B0 /* MainListView.swift */,
+				3780759D259246CF008188B0 /* DemoFeature.swift */,
 				37805E3125919CA3008188B0 /* Assets.xcassets */,
 				37805E3625919CA3008188B0 /* Info.plist */,
 				37805E3325919CA3008188B0 /* Preview Content */,
+				378075BA25925148008188B0 /* EditorDemo-Bridging-Header.h */,
+				378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */,
 			);
 			path = EditorDemo;
 			sourceTree = "<group>";
@@ -130,6 +169,54 @@
 			path = EditorDemoUITests;
 			sourceTree = "<group>";
 		};
+		378075CA25925284008188B0 /* NexEditor */ = {
+			isa = PBXGroup;
+			children = (
+				378075AA25924E61008188B0 /* NexEditorEnginePreview.swift */,
+				378075AF25924EAC008188B0 /* NexEditorEngineWrapper.swift */,
+			);
+			path = NexEditor;
+			sourceTree = "<group>";
+		};
+		378075CD259252F8008188B0 /* DemoViews */ = {
+			isa = PBXGroup;
+			children = (
+				378075A525924D35008188B0 /* BeatTemplateMainView.swift */,
+			);
+			path = DemoViews;
+			sourceTree = "<group>";
+		};
+		378075EC25927E61008188B0 /* AssetPackages */ = {
+			isa = PBXGroup;
+			children = (
+				378075ED25927E61008188B0 /* AssetPackageManager.swift */,
+			);
+			path = AssetPackages;
+			sourceTree = "<group>";
+		};
+		4FE7FED34191E72820A5EB30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1453251DF048E8BC0F068 /* Pods-EditorDemo.debug.xcconfig */,
+				2D9ABBAEA7399C34BB9C6B05 /* Pods-EditorDemo.release.xcconfig */,
+				72378DD700DE6F065267D17C /* Pods-EditorDemo-EditorDemoUITests.debug.xcconfig */,
+				2D115BCEAA9CE3EACB880CAE /* Pods-EditorDemo-EditorDemoUITests.release.xcconfig */,
+				AE2D7453B9903B5F187F57F5 /* Pods-EditorDemoTests.debug.xcconfig */,
+				388C66EEA216B58AF9C7E130 /* Pods-EditorDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		796EC7E16D461E837A3032DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C44F0D4D2E454D802A07E83B /* Pods_EditorDemo.framework */,
+				821330220CA51B3E5BBA0171 /* Pods_EditorDemo_EditorDemoUITests.framework */,
+				66C5AE94E2CCAA862CDE04B7 /* Pods_EditorDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37805E4F25919CA4008188B0 /* Build configuration list for PBXNativeTarget "EditorDemo" */;
 			buildPhases = (
+				EC771B7F11BE15838D6C19B8 /* [CP] Check Pods Manifest.lock */,
 				37805E2625919CA2008188B0 /* Sources */,
 				37805E2725919CA2008188B0 /* Frameworks */,
 				37805E2825919CA2008188B0 /* Resources */,
+				67EB3EB6989F8EF9E67C0153 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37805E5225919CA4008188B0 /* Build configuration list for PBXNativeTarget "EditorDemoTests" */;
 			buildPhases = (
+				74E9E8EB1C681D3FA4A3B71C /* [CP] Check Pods Manifest.lock */,
 				37805E3725919CA3008188B0 /* Sources */,
 				37805E3825919CA3008188B0 /* Frameworks */,
 				37805E3925919CA3008188B0 /* Resources */,
@@ -172,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37805E5525919CA4008188B0 /* Build configuration list for PBXNativeTarget "EditorDemoUITests" */;
 			buildPhases = (
+				A6821B79B4FFAA0277D6A9C5 /* [CP] Check Pods Manifest.lock */,
 				37805E4225919CA3008188B0 /* Sources */,
 				37805E4325919CA3008188B0 /* Frameworks */,
 				37805E4425919CA3008188B0 /* Resources */,
+				6219FA9CD92BA8EA0AD7BBEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378075E825927D4E008188B0 /* beattemplate.bundle in Resources */,
 				37805E3525919CA3008188B0 /* Preview Assets.xcassets in Resources */,
 				37805E3225919CA3008188B0 /* Assets.xcassets in Resources */,
 			);
@@ -254,12 +347,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6219FA9CD92BA8EA0AD7BBEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67EB3EB6989F8EF9E67C0153 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EditorDemo/Pods-EditorDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EditorDemo/Pods-EditorDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EditorDemo/Pods-EditorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74E9E8EB1C681D3FA4A3B71C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EditorDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6821B79B4FFAA0277D6A9C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EditorDemo-EditorDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC771B7F11BE15838D6C19B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EditorDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37805E2625919CA2008188B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37805E3025919CA2008188B0 /* ContentView.swift in Sources */,
+				378075AB25924E61008188B0 /* NexEditorEnginePreview.swift in Sources */,
+				378075D2259257C8008188B0 /* PhotoLibraryPicker.swift in Sources */,
+				37805E3025919CA2008188B0 /* MainListView.swift in Sources */,
+				378075EF25927E61008188B0 /* AssetPackageManager.swift in Sources */,
+				378075A625924D35008188B0 /* BeatTemplateMainView.swift in Sources */,
+				3780759E259246CF008188B0 /* DemoFeature.swift in Sources */,
+				378075B025924EAC008188B0 /* NexEditorEngineWrapper.swift in Sources */,
 				37805E2E25919CA2008188B0 /* EditorDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,13 +616,22 @@
 		};
 		37805E5025919CA4008188B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB1453251DF048E8BC0F068 /* Pods-EditorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"EditorDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = Y59HNQR68T;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorEngine.framework/Headers",
+					"${PODS_ROOT}/NexEditorFramework/NexEditorFramework.framework/Headers",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NexEditorEngine/NexEditorEngine.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NexEditorFramework/NexEditorFramework.framework/Headers\"",
+				);
 				INFOPLIST_FILE = EditorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -429,6 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinemaster.editor.app.EditorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/EditorDemo/EditorDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -436,13 +648,22 @@
 		};
 		37805E5125919CA4008188B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9ABBAEA7399C34BB9C6B05 /* Pods-EditorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"EditorDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = Y59HNQR68T;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/NexEditorEngine/NexEditorEngine.framework/Headers",
+					"${PODS_ROOT}/NexEditorFramework/NexEditorFramework.framework/Headers",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NexEditorEngine/NexEditorEngine.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NexEditorFramework/NexEditorFramework.framework/Headers\"",
+				);
 				INFOPLIST_FILE = EditorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,6 +672,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinemaster.editor.app.EditorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/EditorDemo/EditorDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,6 +680,7 @@
 		};
 		37805E5325919CA4008188B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2D7453B9903B5F187F57F5 /* Pods-EditorDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +703,7 @@
 		};
 		37805E5425919CA4008188B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 388C66EEA216B58AF9C7E130 /* Pods-EditorDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +726,7 @@
 		};
 		37805E5625919CA4008188B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72378DD700DE6F065267D17C /* Pods-EditorDemo-EditorDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +747,7 @@
 		};
 		37805E5725919CA4008188B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D115BCEAA9CE3EACB880CAE /* Pods-EditorDemo-EditorDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

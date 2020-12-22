@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		085D2FAD471D9B0BE3DEE588 /* Pods_EditorTester_EditorTesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46200CA5FA9D5FDC7689EA6 /* Pods_EditorTester_EditorTesterUITests.framework */; };
-		71A7D7B3DCDD7BF8D48CE2D5 /* Pods_EditorTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2604E8E55A86BA0AD412FFE7 /* Pods_EditorTester.framework */; };
+		37807532259217AC008188B0 /* Pods_EditorTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2604E8E55A86BA0AD412FFE7 /* Pods_EditorTester.framework */; };
 		9CADFD00156620A50BF0E357 /* Pods_EditorTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAA732414AB845053D060F3 /* Pods_EditorTesterTests.framework */; };
 		A618F7E725415F5C006123FB /* EditorTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618F7E625415F5C006123FB /* EditorTesterApp.swift */; };
 		A618F7E925415F5C006123FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618F7E825415F5C006123FB /* ContentView.swift */; };
@@ -73,19 +73,6 @@
 			remoteInfo = AssetReaderAppTests;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		37BB48E8258BA5740051DF95 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2604E8E55A86BA0AD412FFE7 /* Pods_EditorTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EditorTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71A7D7B3DCDD7BF8D48CE2D5 /* Pods_EditorTester.framework in Frameworks */,
+				37807532259217AC008188B0 /* Pods_EditorTester.framework in Frameworks */,
 				A69BADB42548531D0077ECDB /* zlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +380,6 @@
 				A618F7E025415F5C006123FB /* Frameworks */,
 				A618F7E125415F5C006123FB /* Resources */,
 				A21909E06AFA5B2FBD561128 /* [CP] Embed Pods Frameworks */,
-				37BB48E8258BA5740051DF95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
