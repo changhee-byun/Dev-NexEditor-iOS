@@ -13,89 +13,59 @@ struct BeatTemplateMainView: View {
     var project = NXEProject()
     @State fileprivate var asset:NXEBeatAssetItem?
     @State fileprivate var assetGroups:[NXEAssetItemGroup]!
+    @State var showVideoPicker: Bool = false
     @State var showImagePicker: Bool = false
+    @State var showPicker = [false, false]
+    
+    enum AssetType: Int {
+        case Image = 0
+        case Video = 1
+    }
     
     let rows = [
         GridItem(.flexible())
     ]
     
-    var config: PHPickerConfiguration  {
-        var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
-        config.filter = .videos
-        config.selectionLimit = 0
-        return config
-    }
-    
     var body: some View {
-//        NavigationView {
-            VStack {
-//                Rectangle()
-//                    .fill(Color.red)
-//                    .frame(minWidth: 0,
-//                           maxWidth: .infinity,
-//                           minHeight: 0,
-//                           maxHeight: .infinity)
-//                HStack {
-//                    Rectangle()
-//                        .fill(Color.yellow)
-//                        .frame(minWidth: 0,
-//                               maxWidth: .infinity,
-//                               minHeight: 0,
-//                               maxHeight: .infinity)
-//                    NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
-//                    Rectangle()
-//                        .fill(Color.purple)
-//                        .frame(minWidth: 0,
-//                               maxWidth: .infinity,
-//                               minHeight: 0,
-//                               maxHeight: .infinity)
-//                }
-//                Rectangle()
-//                    .fill(Color.blue)
-//                    .frame(minWidth: 0,
-//                           maxWidth: .infinity,
-//                           minHeight: 0,
-//                           maxHeight: .infinity)
-                NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
+        VStack {
+            NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
 //                Spacer()
-                ScrollView(.horizontal) {
-                    LazyHGrid(rows: self.rows, alignment: .top) {
+            ScrollView(.horizontal) {
+                LazyHGrid(rows: self.rows, alignment: .top) {
 //                    LazyVGrid(columns: columns) {
-                        ForEach(0...10, id: \.self) { _ in
-                            BeatTemplateAssetListCell()
-                        }
+                    ForEach(0...10, id: \.self) { _ in
+                        BeatTemplateAssetListCell()
                     }
                 }
             }
-//        }
+        }
         .navigationBarTitle(Text("Beat template"), displayMode: .inline)
         .navigationBarItems(
-            trailing:
+            leading:
                 Button(action: {
                     print("add user video")
-                    showPicker()
+                    showPicker(type: .Video)
                 }) {
                     Image(systemName: "plus")
                 }
-            .sheet(isPresented: $showImagePicker) {
-                PhotoLibraryPicker(configuration: self.config, isPresented: $showImagePicker) { pickedAsset, assetName, thumbnail, fetchResult in
-                    switch pickedAsset {
-                        case let asset as UIImage:
-                            print("image asset \(asset)")
-                            createProject(phFetchResult: fetchResult)
-                            
-                        case let asset as URL:
-                            print("asset name -> \(String(describing: assetName))")
-                            print("video asset \(asset)")
-                            
-                            createProject(phFetchResult: fetchResult)
-                            
-                            
-                        default:
-                            print("unsupported \(pickedAsset)")
+                .sheet(isPresented: $showPicker[AssetType.Video.rawValue]) {
+                    PhotoLibraryPicker(configuration: self.getPHPickerConfiguration(assetType: .Video), isPresented: $showPicker[AssetType.Video.rawValue]) { pickedAsset, assetName, thumbnail, fetchResult in
+                        self.pickerCompletion(asset: pickedAsset, assetName: assetName, fetchResult: fetchResult)
                     }
                 }
-            }
+                ,
+            trailing:
+                Button(action: {
+                    print("add user image")
+                    showPicker(type: .Image)                    
+                }) {
+                    Image(systemName: "plus")
+                }
+                .sheet(isPresented: $showPicker[AssetType.Image.rawValue]) {
+                    PhotoLibraryPicker(configuration: self.getPHPickerConfiguration(assetType: .Image), isPresented: $showPicker[AssetType.Image.rawValue]) { pickedAsset, assetName, thumbnail, fetchResult in
+                        self.pickerCompletion(asset: pickedAsset, assetName: assetName, fetchResult: fetchResult)
+                    }
+                }
         ) // end of navigationBarItems
         .onAppear() {
             loadBeatTemplate()
@@ -105,17 +75,35 @@ struct BeatTemplateMainView: View {
         }
     }
     
-    func showPicker() {
+    func showPicker(type: AssetType) {
         let authorizationStatus = PHPhotoLibrary.authorizationStatus()
         if authorizationStatus == .notDetermined {
             PHPhotoLibrary.requestAuthorization({status in
                 if status == .authorized{
-                    self.showImagePicker.toggle()
+                    self.showPicker[type.rawValue].toggle()
                 } else {}
             })
         }
         else if authorizationStatus == .authorized {
-            self.showImagePicker.toggle()
+            self.showPicker[type.rawValue].toggle()
+        }
+    }
+    
+    func pickerCompletion(asset: Any, assetName: String, fetchResult: PHFetchResult<PHAsset>) {
+        switch asset {
+            case let asset as UIImage:
+                print("image asset \(asset)")
+                createProject(phFetchResult: fetchResult)
+                
+            case let asset as URL:
+                print("asset name -> \(String(describing: assetName))")
+                print("video asset \(asset)")
+                
+                createProject(phFetchResult: fetchResult)
+                
+                
+            default:
+                print("unsupported \(asset)")
         }
     }
     
@@ -161,6 +149,18 @@ struct BeatTemplateMainView: View {
             editorEngineWrapper.nxeEngine.seek(0)
             editorEngineWrapper.nxeEngine.play()
         }
+    }
+    
+    func getPHPickerConfiguration(assetType: AssetType)-> PHPickerConfiguration {
+        var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
+        if assetType == .Image {
+            config.filter = .images
+        }
+        else {
+            config.filter = .videos
+        }
+        config.selectionLimit = 1
+        return config
     }
     
 }
