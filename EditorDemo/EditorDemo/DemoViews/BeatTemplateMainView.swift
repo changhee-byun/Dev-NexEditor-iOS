@@ -15,6 +15,10 @@ struct BeatTemplateMainView: View {
     @State fileprivate var assetGroups:[NXEAssetItemGroup]!
     @State var showImagePicker: Bool = false
     
+    let rows = [
+        GridItem(.flexible())
+    ]
+    
     var config: PHPickerConfiguration  {
         var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
         config.filter = .videos
@@ -53,6 +57,15 @@ struct BeatTemplateMainView: View {
 //                           minHeight: 0,
 //                           maxHeight: .infinity)
                 NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
+//                Spacer()
+                ScrollView(.horizontal) {
+                    LazyHGrid(rows: self.rows, alignment: .top) {
+//                    LazyVGrid(columns: columns) {
+                        ForEach(0...10, id: \.self) { _ in
+                            BeatTemplateAssetListCell()
+                        }
+                    }
+                }
             }
 //        }
         .navigationBarTitle(Text("Beat template"), displayMode: .inline)
@@ -111,6 +124,7 @@ struct BeatTemplateMainView: View {
         self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
         if let group = self.assetGroups.first, let asset = group.items[0] as? NXEBeatAssetItem {
             self.asset = asset
+            
         }
         
     }
@@ -149,6 +163,12 @@ struct BeatTemplateMainView: View {
         }
     }
     
+}
+
+struct BeatTemplateAssetListCell: View {
+    var body: some View {
+        Color.orange.frame(width: 60, height: 60)
+    }
 }
 
 struct BeatTemplateMainView_Previews: PreviewProvider {
