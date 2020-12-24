@@ -12,9 +12,8 @@ struct BeatTemplateMainView: View {
     var editorEngineWrapper = NexEditorEngineWrapper()
     var project = NXEProject()
     @State fileprivate var asset:NXEBeatAssetItem?
+    
     @State fileprivate var assetGroups:[NXEAssetItemGroup]!
-    @State var showVideoPicker: Bool = false
-    @State var showImagePicker: Bool = false
     @State var showPicker = [false, false]
     
     enum AssetType: Int {
@@ -29,15 +28,16 @@ struct BeatTemplateMainView: View {
     var body: some View {
         VStack {
             NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
-//                Spacer()
-            ScrollView(.horizontal) {
-                LazyHGrid(rows: self.rows, alignment: .top) {
-//                    LazyVGrid(columns: columns) {
-                    ForEach(0...10, id: \.self) { _ in
-                        BeatTemplateAssetListCell()
-                    }
-                }
-            }
+
+            // to do the work to show beat template assets.
+//            ScrollView(.horizontal) {
+//                LazyHGrid(rows: self.rows, alignment: .top) {
+////                    LazyVGrid(columns: columns) {
+//                    ForEach(0...10, id: \.self) { _ in
+//                        BeatTemplateAssetListCell()
+//                    }
+//                }
+//            }
         }
         .navigationBarTitle(Text("Beat template"), displayMode: .inline)
         .navigationBarItems(

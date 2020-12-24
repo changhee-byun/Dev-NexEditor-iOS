@@ -8,8 +8,8 @@ target 'EditorDemo' do
 
   # Pods for EditorDemo
   
-  # pod 'NexEditorEngine'
-  pod 'NexEditorEngine', :path => '../../NexEditor'
+  pod 'NexEditorEngine'
+  # pod 'NexEditorEngine', :path => '../../NexEditor'
   # pod 'NexEditorFramework'
   pod 'NexEditorFramework', :path => '../NexEditorFramework/'
   
