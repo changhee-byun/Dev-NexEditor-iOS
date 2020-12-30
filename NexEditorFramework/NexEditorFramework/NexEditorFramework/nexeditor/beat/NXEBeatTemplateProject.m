@@ -55,7 +55,6 @@
 
 - (void) setVisualClips:(NSArray<NXEClip *> *)visualClips
 {
-    
     NexLogE(LOG_TAG, @"Please create new project to change clips");
 }
 

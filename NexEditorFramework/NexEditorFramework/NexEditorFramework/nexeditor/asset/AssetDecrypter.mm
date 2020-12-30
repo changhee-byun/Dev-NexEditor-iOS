@@ -17,12 +17,12 @@
  */
 
 #import "AssetDecrypter.h"
-#import <keyczar/keyczar.h>
-#import <keyczar/rw/keyset_reader.h>
-#import <keyczar/base/json_value_serializer.h>
+//#import <keyczar/keyczar.h>
+//#import <keyczar/rw/keyset_reader.h>
+//#import <keyczar/base/json_value_serializer.h>
 #import "assetkey_demangler.h"
 #import "NXEError.h"
-
+/*
 class KeysetDataReader: public keyczar::rw::KeysetReader {
     
     AssetDecrypterKeyset *keyset;
@@ -48,11 +48,12 @@ public:
         this->keyset = keyset;
     }
 };
+*/
 
 @interface AssetDecrypter()
 {
-    KeysetDataReader *_reader;
-    keyczar::Crypter *_crypter;
+//    KeysetDataReader *_reader;
+//    keyczar::Crypter *_crypter;
 }
 @property (nonatomic, strong) AssetDecrypterKeyset *keyset;
 @end
@@ -66,7 +67,7 @@ public:
             // valid keyset has at least two elements: metadata, and version 1
             self.keyset = keyset;
         }
-        _crypter = nullptr;
+//        _crypter = nullptr;
     }
     return self;
 }
@@ -74,35 +75,35 @@ public:
 - (void) dealloc
 {
     self.keyset = nil;
-    if (_crypter != nullptr) {
-        delete _crypter;
-        delete _reader;
-    }
+//    if (_crypter != nullptr) {
+//        delete _crypter;
+//        delete _reader;
+//    }
     [super dealloc];
 }
 
-- (keyczar::Crypter *) crypter
-{
-    if (_crypter == nullptr && self.keyset) {
-        _reader = new KeysetDataReader(self.keyset);
-        
-        _crypter = keyczar::Crypter::Read(*_reader);
-        _crypter->set_encoding(keyczar::Keyczar::NO_ENCODING);
-    }
-    return _crypter;
-}
+//- (keyczar::Crypter *) crypter
+//{
+//    if (_crypter == nullptr && self.keyset) {
+//        _reader = new KeysetDataReader(self.keyset);
+//
+//        _crypter = keyczar::Crypter::Read(*_reader);
+//        _crypter->set_encoding(keyczar::Keyczar::NO_ENCODING);
+//    }
+//    return _crypter;
+//}
 
 - (NSData *) decrypt:(NSData *)encrypted
 {
     NSData *result = nil;
-    if(self.crypter != nullptr)
-    {
-        std::string ciphertext((const char *) encrypted.bytes, encrypted.length);
-        std::string decrypted = "";
-        if (self.crypter->Decrypt(ciphertext, &decrypted)) {
-            result = [NSData dataWithBytes:decrypted.c_str() length:decrypted.length()];
-        }
-    }
+//    if(self.crypter != nullptr)
+//    {
+//        std::string ciphertext((const char *) encrypted.bytes, encrypted.length);
+//        std::string decrypted = "";
+//        if (self.crypter->Decrypt(ciphertext, &decrypted)) {
+//            result = [NSData dataWithBytes:decrypted.c_str() length:decrypted.length()];
+//        }
+//    }
     return result;
 }
 
