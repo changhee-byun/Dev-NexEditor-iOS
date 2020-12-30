@@ -110,6 +110,7 @@
                                             resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
         image = result;
         imageRef = result.CGImage;
+        CGImageRetain(imageRef);
     }];
 
     [fetchOptions release];
@@ -120,7 +121,10 @@
         self.height = (int)CGImageGetHeight(imageRef) & 0xFFFFFFFE;
     }
     
-    return imageRef;
+    if ( self.width == 0 )
+        return NULL;
+    else
+        return imageRef;
 }
 
 - (CGImageRef)createImage4Path:(NSString *)path
@@ -266,7 +270,7 @@
 
 #pragma mark - ImageLoaderProtocol
 
-- (BOOL) openFile:(NSString *)path width:(NSUInteger *)width height:(NSUInteger *)height pixelData:(void **)pixelData imageResource:(void **)imageResource
+- (BOOL)openFile:(NSString *)path width:(NSUInteger *)width height:(NSUInteger *)height pixelData:(void **)pixelData imageResource:(void **)imageResource bEncoding:(BOOL)bEncoding iTargetWidth:(NSInteger)iTargetWidth iTargetHeight:(NSInteger)iTargetHeight
 {
     BOOL result = NO;
     
@@ -304,7 +308,7 @@
     *imageResource = resource;
 
     if (resource.imageRef) {
-        CGImageRetain(resource.imageRef);
+        //CGImageRetain(resource.imageRef);
         
         @synchronized(self.imageList) {
         
