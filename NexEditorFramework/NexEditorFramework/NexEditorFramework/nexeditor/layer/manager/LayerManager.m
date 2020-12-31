@@ -392,7 +392,8 @@ static dispatch_once_t layermanagerToken = 0;
     }
     
     [self.textureDisposeBag deleteTextuersForContextIndex:contextIndex];
-    
+
+#if 0
     if(layerList && layerList.count > 0) {
         int currentPosition = iParam2;
         NexLayer* renderer = [NexLayer sharedInstance];
@@ -446,6 +447,7 @@ static dispatch_once_t layermanagerToken = 0;
         
         [renderer postRender];
     }
+#endif
     isRefreshing = NO;
     if(animationLayer)
         [self refresh];
