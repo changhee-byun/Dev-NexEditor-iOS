@@ -375,8 +375,8 @@
 
 //    Comment: You just need to remember the Core Foundation memory management rules.
 //             If the function name has "Create" in it, then you manage its memory; if not, then you don't.
-        CGImageRelease(imageResource.imageRef);
-        delete [] imageResource.pImageData;
+        //CGImageRelease(imageResource.imageRef);
+        //delete [] imageResource.pImageData;
         
         [self.imageList removeObjectAtIndex:index];
     } else {
