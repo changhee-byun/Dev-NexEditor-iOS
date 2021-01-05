@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37716D0D25A30DD700B28523 /* ClipSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D0C25A30DD600B28523 /* ClipSource.swift */; };
+		37716D1525A30EA900B28523 /* ConvenienceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D1425A30EA900B28523 /* ConvenienceExtensions.swift */; };
+		37716D2525A32BD700B28523 /* UISeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D2225A32BD700B28523 /* UISeekSlider.swift */; };
+		37716D2625A32BD700B28523 /* Playable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D2325A32BD700B28523 /* Playable.swift */; };
+		37716D2725A32BD700B28523 /* NexEditorPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D2425A32BD700B28523 /* NexEditorPlayable.swift */; };
 		37805E2E25919CA2008188B0 /* EditorDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2D25919CA2008188B0 /* EditorDemoApp.swift */; };
 		37805E3025919CA2008188B0 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2F25919CA2008188B0 /* MainListView.swift */; };
 		37805E3225919CA3008188B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37805E3125919CA3008188B0 /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 		0AB1453251DF048E8BC0F068 /* Pods-EditorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo.debug.xcconfig"; path = "Target Support Files/Pods-EditorDemo/Pods-EditorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2D115BCEAA9CE3EACB880CAE /* Pods-EditorDemo-EditorDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo-EditorDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D9ABBAEA7399C34BB9C6B05 /* Pods-EditorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo.release.xcconfig"; path = "Target Support Files/Pods-EditorDemo/Pods-EditorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		37716D0C25A30DD600B28523 /* ClipSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipSource.swift; sourceTree = "<group>"; };
+		37716D1425A30EA900B28523 /* ConvenienceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvenienceExtensions.swift; sourceTree = "<group>"; };
+		37716D2225A32BD700B28523 /* UISeekSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISeekSlider.swift; sourceTree = "<group>"; };
+		37716D2325A32BD700B28523 /* Playable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playable.swift; sourceTree = "<group>"; };
+		37716D2425A32BD700B28523 /* NexEditorPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NexEditorPlayable.swift; sourceTree = "<group>"; };
 		37805E2A25919CA2008188B0 /* EditorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37805E2D25919CA2008188B0 /* EditorDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoApp.swift; sourceTree = "<group>"; };
 		37805E2F25919CA2008188B0 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
@@ -102,6 +112,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37716D0B25A30DC100B28523 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				37716D2125A32BC500B28523 /* Playable */,
+				37716D0C25A30DD600B28523 /* ClipSource.swift */,
+				37716D1425A30EA900B28523 /* ConvenienceExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		37716D2125A32BC500B28523 /* Playable */ = {
+			isa = PBXGroup;
+			children = (
+				37716D2425A32BD700B28523 /* NexEditorPlayable.swift */,
+				37716D2325A32BD700B28523 /* Playable.swift */,
+				37716D2225A32BD700B28523 /* UISeekSlider.swift */,
+			);
+			path = Playable;
+			sourceTree = "<group>";
+		};
 		37805E2125919CA2008188B0 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +158,7 @@
 		37805E2C25919CA2008188B0 /* EditorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37716D0B25A30DC100B28523 /* Common */,
 				378075EC25927E61008188B0 /* AssetPackages */,
 				378075CD259252F8008188B0 /* DemoViews */,
 				378075CA25925284008188B0 /* NexEditor */,
@@ -456,6 +487,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				378075AB25924E61008188B0 /* NexEditorEnginePreview.swift in Sources */,
+				37716D1525A30EA900B28523 /* ConvenienceExtensions.swift in Sources */,
+				37716D0D25A30DD700B28523 /* ClipSource.swift in Sources */,
+				37716D2725A32BD700B28523 /* NexEditorPlayable.swift in Sources */,
+				37716D2525A32BD700B28523 /* UISeekSlider.swift in Sources */,
 				378075D2259257C8008188B0 /* PhotoLibraryPicker.swift in Sources */,
 				37805E3025919CA2008188B0 /* MainListView.swift in Sources */,
 				378075EF25927E61008188B0 /* AssetPackageManager.swift in Sources */,
@@ -463,6 +498,7 @@
 				3780759E259246CF008188B0 /* DemoFeature.swift in Sources */,
 				378075B025924EAC008188B0 /* NexEditorEngineWrapper.swift in Sources */,
 				37805E2E25919CA2008188B0 /* EditorDemoApp.swift in Sources */,
+				37716D2625A32BD700B28523 /* Playable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

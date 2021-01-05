@@ -14,5 +14,7 @@
 #import "NXEProject.h"
 #import "NexEditorLog.h"
 #import "NXEAssetLibrary.h"
+#import "NXEBeatTemplateProject.h"
+#import "NXEAssetItem.h"
 
 #endif /* EditorDemo_Bridging_Header_h */

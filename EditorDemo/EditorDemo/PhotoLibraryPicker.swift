@@ -8,13 +8,15 @@
 import SwiftUI
 import PhotosUI
 
-typealias PhotoLibraryPickerCompletion = (_ asset: Any, _ fileName: String, _ thumbnail: UIImage, _ fetchResult: PHFetchResult<PHAsset>) -> Void
+typealias PhotoLibraryPickerCompletion = (_ asset: Any, _ fileName: String, _ thumbnail: UIImage) -> Void
+typealias PhotoLibraryPickerFetchResultCompletion = (_ filter: PHPickerFilter, _ fetchResult: PHFetchResult<PHAsset>) -> Void
 
 struct PhotoLibraryPicker: UIViewControllerRepresentable {
     let configuration: PHPickerConfiguration
     //@Binding var pickerResult: [Any]
     @Binding var isPresented: Bool
     var onPicked: PhotoLibraryPickerCompletion
+    var onFetchResultPicked: PhotoLibraryPickerFetchResultCompletion
     
     func makeUIViewController(context: Context) -> PHPickerViewController {
         let controller = PHPickerViewController(configuration: configuration)
@@ -61,30 +63,35 @@ struct PhotoLibraryPicker: UIViewControllerRepresentable {
         }
         
         func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+            var filter: PHPickerFilter = .images
+            
             for (index, asset) in results.enumerated() {
                 if asset.itemProvider.canLoadObject(ofClass: UIImage.self)  {
+                    filter = .images
                     asset.itemProvider.loadObject(ofClass: UIImage.self) { (newImage, error) in
                         if let error = error {
                             print(error.localizedDescription)
-                        } else {
+                        }
+                        else {
                             //self.parent.pickerResult.append(newImage as Any)
                             self.pickerResult.append(newImage as Any)
                             self.getAssetInfo(pickerResults: results, index: index) { fileName, url, thumbnail in
                                 //guard let url = url else { return }
-                                let identifiers = results.compactMap(\.assetIdentifier)
-                                let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: identifiers, options: nil)
-                                self.parent.onPicked(newImage as Any, fileName, thumbnail, fetchResult)
+                                //let identifiers = results.compactMap(\.assetIdentifier)
+                                //let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: identifiers, options: nil)
+                                self.parent.onPicked(newImage as Any, fileName, thumbnail)
                             }
                         }
                     }
                 }
                 else if let itemProvider = results.first?.itemProvider, itemProvider.hasItemConformingToTypeIdentifier("public.movie") {
+                    filter = .videos
                     DispatchQueue.main.async {
                         self.getAssetInfo(pickerResults: results, index: index) { fileName, url, thumbnail in
                             guard let url = url else { return }
-                            let identifiers = results.compactMap(\.assetIdentifier)
-                            let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: identifiers, options: nil)
-                            self.parent.onPicked(url, fileName, thumbnail, fetchResult)
+                            //let identifiers = results.compactMap(\.assetIdentifier)
+                            //let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: identifiers, options: nil)
+                            self.parent.onPicked(url, fileName, thumbnail)
                         }
                     }
                 }
@@ -92,6 +99,11 @@ struct PhotoLibraryPicker: UIViewControllerRepresentable {
                     NSLog("Not supported asset")
                 }
             }
+            
+            let identifiers = results.compactMap(\.assetIdentifier)
+            let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: identifiers, options: nil)
+            self.parent.onFetchResultPicked(filter, fetchResult)
+            
             parent.isPresented = false
         }
     }
