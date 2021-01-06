@@ -73,6 +73,15 @@ public class NexEditorPlayable: Playable {
         }
     }
     
+    public func playPause() {
+        if !self._status.playing {
+            play()
+        }
+        else {
+            pause()
+        }
+    }
+    
     public func changeState(_ state: PlayableStateChange, to value: Bool) {
         switch(state) {
         case .loaded:

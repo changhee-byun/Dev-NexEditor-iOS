@@ -11,7 +11,6 @@ import PhotosUI
 struct BeatTemplateMainView: View {
     var editorEngineWrapper = NexEditorEngineWrapper()
 //    @State var project: NXEProject!
-    @State fileprivate var editor: NXEEngine!
     @State fileprivate var project: NXEProject!
     @State fileprivate var playable: Playable!
     @State fileprivate var clips : [NXEClip]? = nil
@@ -25,25 +24,40 @@ struct BeatTemplateMainView: View {
         case Video = 1
     }
     
-    let rows = [
+    let templateGridRow = [
         GridItem(.flexible(minimum: 32), spacing: 0)
     ]
+    
+    @State var currentTime: TimeInterval = TimeInterval()
+    @State var duration: TimeInterval = TimeInterval()
     
     var body: some View {
         VStack {
             NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
+                .onTapGesture {
+                    self.playable.playPause()
+                }
             
+            VStack {
+                HStack {
+                    Text(StringTools.formatTime(interval: self.currentTime))
+                    Spacer()
+                    Text(StringTools.formatTime(interval: self.duration))
+                }
+                ProgressBar(currentTime: self.$currentTime, duration: self.$duration).frame(height: 20)
+            }
             //Color.primary.frame(width: .infinity, height: .infinity)
-
+            
             // to do the work to show beat template assets.
             ScrollView(.horizontal) {
-                LazyHGrid(rows: self.rows, alignment: .bottom, spacing: 0) {
+                LazyHGrid(rows: self.templateGridRow, alignment: .bottom, spacing: 0) {
                     ForEach(self.assetGroups, id: \.self) { asset in
                         BeatTemplateAssetListCell(asset: asset.items[0] as? NXEBeatAssetItem) { asset in
                             editorEngineWrapper.nxeEngine.stop()
                             self.selectedTemplate = asset
                             preparePlayback(asset: self.selectedTemplate)
                         }
+                        Spacer().frame(width:10)
                     }
                 } // end of LazyHGrid
             }// end of ScrollView
@@ -51,30 +65,30 @@ struct BeatTemplateMainView: View {
         } // end of VStack
         .navigationBarTitle(Text("Beat template"), displayMode: .inline)
         .navigationBarItems(
-            leading:
-                Button(action: {
-                    print("add user video")
-                    showPicker(type: .Video)
-                }) {
-                    Image(systemName: "plus")
-                }
-                .sheet(isPresented: $showPicker[AssetType.Video.rawValue]) {
-                    PhotoLibraryPicker(configuration: self.getPHPickerConfiguration(assetType: .Video), isPresented: $showPicker[AssetType.Video.rawValue], onPicked: self.pickerCompletion, onFetchResultPicked: self.pickerFetchResultCompletion(filter:fetchResult:))
-                }
-                ,
             trailing:
-                Button(action: {
-                    print("add user image")
-                    showPicker(type: .Image)                    
-                }) {
-                    Image(systemName: "plus")
-                }
-                .sheet(isPresented: $showPicker[AssetType.Image.rawValue]) {
-                    PhotoLibraryPicker(configuration: self.getPHPickerConfiguration(assetType: .Image), isPresented: $showPicker[AssetType.Image.rawValue], onPicked: self.pickerCompletion, onFetchResultPicked: self.pickerFetchResultCompletion(filter:fetchResult:))
+                HStack {
+                    Button(action: {
+                        print("add user video")
+                        showPicker(type: .Video)
+                    }) {
+                        Image(systemName: "video.badge.plus")
+                    }
+                    .sheet(isPresented: $showPicker[AssetType.Video.rawValue]) {
+                        PhotoLibraryPicker(configuration: self.getPHPickerConfiguration(assetType: .Video), isPresented: $showPicker[AssetType.Video.rawValue], onPicked: self.pickerCompletion, onFetchResultPicked: self.pickerFetchResultCompletion(filter:fetchResult:))
+                    }
+                    Spacer()
+                    Button(action: {
+                        print("add user image")
+                        showPicker(type: .Image)
+                    }) {
+                        Image(systemName: "photo.on.rectangle")
+                    }
+                    .sheet(isPresented: $showPicker[AssetType.Image.rawValue]) {
+                        PhotoLibraryPicker(configuration: self.getPHPickerConfiguration(assetType: .Image), isPresented: $showPicker[AssetType.Image.rawValue], onPicked: self.pickerCompletion, onFetchResultPicked: self.pickerFetchResultCompletion(filter:fetchResult:))
+                    }
                 }
         ) // end of navigationBarItems
         .onAppear() {
-            editor = NXEEngine.instance()
             loadBeatTemplate()
             initPlayer()
         }
@@ -133,19 +147,11 @@ struct BeatTemplateMainView: View {
             self.selectedTemplate = asset
         }
         
-//        self.assetGroups.forEach {
-//            let thumbnailLoadable = $0 as ThumbnailLoadable
-//            let size = CGSize(width: 90, height: 90)
-//            thumbnailLoadable.loadThumbnail(size: size) { image in
-//                image
-//            }
-//        }
-        
     }
     
     func initPlayer() {
-        playable = NexEditorPlayable(editor: editor)
-//        playable.addObserver(slider)
+        playable = NexEditorPlayable(editor: self.editorEngineWrapper.nxeEngine)
+        //playable.addObserver(slider)
         playable.addObserver(AdhocPlayableStateObserver({(playable, state, status) in
             if state == .playing {
 //                let imageNameDefault = status.playing ? "pause_default" : "play_default"
@@ -153,12 +159,11 @@ struct BeatTemplateMainView: View {
             }
             if state == .loaded {
 //                self?.playPauseButton.isEnabled = status.loaded
-//                self?.contentDuration.text = StringTools.formatTime(interval: TimeInterval(playable.duration.seconds))
-//                let time = status.loaded ? 0 : playable.currentTime.seconds
-//                self?.currentTime.text = StringTools.formatTime(interval: time)
+                self.duration = TimeInterval(playable.duration.seconds)
+                self.currentTime = status.loaded ? 0 : playable.currentTime.seconds
             }
             if state == .currentTime {
-//                self?.currentTime.text = StringTools.formatTime(interval: TimeInterval(playable.currentTime.seconds))
+                self.currentTime = playable.currentTime.seconds
             }
         }))
         
@@ -270,7 +275,7 @@ struct BeatTemplateAssetListCell: View {
     
     var body: some View {
         ZStack {
-            Color.orange.frame(width: 70, height: 70)
+            Color.yellow.frame(width: 70, height: 70)
                 .onTapGesture {
                     NSLog("tap item")
                 }

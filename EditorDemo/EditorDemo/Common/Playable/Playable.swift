@@ -41,6 +41,7 @@ public protocol Playable {
     
     func play()
     func pause()
+    func playPause()
     func seek(to: CMTime)
     func changeState(_ state: PlayableStateChange, to value: Bool)
 }
