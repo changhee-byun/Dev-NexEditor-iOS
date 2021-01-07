@@ -197,8 +197,6 @@ struct BeatTemplateMainView: View {
         }
         
         do {
-            self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
-            
             project = try NXEBeatTemplateProject(beatTemplateAssetItem: asset, clips:clips)
             editorEngineWrapper.nxeEngine.setProject(project);
             

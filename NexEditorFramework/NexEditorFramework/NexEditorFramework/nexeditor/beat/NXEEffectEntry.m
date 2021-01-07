@@ -20,7 +20,7 @@ static NSString *const kClipEffectEndTime = @"clipEffectEndTime";
 @property (nonatomic) int startTime;
 @property (nonatomic) int beatIndex;
 @property (nonatomic) BOOL sourceChange;
-@property (nonatomic) NSString *clipEffectId;
+@property (nonatomic, copy) NSString *clipEffectId;
 @property (nonatomic) float clipEffectStartTime;
 @property (nonatomic) float clipEffectEndTime;
 
@@ -35,6 +35,7 @@ static NSString *const kClipEffectEndTime = @"clipEffectEndTime";
         self.startTime = [source[kStartTime] intValue];
         self.beatIndex = [source[kBeatIndex] intValue];
         self.sourceChange = [source[kSourceChange] boolValue];
+//        NSString* test = source[kClipEffectId];
         self.clipEffectId = source[kClipEffectId];
 
         self.clipEffectStartTime = (source[kClipEffectStartTime] != nil) ? [source[kClipEffectStartTime] floatValue] : 0;
@@ -46,7 +47,7 @@ static NSString *const kClipEffectEndTime = @"clipEffectEndTime";
 
 - (void) dealloc
 {
-    self.clipEffectId = nil;
+    //self.clipEffectId = nil;
     [super dealloc];
 }
 
