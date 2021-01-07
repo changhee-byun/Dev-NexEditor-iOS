@@ -7,9 +7,11 @@
 
 import SwiftUI
 import PhotosUI
+import NexEditorFramework
 
 struct BeatTemplateMainView: View {
-    var editorEngineWrapper = NexEditorEngineWrapper()
+    //var editorEngineWrapper = NexEditorEngineWrapper()
+    var nexEditor = NexEditor()
 //    @State var project: NXEProject!
     @State fileprivate var project: NXEProject!
     @State fileprivate var playable: Playable!
@@ -33,7 +35,7 @@ struct BeatTemplateMainView: View {
     
     var body: some View {
         VStack {
-            NexEditorEnginePreview(engineWrapper: self.editorEngineWrapper)
+            NexEditorView(engineWrapper: self.nexEditor)
                 .onTapGesture {
                     self.playable.playPause()
                 }
@@ -53,7 +55,7 @@ struct BeatTemplateMainView: View {
                 LazyHGrid(rows: self.templateGridRow, alignment: .bottom, spacing: 0) {
                     ForEach(self.assetGroups, id: \.self) { asset in
                         BeatTemplateAssetListCell(asset: asset.items[0] as? NXEBeatAssetItem) { asset in
-                            editorEngineWrapper.nxeEngine.stop()
+                            nexEditor.nxeEngine.stop()
                             self.selectedTemplate = asset
                             preparePlayback(asset: self.selectedTemplate)
                         }
@@ -93,7 +95,7 @@ struct BeatTemplateMainView: View {
             initPlayer()
         }
         .onDisappear(){
-            editorEngineWrapper.nxeEngine.stop()
+            nexEditor.nxeEngine.stop()
         }
     }
     
@@ -150,7 +152,7 @@ struct BeatTemplateMainView: View {
     }
     
     func initPlayer() {
-        playable = NexEditorPlayable(editor: self.editorEngineWrapper.nxeEngine)
+        playable = NexEditorPlayable(editor: self.nexEditor.nxeEngine)
         //playable.addObserver(slider)
         playable.addObserver(AdhocPlayableStateObserver({(playable, state, status) in
             if state == .playing {
@@ -198,20 +200,22 @@ struct BeatTemplateMainView: View {
         
         do {
             project = try NXEBeatTemplateProject(beatTemplateAssetItem: asset, clips:clips)
-            editorEngineWrapper.nxeEngine.setProject(project);
+            nexEditor.nxeEngine.setProject(project);
             
-            editorEngineWrapper.refreshPreview()
+            nexEditor.refreshPreview()
             
             
-            editorEngineWrapper.nxeEngine.preparedEditor {
-                editorEngineWrapper.nxeEngine.stop()
-                editorEngineWrapper.nxeEngine.seek(0)
-                let ret = editorEngineWrapper.nxeEngine.play()
-                NSLog("play -> \(ret)")
+            nexEditor.nxeEngine.preparedEditor {
+//                playable.seek(to: CMTime.zero)
+//                playable.changeState(.loaded, to: true)
+                playable.play()
+//                editorEngineWrapper.nxeEngine.stop()
+//                editorEngineWrapper.nxeEngine.seek(0)
+//                let ret = editorEngineWrapper.nxeEngine.play()
+                //NSLog("play -> \(ret)")
             }
             
-            playable.seek(to: CMTime.zero)
-            playable.changeState(.loaded, to: true)
+            
         }
         catch let e {
             print(e.localizedDescription)
@@ -240,15 +244,15 @@ struct BeatTemplateMainView: View {
         project.update()
         
         let duration = project.getTotalTime()
-        var currentTime = self.editorEngineWrapper.nxeEngine.getCurrentPosition();
-        editorEngineWrapper.nxeEngine.setProject(project);
+        var currentTime = self.nexEditor.nxeEngine.getCurrentPosition();
+        nexEditor.nxeEngine.setProject(project);
         
-        editorEngineWrapper.refreshPreview()
+        nexEditor.refreshPreview()
         
         
-        editorEngineWrapper.nxeEngine.preparedEditor {
-            editorEngineWrapper.nxeEngine.seek(0)
-            editorEngineWrapper.nxeEngine.play()
+        nexEditor.nxeEngine.preparedEditor {
+            nexEditor.nxeEngine.seek(0)
+            nexEditor.nxeEngine.play()
         }
     }
     
