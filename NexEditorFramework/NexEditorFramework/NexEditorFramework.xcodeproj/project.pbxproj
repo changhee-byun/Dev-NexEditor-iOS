@@ -48,6 +48,8 @@
 		1EFBD07D1D128F0F004A8022 /* NXEOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFBD07B1D128F0F004A8022 /* NXEOperation.h */; };
 		1EFBD07E1D128F0F004A8022 /* NXEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBD07C1D128F0F004A8022 /* NXEOperation.m */; };
 		2DD4F88C1E2A1A3800448DB8 /* TemplateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD4F88A1E2A1A3800448DB8 /* TemplateHelper.h */; };
+		377DAC6A25A6D02E00166FED /* NexEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DAC6925A6D02E00166FED /* NexEditor.swift */; };
+		377DAC7E25A6DEC400166FED /* NexEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DAC7D25A6DEC400166FED /* NexEditorView.swift */; };
 		3780484D258F4716008188B0 /* AssetEncryptionManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37C06ECC258B00EC000DC834 /* NXEEffectEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C06EC2258B00EB000DC834 /* NXEEffectEntry.h */; };
 		37C06ECF258B00EC000DC834 /* NXEBeatEffectDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C06EC5258B00EC000DC834 /* NXEBeatEffectDefault.h */; };
@@ -322,6 +324,8 @@
 		268A481C8508CA27C9CE2F65 /* Pods_NexEditorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD4F88A1E2A1A3800448DB8 /* TemplateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateHelper.h; sourceTree = "<group>"; };
 		2DD4F88B1E2A1A3800448DB8 /* TemplateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateHelper.m; sourceTree = "<group>"; };
+		377DAC6925A6D02E00166FED /* NexEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditor.swift; sourceTree = "<group>"; };
+		377DAC7D25A6DEC400166FED /* NexEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorView.swift; sourceTree = "<group>"; };
 		37C06EC2258B00EB000DC834 /* NXEEffectEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEffectEntry.h; sourceTree = "<group>"; };
 		37C06EC5258B00EC000DC834 /* NXEBeatEffectDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatEffectDefault.h; sourceTree = "<group>"; };
 		37C06EC9258B00EC000DC834 /* NXEBeatAssetItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatAssetItemInfo.h; sourceTree = "<group>"; };
@@ -658,6 +662,8 @@
 		1E78F7271C9684A300AC3347 /* NexEditorFramework */ = {
 			isa = PBXGroup;
 			children = (
+				377DAC6925A6D02E00166FED /* NexEditor.swift */,
+				377DAC7D25A6DEC400166FED /* NexEditorView.swift */,
 				37EDF165258C839B006A0BF7 /* AssetReaderModule */,
 				F470B2C51E7A20E100505F95 /* include */,
 				CF9B605E1CEAA8D200583A58 /* nexeditor */,
@@ -1340,7 +1346,7 @@
 					1E78F7241C9684A300AC3347 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = Y59HNQR68T;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1230;
 					};
 					1E9A0DCD1CBBB26100D68559 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1449,6 +1455,7 @@
 				CF7E76591D51EC0F000278A9 /* NXEClip.m in Sources */,
 				F436A9D91E5FFA1E00931F6B /* InternalAssetLibrary.m in Sources */,
 				CFA0F9451D13B8D100422072 /* UserField.m in Sources */,
+				377DAC6A25A6D02E00166FED /* NexEditor.swift in Sources */,
 				CFDBFDD01D405AEA0097560A /* MathUtil.m in Sources */,
 				F408F6331E9E33E6000F305D /* assetkey_demangler.c in Sources */,
 				F40CB83B1E5B25910010FC07 /* AssetXMLParser.m in Sources */,
@@ -1530,6 +1537,7 @@
 				CFDBFDE41D405B500097560A /* KMImageLayer.mm in Sources */,
 				CF7E766C1D51EC0F000278A9 /* NXEEngine.m in Sources */,
 				CF9B60AB1CEAA8D200583A58 /* MediaInfo.m in Sources */,
+				377DAC7E25A6DEC400166FED /* NexEditorView.swift in Sources */,
 				1E31FEE71DE3E07500A86CB2 /* KMWaterMark.m in Sources */,
 				E246A8A51E88CF9E00FBFC72 /* OverlayTitleInfo.m in Sources */,
 				F4932CE61E52CC6B009141A3 /* AssetResourceLoader.m in Sources */,
@@ -1685,7 +1693,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1711,6 +1719,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NexEditorEngine/NexEditorEngine.framework/Headers\"",
 					"$(SRCROOT)/AssetReader/AssetReader/include",
 					"$(SRCROOT)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/renderitem",
 				);
@@ -1742,7 +1751,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

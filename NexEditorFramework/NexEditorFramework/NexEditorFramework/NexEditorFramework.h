@@ -35,6 +35,7 @@
 #import <NexEditorFramework/NXECollageProject.h>
 #import <NexEditorFramework/NXECollageSlotConfiguration.h>
 #import <NexEditorFramework/NXECollageTitleConfiguration.h>
+#import <NexEditorFramework/NXEAssetItem.h>
 
 #pragma mark - beatTemplate
 #import <NexEditorFramework/NXEBeatTemplateProject.h>
@@ -47,4 +48,9 @@
 #pragma mark - nexeditor/videoeditor
 #import <NexEditorFramework/NXEEditorErrorCode.h>
 #import <NexEditorFramework/NexLogger.h>
+
+#pragma mark - NexEditorEngine
+#import <NexEditorEngine/NexEditorLog.h>
+
+
 
