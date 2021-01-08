@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 import CoreMedia
+import NexEditorFramework
 
 //: ## Slider
 //: - range: min/max    <- playable.loaded

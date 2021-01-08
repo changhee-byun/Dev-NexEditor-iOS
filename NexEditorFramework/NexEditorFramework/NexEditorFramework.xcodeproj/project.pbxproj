@@ -51,6 +51,8 @@
 		3738E7B525A82C6F005B1F48 /* BeatTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E7B425A82C6F005B1F48 /* BeatTemplate.swift */; };
 		3738E7CB25A8511B005B1F48 /* ClipSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E7CA25A8511B005B1F48 /* ClipSource.swift */; };
 		3738E7D625A851F2005B1F48 /* ThumbnailLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E7D525A851F2005B1F48 /* ThumbnailLoadable.swift */; };
+		3738E7E625A87569005B1F48 /* Playable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E7E225A87569005B1F48 /* Playable.swift */; };
+		3738E7E725A87569005B1F48 /* NexEditorPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E7E325A87569005B1F48 /* NexEditorPlayable.swift */; };
 		377157EE25A703B000A264C4 /* NexEditorAssetPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377157ED25A703B000A264C4 /* NexEditorAssetPackageManager.swift */; };
 		3771580725A7F56800A264C4 /* NexEditorClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3771580625A7F56800A264C4 /* NexEditorClip.swift */; };
 		377DAC6A25A6D02E00166FED /* NexEditorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DAC6925A6D02E00166FED /* NexEditorExt.swift */; };
@@ -332,6 +334,8 @@
 		3738E7B425A82C6F005B1F48 /* BeatTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTemplate.swift; sourceTree = "<group>"; };
 		3738E7CA25A8511B005B1F48 /* ClipSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipSource.swift; sourceTree = "<group>"; };
 		3738E7D525A851F2005B1F48 /* ThumbnailLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailLoadable.swift; sourceTree = "<group>"; };
+		3738E7E225A87569005B1F48 /* Playable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playable.swift; sourceTree = "<group>"; };
+		3738E7E325A87569005B1F48 /* NexEditorPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NexEditorPlayable.swift; sourceTree = "<group>"; };
 		377157ED25A703B000A264C4 /* NexEditorAssetPackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NexEditorAssetPackageManager.swift; sourceTree = "<group>"; };
 		3771580625A7F56800A264C4 /* NexEditorClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorClip.swift; sourceTree = "<group>"; };
 		377DAC6925A6D02E00166FED /* NexEditorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorExt.swift; sourceTree = "<group>"; };
@@ -682,9 +686,19 @@
 			path = NexEditorFramework;
 			sourceTree = "<group>";
 		};
+		3738E7E025A87569005B1F48 /* Playable */ = {
+			isa = PBXGroup;
+			children = (
+				3738E7E225A87569005B1F48 /* Playable.swift */,
+				3738E7E325A87569005B1F48 /* NexEditorPlayable.swift */,
+			);
+			path = Playable;
+			sourceTree = "<group>";
+		};
 		3771580A25A7F57700A264C4 /* NexEditorEXT */ = {
 			isa = PBXGroup;
 			children = (
+				3738E7E025A87569005B1F48 /* Playable */,
 				377DAC6925A6D02E00166FED /* NexEditorExt.swift */,
 				377DAC7D25A6DEC400166FED /* NexEditorView.swift */,
 				377157ED25A703B000A264C4 /* NexEditorAssetPackageManager.swift */,
@@ -1467,6 +1481,7 @@
 				BB1F85C11F41879B008361F3 /* NXELutSource.mm in Sources */,
 				E2DCC0CB202BF314008B8C26 /* TemplateV3Handler.m in Sources */,
 				1E31FEDE1DE3DFE600A86CB2 /* NXELayer.m in Sources */,
+				3738E7E725A87569005B1F48 /* NexEditorPlayable.swift in Sources */,
 				CFDBFDEA1D405B500097560A /* KMTextLayer.mm in Sources */,
 				E246A8A31E88CF9E00FBFC72 /* NSDictionary+ValueForKeyDefault.m in Sources */,
 				CFDBFDE21D405B500097560A /* KMEffectLayer.m in Sources */,
@@ -1488,6 +1503,7 @@
 				377157EE25A703B000A264C4 /* NexEditorAssetPackageManager.swift in Sources */,
 				CFDBFDE81D405B500097560A /* KMLut.m in Sources */,
 				E26C2E631E8A4AB800AFB1C1 /* KMAnimationInterpolation.m in Sources */,
+				3738E7E625A87569005B1F48 /* Playable.swift in Sources */,
 				3738E7CB25A8511B005B1F48 /* ClipSource.swift in Sources */,
 				E2BD2CD51EA5D79D00E17BDA /* NXETextEffect.m in Sources */,
 				37EDF194258C839B006A0BF7 /* AssetItemPathInfo.m in Sources */,

@@ -14,7 +14,7 @@ struct BeatTemplateMainView: View {
     @State var nexEditor = NexEditorExt()
 //    @State var project: NXEProject!
     @State fileprivate var project: NXEProject!
-    @State fileprivate var playable: Playable!
+    @State fileprivate var nexEditorPlayer: Playable!
     //@State fileprivate var clips : [NXEClip]? = nil
     
 //    @State var selectedTemplate: NXEBeatAssetItem?
@@ -41,7 +41,7 @@ struct BeatTemplateMainView: View {
         VStack {
             NexEditorView(engineWrapper: self.nexEditor)
                 .onTapGesture {
-                    self.playable.playPause()
+                    self.nexEditorPlayer.playPause()
                 }
             
             VStack {
@@ -59,7 +59,8 @@ struct BeatTemplateMainView: View {
                 LazyHGrid(rows: self.templateGridRow, alignment: .bottom, spacing: 0) {
                     ForEach(self.beatTemplates, id: \.self) { beatTemplate in
                         BeatTemplateAssetListCell(nexEditor: self.$nexEditor, template: beatTemplate) { selectedTemplate in
-                            nexEditor.nxeEngine.stop()
+                            //nexEditor.nxeEngine.stop()
+                            self.nexEditorPlayer.pause()
                             self.selectedTemplate = selectedTemplate
                             preparePlayback(template: self.selectedTemplate)
                         }
@@ -99,7 +100,8 @@ struct BeatTemplateMainView: View {
             initPlayer()
         }
         .onDisappear(){
-            nexEditor.nxeEngine.stop()
+            self.nexEditorPlayer.pause()
+            //nexEditor.nxeEngine.stop()
         }
     }
     
@@ -150,7 +152,7 @@ struct BeatTemplateMainView: View {
         self.beatTemplates = self.nexEditor.loadBeatTemplates()
         
         if self.beatTemplates.count != 0 {
-            self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
+            //self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
             self.selectedTemplate = self.beatTemplates[0]
         }
 //        NexEditorAssetPackageManager.manager.installAllPackages()
@@ -162,9 +164,9 @@ struct BeatTemplateMainView: View {
     }
     
     func initPlayer() {
-        playable = NexEditorPlayable(editor: self.nexEditor.nxeEngine)
+        nexEditorPlayer = NexEditorPlayable(nexEditorExt: self.nexEditor)
         //playable.addObserver(slider)
-        playable.addObserver(AdhocPlayableStateObserver({(playable, state, status) in
+        nexEditorPlayer.addObserver(AdhocPlayableStateObserver({(playable, state, status) in
             if state == .playing {
 //                let imageNameDefault = status.playing ? "pause_default" : "play_default"
 //                self?.playPauseButton.setImage(UIImage(named:imageNameDefault), for: .normal)
@@ -194,39 +196,39 @@ struct BeatTemplateMainView: View {
         _ = self.nexEditor.setBeatTemplate(asset)
     }
     
-    func createProject(phFetchResult: PHFetchResult<PHAsset>) {
-        var nexClipSources: [NXEClipSource?] = []
-        
-        for index in 0 ..< phFetchResult.count {
-            nexClipSources.append(NXEClipSource(phAsset: phFetchResult[index]))
-        }
-        
-        var clips : [NXEClip] = []
-        for nexClipSource in nexClipSources {
-            do {
-                let clip = try NXEClip(source: nexClipSource)
-                clips.append(clip)
-            } catch {
-                fatalError("Invalid clip")
-            }
-        }
-        
-        project = NXEProject()
-        project.visualClips = clips
-        project.update()
-        
-        let duration = project.getTotalTime()
-        var currentTime = self.nexEditor.nxeEngine.getCurrentPosition();
-        nexEditor.nxeEngine.setProject(project);
-        
-        nexEditor.refreshPreview()
-        
-        
-        nexEditor.nxeEngine.preparedEditor {
-            nexEditor.nxeEngine.seek(0)
-            nexEditor.nxeEngine.play()
-        }
-    }
+//    func createProject(phFetchResult: PHFetchResult<PHAsset>) {
+//        var nexClipSources: [NXEClipSource?] = []
+//        
+//        for index in 0 ..< phFetchResult.count {
+//            nexClipSources.append(NXEClipSource(phAsset: phFetchResult[index]))
+//        }
+//        
+//        var clips : [NXEClip] = []
+//        for nexClipSource in nexClipSources {
+//            do {
+//                let clip = try NXEClip(source: nexClipSource)
+//                clips.append(clip)
+//            } catch {
+//                fatalError("Invalid clip")
+//            }
+//        }
+//        
+//        project = NXEProject()
+//        project.visualClips = clips
+//        project.update()
+//        
+//        let duration = project.getTotalTime()
+//        var currentTime = self.nexEditor.nxeEngine.getCurrentPosition();
+//        nexEditor.nxeEngine.setProject(project);
+//        
+//        nexEditor.refreshPreview()
+//        
+//        
+//        nexEditor.nxeEngine.preparedEditor {
+//            nexEditor.nxeEngine.seek(0)
+//            nexEditor.nxeEngine.play()
+//        }
+//    }
     
     func getPHPickerConfiguration(assetType: AssetType)-> PHPickerConfiguration {
         var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())

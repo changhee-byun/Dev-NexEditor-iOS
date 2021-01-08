@@ -9,14 +9,15 @@
 import Foundation
 
 public class NexEditorExt {
-    public var nxeEngine : NXEEngine = NXEEngine()
     public var preview : UIView = UIView()
     public var clips : [NXEClip]? = nil
     public var beatTemplates: [BeatTemplate] = []
     
+    internal var nxeEngine : NXEEngine = NXEEngine()
     var assetGroups: [NXEAssetItemGroup] = []
     var nxeBeatAssets: [NXEBeatAssetItem] = []
     var project: NXEProject!
+    var player: NexEditorPlayable? = nil
     
     public init(engine: NXEEngine) {
         self.nxeEngine = engine
@@ -107,9 +108,11 @@ public class NexEditorExt {
             refreshPreview()
             
             self.nxeEngine.preparedEditor {
+                self.player?.seek(to: CMTime.zero)
+                self.player?.changeState(.loaded, to: true)
                 //                playable.seek(to: CMTime.zero)
                 //                playable.changeState(.loaded, to: true)
-                self.nxeEngine.play()
+                //self.nxeEngine.play()
                 //                editorEngineWrapper.nxeEngine.stop()
                 //                editorEngineWrapper.nxeEngine.seek(0)
                 //                let ret = editorEngineWrapper.nxeEngine.play()
