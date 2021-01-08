@@ -40,7 +40,30 @@
             _info = [[NXEBeatAssetItemInfo alloc] initWithData:data];
         }
     }
+    
     return _info;
+}
+
+-(NSString *) title {
+    if ( _info == nil ) {
+        NSData *data = self.fileInfoResourceData;
+        if ( data ) {
+            _info = [[NXEBeatAssetItemInfo alloc] initWithData:data];
+        }
+    }
+    
+    return _info.title;
+}
+
+-(NSString *) audioId {
+    if ( _info == nil ) {
+        NSData *data = self.fileInfoResourceData;
+        if ( data ) {
+            _info = [[NXEBeatAssetItemInfo alloc] initWithData:data];
+        }
+    }
+    
+    return _info.audioId;
 }
 
 - (void)dealloc

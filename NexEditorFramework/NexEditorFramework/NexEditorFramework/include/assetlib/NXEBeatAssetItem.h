@@ -25,5 +25,8 @@
  */
 @interface NXEBeatAssetItem: NXEAssetItem
 
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) NSString *audioId;
+
 @end
 

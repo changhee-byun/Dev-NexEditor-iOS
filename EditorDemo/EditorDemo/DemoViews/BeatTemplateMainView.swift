@@ -11,14 +11,18 @@ import NexEditorFramework
 
 struct BeatTemplateMainView: View {
     //var editorEngineWrapper = NexEditorEngineWrapper()
-    var nexEditor = NexEditor()
+    var nexEditor = NexEditorExt()
 //    @State var project: NXEProject!
     @State fileprivate var project: NXEProject!
     @State fileprivate var playable: Playable!
     @State fileprivate var clips : [NXEClip]? = nil
     
-    @State var selectedTemplate: NXEBeatAssetItem?
+//    @State var selectedTemplate: NXEBeatAssetItem?
     @State var assetGroups: [NXEAssetItemGroup] = []
+    
+    @State var beatTemplates: [BeatTemplate] = []
+    @State var selectedTemplate: BeatTemplate?
+    
     @State var showPicker = [false, false]
     
     enum AssetType: Int {
@@ -54,10 +58,10 @@ struct BeatTemplateMainView: View {
             ScrollView(.horizontal) {
                 LazyHGrid(rows: self.templateGridRow, alignment: .bottom, spacing: 0) {
                     ForEach(self.assetGroups, id: \.self) { asset in
-                        BeatTemplateAssetListCell(asset: asset.items[0] as? NXEBeatAssetItem) { asset in
+                        BeatTemplateAssetListCell(template: self.beatTemplates[0], asset: asset.items[0] as? NXEBeatAssetItem) { asset in
                             nexEditor.nxeEngine.stop()
                             self.selectedTemplate = asset
-                            preparePlayback(asset: self.selectedTemplate)
+                            preparePlayback(template: self.selectedTemplate)
                         }
                         Spacer().frame(width:10)
                     }
@@ -133,21 +137,27 @@ struct BeatTemplateMainView: View {
         switch filter {
             case .images:
                 prepareClipSource(phFetchResult: fetchResult)
-                preparePlayback(asset: self.selectedTemplate)
+                preparePlayback(template: self.selectedTemplate)
             case .videos:
                 prepareClipSource(phFetchResult: fetchResult)
-                preparePlayback(asset: self.selectedTemplate)
+                preparePlayback(template: self.selectedTemplate)
             default:
                 print("unsupported picker result")
         }
     }
     
     func loadBeatTemplate() {
-        AssetPackageManager.manager.installAllPackages()
-        self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
-        if let group = self.assetGroups.first, let asset = group.items[0] as? NXEBeatAssetItem {
-            self.selectedTemplate = asset
+        self.beatTemplates = self.nexEditor.loadBeatTemplates()
+        
+        if self.beatTemplates.count != 0 {
+            self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
+            self.selectedTemplate = self.beatTemplates[0]
         }
+//        NexEditorAssetPackageManager.manager.installAllPackages()
+//        self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
+//        if let group = self.assetGroups.first, let asset = group.items[0] as? NXEBeatAssetItem {
+//            self.selectedTemplate = asset
+//        }
         
     }
     
@@ -174,11 +184,11 @@ struct BeatTemplateMainView: View {
     
     func prepareClipSource(phFetchResult: PHFetchResult<PHAsset>) {
         var nexClipSources: [NXEClipSource] = []
-        
+
         for index in 0 ..< phFetchResult.count {
             nexClipSources.append(NXEClipSource(phAsset: phFetchResult[index]))
         }
-        
+
         var clips : [NXEClip] = []
         for nexClipSource in nexClipSources {
             do {
@@ -190,36 +200,16 @@ struct BeatTemplateMainView: View {
         }
         
         self.clips = clips
+        
+        _ = self.nexEditor.setClips(phFetchResult: phFetchResult)
     }
     
-    func preparePlayback(asset:NXEBeatAssetItem?) -> Void {
-        guard let clips = self.clips, let asset = self.selectedTemplate else {
+    func preparePlayback(template: BeatTemplate?) -> Void {
+        guard let clips = self.clips, let asset = template else {
             NSLog("Empty clip sources. or empty beat template asset")
             return
         }
-        
-        do {
-            project = try NXEBeatTemplateProject(beatTemplateAssetItem: asset, clips:clips)
-            nexEditor.nxeEngine.setProject(project);
-            
-            nexEditor.refreshPreview()
-            
-            
-            nexEditor.nxeEngine.preparedEditor {
-//                playable.seek(to: CMTime.zero)
-//                playable.changeState(.loaded, to: true)
-                playable.play()
-//                editorEngineWrapper.nxeEngine.stop()
-//                editorEngineWrapper.nxeEngine.seek(0)
-//                let ret = editorEngineWrapper.nxeEngine.play()
-                //NSLog("play -> \(ret)")
-            }
-            
-            
-        }
-        catch let e {
-            print(e.localizedDescription)
-        }
+        self.nexEditor.setBeatTemplate(asset)
     }
     
     func createProject(phFetchResult: PHFetchResult<PHAsset>) {
@@ -272,8 +262,10 @@ struct BeatTemplateMainView: View {
 
 struct BeatTemplateAssetListCell: View {
     @State var assetThumbnail: UIImage? = nil
+    let template: BeatTemplate
     let asset: NXEBeatAssetItem?
-    var selectCompletion: ((_ item: NXEBeatAssetItem) -> Void)
+    var selectCompletion: ((_ item: BeatTemplate) -> Void)
+    
     
     var body: some View {
         ZStack {
@@ -286,7 +278,7 @@ struct BeatTemplateAssetListCell: View {
                 Image(uiImage: thumb)
                     .onTapGesture {
                         if asset != nil {
-                            selectCompletion(self.asset!)
+                            selectCompletion(self.template)
                         }
                     }
             }

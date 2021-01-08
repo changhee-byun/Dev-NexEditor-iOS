@@ -9,9 +9,9 @@
 import SwiftUI
 
 public struct NexEditorView: UIViewRepresentable {
-    public var engineWrapper : NexEditor
+    public var engineWrapper : NexEditorExt
     
-    public init(engineWrapper: NexEditor) {
+    public init(engineWrapper: NexEditorExt) {
         self.engineWrapper = engineWrapper
     }
     

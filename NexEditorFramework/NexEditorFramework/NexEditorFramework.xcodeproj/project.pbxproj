@@ -48,7 +48,10 @@
 		1EFBD07D1D128F0F004A8022 /* NXEOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFBD07B1D128F0F004A8022 /* NXEOperation.h */; };
 		1EFBD07E1D128F0F004A8022 /* NXEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBD07C1D128F0F004A8022 /* NXEOperation.m */; };
 		2DD4F88C1E2A1A3800448DB8 /* TemplateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD4F88A1E2A1A3800448DB8 /* TemplateHelper.h */; };
-		377DAC6A25A6D02E00166FED /* NexEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DAC6925A6D02E00166FED /* NexEditor.swift */; };
+		3738E7B525A82C6F005B1F48 /* BeatTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E7B425A82C6F005B1F48 /* BeatTemplate.swift */; };
+		377157EE25A703B000A264C4 /* NexEditorAssetPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377157ED25A703B000A264C4 /* NexEditorAssetPackageManager.swift */; };
+		3771580725A7F56800A264C4 /* NexEditorClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3771580625A7F56800A264C4 /* NexEditorClip.swift */; };
+		377DAC6A25A6D02E00166FED /* NexEditorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DAC6925A6D02E00166FED /* NexEditorExt.swift */; };
 		377DAC7E25A6DEC400166FED /* NexEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DAC7D25A6DEC400166FED /* NexEditorView.swift */; };
 		3780484D258F4716008188B0 /* AssetEncryptionManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		37C06ECC258B00EC000DC834 /* NXEEffectEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C06EC2258B00EB000DC834 /* NXEEffectEntry.h */; };
@@ -324,7 +327,10 @@
 		268A481C8508CA27C9CE2F65 /* Pods_NexEditorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD4F88A1E2A1A3800448DB8 /* TemplateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateHelper.h; sourceTree = "<group>"; };
 		2DD4F88B1E2A1A3800448DB8 /* TemplateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateHelper.m; sourceTree = "<group>"; };
-		377DAC6925A6D02E00166FED /* NexEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditor.swift; sourceTree = "<group>"; };
+		3738E7B425A82C6F005B1F48 /* BeatTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTemplate.swift; sourceTree = "<group>"; };
+		377157ED25A703B000A264C4 /* NexEditorAssetPackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NexEditorAssetPackageManager.swift; sourceTree = "<group>"; };
+		3771580625A7F56800A264C4 /* NexEditorClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorClip.swift; sourceTree = "<group>"; };
+		377DAC6925A6D02E00166FED /* NexEditorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorExt.swift; sourceTree = "<group>"; };
 		377DAC7D25A6DEC400166FED /* NexEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorView.swift; sourceTree = "<group>"; };
 		37C06EC2258B00EB000DC834 /* NXEEffectEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEEffectEntry.h; sourceTree = "<group>"; };
 		37C06EC5258B00EC000DC834 /* NXEBeatEffectDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEBeatEffectDefault.h; sourceTree = "<group>"; };
@@ -662,8 +668,7 @@
 		1E78F7271C9684A300AC3347 /* NexEditorFramework */ = {
 			isa = PBXGroup;
 			children = (
-				377DAC6925A6D02E00166FED /* NexEditor.swift */,
-				377DAC7D25A6DEC400166FED /* NexEditorView.swift */,
+				3771580A25A7F57700A264C4 /* NexEditorEXT */,
 				37EDF165258C839B006A0BF7 /* AssetReaderModule */,
 				F470B2C51E7A20E100505F95 /* include */,
 				CF9B605E1CEAA8D200583A58 /* nexeditor */,
@@ -671,6 +676,18 @@
 				1E78F72A1C9684A300AC3347 /* Info.plist */,
 			);
 			path = NexEditorFramework;
+			sourceTree = "<group>";
+		};
+		3771580A25A7F57700A264C4 /* NexEditorEXT */ = {
+			isa = PBXGroup;
+			children = (
+				377DAC6925A6D02E00166FED /* NexEditorExt.swift */,
+				377DAC7D25A6DEC400166FED /* NexEditorView.swift */,
+				377157ED25A703B000A264C4 /* NexEditorAssetPackageManager.swift */,
+				3771580625A7F56800A264C4 /* NexEditorClip.swift */,
+				3738E7B425A82C6F005B1F48 /* BeatTemplate.swift */,
+			);
+			path = NexEditorEXT;
 			sourceTree = "<group>";
 		};
 		37EDF165258C839B006A0BF7 /* AssetReaderModule */ = {
@@ -1433,6 +1450,7 @@
 				E2E64BD61FD6A3B6005473B6 /* RenderDataEncoder.m in Sources */,
 				07C5B2891E25C1E400919EA1 /* NXEError.m in Sources */,
 				F4988F5C20734D9100ACACAB /* NexLogger.m in Sources */,
+				3738E7B525A82C6F005B1F48 /* BeatTemplate.swift in Sources */,
 				E2165B4E202860A8007E3F8A /* NXETemplateProject.m in Sources */,
 				E2BBE1691FF46FA100C3256F /* NXECollageTitleConfiguration.m in Sources */,
 				1EFBD07E1D128F0F004A8022 /* NXEOperation.m in Sources */,
@@ -1455,11 +1473,12 @@
 				CF7E76591D51EC0F000278A9 /* NXEClip.m in Sources */,
 				F436A9D91E5FFA1E00931F6B /* InternalAssetLibrary.m in Sources */,
 				CFA0F9451D13B8D100422072 /* UserField.m in Sources */,
-				377DAC6A25A6D02E00166FED /* NexEditor.swift in Sources */,
+				377DAC6A25A6D02E00166FED /* NexEditorExt.swift in Sources */,
 				CFDBFDD01D405AEA0097560A /* MathUtil.m in Sources */,
 				F408F6331E9E33E6000F305D /* assetkey_demangler.c in Sources */,
 				F40CB83B1E5B25910010FC07 /* AssetXMLParser.m in Sources */,
 				37EDF199258C839B006A0BF7 /* AssetLoader.m in Sources */,
+				377157EE25A703B000A264C4 /* NexEditorAssetPackageManager.swift in Sources */,
 				CFDBFDE81D405B500097560A /* KMLut.m in Sources */,
 				E26C2E631E8A4AB800AFB1C1 /* KMAnimationInterpolation.m in Sources */,
 				E2BD2CD51EA5D79D00E17BDA /* NXETextEffect.m in Sources */,
@@ -1480,6 +1499,7 @@
 				F49FF7362087302900411399 /* NXETextureDisposeBag.m in Sources */,
 				E2E64BD01FD6A3B6005473B6 /* CollageInfo.m in Sources */,
 				CF7E766F1D51EC0F000278A9 /* NXETextLayer.m in Sources */,
+				3771580725A7F56800A264C4 /* NexEditorClip.swift in Sources */,
 				E2BBE1661FF46FA100C3256F /* NXECollageProject.m in Sources */,
 				CF7E767D1D51F918000278A9 /* NXEEngineEventListener.m in Sources */,
 				F41568CB1FE3BC06000A72BE /* NXEAssetItemGroup.m in Sources */,
