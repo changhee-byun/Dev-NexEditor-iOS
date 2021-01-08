@@ -13,11 +13,11 @@ public class NexEditorExt {
     public var clips : [NXEClip]? = nil
     public var beatTemplates: [BeatTemplate] = []
     
-    internal var nxeEngine : NXEEngine = NXEEngine()
-    var assetGroups: [NXEAssetItemGroup] = []
-    var nxeBeatAssets: [NXEBeatAssetItem] = []
+    var nxeEngine : NXEEngine = NXEEngine()
+    var assetItemGroups: [NXEAssetItemGroup] = []
+    var beatAssetItems: [NXEBeatAssetItem] = []
     var project: NXEProject!
-    var player: NexEditorPlayable? = nil
+    var player: NexEditorPlayer? = nil
     
     public init(engine: NXEEngine) {
         self.nxeEngine = engine
@@ -82,11 +82,11 @@ public class NexEditorExt {
     
     public func loadBeatTemplates()-> [BeatTemplate] {
         NexEditorAssetPackageManager.manager.installAllPackages()
-        self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
-        self.nxeBeatAssets = self.assetGroups.map { $0.items[0] as? NXEBeatAssetItem }.compactMap { $0 }
+        self.assetItemGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
+        self.beatAssetItems = self.assetItemGroups.map { $0.items[0] as? NXEBeatAssetItem }.compactMap { $0 }
         
         
-        self.beatTemplates = self.nxeBeatAssets.map {
+        self.beatTemplates = self.beatAssetItems.map {
             print($0)
             //return BeatTemplate(audioId: $0.audioId, title: $0.title, thumbnailHandler: NXEBeatAssetItem.loadThumbnail($0))
             return BeatTemplate(audioId: $0.audioId, title: $0.title)
@@ -178,6 +178,6 @@ extension NexEditorExt {
     }
     
     func getNxeBeatAsset(beatTemplate: BeatTemplate)-> NXEBeatAssetItem? {
-        return self.nxeBeatAssets.filter({$0.audioId == beatTemplate.audioId}).first
+        return self.beatAssetItems.filter({$0.audioId == beatTemplate.audioId}).first
     }
 }

@@ -146,7 +146,7 @@ struct BeatTemplateMainView: View {
     }
     
     func initPlayer() {
-        nexEditorPlayer = NexEditorPlayable(nexEditorExt: self.nexEditor)
+        nexEditorPlayer = NexEditorPlayer(nexEditorExt: self.nexEditor)
         //playable.addObserver(slider)
         nexEditorPlayer.addObserver(AdhocPlayableStateObserver({(playable, state, status) in
             if state == .playing {
@@ -157,6 +157,7 @@ struct BeatTemplateMainView: View {
 //                self?.playPauseButton.isEnabled = status.loaded
                 self.duration = TimeInterval(playable.duration.seconds)
                 self.currentTime = status.loaded ? 0 : playable.currentTime.seconds
+                self.nexEditorPlayer.play()
             }
             if state == .currentTime {
                 self.currentTime = playable.currentTime.seconds

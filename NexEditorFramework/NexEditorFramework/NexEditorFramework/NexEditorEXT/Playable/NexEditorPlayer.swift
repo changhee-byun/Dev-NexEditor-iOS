@@ -23,7 +23,7 @@ extension CMTime {
  *      current time changed
  *
  */
-public class NexEditorPlayable: Playable {
+public class NexEditorPlayer: Playable {
     
     public var status: PlayableStatus { return _status }
     public var duration: CMTime { return CMTime(timeMs: editor.project?.getTotalTime() ?? 0) }
