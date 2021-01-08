@@ -10,15 +10,8 @@ import PhotosUI
 import NexEditorFramework
 
 struct BeatTemplateMainView: View {
-    //var editorEngineWrapper = NexEditorEngineWrapper()
     @State var nexEditor = NexEditorExt()
-//    @State var project: NXEProject!
-    @State fileprivate var project: NXEProject!
-    @State fileprivate var nexEditorPlayer: Playable!
-    //@State fileprivate var clips : [NXEClip]? = nil
-    
-//    @State var selectedTemplate: NXEBeatAssetItem?
-    @State var assetGroups: [NXEAssetItemGroup] = []
+    @State var nexEditorPlayer: Playable!
     
     @State var beatTemplates: [BeatTemplate] = []
     @State var selectedTemplate: BeatTemplate?
@@ -59,7 +52,6 @@ struct BeatTemplateMainView: View {
                 LazyHGrid(rows: self.templateGridRow, alignment: .bottom, spacing: 0) {
                     ForEach(self.beatTemplates, id: \.self) { beatTemplate in
                         BeatTemplateAssetListCell(nexEditor: self.$nexEditor, template: beatTemplate) { selectedTemplate in
-                            //nexEditor.nxeEngine.stop()
                             self.nexEditorPlayer.pause()
                             self.selectedTemplate = selectedTemplate
                             preparePlayback(template: self.selectedTemplate)
@@ -101,7 +93,6 @@ struct BeatTemplateMainView: View {
         }
         .onDisappear(){
             self.nexEditorPlayer.pause()
-            //nexEditor.nxeEngine.stop()
         }
     }
     
@@ -123,12 +114,10 @@ struct BeatTemplateMainView: View {
         switch asset {
             case let asset as UIImage:
                 print("image asset \(asset)")
-                //createProject(phFetchResult: fetchResult)
                 
             case let asset as URL:
                 print("asset name -> \(String(describing: assetName))")
                 print("video asset \(asset)")
-                //createProject(phFetchResult: fetchResult)
                 
             default:
                 print("unsupported \(asset)")
@@ -152,15 +141,8 @@ struct BeatTemplateMainView: View {
         self.beatTemplates = self.nexEditor.loadBeatTemplates()
         
         if self.beatTemplates.count != 0 {
-            //self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
             self.selectedTemplate = self.beatTemplates[0]
         }
-//        NexEditorAssetPackageManager.manager.installAllPackages()
-//        self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
-//        if let group = self.assetGroups.first, let asset = group.items[0] as? NXEBeatAssetItem {
-//            self.selectedTemplate = asset
-//        }
-        
     }
     
     func initPlayer() {
@@ -180,8 +162,6 @@ struct BeatTemplateMainView: View {
                 self.currentTime = playable.currentTime.seconds
             }
         }))
-        
-        //self.preparePlayback(editor: editor, asset: asset)
     }
     
     func prepareClipSource(phFetchResult: PHFetchResult<PHAsset>) {
@@ -195,40 +175,6 @@ struct BeatTemplateMainView: View {
         }
         _ = self.nexEditor.setBeatTemplate(asset)
     }
-    
-//    func createProject(phFetchResult: PHFetchResult<PHAsset>) {
-//        var nexClipSources: [NXEClipSource?] = []
-//        
-//        for index in 0 ..< phFetchResult.count {
-//            nexClipSources.append(NXEClipSource(phAsset: phFetchResult[index]))
-//        }
-//        
-//        var clips : [NXEClip] = []
-//        for nexClipSource in nexClipSources {
-//            do {
-//                let clip = try NXEClip(source: nexClipSource)
-//                clips.append(clip)
-//            } catch {
-//                fatalError("Invalid clip")
-//            }
-//        }
-//        
-//        project = NXEProject()
-//        project.visualClips = clips
-//        project.update()
-//        
-//        let duration = project.getTotalTime()
-//        var currentTime = self.nexEditor.nxeEngine.getCurrentPosition();
-//        nexEditor.nxeEngine.setProject(project);
-//        
-//        nexEditor.refreshPreview()
-//        
-//        
-//        nexEditor.nxeEngine.preparedEditor {
-//            nexEditor.nxeEngine.seek(0)
-//            nexEditor.nxeEngine.play()
-//        }
-//    }
     
     func getPHPickerConfiguration(assetType: AssetType)-> PHPickerConfiguration {
         var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())

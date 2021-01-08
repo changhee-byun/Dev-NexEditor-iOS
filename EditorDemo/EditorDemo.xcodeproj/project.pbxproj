@@ -9,11 +9,7 @@
 /* Begin PBXBuildFile section */
 		37033A3125A46EEC007B5A81 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37033A3025A46EEC007B5A81 /* ProgressBar.swift */; };
 		37033A3D25A58670007B5A81 /* StringTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37033A3C25A58670007B5A81 /* StringTools.swift */; };
-		37716D0D25A30DD700B28523 /* ClipSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D0C25A30DD600B28523 /* ClipSource.swift */; };
-		37716D1525A30EA900B28523 /* ConvenienceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D1425A30EA900B28523 /* ConvenienceExtensions.swift */; };
 		37716D2525A32BD700B28523 /* UISeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D2225A32BD700B28523 /* UISeekSlider.swift */; };
-		37716D2625A32BD700B28523 /* Playable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D2325A32BD700B28523 /* Playable.swift */; };
-		37716D2725A32BD700B28523 /* NexEditorPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37716D2425A32BD700B28523 /* NexEditorPlayable.swift */; };
 		37805E2E25919CA2008188B0 /* EditorDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2D25919CA2008188B0 /* EditorDemoApp.swift */; };
 		37805E3025919CA2008188B0 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E2F25919CA2008188B0 /* MainListView.swift */; };
 		37805E3225919CA3008188B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37805E3125919CA3008188B0 /* Assets.xcassets */; };
@@ -22,11 +18,8 @@
 		37805E4B25919CA4008188B0 /* EditorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37805E4A25919CA4008188B0 /* EditorDemoUITests.swift */; };
 		3780759E259246CF008188B0 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780759D259246CF008188B0 /* DemoFeature.swift */; };
 		378075A625924D35008188B0 /* BeatTemplateMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075A525924D35008188B0 /* BeatTemplateMainView.swift */; };
-		378075AB25924E61008188B0 /* NexEditorEnginePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075AA25924E61008188B0 /* NexEditorEnginePreview.swift */; };
-		378075B025924EAC008188B0 /* NexEditorEngineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075AF25924EAC008188B0 /* NexEditorEngineWrapper.swift */; };
 		378075D2259257C8008188B0 /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */; };
 		378075E825927D4E008188B0 /* beattemplate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 378075E725927D4E008188B0 /* beattemplate.bundle */; };
-		378075EF25927E61008188B0 /* AssetPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378075ED25927E61008188B0 /* AssetPackageManager.swift */; };
 		46BD48E60EF7DF0F92402F6A /* Pods_EditorDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C5AE94E2CCAA862CDE04B7 /* Pods_EditorDemoTests.framework */; };
 		8BD263E9BBE07AD245E7B80F /* Pods_EditorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44F0D4D2E454D802A07E83B /* Pods_EditorDemo.framework */; };
 		B2F087D75E3905BF43956B25 /* Pods_EditorDemo_EditorDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821330220CA51B3E5BBA0171 /* Pods_EditorDemo_EditorDemoUITests.framework */; };
@@ -68,11 +61,7 @@
 		2D9ABBAEA7399C34BB9C6B05 /* Pods-EditorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo.release.xcconfig"; path = "Target Support Files/Pods-EditorDemo/Pods-EditorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		37033A3025A46EEC007B5A81 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		37033A3C25A58670007B5A81 /* StringTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTools.swift; sourceTree = "<group>"; };
-		37716D0C25A30DD600B28523 /* ClipSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipSource.swift; sourceTree = "<group>"; };
-		37716D1425A30EA900B28523 /* ConvenienceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvenienceExtensions.swift; sourceTree = "<group>"; };
 		37716D2225A32BD700B28523 /* UISeekSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISeekSlider.swift; sourceTree = "<group>"; };
-		37716D2325A32BD700B28523 /* Playable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playable.swift; sourceTree = "<group>"; };
-		37716D2425A32BD700B28523 /* NexEditorPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NexEditorPlayable.swift; sourceTree = "<group>"; };
 		37805E2A25919CA2008188B0 /* EditorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37805E2D25919CA2008188B0 /* EditorDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoApp.swift; sourceTree = "<group>"; };
 		37805E2F25919CA2008188B0 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
@@ -87,12 +76,9 @@
 		37805E4C25919CA4008188B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3780759D259246CF008188B0 /* DemoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
 		378075A525924D35008188B0 /* BeatTemplateMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTemplateMainView.swift; sourceTree = "<group>"; };
-		378075AA25924E61008188B0 /* NexEditorEnginePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorEnginePreview.swift; sourceTree = "<group>"; };
-		378075AF25924EAC008188B0 /* NexEditorEngineWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexEditorEngineWrapper.swift; sourceTree = "<group>"; };
 		378075BA25925148008188B0 /* EditorDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditorDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
 		378075E725927D4E008188B0 /* beattemplate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = beattemplate.bundle; path = EditorDemo/beattemplate.bundle; sourceTree = "<group>"; };
-		378075ED25927E61008188B0 /* AssetPackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetPackageManager.swift; sourceTree = "<group>"; };
 		388C66EEA216B58AF9C7E130 /* Pods-EditorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemoTests.release.xcconfig"; path = "Target Support Files/Pods-EditorDemoTests/Pods-EditorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		66C5AE94E2CCAA862CDE04B7 /* Pods_EditorDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EditorDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72378DD700DE6F065267D17C /* Pods-EditorDemo-EditorDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditorDemo-EditorDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-EditorDemo-EditorDemoUITests/Pods-EditorDemo-EditorDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +120,6 @@
 			children = (
 				37033A3C25A58670007B5A81 /* StringTools.swift */,
 				37716D2125A32BC500B28523 /* Playable */,
-				37716D0C25A30DD600B28523 /* ClipSource.swift */,
-				37716D1425A30EA900B28523 /* ConvenienceExtensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -143,8 +127,6 @@
 		37716D2125A32BC500B28523 /* Playable */ = {
 			isa = PBXGroup;
 			children = (
-				37716D2425A32BD700B28523 /* NexEditorPlayable.swift */,
-				37716D2325A32BD700B28523 /* Playable.swift */,
 				37716D2225A32BD700B28523 /* UISeekSlider.swift */,
 				37033A3025A46EEC007B5A81 /* ProgressBar.swift */,
 			);
@@ -178,9 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				37716D0B25A30DC100B28523 /* Common */,
-				378075EC25927E61008188B0 /* AssetPackages */,
 				378075CD259252F8008188B0 /* DemoViews */,
-				378075CA25925284008188B0 /* NexEditor */,
 				37805E2D25919CA2008188B0 /* EditorDemoApp.swift */,
 				37805E2F25919CA2008188B0 /* MainListView.swift */,
 				3780759D259246CF008188B0 /* DemoFeature.swift */,
@@ -219,29 +199,12 @@
 			path = EditorDemoUITests;
 			sourceTree = "<group>";
 		};
-		378075CA25925284008188B0 /* NexEditor */ = {
-			isa = PBXGroup;
-			children = (
-				378075AA25924E61008188B0 /* NexEditorEnginePreview.swift */,
-				378075AF25924EAC008188B0 /* NexEditorEngineWrapper.swift */,
-			);
-			path = NexEditor;
-			sourceTree = "<group>";
-		};
 		378075CD259252F8008188B0 /* DemoViews */ = {
 			isa = PBXGroup;
 			children = (
 				378075A525924D35008188B0 /* BeatTemplateMainView.swift */,
 			);
 			path = DemoViews;
-			sourceTree = "<group>";
-		};
-		378075EC25927E61008188B0 /* AssetPackages */ = {
-			isa = PBXGroup;
-			children = (
-				378075ED25927E61008188B0 /* AssetPackageManager.swift */,
-			);
-			path = AssetPackages;
 			sourceTree = "<group>";
 		};
 		4FE7FED34191E72820A5EB30 /* Pods */ = {
@@ -506,21 +469,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378075AB25924E61008188B0 /* NexEditorEnginePreview.swift in Sources */,
 				37033A3D25A58670007B5A81 /* StringTools.swift in Sources */,
-				37716D1525A30EA900B28523 /* ConvenienceExtensions.swift in Sources */,
-				37716D0D25A30DD700B28523 /* ClipSource.swift in Sources */,
-				37716D2725A32BD700B28523 /* NexEditorPlayable.swift in Sources */,
 				37716D2525A32BD700B28523 /* UISeekSlider.swift in Sources */,
 				378075D2259257C8008188B0 /* PhotoLibraryPicker.swift in Sources */,
 				37033A3125A46EEC007B5A81 /* ProgressBar.swift in Sources */,
 				37805E3025919CA2008188B0 /* MainListView.swift in Sources */,
-				378075EF25927E61008188B0 /* AssetPackageManager.swift in Sources */,
 				378075A625924D35008188B0 /* BeatTemplateMainView.swift in Sources */,
 				3780759E259246CF008188B0 /* DemoFeature.swift in Sources */,
-				378075B025924EAC008188B0 /* NexEditorEngineWrapper.swift in Sources */,
 				37805E2E25919CA2008188B0 /* EditorDemoApp.swift in Sources */,
-				37716D2625A32BD700B28523 /* Playable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
