@@ -1,5 +1,5 @@
 //
-//  NexEditorFrameworkWrapper.swift
+//  NexEditorExt.swift
 //  NexEditorFramework
 //
 //  Created by CHANGHEE2 on 2021/01/07.
@@ -87,8 +87,6 @@ public class NexEditorExt {
         
         
         self.beatTemplates = self.beatAssetItems.map {
-            print($0)
-            //return BeatTemplate(audioId: $0.audioId, title: $0.title, thumbnailHandler: NXEBeatAssetItem.loadThumbnail($0))
             return BeatTemplate(audioId: $0.audioId, title: $0.title)
         }
 
@@ -101,7 +99,6 @@ public class NexEditorExt {
         }
         
         do {
-            
             self.project = try NXEBeatTemplateProject(beatTemplateAssetItem: selectedAsset, clips: self.clips)
             self.nxeEngine.setProject(self.project)
             
@@ -110,16 +107,7 @@ public class NexEditorExt {
             self.nxeEngine.preparedEditor {
                 self.player?.seek(to: CMTime.zero)
                 self.player?.changeState(.loaded, to: true)
-                //                playable.seek(to: CMTime.zero)
-                //                playable.changeState(.loaded, to: true)
-                //self.nxeEngine.play()
-                //                editorEngineWrapper.nxeEngine.stop()
-                //                editorEngineWrapper.nxeEngine.seek(0)
-                //                let ret = editorEngineWrapper.nxeEngine.play()
-                //NSLog("play -> \(ret)")
             }
-
-            
         }
         catch let e {
             print(e.localizedDescription)

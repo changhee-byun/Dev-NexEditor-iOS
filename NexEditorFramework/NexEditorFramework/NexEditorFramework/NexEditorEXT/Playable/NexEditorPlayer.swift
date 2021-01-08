@@ -61,16 +61,14 @@ public class NexEditorPlayer: Playable {
     public func play() {
         if !self._status.playing {
             editor.resume()
-            self._status.playing = true
-            self.broadcastStateChange(.playing)
+            changeState(.playing, to: true)
         }
     }
     
     public func pause() {
         if self._status.playing {
             editor.pause()
-            self._status.playing = false
-            self.broadcastStateChange(.playing)
+            changeState(.playing, to: false)
         }
     }
     
