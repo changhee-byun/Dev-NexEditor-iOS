@@ -11,11 +11,11 @@ import NexEditorFramework
 
 struct BeatTemplateMainView: View {
     //var editorEngineWrapper = NexEditorEngineWrapper()
-    var nexEditor = NexEditorExt()
+    @State var nexEditor = NexEditorExt()
 //    @State var project: NXEProject!
     @State fileprivate var project: NXEProject!
     @State fileprivate var playable: Playable!
-    @State fileprivate var clips : [NXEClip]? = nil
+    //@State fileprivate var clips : [NXEClip]? = nil
     
 //    @State var selectedTemplate: NXEBeatAssetItem?
     @State var assetGroups: [NXEAssetItemGroup] = []
@@ -57,10 +57,10 @@ struct BeatTemplateMainView: View {
             // to do the work to show beat template assets.
             ScrollView(.horizontal) {
                 LazyHGrid(rows: self.templateGridRow, alignment: .bottom, spacing: 0) {
-                    ForEach(self.assetGroups, id: \.self) { asset in
-                        BeatTemplateAssetListCell(template: self.beatTemplates[0], asset: asset.items[0] as? NXEBeatAssetItem) { asset in
+                    ForEach(self.beatTemplates, id: \.self) { beatTemplate in
+                        BeatTemplateAssetListCell(nexEditor: self.$nexEditor, template: beatTemplate) { selectedTemplate in
                             nexEditor.nxeEngine.stop()
-                            self.selectedTemplate = asset
+                            self.selectedTemplate = selectedTemplate
                             preparePlayback(template: self.selectedTemplate)
                         }
                         Spacer().frame(width:10)
@@ -183,33 +183,15 @@ struct BeatTemplateMainView: View {
     }
     
     func prepareClipSource(phFetchResult: PHFetchResult<PHAsset>) {
-        var nexClipSources: [NXEClipSource] = []
-
-        for index in 0 ..< phFetchResult.count {
-            nexClipSources.append(NXEClipSource(phAsset: phFetchResult[index]))
-        }
-
-        var clips : [NXEClip] = []
-        for nexClipSource in nexClipSources {
-            do {
-                let clip = try NXEClip(source: nexClipSource)
-                clips.append(clip)
-            } catch {
-                fatalError("Invalid clip")
-            }
-        }
-        
-        self.clips = clips
-        
         _ = self.nexEditor.setClips(phFetchResult: phFetchResult)
     }
     
     func preparePlayback(template: BeatTemplate?) -> Void {
-        guard let clips = self.clips, let asset = template else {
-            NSLog("Empty clip sources. or empty beat template asset")
+        guard let asset = template else {
+            NSLog("empty beat template asset")
             return
         }
-        self.nexEditor.setBeatTemplate(asset)
+        _ = self.nexEditor.setBeatTemplate(asset)
     }
     
     func createProject(phFetchResult: PHFetchResult<PHAsset>) {
@@ -261,10 +243,11 @@ struct BeatTemplateMainView: View {
 }
 
 struct BeatTemplateAssetListCell: View {
-    @State var assetThumbnail: UIImage? = nil
+    @Binding var nexEditor: NexEditorExt
     let template: BeatTemplate
-    let asset: NXEBeatAssetItem?
     var selectCompletion: ((_ item: BeatTemplate) -> Void)
+    
+    @State var assetThumbnail: UIImage? = nil
     
     
     var body: some View {
@@ -277,24 +260,18 @@ struct BeatTemplateAssetListCell: View {
             if let thumb = assetThumbnail {
                 Image(uiImage: thumb)
                     .onTapGesture {
-                        if asset != nil {
-                            selectCompletion(self.template)
-                        }
+                        selectCompletion(self.template)
                     }
             }
         }
         .onAppear() {
-            loadThumb(thumbnail: self.asset)
+            loadThumb()
         }
     
     }
     
-    func loadThumb(thumbnail: ThumbnailLoadable?) {
-        guard let thumb = thumbnail else {
-            return
-        }
-        
-        thumb.loadThumbnail(size: CGSize(width: 60, height: 60)) { image in
+    func loadThumb() {
+        self.nexEditor.getThumbnail(template: self.template, size: CGSize(width: 60, height: 60)) { image in
             self.assetThumbnail = image
         }
     }

@@ -84,8 +84,10 @@ public class NexEditorExt {
         self.assetGroups = NXEAssetLibrary.instance().groups(inCategory: NXEAssetItemCategory.beatTemplate)
         self.nxeBeatAssets = self.assetGroups.map { $0.items[0] as? NXEBeatAssetItem }.compactMap { $0 }
         
+        
         self.beatTemplates = self.nxeBeatAssets.map {
             print($0)
+            //return BeatTemplate(audioId: $0.audioId, title: $0.title, thumbnailHandler: NXEBeatAssetItem.loadThumbnail($0))
             return BeatTemplate(audioId: $0.audioId, title: $0.title)
         }
 
@@ -93,17 +95,7 @@ public class NexEditorExt {
     }
     
     public func setBeatTemplate(_ beatTemplate: BeatTemplate)-> Bool {
-//        do {
-//        self.project = try NXEBeatTemplateProject(beatTemplateAssetItem: self.nxeBeatAssets[0], clips: self.clips)
-//        self.nxeEngine.setProject(self.project)
-//        }
-//        catch let e {
-//            print(e.localizedDescription)
-//        }
-//
-//        return true
-        
-        guard let selectedAsset = self.nxeBeatAssets.filter({$0.audioId == beatTemplate.audioId}).first else {
+        guard let selectedAsset = self.getNxeBeatAsset(beatTemplate: beatTemplate) else {
             return false
         }
         
@@ -132,6 +124,15 @@ public class NexEditorExt {
         }
         
         return true
+    }
+    
+    public func getThumbnail(template: BeatTemplate, size: CGSize, _ loaded: @escaping (_ image: UIImage?)->Void) {
+        guard let selectedAsset = self.getNxeBeatAsset(beatTemplate: template) else {
+            loaded(nil)
+            return
+        }
+        
+        selectedAsset.loadThumbnail(size: size, loaded)
     }
 }
 
@@ -171,5 +172,9 @@ extension NexEditorExt {
         else {
             return false
         }
+    }
+    
+    func getNxeBeatAsset(beatTemplate: BeatTemplate)-> NXEBeatAssetItem? {
+        return self.nxeBeatAssets.filter({$0.audioId == beatTemplate.audioId}).first
     }
 }

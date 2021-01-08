@@ -8,8 +8,7 @@
 
 import Foundation
 
-
-public struct BeatTemplate {
+public struct BeatTemplate: Hashable {
     public let audioId: String
     public let title: String
     
@@ -20,5 +19,9 @@ public struct BeatTemplate {
     public init(audioId: String, title: String) {
         self.audioId = audioId
         self.title = title
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(audioId)
     }
 }
