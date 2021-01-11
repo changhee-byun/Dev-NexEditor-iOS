@@ -9,9 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'NexEditorFramework'
 
-  project = Xcodeproj::Project.open('NexEditorFramework/NexEditorFramework.xcodeproj')
-  target = project.targets.first
-  version = target.build_settings('Debug')['CURRENT_PROJECT_VERSION']
+  # project = Xcodeproj::Project.open('NexEditorFramework/NexEditorFramework.xcodeproj')
+  # target = project.targets.first
+  # version = target.build_settings('Debug')['CURRENT_PROJECT_VERSION']
+  version = "1.7.0"
 
   s.version          = version
   s.summary          = 'NexEditor framework for internal development'
@@ -27,43 +28,61 @@ NexStreaming Corp. Internal
 NexEditor framework for internal development
                        DESC
 
-  s.homepage         = 'http://gerrit.nexstreaming.com:8080/#/admin/projects/NexEditor_IOS'
+  s.homepage         = 'https://github.com/KineMasterCorp/NexEditor'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Proprietary', :file => 'LICENSE' }
   s.author           = { 'KineMaster Corp.' => 'editor@kinemaster.com' }
   #s.source           = { :git => 'ssh://gerrit.nexstreaming.com:29418/NexEditor_IOS', :tag => s.version.to_s }
-  s.source           = { :git => 'ssh://gerrit.nexstreaming.com:29418/NexEditor_IOS', :branch => 'master' }
+  s.source           = { 
+  :git => 'https://github.com/changhee-byun/Dev-NexEditor-iOS.git', 
+  :branch => 'main' 
+}
 
   s.requires_arc = false
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
 
-  s.requires_arc = [
-    'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}',
-    'NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
-    ]
+  # s.requires_arc = [
+  #   'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}',
+  #   'NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
+  #   ]
   s.source_files = [
-    'NexEditorFramework/NexEditorFramework/**/*.{h,m,c,mm,cpp,hpp,swift}',
-    'NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/**/*.{h,m,c,mm,cpp,hpp,swift}',
+    'NexEditorFramework/NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
     ]                    
-  s.public_header_files = ['NexEditorFramework/NexEditorFramework/include/*.h',
-    'NexEditorFramework/NexEditorFramework/include/assetlib/*.h',
-    'NexEditorFramework/NexEditorFramework/include/collage/*.h',
-    'NexEditorFramework/NexEditorFramework/include/template/*.h',
-    'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageInfo.h',
-    'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageType.h',
-    'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageTextStyle.h',
-    'NexEditorFramework/AssetReaderModule/include/*.h'
+  s.public_header_files = ['NexEditorFramework/NexEditorFramework/NexEditorFramework/include/*.h',
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/include/assetlib/*.h',
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/include/collage/*.h',
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/include/template/*.h',
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageInfo.h',
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageType.h',
+    'NexEditorFramework/NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/CollageTextStyle.h',
+    'NexEditorFramework/NexEditorFramework/AssetReaderModule/include/*.h'
     ]
-  s.exclude_files = ['NexEditorFramework/NexEditorFramework/Keyczar/Framework/**/*',
-    ]
-  s.vendored_frameworks = 'NexEditorFramework/Frameworks/Framework/keyczar.framework', 'NexEditorFramework/Frameworks/Framework/zlib.framework'
+
+  # arc_files = 'NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}', 'NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
+
+  s.exclude_files = ['NexEditorFramework/NexEditorFramework/NexEditorFramework/Keyczar/Framework/**/*',
+  'NexEditorFramework/NexEditorFramework/NexEditorFramework/Frameworks/Framework/keyczar.framework/**/*',
+  'NexEditorFramework/NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}', 
+  'NexEditorFramework/NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}'
+  ]
+
+  s.subspec 'arc-specific' do |sna|
+    sna.requires_arc = true
+    sna.source_files = [ 'NexEditorFramework/NexEditorFramework/NexEditorFramework/nexeditor/collageLoader/*.{h,m}', 'NexEditorFramework/NexEditorFramework/AssetReaderModule/**/*.{h,m,mm,cpp,hpp}' ]
+  end
+
+
+  s.vendored_frameworks = 'NexEditorFramework/NexEditorFramework/Frameworks/Framework/zlib.framework'
   s.vendored_libraries = [
     ]
 
   s.pod_target_xcconfig = { "ENABLE_BITCODE" => "NO", 
-                            'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/renderitem"' }
-
-  s.resource = 'NexEditorFramework/NexEditorFramework/resource'
+                            'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/renderitem"',
+                            'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+                            
+  s.resource = 'NexEditorFramework/NexEditorFramework/NexEditorFramework/resource'
 
   s.dependency 'NexEditorEngine'
 end
