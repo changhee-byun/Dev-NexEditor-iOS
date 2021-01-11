@@ -11,7 +11,7 @@ target 'EditorDemo' do
   pod 'NexEditorEngine'
   # pod 'NexEditorEngine', :path => '../../NexEditor'
   # pod 'NexEditorFramework'
-  pod 'NexEditorFramework', :path => '../NexEditorFramework/'
+  pod 'NexEditorFramework', :path => '../'
   
 
   target 'EditorDemoTests' do

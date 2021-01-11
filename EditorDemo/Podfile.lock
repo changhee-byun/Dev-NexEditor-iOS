@@ -4,10 +4,13 @@ PODS:
   - NexEditorEngine/NexEditor (3.0.7)
   - NexEditorFramework (1.7.0):
     - NexEditorEngine
+    - NexEditorFramework/arc-specific (= 1.7.0)
+  - NexEditorFramework/arc-specific (1.7.0):
+    - NexEditorEngine
 
 DEPENDENCIES:
   - NexEditorEngine
-  - NexEditorFramework (from `../NexEditorFramework/`)
+  - NexEditorFramework (from `../`)
 
 SPEC REPOS:
   https://github.com/KineMasterCorp/NexPods.git:
@@ -15,12 +18,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   NexEditorFramework:
-    :path: "../NexEditorFramework/"
+    :path: "../"
 
 SPEC CHECKSUMS:
   NexEditorEngine: f470d72926fbcaf1d708045090c07f381ad28e06
-  NexEditorFramework: 2fc57cb23a9e855730c7231385862fc537786c2a
+  NexEditorFramework: 59622760621ececcf396c058c6288d49002cc483
 
-PODFILE CHECKSUM: 47e0a129f3749950f8c112c650bc6c8580e71ce0
+PODFILE CHECKSUM: 7bb82e483bda4c92f5c02dc3405c10c4f95c90da
 
 COCOAPODS: 1.10.0
