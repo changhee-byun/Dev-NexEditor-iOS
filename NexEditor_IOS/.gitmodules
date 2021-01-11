@@ -1,3 +1,0 @@
-[submodule "submodules/NexEditor"]
-	path = submodules/NexEditor
-	url = ssh://eric.yoo@gerrit.nexstreaming.com:29418/NexEditor

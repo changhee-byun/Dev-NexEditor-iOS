@@ -1,9 +1,0 @@
-{
-  "filename": "bgm.mp3",
-  "id": "com.lge.template.audio.newgeneration",
-  "label": {
-    "en": "New Generation"
-  },
-  "type": "nex.audio",
-  "hidden": false
-}

@@ -1,1 +1,0 @@
-python kedl.py -p -o output -k kedlkeys_sdk theme_src\builtin_basic\basic_accent.xml theme_src\builtin_basic\basic_ending.xml theme_src\builtin_basic\basic_middle.xml theme_src\builtin_basic\basic_opening.xml theme_src\builtin_basic\basic_theme.xml theme_src\builtin_basic\basic_trans.xml

@@ -1,9 +1,0 @@
-{
-    "filename": "sports_bgm.mp3",
-    "hidden": false,
-    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.audio.sports.bgm",
-    "label": {
-        "en": "sports_bgm"
-    },
-    "type": "nex.audio"
-}

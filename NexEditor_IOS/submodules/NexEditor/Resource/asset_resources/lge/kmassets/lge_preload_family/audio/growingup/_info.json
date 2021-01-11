@@ -1,9 +1,0 @@
-{
-  "filename": "bgm.mp3",
-  "id": "com.lge.template.audio.growingup",
-  "label": {
-    "en": "Growing Up"
-  },
-  "type": "nex.audio",
-  "hidden": false
-}

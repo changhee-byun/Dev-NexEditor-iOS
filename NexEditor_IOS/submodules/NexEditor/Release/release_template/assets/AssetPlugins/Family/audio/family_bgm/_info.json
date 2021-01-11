@@ -1,9 +1,0 @@
-{
-    "filename": "family_bgm.mp3",
-    "hidden": false,
-    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.audio.family.bgm",
-    "label": {
-        "en": "family_bgm"
-    },
-    "type": "nex.audio"
-}

@@ -1,9 +1,0 @@
-{
-    "filename": "love_bgm.mp3",
-    "hidden": false,
-    "id": "com.nexstreaming.kmsdk.design.nexeditor.template.audio.love.bgm",
-    "label": {
-        "en": "love_bgm"
-    },
-    "type": "nex.audio"
-}

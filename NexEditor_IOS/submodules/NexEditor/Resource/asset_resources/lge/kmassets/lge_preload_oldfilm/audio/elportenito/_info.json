@@ -1,9 +1,0 @@
-{
-  "filename": "bgm.mp3",
-  "id": "com.lge.template.audio.elportenito",
-  "label": {
-    "en": "El Portenito"
-  },
-  "type": "nex.audio",
-  "hidden": false
-}

@@ -1,1 +1,0 @@
-ios/NexEditorEngine/NexEditorEngine.podspec

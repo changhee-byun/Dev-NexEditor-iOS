@@ -1,1 +1,0 @@
-ios/Podspecs/NexRenderer.podspec

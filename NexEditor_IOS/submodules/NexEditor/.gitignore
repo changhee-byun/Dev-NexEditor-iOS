@@ -1,9 +1,0 @@
-# generated release out files
-/Release/_OUTPUT
-/Release/package
-/Release/*.apk
-/Release/*.html
-
-# vs code
-.vscode
-.project

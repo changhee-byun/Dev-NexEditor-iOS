@@ -1,5 +1,0 @@
-{
-global: Java_com_nex*; checkSDKProtection;
-local: *; 
-};
-

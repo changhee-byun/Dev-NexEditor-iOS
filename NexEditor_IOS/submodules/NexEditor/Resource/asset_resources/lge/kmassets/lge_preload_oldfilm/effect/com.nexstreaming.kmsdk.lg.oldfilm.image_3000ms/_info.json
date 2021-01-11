@@ -1,9 +1,0 @@
-{
-  "filename": "kedl.xml",
-  "id": "com.nexstreaming.kmsdk.lg.oldfilm.image_3000ms",
-  "label": {
-    "en": "oldfilm 16v9 image_3000ms"
-  },
-  "type": "nex.kedl",
-  "hidden": "true"
-}

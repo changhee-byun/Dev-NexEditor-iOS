@@ -1,1 +1,0 @@
-python kedl.py -p -o output -k kedlkeys_sdk theme_src\serene_theme\serene_accent.xml theme_src\serene_theme\serene_ending.xml theme_src\serene_theme\serene_middle.xml theme_src\serene_theme\serene_opening.xml theme_src\serene_theme\serene_theme.xml theme_src\serene_theme\serene_trans.xml 
