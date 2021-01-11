@@ -9,15 +9,33 @@
 import SwiftUI
 
 public struct NexEditorView: UIViewRepresentable {
-    public var engineWrapper : NexEditorExt
+    public var engineExt : NexEditorExt
+    public var viewFrame: CGRect
     
-    public init(engineWrapper: NexEditorExt) {
-        self.engineWrapper = engineWrapper
+    public init(engine: NexEditorExt, viewFrame: CGRect) {
+        self.engineExt = engine
+        self.viewFrame = viewFrame
+    }
+    
+    public init(engine: NexEditorExt) {
+        self.init(engine: engine, viewFrame: CGRect(x: 0, y: 0, width: 900, height: 1600))
+    }
+    
+    public init(engine: NexEditorExt, viewWidth: CGFloat) {
+        self.init(engine: engine, viewFrame: CGRect(x: 0, y: 0, width: viewWidth, height: viewWidth*16/9))
+    }
+    
+    public init(engine: NexEditorExt, viewWidth: CGFloat, viewHeight: CGFloat) {
+        self.init(engine: engine, viewFrame: CGRect(x: 0, y: 0, width: viewWidth, height: viewHeight))
+    }
+    
+    public init(engine: NexEditorExt, viewSize: CGSize) {
+        self.init(engine: engine, viewFrame: CGRect(x: 0, y: 0, width: viewSize.width, height: viewSize.height))
     }
     
     public func makeUIView(context: Context) -> UIView {
-        engineWrapper.preview = UIView(frame: CGRect(x: 0, y: 0, width: 1000, height: 1500))
-        return engineWrapper.preview
+        engineExt.preview = UIView(frame: viewFrame)
+        return engineExt.preview
     }
     
     public func updateUIView(_ view: UIView, context: Context) {

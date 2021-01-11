@@ -32,7 +32,7 @@ struct BeatTemplateMainView: View {
     
     var body: some View {
         VStack {
-            NexEditorView(engineWrapper: self.nexEditor)
+            NexEditorView(engine: self.nexEditor)
                 .onTapGesture {
                     self.nexEditorPlayer.playPause()
                 }

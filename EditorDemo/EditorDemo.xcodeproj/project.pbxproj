@@ -119,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				37033A3C25A58670007B5A81 /* StringTools.swift */,
+				378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */,
 				37716D2125A32BC500B28523 /* Playable */,
 			);
 			path = Common;
@@ -168,7 +169,6 @@
 				37805E3625919CA3008188B0 /* Info.plist */,
 				37805E3325919CA3008188B0 /* Preview Content */,
 				378075BA25925148008188B0 /* EditorDemo-Bridging-Header.h */,
-				378075D1259257C8008188B0 /* PhotoLibraryPicker.swift */,
 			);
 			path = EditorDemo;
 			sourceTree = "<group>";
