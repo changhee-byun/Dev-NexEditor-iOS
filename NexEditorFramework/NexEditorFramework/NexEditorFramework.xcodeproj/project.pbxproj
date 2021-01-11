@@ -120,7 +120,7 @@
 		BB754ECB1FE0F787006985B4 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = BB754ECA1FE0F787006985B4 /* UIImage+Resize.h */; };
 		BBFC66B61F4171E500EACF6A /* NXELutRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFC66B51F4171E500EACF6A /* NXELutRegistry.m */; };
 		BBFC66BA1F41721300EACF6A /* NXELutRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = BBFC66B91F41721300EACF6A /* NXELutRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0DC214BBDFBC481868D292 /* Pods_NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268A481C8508CA27C9CE2F65 /* Pods_NexEditorFramework.framework */; };
+		CCD584E26F20F5D5387CC163 /* Pods_NexEditorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2324F0355E1C5D4C32434C3A /* Pods_NexEditorFramework.framework */; };
 		CF2E753C1CF7DBD900A01146 /* NexImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2E75341CF7DBD900A01146 /* NexImage.h */; };
 		CF2E753D1CF7DBD900A01146 /* NexImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2E75351CF7DBD900A01146 /* NexImage.mm */; };
 		CF2E753E1CF7DBD900A01146 /* UIListenerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2E75361CF7DBD900A01146 /* UIListenerProtocol.h */; };
@@ -291,7 +291,6 @@
 		F4C303231FF25353001D64BB /* NXECollageSlotConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C3031E1FF25353001D64BB /* NXECollageSlotConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C303241FF25353001D64BB /* NXECollageTitleConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C3031F1FF25353001D64BB /* NXECollageTitleConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4CD84601E51C0DC006EFC94 /* NXEAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CD845E1E51C0DC006EFC94 /* NXEAssetLibrary.m */; };
-		F4F213EA1E79673500AC7C46 /* keyczar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F213E81E79673500AC7C46 /* keyczar.framework */; };
 		F4F213EB1E79673500AC7C46 /* zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F213E91E79673500AC7C46 /* zlib.framework */; };
 		F4FE71A41E962B7A00AD2CD0 /* NXEClipSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE71A21E962B7A00AD2CD0 /* NXEClipSource.m */; };
 		F4FEFF8C1E88B35300DF0E26 /* NXETextLayerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FEFF8B1E88B35300DF0E26 /* NXETextLayerPrivate.h */; };
@@ -327,7 +326,7 @@
 		1E78F72A1C9684A300AC3347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFBD07B1D128F0F004A8022 /* NXEOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXEOperation.h; sourceTree = "<group>"; };
 		1EFBD07C1D128F0F004A8022 /* NXEOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXEOperation.m; sourceTree = "<group>"; };
-		268A481C8508CA27C9CE2F65 /* Pods_NexEditorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2324F0355E1C5D4C32434C3A /* Pods_NexEditorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexEditorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD4F88A1E2A1A3800448DB8 /* TemplateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateHelper.h; sourceTree = "<group>"; };
 		2DD4F88B1E2A1A3800448DB8 /* TemplateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateHelper.m; sourceTree = "<group>"; };
 		3738E7B425A82C6F005B1F48 /* BeatTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTemplate.swift; sourceTree = "<group>"; };
@@ -379,8 +378,7 @@
 		37EDF187258C839B006A0BF7 /* AssetDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetDB.m; sourceTree = "<group>"; };
 		37EDF188258C839B006A0BF7 /* AssetEncryptionManifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetEncryptionManifest.m; sourceTree = "<group>"; };
 		37EDF189258C839B006A0BF7 /* AssetItemInfoPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetItemInfoPrivate.h; sourceTree = "<group>"; };
-		3AAF34916D51D35EF8018DD9 /* Pods-NexEditorFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorFramework/Pods-NexEditorFramework.release.xcconfig"; sourceTree = "<group>"; };
-		B5B8642F961E5251F8F10F8C /* Pods-NexEditorFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexEditorFramework/Pods-NexEditorFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		5C1B0BD844F377F78F18EA5B /* Pods-NexEditorFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorFramework.debug.xcconfig"; path = "Target Support Files/Pods-NexEditorFramework/Pods-NexEditorFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		BB0374451FE2651700D5B470 /* FontTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontTools.h; sourceTree = "<group>"; };
 		BB0374471FE2652B00D5B470 /* FontTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FontTools.mm; sourceTree = "<group>"; };
 		BB0AE48A20108B7C000F3EB3 /* ImageUtil+KMLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageUtil+KMLayer.h"; sourceTree = "<group>"; };
@@ -403,6 +401,7 @@
 		BB754ECA1FE0F787006985B4 /* UIImage+Resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		BBFC66B51F4171E500EACF6A /* NXELutRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXELutRegistry.m; sourceTree = "<group>"; };
 		BBFC66B91F41721300EACF6A /* NXELutRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXELutRegistry.h; sourceTree = "<group>"; };
+		CF0D6A00300E4E06B130AAAA /* Pods-NexEditorFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexEditorFramework.release.xcconfig"; path = "Target Support Files/Pods-NexEditorFramework/Pods-NexEditorFramework.release.xcconfig"; sourceTree = "<group>"; };
 		CF2E75341CF7DBD900A01146 /* NexImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NexImage.h; sourceTree = "<group>"; };
 		CF2E75351CF7DBD900A01146 /* NexImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NexImage.mm; sourceTree = "<group>"; };
 		CF2E75361CF7DBD900A01146 /* UIListenerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIListenerProtocol.h; sourceTree = "<group>"; };
@@ -586,10 +585,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F213EA1E79673500AC7C46 /* keyczar.framework in Frameworks */,
 				F4F213EB1E79673500AC7C46 /* zlib.framework in Frameworks */,
 				1E0C5AE01CD7805800C0797B /* AudioToolbox.framework in Frameworks */,
-				CC0DC214BBDFBC481868D292 /* Pods_NexEditorFramework.framework in Frameworks */,
+				CCD584E26F20F5D5387CC163 /* Pods_NexEditorFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,8 +656,8 @@
 				1E78F7271C9684A300AC3347 /* NexEditorFramework */,
 				1E78F7261C9684A300AC3347 /* Products */,
 				F4F213E61E79673500AC7C46 /* Frameworks */,
-				938FDD023A4AB7ABF2849C32 /* Pods */,
 				E2165B4220285E9E007E3F8A /* Recovered References */,
+				B4FDBEB981161D3654E8C9C7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -801,13 +799,13 @@
 			path = DBIndexed;
 			sourceTree = "<group>";
 		};
-		938FDD023A4AB7ABF2849C32 /* Pods */ = {
+		B4FDBEB981161D3654E8C9C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B5B8642F961E5251F8F10F8C /* Pods-NexEditorFramework.debug.xcconfig */,
-				3AAF34916D51D35EF8018DD9 /* Pods-NexEditorFramework.release.xcconfig */,
+				5C1B0BD844F377F78F18EA5B /* Pods-NexEditorFramework.debug.xcconfig */,
+				CF0D6A00300E4E06B130AAAA /* Pods-NexEditorFramework.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		BB0374581FE3914200D5B470 /* editorUtil */ = {
@@ -1190,7 +1188,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F213E71E79673500AC7C46 /* Framework */,
-				268A481C8508CA27C9CE2F65 /* Pods_NexEditorFramework.framework */,
+				2324F0355E1C5D4C32434C3A /* Pods_NexEditorFramework.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -1365,7 +1363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E78F72D1C9684A300AC3347 /* Build configuration list for PBXNativeTarget "NexEditorFramework" */;
 			buildPhases = (
-				6F8B46DC15AF327D302FF30D /* [CP] Check Pods Manifest.lock */,
+				C57B8E0EB0690D030D04A6B7 /* [CP] Check Pods Manifest.lock */,
 				1E78F7201C9684A300AC3347 /* Sources */,
 				1E78F7211C9684A300AC3347 /* Frameworks */,
 				1E78F7221C9684A300AC3347 /* Headers */,
@@ -1449,16 +1447,20 @@
 			shellPath = /bin/sh;
 			shellScript = "bash ./buildframework.sh\n";
 		};
-		6F8B46DC15AF327D302FF30D /* [CP] Check Pods Manifest.lock */ = {
+		C57B8E0EB0690D030D04A6B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NexEditorFramework-checkManifestLockResult.txt",
 			);
@@ -1697,7 +1699,7 @@
 		};
 		1E78F72E1C9684A300AC3347 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5B8642F961E5251F8F10F8C /* Pods-NexEditorFramework.debug.xcconfig */;
+			baseConfigurationReference = 5C1B0BD844F377F78F18EA5B /* Pods-NexEditorFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -1711,15 +1713,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/NexEditorFramework/Keyczar/Framework",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks/Framework",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/AssetReader/AssetReader/include",
-					"$(SRCROOT)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/renderitem",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NexEditorFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1755,7 +1752,7 @@
 		};
 		1E78F72F1C9684A300AC3347 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AAF34916D51D35EF8018DD9 /* Pods-NexEditorFramework.release.xcconfig */;
+			baseConfigurationReference = CF0D6A00300E4E06B130AAAA /* Pods-NexEditorFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -1769,16 +1766,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/NexEditorFramework/Keyczar/Framework",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks/Framework",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/NexEditorEngine/NexEditorEngine.framework/Headers\"",
-					"$(SRCROOT)/AssetReader/AssetReader/include",
-					"$(SRCROOT)/../submodules/NexEditor/NexEditorSDK/nexeditorengine/extern_lib/RenderItemSDK/renderitem",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NexEditorFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
